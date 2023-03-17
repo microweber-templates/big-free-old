@@ -26,8 +26,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 
-<section class="section py-0 edit safe-mode nodrop" field="layout-content-skin-60-<?php print $params['id'] ?>" rel="global">
-    <div style="background-color: #2b2b2b;">
+<section class="section py-0 edit safe-mode nodrop" field="layout-content-skin-60-<?php print $params['id'] ?>" rel="module">
+    <div>
         <div class="container <?php print $layout_classes; ?> text-white">
             <div class="row">
                 <div class="col-sm-12 mx-auto mx-lg-0 allow-drop">
