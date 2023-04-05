@@ -1,7 +1,7 @@
 <?php
 
 $config = array();
-$config['name'] = "Big Template";
+$config['name'] = "Big Template Free";
 $config['author'] = "Microweber CMS";
 $config['version'] = "6.1.1";
 $config['url'] = "http://microweber.com";
@@ -56,7 +56,7 @@ $config['stylesheet_compiler']['settings'][] = array('type' => 'title', 'label' 
 $config['stylesheet_compiler']['settings']['fontFamily'] = array('type' => 'font_selector', 'default' => 'lato', 'label' => 'Choose font for your site');
 $config['stylesheet_compiler']['settings']['fontFamily']['options'] = array('milliard' => 'Milliard');
 
-$config['stylesheet_compiler']['settings']['bodyFontSize'] = array('type' => 'text', 'default' => '16px', 'label' => 'Body Font Size');
+$config['stylesheet_compiler']['settings']['bodyFontSize'] = array('type' => 'range', 'default' => '16px', 'label' => 'Body Font Size');
 
 
 $config['template_settings'][] = array('type' => 'delimiter');
