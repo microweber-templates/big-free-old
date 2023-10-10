@@ -1,7 +1,7 @@
 {
-  "name": "microweber-templates/big",
+  "name": "microweber-templates/big-free",
   "type": "microweber-template",
-  "description": "Big Template",
+  "description": "Big Template - FREE VERSION",
   "keywords": [
 
     "main"
@@ -316,5 +316,5 @@
           "layouts/templates/videos/skin-8.php"
       ]
   },
-  "target-dir": "big"
+  "target-dir": "big-free"
 }
