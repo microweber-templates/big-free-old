@@ -1,7 +1,7 @@
 <?php
 
 
-namespace MicroweberPackages\Template\Big;
+namespace MicroweberPackages\Template\BigFree;
 
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
