@@ -1,6 +1,6 @@
 <?php
 
-namespace MicroweberPackages\Template\Big\tests\Browser;
+namespace MicroweberPackages\Template\BigFree\tests\Browser;
 
 use Illuminate\Support\Facades\Auth;
 use Laravel\Dusk\Browser;
@@ -10,7 +10,7 @@ use Tests\DuskTestCase;
 
 class TemplateBigLiveEditTemplateTest extends DuskTestCase
 {
-    public $template_name = 'template-big';
+    public $template_name = 'big-free';
 
     public function bootTemplate()
     {
