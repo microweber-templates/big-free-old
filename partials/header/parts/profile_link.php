@@ -1,4 +1,4 @@
-<?php if ($profile_link == 'yes'): ?>
+<?php if ($profile_link == 1): ?>
     <script>
         var $window = $(window), $document = $(document);
         $document.ready(function () {

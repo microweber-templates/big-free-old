@@ -1564,17 +1564,17 @@ body.page-loaded .js-ajax-loading {
     }
 }
 
-@media screen and (min-width: 1000px) {
-    .mw-big-navbar-toggler {
-        display: none;
-    }
-}
-
-@media screen and (min-width: 1060px) {
-    .mw-big-navbar-toggler {
-        display: block;
-    }
-}
+//@media screen and (min-width: 1000px) {
+//    .mw-big-navbar-toggler {
+//        display: none;
+//    }
+//}
+//
+//@media screen and (min-width: 1060px) {
+//    .mw-big-navbar-toggler {
+//        display: block;
+//    }
+//}
 
 .mw-big-dropdown-cart.dropdown-menu {
     right: 0px;

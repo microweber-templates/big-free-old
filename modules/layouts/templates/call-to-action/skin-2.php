@@ -25,8 +25,16 @@ if (!$classes['padding_bottom']) {
 $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
 ?>
 
-<section class="section <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-call-to-action-skin-2-<?php print $params['id'] ?>" rel="module">
-    <div class="container">
+<section class="section <?php print $layout_classes; ?> edit nodrop" field="layout-call-to-action-skin-2-<?php print $params['id'] ?>" rel="module">
+
+
+    <div class="mw-layout-background-block">
+        <div class="mw-layout-background-node"></div>
+        <div class="mw-layout-background-overlay"></div>
+    </div>
+
+ <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
+    <div class="mw-layout-container no-element-allow-drop container">
         <div class="row flex-lg-nowrap mh-350">
             <div class="col-12 col-sm-10 col-lg-6 pb-5 mb-4 pe-lg-5 ps-0 text-center text-lg-start d-flex align-items-center order-2 order-lg-1">
                 <div class="allow-drop">
@@ -41,8 +49,10 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             </div>
 
             <div class="col-12 col-sm-10 col-lg-8 order-1 order-lg-2 mb-4">
-                <div class="background-image-holder mh-350 h-100" style="background-image: url('<?php print template_url(); ?>assets/img/layouts/cta-2.png');"></div>
+                <div class="  mh-350 h-100" style="background-image: url('<?php print template_url(); ?>assets/img/layouts/cta-2.png');"></div>
             </div>
         </div>
     </div>
+<module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />
+
 </section>

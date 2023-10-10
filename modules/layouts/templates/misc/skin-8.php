@@ -30,8 +30,11 @@ if (page_title()) {
 }
 ?>
 
-<section class="section <?php print $layout_classes; ?>safe-mode edit allow-drop" field="layout-misc-skin-8-<?php print $params['id'] ?>" rel="module">
-    <div class="container">
+<section class="section <?php print $layout_classes; ?> edit allow-drop" field="layout-misc-skin-8-<?php print $params['id'] ?>" rel="module">
+
+     <module type="background" id="background-layout--<?php print $params['id'] ?>" />
+    <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
+    <div class="mw-layout-container no-element allow-drop container">
         <div class="row text-center py-5 col-12">
             <div class="col mb-5 cloneable align-self-center">
                 <img src="<?php print template_url(); ?>assets/img/layouts/Amazon2.png">
@@ -53,4 +56,6 @@ if (page_title()) {
             </div>
         </div>
     </div>
+<module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />
+
 </section>

@@ -27,9 +27,9 @@ description: Posts 14
                 <div class="h-100 d-flex flex-column">
                     <?php if (!isset($show_fields) or $show_fields == false or in_array('thumbnail', $show_fields)): ?>
 
-                    <a href="<?php print $item['link'] ?>" class="btn btn-link d-block px-0">
-                        <div class="img-as-background h-650">
-                            <img src="<?php print thumbnail($item['image'], 850, 850); ?>" style="top: unset!important;" class=" "/>
+                    <a href="<?php print $item['link'] ?>" class="   d-block px-md-0 px-2">
+                        <div class="img-as-background">
+                            <img src="<?php print thumbnail($item['image'], 850, 850); ?>" style="top: unset!important; position: relative !important;"/>
                         </div>
                     </a>
                     <?php endif; ?>
@@ -37,11 +37,11 @@ description: Posts 14
 
                     <div class="pt-4 pb-3">
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
-                            <a href="<?php print $item['link'] ?>" class="btn btn-link text-dark mb-2 px-0"><h4 class="text-start text-left"><?php print $item['title'] ?></h4></a>
+                            <a href="<?php print $item['link'] ?>" class="  px-md-0 px-2"><h4 class="text-start text-left"><?php print $item['title'] ?></h4></a>
                         <?php endif; ?>
 
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('description', $show_fields)): ?>
-                            <p style="color: #8F8BA5;" class="lead"><?php print $item['description'] ?></p>
+                            <p class="lead"><?php print $item['description'] ?></p>
                         <?php endif; ?>
                     </div>
                 </div>

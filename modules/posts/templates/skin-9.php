@@ -25,7 +25,7 @@ description: Posts 9
             ?>
 
             <div class="mx-auto col-sm-10 mx-md-0 col-md-6 col-lg-4 mb-5" itemscope itemtype="<?php print $schema_org_item_type_tag ?>">
-                <div class="border   overflow-hidden h-100 d-flex flex-column bg-body hover-  ">
+                <div class=" overflow-hidden h-100 d-flex flex-column bg-body hover-  ">
                     <?php if (!isset($show_fields) or $show_fields == false or in_array('thumbnail', $show_fields)): ?>
 
                     <a href="<?php print $item['link'] ?>" class="d-block position-relative">
@@ -35,10 +35,10 @@ description: Posts 9
                     </a>
                     <?php endif; ?>
 
-                    <div class="d-flex flex-column h-100 px-5 pt-3 pb-2">
+                    <div class="d-flex flex-column h-100 pt-3 pb-2">
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('created_at', $show_fields)): ?>
 
-                        <small class="mb-3 mt-3 d-block  "><?php echo date(get_date_format_raw(), strtotime($item['created_at'])); ?></small>
+                        <small class="mb-3 mt-3 d-block  "><?php echo date_system_format($item['created_at']) ; ?></small>
                         <?php endif; ?>
 
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>

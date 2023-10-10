@@ -36,6 +36,7 @@ description: Skin-2
                 } else {
                     $itemLink = false;
                 }
+
             } else {
                 $itemTitle = false;
                 $itemDescription = false;
@@ -48,14 +49,17 @@ description: Skin-2
                         <img src="<?php print thumbnail($item['filename'], 350, 350, true); ?>"/>
                     </div>
 
-                    <div class="show-on-hover position-absolute bg-body border   mh-350 w-100 top-0 mb-3 p-5 text-center align-items-center justify-content-center d-flex flex-column">
-                        <?php if ($itemTitle): ?>
-                            <h5 class="mb-1"><?php print $itemTitle; ?></h5>
-                        <?php endif; ?>
-                        <?php if ($itemDescription): ?>
-                            <p class="mb-3"><?php print $itemDescription; ?></p>
-                        <?php endif; ?>
-                    </div>
+                    <?php if ($itemTitle || $itemDescription): ?>
+
+                        <div class="show-on-hover position-absolute bg-body border   mh-350 w-100 top-0 mb-3 p-5 text-center align-items-center justify-content-center d-flex flex-column">
+                            <?php if ($itemTitle): ?>
+                                <h4 class="mb-1"><?php print $itemTitle; ?></h4>
+                            <?php endif; ?>
+                            <?php if ($itemDescription): ?>
+                                <p class="mb-3"><?php print $itemDescription; ?></p>
+                            <?php endif; ?>
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
         <?php endforeach; ?>

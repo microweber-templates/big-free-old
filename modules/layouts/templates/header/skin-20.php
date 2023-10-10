@@ -25,24 +25,24 @@ if (!$classes['padding_bottom']) {
 $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
 ?>
 
-<section class="section mw-layout-overlay-wrapper  <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-header-skin-20-<?php print $params['id'] ?>" rel="module">
-    <div class="mw-layout-overlay"></div>
-    <div class="container mw-layout-overlay-container-fluid mh-100vh d-flex align-items-center justify-content-center">
-        <div class="row col-12">
-            <div class="col-12 col-sm-10 col-lg-6 me-auto mb-5 px-0">
-                <img class="mh-500" src="<?php print template_url(); ?>assets/img/layouts/header-20.png" />
+
+<section class="section py-0 d-flex align-items-center justify-content-center">
+    <module type="background"/>
+    <div class="mw-layout-container container mh-100vh d-flex align-items-center justify-content-center no-element edit nodrop no-typing no-select" field="layout-header-skin-16-<?php print $params['id'] ?>" rel="module">
+        <div class="row">
+
+            <div class="col-12  safe-mode  col-sm-10 col-lg-6 me-auto mb-5">
+                <img class="allow-select mh-500" src="<?php print template_url(); ?>assets/img/layouts/gallery-1-14.jpg" />
             </div>
 
-            <div class="col-12 col-sm-10 col-lg-6 text-center ms-auto text-lg-start d-flex align-items-center mb-5">
-                <div class="container mw-layout-overlay-container-fluid-right-col-in-container mw-layout-overlay-container">
-                    <div class="allow-drop ps-lg-5">
-                        <h1 class="header-section-title mb-4">Your best services here</h1>
+            <div class="col-12  safe-mode  col-sm-10 col-lg-6 text-center ms-auto text-lg-start d-flex align-items-center mb-5 allow-drop">
+                <div class="allow-select">
+                    <h1 data-mwplaceholder="<?php _e('Enter title here'); ?>" class="header-section-title mb-7">Describe your company </h1>
+                    <p data-mwplaceholder="<?php _e('Enter text here'); ?>" class="header-section-p mb-7">Describe your company and services with few words and explain why you are the best choice.</p>
 
-                        <p class="header-section-p lead-2">Describe your company and services with few words and explain why you are the best choice.</p>
-                        <br/>
+                    <br/>
+                    <module type="btn" button_style="btn-primary" button_size="btn-lg px-5" text="Read More"/>
 
-                        <module type="btn" button_style="btn-primary" button_size="btn-lg px-5" text="Read More"/>
-                    </div>
                 </div>
             </div>
         </div>

@@ -47,7 +47,7 @@ description: Skin-1
     })
 </script>
 
-<div class="testimonials-faces-wrapper">
+<div class="testimonials-faces-wrapper overflow-hidden">
     <div class="testimonials-wrapper mx-auto">
         <div class="mw-testimonials mw-testimonials-faces">
             <?php foreach ($data as $item): ?>
@@ -66,7 +66,7 @@ description: Skin-1
     </div>
 
     <?php if ($all_have_pictures): ?>
-        <div class="mwt-faces my-3 d-flex align-items-center justify-content-center">
+        <div class="mwt-faces my-3">
             <?php $count = -1;
             foreach ($data as $item): $count++; ?>
                 <span class="mwt-face-holder" data-index="<?php print $count; ?>">
@@ -79,7 +79,7 @@ description: Skin-1
             <?php endforeach; ?>
         </div>
     <?php else: ?>
-        <div class="mwt-faces my-3 d-flex align-items-center justify-content-center">
+        <div class="mwt-faces my-3">
             <?php $count = -1;
             foreach ($data as $item): $count++; ?>
                 <span class="mwt-face-holder" data-index="<?php print $count; ?>">
@@ -100,8 +100,20 @@ description: Skin-1
                     <div class="mw-testimonials-item-faces-content mt-2">
                         <div class="row text-center">
                             <div class="col-12 col-lg-10 col-lg-8 mx-auto">
-                                <h5><?php print $item['name']; ?></h5>
-                                <p><?php print $item['client_role']; ?></p> &nbsp;
+                                <?php if ($item['name']): ?>
+                                    <h5 class=" mb-0"><?php print $item['name']; ?></h5>
+                                <?php endif; ?>
+                                <?php if ($item['client_company']): ?>
+                                    <p class="mb-0"><?php print $item['client_company']; ?></p>
+                                <?php endif; ?>
+
+                                <?php if ($item['client_website']): ?>
+                                    <a class="my-1 d-block" href="<?php print $item['client_website']; ?>"><?php print $item['client_website'] ?></a>
+                                <?php endif; ?>
+
+                                <?php if ($item['client_role']): ?>
+                                    <p><?php print $item['client_role']; ?></p>
+                                <?php endif; ?>
                             </div>
                         </div>
                     </div>

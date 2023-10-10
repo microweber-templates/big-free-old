@@ -42,6 +42,11 @@ description: Skin-9
     }
 
     <?php echo '#' . $params['id'] . ' '; ?>
+    .slick-list {
+        overflow: hidden;
+    }
+
+    <?php echo '#' . $params['id'] . ' '; ?>
     .slick-slide {
         height: inherit !important;
     }
@@ -69,15 +74,30 @@ description: Skin-9
     }
 </style>
 
-<div class="slick-arrows-1">
-    <div class="slickslider" data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "dots": false, "arrows": true}'>
+<div class="slick-arrows-1 ">
+    <div class="slickslider " data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "dots": false, "arrows": true}'>
         <?php foreach ($data as $item): ?>
-            <div class="border   mx-3 h-100 p-5">
+            <div class="border testimonials-background-variable testimonialBorderVariable   mx-3 h-100 p-5 ">
                 <?php if ($item['client_picture']): ?>
                     <img src="<?php print thumbnail($item['client_picture'], 130); ?>" class="d-block mb-3"/>
                 <?php endif; ?>
 
+                <?php if ($item['name']): ?>
+                    <h5 class=" mb-0"><?php print $item['name']; ?></h5>
+                <?php endif; ?>
+
                 <p><?php print character_limiter($item['content'], $limit); ?></p>
+                <?php if ($item['client_company']): ?>
+                    <p class="mb-0"><?php print $item['client_company']; ?></p>
+                <?php endif; ?>
+
+                <?php if ($item['client_website']): ?>
+                    <a class="my-1 d-block" href="<?php print $item['client_website']; ?>"><?php print $item['client_website'] ?></a>
+                <?php endif; ?>
+
+                <?php if ($item['client_role']): ?>
+                    <p><?php print $item['client_role']; ?></p>
+                <?php endif; ?>
             </div>
         <?php endforeach; ?>
     </div>

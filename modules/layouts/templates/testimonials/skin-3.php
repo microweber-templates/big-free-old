@@ -25,8 +25,11 @@ if (!$classes['padding_bottom']) {
 $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
 ?>
 
-<section class="section <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-testimonials-skin-3-<?php print $params['id'] ?>" rel="module">
-    <div class="container">
+<section class="section <?php print $layout_classes; ?> edit  nodrop" field="layout-testimonials-skin-3-<?php print $params['id'] ?>" rel="module">
+
+     <module type="background" id="background-layout--<?php print $params['id'] ?>" />
+    <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
+    <div class="mw-layout-container no-element allow-drop container">
         <div class="row text-center">
             <div class="col-12 col-lg-10 col-lg-8 mx-auto allow-drop">
                 <h5 class=" ">Pictures In The Sky</h5>
@@ -37,6 +40,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
         <div class="allow-drop"></div>
 
-        <module type="testimonials" template="skin-10" project_name="Testimonials 3"/>
+        <module type="testimonials" template="skin-10" project_name="Testimonials 1"/>
     </div>
+  <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />
+
 </section>

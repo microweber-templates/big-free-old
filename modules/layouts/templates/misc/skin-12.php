@@ -4,9 +4,11 @@
 
 type: layout
 
-name: Accordions
+name: Mics 12
 
-position: 11
+position: 12
+
+categories: Misc
 
 */
 
@@ -23,8 +25,13 @@ if (!$classes['padding_bottom']) {
 $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
 ?>
 
-<section class="misc-12 d-flex <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-skin-11-<?php print $params['id'] ?>" rel="module">
-    <div class="container align-self-center allow-drop">
+<section class="misc-12 d-flex <?php print $layout_classes; ?> edit  nodrop" field="layout-skin-11-<?php print $params['id'] ?>" rel="module">
+
+     <module type="background" id="background-layout--<?php print $params['id'] ?>" />
+    <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
+    <div class="mw-layout-container no-element allow-drop container align-self-center allow-drop">
         <module type="accordion" template="misc-12"/>
     </div>
+<module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />
+
 </section>

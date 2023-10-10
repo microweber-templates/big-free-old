@@ -33,23 +33,31 @@ description: Skin-12
     <?php $rand = uniqid(); ?>
     <div class="gallery-holder">
         <div class="row">
-            <div class="col-holder col-8">
-                <?php foreach ($data as $count => $item): ?>
-                    <?php if ($count == 0): ?>
-                        <div class="item pictures picture-<?php print $item['id']; ?>" onclick="mw.gallery(gallery<?php print $rand; ?>, <?php print $count; ?>);return false;">
-                            <img class="w-100" src="<?php print thumbnail($item['filename'], 800, 800, true); ?>" alt="">
+            <?php $count = -1; ?>
+                <?php foreach ($data as $item): ?>
+                    <?php $count++; ?>
+                    <?php if ($count == 0 || $count == 5): ?>
+                        <div class="col-holder col-8">
+                            <div class="item pictures picture-<?php print $item['id']; ?>" onclick="mw.gallery(gallery<?php print $rand; ?>, <?php print $count; ?>);return false;">
+                                <img class="w-100" src="<?php print thumbnail($item['filename'], 800, 800, true); ?>" alt="">
+                            </div>
                         </div>
+                     <?php else : ?>
+                     <?php  if ($count == 1 || $count == 3 ):  ?>  <div class="col-holder col-4"> <?php endif; ?>
+
+                            <div class="item pictures picture-<?php print $item['id']; ?>" onclick="mw.gallery(gallery<?php print $rand; ?>, <?php print $count; ?>);return false;">
+                                <img class="w-100" src="<?php print thumbnail($item['filename'], 500, 500, true); ?>" alt="">
+                            </div>
+
+                             
+                    <?php  if ($count == 2 || $count == 4):  ?> </div>  <?php endif; ?>
+
                     <?php endif; ?>
+                    <?php if ($count == 5):
+                        $count = -1;
+                    endif; ?>
                 <?php endforeach; ?>
-            </div>
-            <div class="col-holder col-4">
-                <?php foreach ($data as $count => $item): ?>
-                    <?php if ($count == 1 OR $count == 2): ?>
-                        <div class="item pictures picture-<?php print $item['id']; ?>" onclick="mw.gallery(gallery<?php print $rand; ?>, <?php print $count; ?>);return false;">
-                            <img class="w-100" src="<?php print thumbnail($item['filename'], 500, 500, true); ?>" alt="">
-                        </div>
-                    <?php endif; ?>
-                <?php endforeach; ?>
+
             </div>
         </div>
     </div>

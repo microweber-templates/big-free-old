@@ -12,60 +12,70 @@ description: Skin-4
 
 ?>
 
-<script>mw.lib.require('slick')</script>
 <script>
+    mw.require('<?php print modules_url() ?>slider_v2/slider-v2.js');
     $(document).ready(function () {
-        $('.slickslider', '#<?php echo $params['id']; ?>').slick();
+        new SliderV2('#js-testimonials-slider-<?php echo $params['id']; ?>', {
+            loop: true,
+            autoplay:true,
+            direction: 'horizontal', //horizontal or vertical
+            pagination: {
+                element: '#js-testimonials-slider-pagination-<?php echo $params['id']; ?>',
+            },
+            navigation: {
+                nextElement: '#js-testimonials-pagination-next-<?php echo $params['id']; ?>',
+                previousElement: '#js-testimonials-pagination-previous-<?php echo $params['id']; ?>',},
+        });
     });
 </script>
-
 <style>
-    <?php echo '#' . $params['id'] . ' '; ?> .slick-dotted.slick-slider {
-        margin-bottom: 0px;
-    }
-    <?php echo '#' . $params['id'] . ' '; ?>
-    .slick-dots {
-        width: 91.6666666667%;
-        margin: 0 auto;
-        right: 0;
-        text-align: left;
-        padding-left: 3rem;
-    }
-
-    @media screen and (max-width: 1199px) {
-    <?php echo '#' . $params['id'] . ' '; ?>
-        .slick-dots {
-            width: 100%;
-            padding-left: 0;
-        }
+    .slider_v2-default.swiper .swiper-pagination-bullet {
+        background-color: #000;
     }
 </style>
 
-<div class="slick-arrows-1">
-    <div class="slickslider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "dots": true, "arrows": false}'>
+
+<div id="js-testimonials-slider-<?php echo $params['id']; ?>" class="slider_v2-default swiper">
+    <div class="swiper-wrapper">
         <?php foreach ($data as $item): ?>
+        <div class="swiper-slide">
             <div class="row">
                 <div class="col-12 col-lg-12 col-lg-10 mx-auto">
                     <i class="mdi mdi-format-quote-close icon-size-46px   d-block mb-5"></i>
                     <div class="px-5">
-                        <p class="lead-3"><?php print character_limiter($item['content'], $limit); ?></p>
+                        <h4><?php print character_limiter($item['content'], $limit); ?></h4>
                     </div>
                     <br/>
                     <div class="row">
                         <div class="col-12 col-lg-12 col-lg-11 mx-auto">
                             <div class="row">
-                                <div class="col-6 text-start text-left">
+                                <div class="col-6 text-start">
 
                                 </div>
                                 <div class="col-6 text-end text-right">
-                                    <h6 class=" "><?php print $item['name']; ?></h6>
-                                    <p><?php print $item['client_role']; ?></p> &nbsp;
+                                    <?php if ($item['name']): ?>
+                                        <h5 class=" mb-0"><?php print $item['name']; ?></h5>
+                                    <?php endif; ?>
+                                    <?php if ($item['client_company']): ?>
+                                        <p class="mb-0"><?php print $item['client_company']; ?></p>
+                                    <?php endif; ?>
+
+                                    <?php if ($item['client_website']): ?>
+                                        <a class="my-1 d-block" href="<?php print $item['client_website']; ?>"><?php print $item['client_website'] ?></a>
+                                    <?php endif; ?>
+
+                                    <?php if ($item['client_role']): ?>
+                                        <p><?php print $item['client_role']; ?></p>
+                                    <?php endif; ?>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
         <?php endforeach; ?>
     </div>
+    <div id="js-testimonials-slider-pagination-<?php echo $params['id']; ?>" class="swiper-pagination me-auto text-start"></div>
+
 </div>

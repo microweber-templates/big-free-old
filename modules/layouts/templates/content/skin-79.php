@@ -12,19 +12,6 @@ categories: Content
 
 */
 
+
+// THIS IS PREMIUM LAYOUT, PLEASE BUY LICENSE KEY FROM https://microweber.com
 ?>
-
-<?php
-if (!$classes['padding_top']) {
-    $classes['padding_top'] = '';
-}
-if (!$classes['padding_bottom']) {
-    $classes['padding_bottom'] = '';
-}
-
-$layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
-?>
-
-
-
-

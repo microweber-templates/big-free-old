@@ -8,6 +8,8 @@ name: Call to action 16
 
 position: 16
 
+hidden: true
+
 categories: Call to Action
 
 */
@@ -25,8 +27,16 @@ if (!$classes['padding_bottom']) {
 $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
 ?>
 
-<section class="section    <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-call-to-action-skin-16-<?php print $params['id'] ?>" rel="module">
-    <div class="container">
+<section class="section    <?php print $layout_classes; ?> edit nodrop" field="layout-call-to-action-skin-16-<?php print $params['id'] ?>" rel="module">
+
+
+    <div class="mw-layout-background-block">
+        <div class="mw-layout-background-node"></div>
+        <div class="mw-layout-background-overlay"></div>
+    </div>
+
+ <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
+    <div class="mw-layout-container no-element-allow-drop container">
         <div class="row">
             <div class="col-12 col-sm-10 col-lg-12 col-lg-12 mx-auto">
                 <div class="row bg-body   px-5 py-2 d-block d-md-flex justify-content-between align-items-center">
@@ -39,4 +49,6 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             </div>
         </div>
     </div>
+<module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />
+
 </section>

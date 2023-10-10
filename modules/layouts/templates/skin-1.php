@@ -24,17 +24,19 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 <section class="section <?php print $layout_classes; ?> nodrop clean-container edit" field="layout-skin-1-<?php print $params['id'] ?>" rel="module">
-    <div class="container safe-mode">
+    <module type="background" id="background-layout--<?php print $params['id'] ?>" />
+    <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
+
+    <div class="mw-layout-container no-element allow-drop container">
         <div class="row">
-            <div class="col-12 col-md-12 allow-drop">
-                <div class="mw-row">
-                    <div class="mw-col" style="width:100%">
-                        <div class="mw-col-container">
-                            <div class="mw-empty-element"></div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-12 allow-drop">
+                <h1 class="element" data-mwplaceholder="Enter your title here"></h1>
+
+                <p class="element" data-mwplaceholder="This is sample text for your page"></p>
             </div>
         </div>
     </div>
+
+    <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />
+
 </section>

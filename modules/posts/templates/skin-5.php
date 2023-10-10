@@ -19,7 +19,7 @@
                     <div class="post-holder mb-4">
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('created_at', $show_fields)): ?>
 
-                            <small class="d-block   mb-4"><?php echo date(get_date_format_raw(), strtotime($item['created_at'])); ?></small>
+                            <small class="d-block   mb-4"><?php echo date_system_format($item['created_at']) ; ?></small>
                         <?php endif; ?>
 
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
@@ -42,7 +42,7 @@
 
                                 <div class="w-40 mx-auto">
                                             <div class="img-as-background rounded-circle square">
-                                                <img src="<?php echo thumbnail($user['thumbnail'], 80, 80); ?>"/>
+                                                <img src="<?php echo thumbnail($user['thumbnail'], 80, 80); ?>" />
                                             </div>
                                         </div>
                                     </div>
@@ -63,7 +63,6 @@
                         <?php endif; ?>
                     </div>
 
-                    <div class="element-hr-underlined mb-4 d-block d-lg-none"></div>
                 </div>
             <?php endif; ?>
         <?php endforeach; ?>
@@ -75,7 +74,7 @@
                     <div class="post-holder mb-4">
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('created_at', $show_fields)): ?>
 
-                        <small class="d-block   mb-4"><?php echo date(get_date_format_raw(), strtotime($item['created_at'])); ?></small>
+                        <small class="d-block   mb-4"><?php echo date_system_format($item['created_at']) ; ?></small>
                         <?php endif; ?>
 
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>

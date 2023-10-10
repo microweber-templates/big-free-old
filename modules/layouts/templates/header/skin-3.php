@@ -25,29 +25,23 @@ if (!$classes['padding_bottom']) {
 $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
 ?>
 
-<section class="section mw-layout-overlay-wrapper  py-0 edit safe-mode" field="layout-header-skin-3-<?php print $params['id'] ?>" rel="module">
-    <div class="mw-layout-overlay"></div>
-    <div class="mh-100vh d-flex align-items-center mw-big-skin-3-background">
-        <div class="container mw-layout-overlay-container <?php print $layout_classes; ?>">
-            <div class="row text-center">
-                <div class="col-12 col-lg-10 col-lg-10 mx-auto">
-                    <div class="row d-flex align-items-center justify-content-center">
-                        <div class="col-12 col-lg-7 allow-drop py-4">
-                            <h1 class="header-section-title">Heading of your website</h1>
-                            <p class="header-section-p lead mb-7">Describe your company and services with few words and explain why you are the best choice.</p>
-
-                            <div class="nodrop d-flex align-items-center justify-content-center cloneable">
-                                <div class="ms-4 me-lg-3">
-                                    <module type="video" class="cloneable" template="dialog">
-                                </div>
-                                <div class="me-1 me-lg-3">
-                                    <p class="header-section-p lead mb-0">Some text</p>
-                                </div>
-                            </div>
+<section class="section py-0 d-flex align-items-center justify-content-center">
+    <module type="background"/>
+    <div class="mw-layout-container no-element edit nodrop no-typing no-select" field="layout-header-skin-3-<?php print $params['id'] ?>" rel="module">
+        <div class="row">
+            <div class="col-12  safe-mode  mx-auto ">
+                <div class="row d-flex align-items-center justify-content-center safe-mode ">
+                    <div class="col-12  safe-mode  col-md-6 p-4 cloneable element nodrop">
+                        <div class="col-md-10 mx-auto m-4 safe-mode allow-drop allow-select">
+                            <h1 data-mwplaceholder="<?php _e('Enter title here'); ?>" class="header-section-title mb-7">Describe your company </h1>
+                            <p data-mwplaceholder="<?php _e('Enter text here'); ?>" class="header-section-p mb-7">Describe your company and services with few words and explain why you are the best choice.</p>
+                            <module type="btn" button_style="btn-primary   " button_size="btn-lg px-5" text="Call to action"/>
                         </div>
+                    </div>
 
-                        <div class="col-12 col-sm-10 col-md-8 col-lg-5 py-4 cloneable">
-                            <img src="<?php print template_url(); ?>assets/img/layouts/header-3.png" class=" "/>
+                    <div class="col-12  safe-mode  col-md-6 no-typing nodrop allow-select">
+                        <div class="img-as-background no-typing" style="min-height: 100vh;">
+                            <img src="<?php print template_url(); ?>assets/img/layouts/gallery-1-6.jpg" alt="">
                         </div>
                     </div>
                 </div>

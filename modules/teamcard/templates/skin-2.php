@@ -43,10 +43,16 @@ description: Skin-2
                     <div>
                         <div class="row d-flex align-items-center justify-content-center justify-content-lg-between">
                             <div class="col-sm-12 col-md-6 mb-5 mb-md-0">
-                                <div class="w-250 mx-auto">
-                                    <div class="img-as-background   square">
-                                        <img src="<?php print thumbnail($slide['file'], 850); ?>"/>
-                                    </div>
+                                <div class="w-450 mx-auto">
+                                    <?php if ($slide['file']) { ?>
+                                        <div class="img-as-background square">
+                                            <img style="object-fit: contain !important;" src="<?php print thumbnail($slide['file'], 850); ?>"/>
+                                        </div>
+                                    <?php } else { ?>
+                                        <div class="img-as-background square">
+                                            <img style="object-fit: contain !important;" src="<?php print template_url() ?>modules/teamcard/templates/default-image.svg"/>
+                                        </div>
+                                    <?php } ?>
                                 </div>
                             </div>
 

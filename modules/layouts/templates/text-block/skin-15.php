@@ -26,8 +26,11 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 
-<section class="section <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-text-block-skin-15-<?php print $params['id'] ?>" rel="module">
-    <div class="container">
+<section class="section <?php print $layout_classes; ?> edit   nodrop" field="layout-text-block-skin-15-<?php print $params['id'] ?>" rel="module">
+
+     <module type="background" id="background-layout--<?php print $params['id'] ?>" />
+    <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
+    <div class="mw-layout-container no-element allow-drop container">
         <div class="row d-flex justify-content-center justify-content-md-between border-top border-bottom py-8 cloneable">
             <div class="col-4">
                 <div class="allow-drop">
@@ -42,4 +45,6 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             </div>
         </div>
     </div>
+<module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />
+
 </section>

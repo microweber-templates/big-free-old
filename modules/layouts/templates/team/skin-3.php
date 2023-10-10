@@ -25,72 +25,20 @@ if (!$classes['padding_bottom']) {
 $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
 ?>
 
-<section class="section <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-team-skin-3-<?php print $params['id'] ?>" rel="module">
-    <div class="container">
+<section class="section <?php print $layout_classes; ?>">
+
+    <module type="background" id="background-layout--<?php print $params['id'] ?>" />
+    <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
+    <div class="mw-layout-container no-element allow-drop container edit    nodrop" field="layout-team-skin-3-<?php print $params['id'] ?>" rel="module">
         <div class="row text-center">
-            <div class="col-12 col-lg-10 col-lg-8 mx-auto allow-drop">
-                <h6 class=" ">Asteroids</h6>
-                <p>I’m not really sure how old I was when I got the gift for Christmas, but I remember thinking it was a pretty impressive piece of electronic hardware.</p>
-                <br/><br/>
+            <div class="col-12 col-lg-10 col-lg-8 mx-auto allow-drop mb-3">
+                <h3>Meet our Team</h3>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Deserunt doloribus ducimus expedita labore non odit quibusdam repellendus sunt.</p>
             </div>
         </div>
 
-        <div class="row text-center text-sm-center d-flex justify-content-center">
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-8 cloneable">
-                <div class="d-block">
-                    <div class="img-as-background   square mb-3">
-                        <img src="<?php print template_url(); ?>assets/img/layouts/team-3-1.jpg"/>
-                    </div>
-
-                    <div class="allow-drop">
-                        <h5 class="mb-1">Jesus McLaughlin</h5>
-                        <p>UI/UX Designer</p>
-                        <module type="social_links" template="skin-1" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-8 cloneable">
-                <div class="d-block">
-                    <div class="img-as-background   square mb-3">
-                        <img src="<?php print template_url(); ?>assets/img/layouts/team-3-2.jpg"/>
-                    </div>
-
-                    <div class="allow-drop">
-                        <h5 class="mb-1">Sally Armstrong</h5>
-                        <p>UI/UX Designer</p>
-                        <module type="social_links" template="skin-1" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-8 cloneable">
-                <div class="d-block">
-                    <div class="img-as-background   square mb-3">
-                        <img src="<?php print template_url(); ?>assets/img/layouts/team-3-3.jpg"/>
-                    </div>
-
-                    <div class="allow-drop">
-                        <h5 class="mb-1">Bertha Farmer</h5>
-                        <p>UI/UX Designer</p>
-                        <module type="social_links" template="skin-1" />
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-6 col-md-4 col-lg-3 mb-8 cloneable">
-                <div class="d-block">
-                    <div class="img-as-background   square mb-3">
-                        <img src="<?php print template_url(); ?>assets/img/layouts/team-3-5.jpg"/>
-                    </div>
-
-                    <div class="allow-drop">
-                        <h5 class="mb-1">Nell Robertson</h5>
-                        <p>UI/UX Designer</p>
-                        <module type="social_links" template="skin-1" />
-                    </div>
-                </div>
-            </div>
-        </div>
+        <module type="teamcard" template="skin-7"/>
     </div>
+    <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />
+
 </section>

@@ -30,7 +30,7 @@ if (is_array($data)): ?>
             </div>
         <?php } ?>
         <div class="shop-inner-big-image position-relative">
-            <?php $price = app()->shop_manager->get_product_prices(content_id(), true);
+            <?php $price = get_product_prices(content_id(), true);
 
             if (isset($price[0]) and isset($price[0]['original_value'])): ?>
 

@@ -27,12 +27,12 @@ description: Skin-3
                     arrows: true,
                     autoplay: false,
                     autoplaySpeed: 2000,
-                    dots: false,
+                    dots: true,
                     responsive: [
                         {
                             breakpoint: 1200,
                             settings: {
-                                arrows: false,
+                                arrows: true,
                                 centerMode: true,
                                 centerPadding: '0px',
                                 slidesToShow: 3
@@ -66,7 +66,7 @@ description: Skin-3
     <?php $rand = uniqid(); ?>
 
     <div class="slick-arrows-1">
-        <div class="slick-gallery px-5" style="margin: 0 -15px;">
+        <div class="slick-gallery" style="margin: 0 -15px;">
             <?php foreach ($data as $item): ?>
                 <?php
                 if (isset($item['image_options']) and is_array($item['image_options'])) {

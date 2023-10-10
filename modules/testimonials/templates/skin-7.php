@@ -73,7 +73,7 @@ description: Skin-7
 <div class="slick-arrows-1">
     <div class="slickslider" data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "dots": false, "arrows": true}'>
         <?php foreach ($data as $item): ?>
-            <div class="border   mx-3 h-100 p-5">
+            <div class="border testimonials-background-variable testimonialBorderVariable   mx-3 h-100 p-5">
                 <div class="text-center text-sm-start mb-3">
                     <div class="d-block d-sm-flex align-items-center justify-content-between">
                         <div class="d-block d-sm-flex align-items-center">

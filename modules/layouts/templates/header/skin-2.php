@@ -25,19 +25,15 @@ if (!$classes['padding_bottom']) {
 $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
 ?>
 
-<section class="section mw-layout-overlay-wrapper  py-0 edit safe-mode nodrop" field="layout-header-skin-2-<?php print $params['id'] ?>" rel="module" data-background-position="center center" data-overlay-black="true" data-overlay="4">
-    <div class="mw-layout-overlay"></div>
-    <div class="background-image-holder mh-100vh d-flex align-items-center" style="background-image: url('<?php print template_url(); ?>assets/img/layouts/header-2.jpg')">
-        <div class="container mw-layout-overlay-container <?php print $layout_classes; ?>">
-            <div class="row text-center">
-                <div class="col-12 col-lg-10 col-lg-8 mx-auto text-white allow-drop">
-                    <h1 class="header-section-title">Heading of your website</h1>
-                    <p class="header-section-p lead">Describe your company and services with few words and explain why you are the best choice.</p>
-                </div>
 
-                <div class="position-absolute bottom-0 w-100 text-center left-0">
-                    <a href="#" class="btn btn-light   btn-icon btn-lg mb-7 cloneable"><i class="mdi mdi-chevron-down icon-size-24px text-muted me-0"></i></a>
-                </div>
+
+<section class="section mw-layout-dark-background py-0 d-flex align-items-center justify-content-center">
+    <module type="background" data-background-image="<?php print template_url(); ?>assets/img/layouts/gallery-1-5.jpg" id="background-layout--<?php print $params['id'] ?>" />
+    <div class="mw-layout-container container mh-100vh d-flex align-items-center justify-content-center no-element edit nodrop no-typing no-select" field="layout-header-skin-2-<?php print $params['id'] ?>" rel="module">
+        <div class="row text-center">
+            <div class="col-12  safe-mode  mx-auto text-white allow-drop safe-mode allow-select">
+                <h1 data-mwplaceholder="<?php _e('Enter title here'); ?>" class="header-section-title mb-7">Describe your company </h1>
+                <p data-mwplaceholder="<?php _e('Enter text here'); ?>" class="header-section-p mb-7">Describe your company and services with few words and explain why you are the best choice.</p>
             </div>
         </div>
     </div>

@@ -22,12 +22,20 @@ description: Skin-1
 
 <div class="row text-center text-md-start d-flex align-items-center justify-content-center justify-content-lg-between">
     <div class="col-sm-10 col-md-6 col-lg-5 col-lg-4 mb-5 mb-md-0">
+
         <?php if (isset($data) and $data): ?>
             <?php foreach ($data as $key => $slide): ?>
-                <div class="w-250 mx-auto js-member" data-id="<?php echo $key; ?>" style="<?php if ($key > 0): ?>display: none; <?php endif; ?>">
-                    <div class="img-as-background   square">
+                <div class="w-450 mx-auto js-member" data-id="<?php echo $key; ?>" style="<?php if ($key > 0): ?>display: none; <?php endif; ?>">
+
+                   <?php if ($slide['file']) { ?>
+                    <div class="img-as-background square">
                         <img src="<?php print thumbnail($slide['file'], 850); ?>"/>
                     </div>
+                    <?php } else { ?>
+                        <div class="img-as-background square">
+                            <img src="<?php print template_url() ?>modules/teamcard/templates/default-image.svg"/>
+                        </div>
+                    <?php } ?>
                 </div>
             <?php endforeach; ?>
         <?php endif; ?>

@@ -25,14 +25,14 @@ description: Posts 6
             ?>
 
             <div class="mx-auto col-sm-10 mx-md-0 col-md-4 mb-5" itemscope itemtype="<?php print $schema_org_item_type_tag ?>">
-                <div class="border pt-6 px-5 h-100">
+                <div class="pt-6 px-5 h-100">
                     <div class="d-flex flex-column h-100">
                         <div>
                             <?php if (!isset($show_fields) or $show_fields == false or in_array('created_at', $show_fields)): ?>
 
                             <div class="mb-3">
                                 <?php echo $itemCats; ?>
-                                <small class=" "><?php echo date(get_date_format_raw(), strtotime($item['created_at'])); ?></small>
+                                <small class=" "><?php echo date_system_format($item['created_at']) ; ?></small>
                             </div>
                             <?php endif; ?>
 
@@ -58,7 +58,7 @@ description: Posts 6
 
                                         <div class="w-40">
                                             <div class="img-as-background rounded-circle square">
-                                                <img src="<?php echo thumbnail($user['thumbnail'], 80, 80); ?>"/>
+                                                <img src="<?php echo thumbnail($user['thumbnail'], 80, 80); ?>" />
                                             </div>
                                         </div>
                                         <?php endif; ?>

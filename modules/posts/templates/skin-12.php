@@ -29,10 +29,10 @@ description: Posts 12
                         <div class="h-100 d-flex flex-column">
                             <?php if (!isset($show_fields) or $show_fields == false or in_array('thumbnail', $show_fields)): ?>
 
-                            <a href="<?php print $item['link'] ?>" class="btn btn-link d-block">
-                                <div class="img-as-background h-175  ">
-                                    <img src="<?php print thumbnail($item['image'], 250, 250); ?>" class=" "/>
-                                </div>
+                            <a href="<?php print $item['link'] ?>" class="   d-block position-relative overflow-hidden h-350 ">
+
+                                <img alt="post-img" src="<?php print thumbnail($item['image'], 650, 650); ?>" style="min-height: 100%;"/>
+
                             </a>
                             <?php endif; ?>
 
@@ -40,7 +40,7 @@ description: Posts 12
                             <div class="pt-4 pb-3">
                                 <?php if (!isset($show_fields) or $show_fields == false or in_array('created_at', $show_fields)): ?>
 
-                                <small class="mb-2 d-block  "><?php echo date(get_date_format_raw(), strtotime($item['created_at'])); ?></small>
+                                <small class="mb-2 d-block  "><?php echo date_system_format($item['created_at']) ; ?></small>
                                 <?php endif; ?>
 
                                 <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>

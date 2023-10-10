@@ -36,29 +36,39 @@ description: Skin-1
                 } else {
                     $itemLink = false;
                 }
+
+
+                if (isset($item['image_options']['alt-text'])) {
+                    $itemAltText = $item['image_options']['alt-text'];
+                } else {
+                    $itemAltText = false;
+                }
             } else {
                 $itemTitle = false;
                 $itemDescription = false;
                 $itemLink = false;
+                $itemAltText = false;
             }
             ?>
             <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
                 <div class="d-block position-relative show-on-hover-root">
                     <div class="img-as-background   mh-400 mb-3">
-                        <img src="<?php print thumbnail($item['filename'], 1080, 1080, true); ?>"/>
+                        <img alt="<?php print $itemAltText; ?>" src="<?php print thumbnail($item['filename'], 1080, 1080, true); ?>"/>
                     </div>
 
-                    <div class="show-on-hover position-absolute bg-body border   mh-400 w-100 top-0 mb-3 p-5 text-center align-items-center justify-content-center d-flex flex-column">
-                        <?php if ($itemTitle): ?>
-                            <h4 class="mb-1"><?php print $itemTitle; ?></h4>
-                        <?php endif; ?>
-                        <?php if ($itemDescription): ?>
-                            <p class="mb-3"><?php print $itemDescription; ?></p>
-                        <?php endif; ?>
-                        <?php if ($itemLink): ?>
-                            <a href="<?php print $itemLink; ?>" class="btn btn-link">Learn More</a>
-                        <?php endif; ?>
-                    </div>
+                    <?php if ($itemTitle || $itemDescription || $itemLink): ?>
+                        <div class="show-on-hover position-absolute bg-body border   mh-400 w-100 top-0 mb-3 p-5 text-center align-items-center justify-content-center d-flex flex-column">
+                            <?php if ($itemTitle): ?>
+                                <h4 class="mb-1"><?php print $itemTitle; ?></h4>
+                            <?php endif; ?>
+                            <?php if ($itemDescription): ?>
+                                <p class="mb-3"><?php print $itemDescription; ?></p>
+                            <?php endif; ?>
+                            <?php if ($itemLink): ?>
+                                <a target="_blank" href="https://<?php print $itemLink; ?>" class="btn btn-link"><?php print $itemAltText; ?></a>
+                            <?php endif; ?>
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
         <?php endforeach; ?>

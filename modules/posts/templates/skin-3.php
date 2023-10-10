@@ -27,9 +27,9 @@ description: Posts 3
                 <div class="h-100 d-flex flex-column">
                     <?php if (!isset($show_fields) or $show_fields == false or in_array('thumbnail', $show_fields)): ?>
 
-                    <a href="<?php print $item['link'] ?>" class="btn btn-link d-block">
+                    <a href="<?php print $item['link'] ?>" class="   d-block">
                         <div class="img-as-background h-350">
-                            <img src="<?php print thumbnail($item['image'], 450, 450); ?>" class=" "/>
+                            <img src="<?php print thumbnail($item['image'], 450, 450); ?>" style="position: relative !important;"/>
                         </div>
                     </a>
                     <?php endif; ?>
@@ -38,11 +38,11 @@ description: Posts 3
                     <div class="pt-4 pb-3">
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('created_at', $show_fields)): ?>
 
-                        <small class="mb-2 d-block"><?php echo date(get_date_format_raw(), strtotime($item['created_at'])); ?></small>
+                        <small class="mb-2 d-block"><?php echo date_system_format($item['created_at']) ; ?></small>
                         <?php endif; ?>
 
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
-                            <a href="<?php print $item['link'] ?>" class="btn btn-link text-dark mb-2"><h4 class="text-start text-left"><?php print $item['title'] ?></h4></a>
+                            <a href="<?php print $item['link'] ?>" class=" "><h4 class="text-start text-left"><?php print $item['title'] ?></h4></a>
                         <?php endif; ?>
 
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('description', $show_fields)): ?>

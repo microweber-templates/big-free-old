@@ -19,7 +19,8 @@
     foreach ($module_layouts as $module) {
         if (strpos($module['layout_file'], 'gallery/') !== false) {
             $i++;
-            print 'Gallery skin-'.$i.'<module type="layouts"  template="' . ($module['layout_file']) . '" template_order_number="'.$i.'" id="mod-' . md5($module['name']) . '" />';
+
+            print $module['layout_file'] .'<module type="layouts"  template="' . ($module['layout_file']) . '" template_order_number="'.$i.'" id="mod-' . md5($module['name']) . '" />';
         }
     }
     ?>

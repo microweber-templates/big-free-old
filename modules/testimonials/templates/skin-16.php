@@ -84,21 +84,18 @@ description: Skin-16
 
     }
 
-    .testimonials-tony-p {
-        color: #7E8495;
-        font-size: 16px;
+    <?php echo '#' . $params['id'] . ' '; ?>
+    .slick-list {
+        overflow: hidden;
     }
 
-    .slick-list {
-        overflow: unset;
-    }
 
 </style>
 
 <div class="slick-arrows-1">
     <div class="slickslider" data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "dots": false, "arrows": true}'>
         <?php foreach ($data as $item): ?>
-            <div class="tony-template-testimonial mx-3 p-5">
+            <div class="tony-template-testimonial testimonials-background-variable testimonialBorderVariable mx-3 p-5">
 
                 <div class="py-3 mb-4">
                     <img height="20" width="auto" src="<?php print template_url(); ?>assets/img/layouts/tony/testimonials-stars.png" class=""/>
@@ -119,8 +116,20 @@ description: Skin-16
                             <?php endif; ?>
 
                             <div>
-                                <h6 class="mb-0"><?php print $item['name']; ?></h6>
-                                <small class="mb-0 text-dark"><?php print $item['client_role']; ?></small>
+                                <?php if ($item['name']): ?>
+                                    <h5 class=" mb-0"><?php print $item['name']; ?></h5>
+                                <?php endif; ?>
+                                <?php if ($item['client_company']): ?>
+                                    <p class="mb-0"><?php print $item['client_company']; ?></p>
+                                <?php endif; ?>
+
+                                <?php if ($item['client_website']): ?>
+                                    <a class="my-1 d-block" href="<?php print $item['client_website']; ?>"><?php print $item['client_website'] ?></a>
+                                <?php endif; ?>
+
+                                <?php if ($item['client_role']): ?>
+                                    <p><?php print $item['client_role']; ?></p>
+                                <?php endif; ?>
                             </div>
                         </div>
                     </div>

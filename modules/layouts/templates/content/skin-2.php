@@ -26,12 +26,21 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 
-<section class="mw-layout-overlay-wrapper section <?php print $layout_classes; ?> edit safe-mode nodrop " field="layout-content-skin-2-<?php print $params['id'] ?>" rel="module">
-    <div class="row text-center">
+<section class="section <?php print $layout_classes; ?> edit nodrop" field="layout-content-skin-2-<?php print $params['id'] ?>" rel="module">
+
+    <module type="background" id="background-layout--<?php print $params['id'] ?>" />
+    <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
+
+    <div class="row mw-layout-container no-element allow-drop text-center">
         <div class="col-12 col-lg-10 col-lg-8 mx-auto allow-drop">
-            <div class="cloneable mb-4 icon-size-64px"><i class="mdi mdi-fishbowl-outline safe-element"></i></div>
-            <h1>Beyond The Naked Eye</h1>
-            <p class="mb-3">If you are in the market for a computer, there are a number of factors to consider. <br/>Will it be used for your home, your office or perhaps even</p>
+            <div class="mb-4 icon-size-64px no-element"><i class="safe-element mw-micon-Anchor mb-4 icon-size-64px"></i></div>
+            <h3 data-mwplaceholder="<?php _e('Enter title here'); ?>">Your Story Should Evolve Over Time</h3>
+            <p data-mwplaceholder="<?php _e('Enter title here'); ?>" class="mb-3">Update your audience on new developments and how
+                <br>
+                you're overcoming challenges.
+            </p>
         </div>
     </div>
+   <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />
+
 </section>

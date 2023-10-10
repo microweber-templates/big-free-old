@@ -32,22 +32,6 @@ i.mdi {
 }
 
 
-.header-background {
-    background-color: var(--headerBg);
-    //color: var(--textDark);
-    min-height: 70px;
-    padding: 10px;
-}
-
-
-.footer-background {
-    background-color: var(--footerBg) $mw-importance;
-    //color: var(--textDark);
-    padding-top: 3.5rem;
-    padding-bottom: 2.5rem;
-}
-
-
 body, p , h1, h2, h3, h4, h5, h6, .navbar .logo-text {
     font-family: var(--fontFamily);
     font-display: swap;
@@ -66,82 +50,7 @@ p {
 
 }
 
-p {
-   font-size: 1rem;
-    color: var(--textLight);
-}
 
-h1 {
-    @media screen and (min-width: 615px) {
-        font-size: 3.125rem;
-    }
-    color: var(--textDark);
-    font-weight: 600;
-
-}
-
-h2 {
-    @media screen and (min-width: 615px) {
-        font-size: 2.75rem;
-    }
-    color: var(--textDark);
-
-    font-weight: 600;
-
-}
-
-h3 {
-    @media screen and (min-width: 615px) {
-        font-size: 2.25rem;
-    }
-    color: var(--textDark);
-
-    font-weight: 600;
-
-}
-
-h4 {
-    @media screen and (min-width: 615px) {
-        font-size: 1.75rem;
-    }
-
-    color: var(--textDark);
-
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-
-}
-
-h5 {
-    @media screen and (min-width: 615px) {
-        font-size: 1.5rem;
-    }
-
-    color: var(--textDark);
-
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-}
-
-h6 {
-    @media screen and (min-width: 615px) {
-        font-size: 1.25rem;
-    }
-
-    color: var(--textDark);
-
-    font-weight: 600;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: normal;
-    letter-spacing: normal;
-}
 
 b, strong {
     font-weight: 600;
@@ -161,9 +70,12 @@ b, strong {
  ******************************************* */
 
 section.section {
-    padding-top: 6.5rem;
-    padding-bottom: 6.5rem;
     background-color: var(--section);
+
+    position: relative;
+    &.d-flex {
+        display: block !important;
+    }
 
     &:after {
         content: '.';
@@ -374,16 +286,15 @@ $icons-sizes-list: 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 5
         z-index: 9;
         width: 50px;
         height: 50px;
-        background-color: var(--textDark)$mw-importance;
+        background-color: #f5f5f5;
         //background: rgba(red($white), green($white), blue($white), 0.7);
         display: flex;
         align-items: center;
         justify-content: center;
-        opacity: 0.7;
+        opacity: 0.9;
         border-radius: 100%;
 
         &:hover {
-            background: #5f5f5f;
             opacity: 1;
         }
 
@@ -395,23 +306,24 @@ $icons-sizes-list: 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 5
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             font-size: 30px;
-            color: $white;
+            color: black;
+
         }
     }
 
     .slick-arrow.slick-next {
-        right: 0;
+        right: 0 !important;
 
         &:before {
-            content: "\F0142";
+            content: "\F0142" !important;
         }
     }
 
     .slick-arrow.slick-prev {
-        left: 0;
+        left: 0 !important;
 
         &:before {
-            content: "\F0141";
+            content: "\F0141" !important;
         }
     }
 }
@@ -474,8 +386,8 @@ $icons-sizes-list: 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 5
 
         .bx-pager-item a {
             border: 1px solid var(--primaryColor) $mw-importance;
-            height: 14px $mw-importance;
-            width: 14px $mw-importance;
+            height: 7px !important;
+            width: 24px !important;
             -webkit-border-radius: 24px $mw-importance;
             -moz-border-radius: 24px $mw-importance;
             border-radius: 24px $mw-importance;
@@ -540,7 +452,7 @@ $icons-sizes-list: 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 5
 
             a:before {
                 font: normal normal normal 58px/1 "Material Design Icons";
-                color: $dark;
+                color: var(--primaryColor);
                 font-size: 36px;
                 text-shadow: none;
                 display: inline-flex;
@@ -552,6 +464,10 @@ $icons-sizes-list: 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 5
 
             a.bx-next {
                 right: 5%;
+                opacity: .5;
+                 &:hover {
+                     opacity: 1;
+                 }
             }
 
             a.bx-next:before {
@@ -561,6 +477,10 @@ $icons-sizes-list: 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 5
             a.bx-prev {
                 left: 5%;
                 text-align: right;
+                opacity: .5;
+                 &:hover {
+                     opacity: 1;
+                 }
             }
 
             a.bx-prev:before {
@@ -585,11 +505,13 @@ $icons-sizes-list: 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 5
 
 
 .show-on-hover {
-    visibility: hidden $mw-importance;
+    visibility: hidden !important;
 }
 
 .show-on-hover-root:hover .show-on-hover {
-    visibility: visible $mw-importance;
+    visibility: visible !important;
+    height: 100%;
+    opacity: 90%;
 }
 
 
@@ -682,40 +604,23 @@ $icons-sizes-list: 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 5
                 }
             }
 
+            a {
+                font-family: var(--menuFontFamily) !important;
+                font-size: var(--menuFontSize) !important;
+
+            }
             @media screen and (min-width: 1200px) {
                 a {
-                    color: var(--menuColor) $mw-importance;
+                    color: var(--menuColor) !important;
                     display: inline-block $mw-importance;
                     position: relative $mw-importance;
+
                 }
             }
 
-            //a:after {
-            //    content: ''$mw-importance;
-            //    position: absolute$mw-importance;
-            //    width: 100%$mw-importance;
-            //    transform: scaleX(0)$mw-importance;
-            //    height: 1px$mw-importance;
-            //    bottom: 0$mw-importance;
-            //    left: 0$mw-importance;
-            //    background-color: var(--primaryColor)$mw-importance;
-            //    transform-origin: bottom right$mw-importance;
-            //    transition: transform 0.35s ease-out$mw-importance;
-            //}
-            //
-            //a:hover:after {
-            //    transform: scaleX(1)$mw-importance;
-            //    transform-origin: bottom left$mw-importance;
-            //}
-            //
-            //a.active {
-            //    color: var(--primaryColor) $mw-importance;
-            //
-            //}
-
             @media screen and (min-width: 991px) {
                 a:hover, a:hover span {
-                    color: var(--primaryColor)$mw-importance;
+                    color: var(--menuHoverColor)$mw-importance;
                 }
             }
         }
@@ -806,12 +711,6 @@ a:hover {
     }
 }
 
-.form-control-outline-dark {
-    .form-control {
-        border-color: $dark;
-    }
-}
-
 .form-control-transparent-5 {
     .form-control {
         opacity: .5;
@@ -825,20 +724,6 @@ a:hover {
     }
 }
 
-
-.btn {
-    border-radius: 0;
-}
-
-.btn-primary {
-    background: var(--primaryColor)$mw-importance;
-    border-color: var(--primaryColor)$mw-importance;
-    color: var(--btnText)$mw-importance;
-
-    i.mdi {
-        color: var(--btnText);
-    }
-}
 
 .text-primary {
     background: var(--primaryColor)$mw-importance;
@@ -854,26 +739,6 @@ a:hover {
     color: var(--textDark)$mw-importance;
 }
 
-.btn-outline-primary {
-
-    color: var(--primaryColor)$mw-importance;;
-    border-color: var(--primaryColor)$mw-importance;;
-    &:hover {
-        background-color: var(--primaryColor)$mw-importance;
-        border-color: var(--primaryColor)$mw-importance;
-        color: var(--btnText)$mw-importance;
-
-        i {
-            color: $white$mw-importance;
-
-        }
-    }
-}
-
-
-a {
-    color: var(--links);
-}
 
 
 .bg-secondary {
@@ -891,13 +756,13 @@ a {
 
 .hover-bg-body:hover .bg-body {
     background: var(--primaryColor) $mw-importance;
-    color: var(--btnText)$mw-importance;
+    color: var(--btnTextColor)$mw-importance;
 
 }
 
 
 .hover-bg-body:hover .bg-body i {
-    color: var(--btnText)$mw-importance;
+    color: var(--btnTextColor)$mw-importance;
 }
 
 .shop-inner-gallery {
@@ -950,6 +815,11 @@ a {
     }
 }
 
+.page-item.active .page-link {
+    background-color: var(--primaryColor)$mw-importance;
+    border-color: var(--primaryColor)$mw-importance;
+    color: var(--btnTextColor) !important;
+}
 
 .price-list-hr {
      min-height: 1px$mw-importance;

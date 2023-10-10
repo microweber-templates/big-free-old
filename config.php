@@ -1,9 +1,9 @@
 <?php
 
 $config = array();
-$config['name'] = "Big Template Free";
+$config['name'] = "Big Template";
 $config['author'] = "Microweber CMS";
-$config['version'] = "6.1.1";
+$config['version'] = "6.2";
 $config['url'] = "http://microweber.com";
 
 
@@ -32,31 +32,58 @@ $config['stylesheet_compiler']['css_file'] = 'assets/css/colors.css';
 $config['framework'] = "bootstrap5";
 
 
-$config['stylesheet_compiler']['settings'][] = array('type' => 'title', 'label' => 'Background colors');
-$config['stylesheet_compiler']['settings'][] = array('type' => 'delimiter');
-$config['stylesheet_compiler']['settings']['body-bg'] = array('type' => 'color', 'default' => '#fff', 'label' => 'Base background');
-$config['stylesheet_compiler']['settings']['section'] = array('type' => 'color', 'default' => '#fff', 'label' => 'Layout background');
-$config['stylesheet_compiler']['settings']['primary'] = array('type' => 'color', 'default' => '#0044de', 'label' => 'Primary color');
 
-$config['stylesheet_compiler']['settings'][] = array('type' => 'title', 'label' => 'Texts colors');
-$config['stylesheet_compiler']['settings']['textDark'] = array('type' => 'color', 'default' => '#212121', 'label' => 'Headings');
-$config['stylesheet_compiler']['settings']['textLight'] = array('type' => 'color', 'default' => '#f4f4f4', 'label' => 'Texts');
-$config['stylesheet_compiler']['settings']['btnText'] = array('type' => 'color', 'default' => '#f4f4f4', 'label' => 'Button text');
-$config['stylesheet_compiler']['settings']['links'] = array('type' => 'color', 'default' => '#000000', 'label' => 'Links color');
+//
+//$config['stylesheet_compiler']['settings'][] = array('type' => 'title', 'label' => 'Layout settings');
+//$config['stylesheet_compiler']['settings'][] = array('type' => 'delimiter');
+//
+//$config['stylesheet_compiler']['settings']['fontFamily'] = array('type' => 'font_selector', 'default' => 'lato', 'label' => 'Choose font for your site');
+//$config['stylesheet_compiler']['settings']['fontFamily']['options'] = array('milliard' => 'Milliard');
+//
+//$config['stylesheet_compiler']['settings']['bodyFontSize'] = array('type' => 'text', 'default' => '16px', 'label' => 'Body Font Size');
+//
+//$config['stylesheet_compiler']['settings']['headingColor'] = array('type' => 'color', 'default' => '#000', 'label' => 'Heading color');
+//$config['stylesheet_compiler']['settings']['paragraphColor'] = array('type' => 'color', 'default' => '#000', 'label' => 'Paragraph color');
+//$config['stylesheet_compiler']['settings']['links'] = array('type' => 'color', 'default' => '#000000', 'label' => 'Links color');
+//
+//$config['stylesheet_compiler']['settings']['lineHeight'] = array('type' => 'text', 'default' => '1.2rem', 'label' => 'Line Height');
+//$config['stylesheet_compiler']['settings']['fontWeight'] = array('type' => 'text', 'default' => '400', 'label' => 'Font Weight');
+//$config['stylesheet_compiler']['settings']['letterSpacing'] = array('type' => 'text', 'default' => '0', 'label' => 'Letter Spacing');
+//$config['stylesheet_compiler']['settings']['textTransform'] = array('type' => 'text', 'default' => 'none', 'label' => 'Text Transform');
+//
+//$config['stylesheet_compiler']['settings']['headingOne'] = array('type' => 'text', 'default' => '50px', 'label' => 'Heading 1');
+//$config['stylesheet_compiler']['settings']['headingTwo'] = array('type' => 'text', 'default' => '42px', 'label' => 'Heading 2');
+//$config['stylesheet_compiler']['settings']['headingThree'] = array('type' => 'text', 'default' => '36px', 'label' => 'Heading 3');
+//$config['stylesheet_compiler']['settings']['headingFour'] = array('type' => 'text', 'default' => '30px', 'label' => 'Heading 4');
+//$config['stylesheet_compiler']['settings']['headingFive'] = array('type' => 'text', 'default' => '26px', 'label' => 'Heading 5');
+//$config['stylesheet_compiler']['settings']['headingSix'] = array('type' => 'text', 'default' => '20px', 'label' => 'Heading 6');
+//$config['stylesheet_compiler']['settings']['paragraphSize'] = array('type' => 'text', 'default' => '16px', 'label' => 'Paragraph size');
+//
+//
+//$config['stylesheet_compiler']['settings'][] = array('type' => 'title', 'label' => 'Background colors');
+//$config['stylesheet_compiler']['settings'][] = array('type' => 'delimiter');
+//$config['stylesheet_compiler']['settings']['body-bg'] = array('type' => 'color', 'default' => '#fff', 'label' => 'Base background');
+//$config['stylesheet_compiler']['settings']['section'] = array('type' => 'color', 'default' => '#fff', 'label' => 'Layout background');
+//$config['stylesheet_compiler']['settings']['primary'] = array('type' => 'color', 'default' => '#0044de', 'label' => 'Primary color');
+//
+//
+//$config['stylesheet_compiler']['settings'][] = array('type' => 'title', 'label' => 'Menus');
+//$config['stylesheet_compiler']['settings']['topHeaderBg'] = array('type' => 'color', 'default' => '#000', 'label' => 'Top Header background');
+//$config['stylesheet_compiler']['settings']['topHeaderElements'] = array('type' => 'color', 'default' => '#fff', 'label' => 'Top Header elements');
+//$config['stylesheet_compiler']['settings']['headerBg'] = array('type' => 'color', 'default' => '#fff', 'label' => 'Header background');
+//$config['stylesheet_compiler']['settings']['footerBg'] = array('type' => 'color', 'default' => '#fff', 'label' => 'Footer background');
+//$config['stylesheet_compiler']['settings']['menuColor'] = array('type' => 'color', 'default' => '#000000', 'label' => 'Menu link color');
+//$config['stylesheet_compiler']['settings']['menuHoverColor'] = array('type' => 'color', 'default' => '#000000', 'label' => 'Menu link hover color');
+//$config['stylesheet_compiler']['settings']['menuFontFamily'] = array('type' => 'font_selector', 'default' => 'lato', 'label' => 'Choose font for your header menu');
+//$config['stylesheet_compiler']['settings']['menuFontFamily']['options'] = array('milliard' => 'Milliard');
+//$config['stylesheet_compiler']['settings']['menuFontSize'] = array('type' => 'text', 'default' => '16px', 'label' => 'Menu Font Size');
+//
+//
+//$config['stylesheet_compiler']['settings'][] = array('type' => 'title', 'label' => 'Buttons');
+//$config['stylesheet_compiler']['settings']['btnText'] = array('type' => 'color', 'default' => '#f4f4f4', 'label' => 'Button text');
+//
 
-$config['stylesheet_compiler']['settings'][] = array('type' => 'title', 'label' => 'Menus');
-$config['stylesheet_compiler']['settings']['headerBg'] = array('type' => 'color', 'default' => '#fff', 'label' => 'Header background');
-$config['stylesheet_compiler']['settings']['footerBg'] = array('type' => 'color', 'default' => '#fff', 'label' => 'Footer background');
-$config['stylesheet_compiler']['settings']['menuColor'] = array('type' => 'color', 'default' => '#000000', 'label' => 'Menu color');
 
-
-$config['stylesheet_compiler']['settings'][] = array('type' => 'delimiter');
-$config['stylesheet_compiler']['settings'][] = array('type' => 'title', 'label' => 'Font Settings');
-
-$config['stylesheet_compiler']['settings']['fontFamily'] = array('type' => 'font_selector', 'default' => 'lato', 'label' => 'Choose font for your site');
-$config['stylesheet_compiler']['settings']['fontFamily']['options'] = array('milliard' => 'Milliard');
-
-$config['stylesheet_compiler']['settings']['bodyFontSize'] = array('type' => 'range', 'default' => '16px', 'label' => 'Body Font Size');
 
 
 $config['template_settings'][] = array('type' => 'delimiter');

@@ -20,13 +20,6 @@ $itemTags = content_tags(CONTENT_ID);
     <div class="container mw-m-t-30 mw-m-b-50">
         <div class="row">
 
-            <?php if ($picture != '' AND $picture != false): ?>
-
-                <div class="background-image-holder h-650" style="background-image: url('<?php print $picture; ?>');">
-
-                </div>
-            <?php endif; ?>
-
                 <h2 class="mt-5 text-center  text-dark"><?php echo $post['title']; ?></h2>
                 <p class="text-dark text-center"><?php echo date('d M Y', strtotime($post['created_at'])); ?></p>
 

@@ -25,33 +25,24 @@ description: Posts 2
             ?>
             <hr class="thin"/>
             <div class="row pt-3 mb-0" itemscope itemtype="<?php print $schema_org_item_type_tag ?>">
-                <?php if (!isset($show_fields) or $show_fields == false or in_array('dete', $show_fields)): ?>
 
-                <div class="col-lg-3">
-                    <?php echo $itemCats; ?>
-                    <small class="mb-2 d-block"><?php echo date(get_date_format_raw(), strtotime($item['created_at'])); ?></small>
-                </div>
-                <?php endif; ?>
 
-                <div class="col-lg-7">
-                    <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
-                        <a href="<?php print $item['link'] ?>" class="text-dark"><h3><?php print $item['title'] ?></h3></a>
-                    <?php endif; ?>
-                    <?php if (!isset($show_fields) or $show_fields == false or in_array('description', $show_fields)): ?>
-                        <p class="lead"><?php print $item['description'] ?></p>
-                    <?php endif; ?>
-                </div>
+            <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
+                <a href="<?php print $item['link'] ?>" class="text-dark"><h3><?php print $item['title'] ?></h3></a>
+            <?php endif; ?>
+
+            <small class="my-2 d-block"><?php echo date_system_format($item['created_at']) ; ?></small>
+
+            <?php if (!isset($show_fields) or $show_fields == false or in_array('description', $show_fields)): ?>
+                <p class="lead"><?php print $item['description'] ?></p>
+            <?php endif; ?>
+
             </div>
         <?php endforeach; ?>
         <hr class="thin"/>
     <?php endif; ?>
 </div>
-<?php if (!isset($show_fields) or $show_fields == false or in_array('learn_more', $show_fields)): ?>
 
-<div class="text-center">
-    <a href="#" class="btn btn-outline-primary   ">Learn More</a>
-</div>
-<?php endif; ?>
 
 
 <?php if (isset($pages_count) and $pages_count > 1 and isset($paging_param)): ?>

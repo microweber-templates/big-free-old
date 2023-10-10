@@ -25,8 +25,11 @@ if (!$classes['padding_bottom']) {
 $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
 ?>
 
-<section class="<?php print $layout_classes; ?> edit safe-mode" field="layout-price-lists-skin-1-<?php print $params['id'] ?>" rel="module">
-    <div class="container">
+<section class="<?php print $layout_classes; ?> edit    nodrop" field="layout-price-lists-skin-1-<?php print $params['id'] ?>" rel="module">
+
+     <module type="background" id="background-layout--<?php print $params['id'] ?>" />
+    <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
+    <div class="mw-layout-container no-element allow-drop container">
         <div class="row py-4">
             <h3 class="text-center py-5">Price List</h3>
             <div class="col-10 mx-auto">
@@ -54,5 +57,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             </div>
         </div>
     </div>
+<module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />
+
 </section>
 

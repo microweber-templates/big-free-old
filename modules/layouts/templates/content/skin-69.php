@@ -24,8 +24,10 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 
-<section class="section   <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-skin-content-69-<?php print $params['id'] ?>" rel="module">
-    <div class="container  " >
+<section class="section   <?php print $layout_classes; ?> ">
+    <module type="background" id="background-layout--<?php print $params['id'] ?>" />
+    <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
+    <div class="container mw-layout-container no-element allow-drop edit nodrop" field="layout-skin-content-69-<?php print $params['id'] ?>" rel="module" >
         <div class="row cloneable">
             <div class="col-12 text-center">
                 <h2 class="mb-10">The new family members?</h2>
@@ -51,7 +53,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                 <img class="w-100" title="" alt="" src="<?php print template_url(); ?>assets/img/he.jpg"/>
             </div>
         </div>
-    </div>  
+    </div>
+   <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />
+
 </section>
 
 

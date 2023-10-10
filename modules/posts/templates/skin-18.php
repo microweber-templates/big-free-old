@@ -42,9 +42,9 @@ description: Posts 18
             <div class="mx-auto mx-md-0 col-12 mb-5" itemscope itemtype="<?php print $schema_org_item_type_tag ?>">
                 <div class="h-100 d-flex flex-wrap align-items-center ">
                     <div class="col-lg-6 col-12 pt-4 pb-3 order-lg-1 order-2">
-                        <small style="color: #8C93A4;" class="mb-4 d-block"><?php echo date(get_date_format_raw(), strtotime($item['created_at'])); ?></small>
+                        <small style="color: #8C93A4;" class="mb-4 d-block"><?php echo date_system_format($item['created_at']) ; ?></small>
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
-                            <a href="<?php print $item['link'] ?>" class="btn btn-link text-dark mb-2"><h4 class="text-start text-left"><?php print $item['title'] ?></h4></a>
+                            <a href="<?php print $item['link'] ?>" class=" "><h4 class="text-start text-left"><?php print $item['title'] ?></h4></a>
                         <?php endif; ?>
 
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('description', $show_fields)): ?>
@@ -52,16 +52,17 @@ description: Posts 18
                         <?php endif; ?>
 
                         <div class="d-flex">
-                            <a href="" class=" d-flex align-items-center action-blog-arrow"> Read More </a>
+                            <a href="<?php print $item['link'] ?>" class=" d-flex align-items-center action-blog-arrow"> Read More </a>
+
                             <i style="color: #FFA028;" class="col-xl-1 ps-lg-0 action-blog-arrow mt-1 mwiconlist-icon mw-micon-solid-Arrow-OutRight"></i>
                         </div>
 
                     </div>
 
                     <div class="col-lg-4 col-12 justify-content-end ms-auto order-lg-2 order-1">
-                        <a href="<?php print $item['link'] ?>" class="btn btn-link d-block">
+                        <a href="<?php print $item['link'] ?>" class="   d-block">
                             <div class="img-as-background">
-                                <img src="<?php print thumbnail($item['image'], 850, 850); ?>" class=" position-relative"/>
+                                <img src="<?php print thumbnail($item['image'], 850, 850); ?>"  style="position: relative !important;"/>
                             </div>
                         </a>
                     </div>

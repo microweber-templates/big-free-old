@@ -30,44 +30,47 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     }
 </style>
 
-<section class="section <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-feature-skin-3-<?php print $params['id'] ?>" rel="module">
-    <div class="container">
-        <div class="row mb-3 py-4 text-center text-sm-start">
-            <div class="col-sm-10 col-md-12 col-lg-6 mb-6 cloneable">
-                <div class="h-100 d-flex flex-column border   hover-   py-5 px-5">
-                    <div class="d-block d-sm-flex align-items-center h-100">
-                        <div class="col-3 me-sm-5 mb-5 mb-sm-0 mx-auto icon-size-42px" style="width: 80px;">
-                            <div class="   rounded-circle square d-flex align-items-center justify-content-center">
-                                <i class="mdi mdi-email-check-outline   position-absolute safe-element"></i>
-                            </div>
-                        </div>
+<section class="section <?php print $layout_classes; ?> edit   nodrop" field="layout-feature-skin-3-<?php print $params['id'] ?>" rel="module">
 
-                        <div class="col-md-9 allow-drop">
-                            <h4>Pictures In The Sky</h4>
-                            <p class="mb-2">Naturally, as you grow in your love of astronomy, you will</p>
-                            <module type="btn" text="Learn More" button_style="btn-link" button_size=" "/>
+     <module type="background" id="background-layout--<?php print $params['id'] ?>" />
+    <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
+    <div class="mw-layout-container no-element allow-drop container">
+        <div class="row mb-3 py-4 text-center text-sm-start">
+            <div class="col-sm-10 col-md-12 col-lg-6 mb-6 cloneable element ">
+                <div class="d-block d-sm-flex align-items-center  border p-sm-5 p-3 background-color-element">
+                    <div class="col-3 me-sm-5 mx-auto icon-size-42px" style="width: 80px;">
+                        <div class="   rounded-circle square d-flex align-items-center justify-content-center">
+                            <i class="safe-element mw-micon-Alien-2"></i>
                         </div>
+                    </div>
+
+                    <div class="col-md-9 allow-drop">
+                        <h4 data-mwplaceholder="<?php _e('Enter title here'); ?>" >Pictures In The Sky</h4>
+                        <p data-mwplaceholder="<?php _e('Enter text here'); ?>"  class="mb-2">Naturally, as you grow in your love of astronomy, you will</p>
+                        <module type="btn" text="Learn More" button_style="btn-primary" class="mt-3" button_size=" "/>
+
                     </div>
                 </div>
             </div>
 
-            <div class="col-sm-10 col-md-12 col-lg-6 mb-6 cloneable">
-                <div class="h-100 d-flex flex-column border   hover-   py-5 px-5">
-                    <div class="d-block d-sm-flex align-items-center h-100">
-                        <div class="col-3 me-sm-5 mb-5 mb-sm-0 mx-auto icon-size-42px" style="width: 80px;">
-                            <div class="   rounded-circle square d-flex align-items-center justify-content-center">
-                                <i class="mdi mdi-alarm   position-absolute safe-element"></i>
-                            </div>
-                        </div>
-
-                        <div class="col-md-9 allow-drop">
-                            <h4>Pictures In The Sky</h4>
-                            <p class="mb-2">Naturally, as you grow in your love of astronomy, you will</p>
-                            <module type="btn" text="Learn More" button_style="btn-link" button_size=" "/>
+            <div class="col-sm-10 col-md-12 col-lg-6 mb-6 cloneable element  ">
+                <div class="d-block d-sm-flex align-items-center border p-sm-5 p-3 background-color-element">
+                    <div class="col-3 me-sm-5 mx-auto icon-size-42px" style="width: 80px;">
+                        <div class="   rounded-circle square d-flex align-items-center justify-content-center">
+                            <i class="safe-element mw-micon-Alien"></i>
                         </div>
                     </div>
+
+                    <div class="col-md-9 allow-drop">
+                        <h4 data-mwplaceholder="<?php _e('Enter title here'); ?>" >Pictures In The Sky</h4>
+                        <p data-mwplaceholder="<?php _e('Enter text here'); ?>" class="mb-2">Naturally, as you grow in your love of astronomy, you will</p>
+                        <module type="btn" text="Learn More" button_style="btn-primary" class="mt-3" button_size=" "/>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
+ <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />
+
 </section>

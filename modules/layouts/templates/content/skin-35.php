@@ -26,12 +26,14 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 
-<section class="section <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-content-skin-35-<?php print $params['id'] ?>" rel="module">
-    <div class="container">
+<section class="section <?php print $layout_classes; ?> ">
+    <module type="background" id="background-layout--<?php print $params['id'] ?>" />
+    <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
+    <div class="container mw-layout-container no-element allow-drop edit nodrop" field="layout-content-skin-35-<?php print $params['id'] ?>" rel="module">
         <div class="row">
             <div class="col-12 col-sm-10 col-lg-6 mx-auto pb-5 pe-lg-5 text-center text-lg-start d-flex align-items-center order-2 order-lg-1">
                 <div class="allow-drop">
-                    <h1 class="mb-4">Motivation Is The First Step To Success</h1>
+                    <h3 class="mb-4">Motivation Is The First Step To Success</h3>
 
                     <p class="lead">The large-screen TV has come a long way from those faded-out behemoths of old that took up half your living room and never really produced a picture of decent quality. Now, however, especially in combination with HDTV, you </p>
                 </div>
@@ -44,4 +46,6 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             </div>
         </div>
     </div>
+   <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />
+
 </section>

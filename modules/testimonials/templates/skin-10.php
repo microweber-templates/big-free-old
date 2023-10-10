@@ -12,74 +12,67 @@ description: Skin-10
 
 ?>
 
-<script>mw.lib.require('slick')</script>
 <script>
+    mw.require('<?php print modules_url() ?>slider_v2/slider-v2.js');
     $(document).ready(function () {
-        $('.slickslider', '#<?php echo $params['id']; ?>').slick({
-            rtl: document.documentElement.dir === 'rtl',
-            responsive: [
-                {
-                    breakpoint: 992,
-                    settings: {
-                        slidesToShow: 2,
-                    }
-                },
-                {
-                    breakpoint: 575,
-                    settings: {
-                        slidesToShow: 1,
-                    }
-                }
-            ]
+        new SliderV2('#js-testimonials-slider-<?php echo $params['id']; ?>', {
+            loop: true,
+            autoplay:true,
+            direction: 'horizontal', //horizontal or vertical
+            pagination: {
+                element: '#js-testimonials-slider-pagination-<?php echo $params['id']; ?>',
+            },
+            navigation: {
+                nextElement: '#js-testimonials-pagination-next-<?php echo $params['id']; ?>',
+                previousElement: '#js-testimonials-pagination-previous-<?php echo $params['id']; ?>',},
         });
     });
 </script>
-
 <style>
-    <?php echo '#' . $params['id'] . ' '; ?>
-    .list-inline {
-        margin: 0;
-    }
-
-    <?php echo '#' . $params['id'] . ' '; ?>
-    .list-inline li {
-        margin: 0 3px;
-    }
-
-    @media screen and (min-width: 992px) {
-    <?php echo '#' . $params['id'] . ' '; ?>
-        .slick-arrow.slick-prev {
-            left: -60px;
-        }
-
-    <?php echo '#' . $params['id'] . ' '; ?>
-        .slick-arrow.slick-next {
-            right: -60px;
-        }
+    .slider_v2-default.swiper .swiper-pagination-bullet {
+        background-color: #000;
     }
 </style>
 
 
-<div class="slick-arrows-1">
-    <div class="slickslider" data-slick='{"slidesToShow": 3, "slidesToScroll": 1, "dots": false, "arrows": true}'>
+<div id="js-testimonials-slider-<?php echo $params['id']; ?>" class="slider_v2-default swiper">
+    <div class="swiper-wrapper pb-4">
         <?php foreach ($data as $item): ?>
-            <div class="border   text-center mx-3 h-100 p-5">
-                <?php if ($item['client_picture']): ?>
-                    <div class="w-125 mx-auto my-4">
-                        <div class="img-as-background rounded-circle square">
-                            <img src="<?php print thumbnail($item['client_picture'], 120); ?>" class="d-block"/>
+        <div class="swiper-slide">
+            <div class="row text-center">
+                <div class="col-12 col-lg-10 col-lg-8 mx-auto my-2">
+                    <?php if ($item['client_picture']): ?>
+                        <div class="w-125 mx-auto my-4">
+                            <div class="img-as-background rounded-circle square">
+                                 <img src="<?php print thumbnail($item['client_picture'], 120); ?>" class="d-block"/>
+                            </div>
                         </div>
+                    <?php endif; ?>
+
+                    <div class="my-3">
+                        <?php if ($item['name']): ?>
+                            <h5 class=" mb-0"><?php print $item['name']; ?></h5>
+                        <?php endif; ?>
+                        <?php if ($item['client_company']): ?>
+                            <p class="mb-0"><?php print $item['client_company']; ?></p>
+                        <?php endif; ?>
+
+                        <?php if ($item['client_website']): ?>
+                            <a class="my-1 d-block" href="<?php print $item['client_website']; ?>"><?php print $item['client_website'] ?></a>
+                        <?php endif; ?>
+
+                        <?php if ($item['client_role']): ?>
+                            <p><?php print $item['client_role']; ?></p>
+                        <?php endif; ?>
+
                     </div>
-                <?php endif; ?>
 
-                <div class="my-5">
-                    <h5 class="mb-0"><?php print $item['name']; ?></h5>
-                    <h6 class="mb-0"><?php print $item['client_company']; ?></h6>
+                    <p><?php print character_limiter($item['content'], $limit); ?></p>
                 </div>
-
-                <div class="element-hr mx-auto my-5"></div>
-                <p><?php print character_limiter($item['content'], $limit); ?></p>
             </div>
+        </div>
         <?php endforeach; ?>
     </div>
+    <div id="js-testimonials-slider-pagination-<?php echo $params['id']; ?>" class="swiper-pagination mt-4"></div>
+
 </div>

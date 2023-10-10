@@ -836,4 +836,21 @@
     .menu-header-skin-7 .module-menu ul li a {
       text-align: left !important; } }
 
+.templates-top-header-menu {
+  background-color: var(--topHeaderBg) !important; }
+  .templates-top-header-menu .module-social-links .mdi {
+    color: var(--topHeaderElements) !important; }
+    .templates-top-header-menu .module-social-links .mdi:before {
+      font-size: 20px; }
+  .templates-top-header-menu .btn-phone {
+    font-size: 12px;
+    color: var(--topHeaderElements) !important; }
+  .templates-top-header-menu .top-header-background {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 45px;
+    list-style: none;
+    padding: 5px 20px; }
+
 /*# sourceMappingURL=header-menus.css.map */

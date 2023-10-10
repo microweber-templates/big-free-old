@@ -1,4 +1,4 @@
-<?php if ($shopping_cart == 'yes'): ?>
+<?php if ($shopping_cart == 1): ?>
     <li class="nav-item dropdown btn-shopping-cart ps-3">
         <a href="#" class="nav-link px-0 d-flex align-items-center" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
             <span class="badge badge-number badge-secondary badge-pill btn btn-outline-primary px-2 mx-2 js-shopping-cart-quantity"><?php print cart_sum(false); ?></span>

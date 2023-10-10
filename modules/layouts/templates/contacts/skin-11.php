@@ -26,9 +26,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 
-<section class="section <?php print $layout_classes; ?> edit safe-mode  " field="layout-contacts-skin-11-<?php print $params['id'] ?>" rel="module" data-background-position="center center" data-bg-contain="true">
+<section class="section <?php print $layout_classes; ?> edit nodrop" field="layout-contacts-skin-11-<?php print $params['id'] ?>" rel="module" data-background-position="center center" data-bg-contain="true">
 
-    <div class="container">
+    <div class="mw-layout-container no-element allow-drop container">
         <div class="row text-center text-md-start">
             <div class="mx-auto col-sm-10 col-md-5 mb-5 cloneable allow-drop">
                 <p class="lead-2">If you have any questions or recommendations, you can contact us from the information provided</p>
@@ -89,4 +89,6 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             </div>
         </div>
     </div>
+<module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />
+
 </section>

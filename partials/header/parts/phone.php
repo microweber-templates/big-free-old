@@ -1,7 +1,12 @@
-<?php if ($phone_text == 'yes'): ?>
+<?php if ($phone_text == 1): ?>
     <li class="nav-item dropdown btn-phone ps-3 my-xl-0 my-1">
-        <div class="edit safe-mode" field="header_phone_text" rel="global">
-            <span class="text-outline-primary font-weight-bold">00359 878 123 456</span>
+        <div>
+            <span class="text-outline-primary font-weight-bold">
+                <a href="tel:<?php print $phone_text_value; ?>" class="nav-link text-decoration-none">
+                    <span class="mdi mdi-phone"></span>
+                    <?php print $phone_text_value; ?>
+                </a>
+            </span>
         </div>
     </li>
 <?php endif; ?>

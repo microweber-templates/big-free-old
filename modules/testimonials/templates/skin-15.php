@@ -12,38 +12,36 @@ description: Skin-15
 
 ?>
 
-<?php
-
-/*
-
-type: layout
-
-name: Skin-5
-
-description: Skin-5
-
-*/
-
-?>
-
-<script>mw.lib.require('slick')</script>
 <script>
+    mw.require('<?php print modules_url() ?>slider_v2/slider-v2.js');
     $(document).ready(function () {
-        $('.slickslider', '#<?php echo $params['id']; ?>').slick();
+        new SliderV2('#js-testimonials-slider-<?php echo $params['id']; ?>', {
+            loop: true,
+            autoplay:true,
+            direction: 'horizontal', //horizontal or vertical
+            pagination: {
+                element: '#js-testimonials-slider-pagination-<?php echo $params['id']; ?>',
+            },
+            navigation: {
+                nextElement: '#js-testimonials-pagination-next-<?php echo $params['id']; ?>',
+                previousElement: '#js-testimonials-pagination-previous-<?php echo $params['id']; ?>',},
+        });
     });
 </script>
 <style>
-    <?php echo '#' . $params['id'] . ' '; ?>
-    .slick-dotted.slick-slider {
-        margin-bottom: 0px;
+    .slider_v2-default.swiper .swiper-pagination-bullet {
+        background-color: #000;
     }
 </style>
-<div class="slick-arrows-1">
-    <div class="slickslider" data-slick='{"slidesToShow": 1, "slidesToScroll": 1, "dots": true, "arrows": true}'>
+
+
+<div id="js-testimonials-slider-<?php echo $params['id']; ?>" class="slider_v2-default swiper">
+    <div class="swiper-wrapper pb-4">
         <?php foreach ($data as $item): ?>
+        <div class="swiper-slide">
             <div class="row text-center">
                 <div class="col-12 col-lg-10 col-lg-8 mx-auto">
-                    <p class="lead-2"><?php print character_limiter($item['content'], $limit); ?></p>
+                    <h5><?php print character_limiter($item['content'], $limit); ?></h5>
                     <br/>
                     <br/>
                     <div class="text-center text-sm-start mb-9">
@@ -59,15 +57,31 @@ description: Skin-5
                             <?php endif; ?>
 
                             <div>
-                                <h5 class="mb-1"><?php print $item['name']; ?></h5>
-                                <p class="mb-0"><?php print $item['client_role']; ?></p>
+                                <?php if ($item['name']): ?>
+                                    <h5 class=" mb-0"><?php print $item['name']; ?></h5>
+                                <?php endif; ?>
+                                <?php if ($item['client_company']): ?>
+                                    <p class="mb-0"><?php print $item['client_company']; ?></p>
+                                <?php endif; ?>
+
+                                <?php if ($item['client_website']): ?>
+                                    <a class="my-1 d-block" href="<?php print $item['client_website']; ?>"><?php print $item['client_website'] ?></a>
+                                <?php endif; ?>
+
+                                <?php if ($item['client_role']): ?>
+                                    <p><?php print $item['client_role']; ?></p>
+                                <?php endif; ?>
                             </div>
                         </div>
                     </div>
 
                 </div>
             </div>
+        </div>
         <?php endforeach; ?>
     </div>
+    <div id="js-testimonials-slider-pagination-<?php echo $params['id']; ?>" class="swiper-pagination mt-4"></div>
+    <div id="js-testimonials-pagination-previous-<?php echo $params['id']; ?>" class="mw-slider-v2-buttons-slide mw-slider-v2-button-prev"></div>
+    <div id="js-testimonials-pagination-next-<?php echo $params['id']; ?>" class="mw-slider-v2-buttons-slide mw-slider-v2-button-next"></div>
 </div>
 

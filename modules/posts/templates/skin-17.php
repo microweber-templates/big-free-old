@@ -45,20 +45,18 @@ description: Posts 17
                    <div class="h-100 blog-16-merry-card">
                        <?php if (!isset($show_fields) or $show_fields == false or in_array('thumbnail', $show_fields)): ?>
 
-                       <a href="<?php print $item['link'] ?>" class="btn btn-link d-block">
+                       <a href="<?php print $item['link'] ?>" class="   d-block">
                            <div class="img-as-background h-350">
-                               <img src="<?php print thumbnail($item['image'], 450, 450); ?>" class=" "/>
+                               <img src="<?php print thumbnail($item['image'], 450, 450); ?>"  style="position: relative !important;"/>
                            </div>
                        </a>
                        <?php endif; ?>
 
 
                        <div class="pt-4 pb-3 px-4">
-                           <img class="mx-auto d-flex mb-4" width="" src="<?php print template_url(); ?>assets/img/layouts/merry/merry-blog-16-voice.png"/>
-
 
                            <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
-                               <a href="<?php print $item['link'] ?>" class="btn btn-link text-dark mb-2"><h6 class="text-start text-left"><?php print $item['title'] ?></h6></a>
+                               <a href="<?php print $item['link'] ?>" class=" "><h6 class="text-start text-left"><?php print $item['title'] ?></h6></a>
                            <?php endif; ?>
 
                            <?php if (!isset($show_fields) or $show_fields == false or in_array('description', $show_fields)): ?>

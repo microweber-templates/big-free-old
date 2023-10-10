@@ -52,49 +52,25 @@ description: Skin-20
         }
 
 
-
     <?php echo '#' . $params['id'] . ' '; ?>
         .slick-arrow.slick-next {
             bottom: -104px;
             top: unset;
             left: 70px;
-            color: #FFA028!important;
         }
-
-    <?php echo '#' . $params['id'] . ' '; ?>
-        .slick-arrows-1 .slick-arrow {
-            background-color: #ffffff!important;
-            border: 1px solid rgba(255, 160, 40, 0.8)!important;
-
-        }
-
-
-
-    <?php echo '#' . $params['id'] . ' '; ?>
-        .slick-arrows-1 .slick-arrow:hover {
-            background: #FF5670!important;
-
-            border-color: #FF5670!important;
-        }
-
 
 
 
     <?php echo '#' . $params['id'] . ' '; ?>
     .slick-arrows-1 .slick-arrow:before {
-        color: rgba(255, 160, 40, 0.8)!important;
         margin-bottom: 2px!important;
         opacity: 1;
 
     }
 
     <?php echo '#' . $params['id'] . ' '; ?>
-        .slick-arrows-1 .slick-arrow:hover .slick-arrow:before {
-            color: #ffffff !important;
-            opacity: 1 !important;
-        }
 
-        .action-blog-quote {
+    .action-blog-quote {
         right: -13px;
         top: 211px;
 
@@ -117,20 +93,28 @@ description: Skin-20
                    </div>
 
                     <div class="col-lg-4 col-12 mx-auto ps-3 mt-lg-0 mt-5">
-                        <img src="<?php print template_url(); ?>assets/img/layouts/action/action-blog-quote-blue.png" class="mb-4"/>
-
-
                         <h4>Save Time Managing <br> Social Media For Business</h4>
 
-                        <p class="py-3" style="line-height: 36px; color: #8C93A4;"><?php print character_limiter($item['content'], $limit); ?></p>
+                        <p class="py-3"><?php print character_limiter($item['content'], $limit); ?></p>
 
                         <img src="<?php print template_url(); ?>assets/img/layouts/action/action-blog-stars.png" class="mb-4"/>
 
 
 
-                        <h6><?php print $item['name']; ?></h6>
-                        <small style="color: #8C93A4;"><?php print $item['client_role']; ?></small>
+                        <?php if ($item['name']): ?>
+                            <h5 class=" mb-0"><?php print $item['name']; ?></h5>
+                        <?php endif; ?>
+                        <?php if ($item['client_company']): ?>
+                            <p class="mb-0"><?php print $item['client_company']; ?></p>
+                        <?php endif; ?>
 
+                        <?php if ($item['client_website']): ?>
+                            <a class="my-1 d-block" href="<?php print $item['client_website']; ?>"><?php print $item['client_website'] ?></a>
+                        <?php endif; ?>
+
+                        <?php if ($item['client_role']): ?>
+                            <p><?php print $item['client_role']; ?></p>
+                        <?php endif; ?>
 
                     </div>
                 </div>

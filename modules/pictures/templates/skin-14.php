@@ -20,10 +20,10 @@ if (is_array($data)): ?>
    <div class="new-skin-shop">
 
 
-        <div class="shop-inner-gallery d-block">
+        <div class="shop-inner-gallery row">
 
             <div class="shop-inner-big-image position-relative">
-                <?php $price = app()->shop_manager->get_product_prices(content_id(), true);
+                <?php $price = get_product_prices(content_id(), true);
 
                 if (isset($price[0]) and isset($price[0]['original_value'])): ?>
 
@@ -53,7 +53,7 @@ if (is_array($data)): ?>
             </div>
 
             <?php if (sizeof($data) > 1) { ?>
-                <div class="shop-inner-gallery-thumbnails mt-4 flex-direction-row">
+                <div class="shop-inner-gallery-thumbnails mt-4 d-flex">
                     <?php $count = -1; foreach ($data as $item): $count++; ?>
                         <a class="mx-0"
                            href="<?php print thumbnail($item['filename'], 1080, 1080); ?>"

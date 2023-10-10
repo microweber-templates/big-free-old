@@ -56,13 +56,13 @@ description: Posts 16
             ?>
             <div class="mx-auto mx-md-0 col-sm-10 col-md-6 col-xl-3 mb-5" itemscope itemtype="<?php print $schema_org_item_type_tag ?>">
                 <div class="h-100 d-flex flex-column">
-                    <a href="<?php print $item['link'] ?>" class="btn btn-link d-block">
+                    <a href="<?php print $item['link'] ?>" class="   d-block">
 
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('thumbnail', $show_fields)): ?>
 
                         <div class="img-as-background h-350">
                             <a class="merry-on-hover-button" href=""><i class="mw-micon-Google-Play"></i></a>
-                            <img src="<?php print thumbnail($item['image'], 450, 450); ?>" class=" "/>
+                            <img src="<?php print thumbnail($item['image'], 450, 450); ?>"  style="position: relative !important;"/>
                         </div>
                         <?php endif; ?>
 
@@ -70,7 +70,7 @@ description: Posts 16
 
                     <div class="pt-4 pb-3">
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
-                            <a href="<?php print $item['link'] ?>" class="btn btn-link text-dark mb-2"><h6 class="text-start text-left"><?php print $item['title'] ?></h6></a>
+                            <a href="<?php print $item['link'] ?>" class=" "><h6 class="text-start text-left"><?php print $item['title'] ?></h6></a>
                         <?php endif; ?>
 <!---->
 <!--                        --><?php //if (!isset($show_fields) or $show_fields == false or in_array('description', $show_fields)): ?>
@@ -78,7 +78,7 @@ description: Posts 16
 <!--                        --><?php //endif; ?>
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('created_at', $show_fields)): ?>
 
-                        <small class="mb-2 ms-2 d-block"><?php echo date(get_date_format_raw(), strtotime($item['created_at'])); ?></small>
+                        <small class=" d-block"><?php echo date_system_format($item['created_at']) ; ?></small>
                         <?php endif; ?>
 
                     </div>

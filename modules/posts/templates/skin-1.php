@@ -29,17 +29,17 @@ description: Posts Slider 1
                 ?>
 
                 <div class="mx-3 col-sm-10 col-md-6 col-lg-4 mb-5" itemscope itemtype="<?php print $schema_org_item_type_tag ?>">
-                    <div class="border   overflow-hidden h-100 d-flex flex-column">
+                    <div class="overflow-hidden h-100 d-flex flex-column">
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('thumbnail', $show_fields)): ?>
 
                         <a href="<?php print $item['link'] ?>">
                             <div class="img-as-background h-350">
-                                <img src="<?php print thumbnail($item['image'], 450, 500); ?>"/>
+                                <img src="<?php print thumbnail($item['image'], 450, 500); ?>" style="position: relative !important;"/>
                             </div>
                         </a>
                         <?php endif; ?>
 
-                        <div class="px-5 pt-3 pb-5 mt-md-auto mt-5">
+                        <div class=" pt-3 pb-5 mt-md-auto mt-5">
                             <?php echo $itemCats; ?>
                             <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
                                 <h4 class="mb-2"><?php print $item['title'] ?></h4>
@@ -54,7 +54,7 @@ description: Posts Slider 1
                             <div class="m-t-auto">
                                 <?php if (!isset($show_fields) or $show_fields == false or in_array('read_more', $show_fields)): ?>
 
-                                <a href="<?php print $item['link'] ?>" class="btn btn-link">
+                                <a href="<?php print $item['link'] ?>" class="  ">
                                     <span>
                                         <?php
                                             if($read_more_text){

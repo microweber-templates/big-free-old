@@ -26,8 +26,10 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 
-<section class="section <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-content-skin-34-<?php print $params['id'] ?>" rel="module">
-    <div class="container">
+<section class="section <?php print $layout_classes; ?> ">
+    <module type="background" id="background-layout--<?php print $params['id'] ?>" />
+    <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
+    <div class="container mw-layout-container no-element allow-drop edit nodrop" field="layout-content-skin-34-<?php print $params['id'] ?>" rel="module">
         <div class="row text-center mb-5 nodrop">
             <div class="col-12 col-lg-8 col-lg-8 mx-auto allow-drop">
                 <h5 class="mb-7">Free Real Estate Listing</h5>
@@ -41,4 +43,6 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             </div>
         </div>
     </div>
+   <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />
+
 </section>

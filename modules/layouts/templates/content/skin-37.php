@@ -26,11 +26,13 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 
-<section class="section <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-content-skin-37-<?php print $params['id'] ?>" rel="module">
-    <div class="container">
+<section class="section <?php print $layout_classes; ?> ">
+    <module type="background" id="background-layout--<?php print $params['id'] ?>" />
+    <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
+    <div class="container mw-layout-container no-element allow-drop edit nodrop" field="layout-content-skin-37-<?php print $params['id'] ?>" rel="module">
         <div class="row text-center mb-5 nodrop">
             <div class="col-12 col-lg-8 col-lg-8 mx-auto allow-drop">
-                <h1 class="mb-3">Going Wireless With Your Headphones</h1>
+                <h3 class="mb-3">Going Wireless With Your Headphones</h3>
             </div>
         </div>
 
@@ -68,4 +70,6 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             </div>
         </div>
     </div>
+   <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />
+
 </section>

@@ -47,7 +47,7 @@
     padding: 30px 0;
 
     &:after {
-        background-image: unset $mw-importance;
+        background-image: unset !important;
     }
 
     .container {
@@ -118,7 +118,6 @@
     h4,
     h5,
     h6 {
-        font-size: 40px;
         font-weight: bold;
         margin-bottom: 20px;
         color: $dark;
@@ -263,20 +262,14 @@
 
     .timeline__title {
         margin: 0;
-        font-size: 24px;
         text-align: right;
-        color: $dark;
         font-weight: bold;
-        max-width: 300px;
         margin: 0 0px 0 auto;
         margin-bottom: 10px;
     }
 
     .timeline__description {
         text-align: right;
-        color: $secondary;
-        font-size: 16px;
-        max-width: 300px;
         margin: 0 0px 0 auto;
     }
 
@@ -327,7 +320,7 @@
 }
 
 .slick-list {
-    padding: 0px$mw-importance;
+    padding: 0px!important;
 }
 
 .beauty {
@@ -605,7 +598,7 @@
     }
     .slick-dots {
         position: absolute;
-        bottom: -25px $mw-importance;
+        bottom: -25px !important;
         display: block;
         width: 100%;
         padding: 0;
@@ -622,7 +615,7 @@
         text-align: center;
         margin-top: 30px;
         position: absolute;
-        bottom: -30px$mw-importance;
+        bottom: -30px!important;
     }
     .slick-gallery {
         p {
@@ -635,7 +628,7 @@
             text-align: center;
             margin-top: 40px;
             position: absolute;
-            bottom: -30px$mw-importance;
+            bottom: -30px!important;
         }
 
         .slick-dots li {
@@ -699,20 +692,20 @@
         }
         @media screen and (min-width: 1400px) {
             .slick-next {
-                right: -15% $mw-importance;
+                right: -15% !important;
             }
 
             .slick-prev {
-                left: -15% $mw-importance;
+                left: -15% !important;
             }
         }
         @media screen and (max-width: 1399px) {
             .slick-next {
-                right: -5% $mw-importance;
+                right: -5% !important;
             }
 
             .slick-prev {
-                left: -5% $mw-importance;
+                left: -5% !important;
             }
         }
         @media screen and (max-width: 1199px) {
@@ -721,11 +714,11 @@
             }
 
             .slick-next {
-                right: 5% $mw-importance;
+                right: 5% !important;
             }
 
             .slick-prev {
-                left: 5% $mw-importance;
+                left: 5% !important;
             }
         }
 
@@ -750,15 +743,15 @@
             margin: 0 5px;
         }
 
-        .slick-dots li button {
-            border: 0;
-            height: 10px;
-            width: 10px;
+        .slick-slider .slick-dots li button {
+            border: 0 !important;
+            height: 10px !important;
+            width: 10px !important;
             -webkit-border-radius: 14px;
             -moz-border-radius: 14px;
-            border-radius: 14px;
-            background: fade($light, 50%);
-            border: 1px solid $dark;
+            border-radius: 14px !important;
+            background: fade($light, 50%) !important;
+            border: 1px solid $dark !important;
         }
 
         .slick-dots li.slick-active button {
@@ -799,28 +792,40 @@
             font-size: 0;
             border: 0;
             background: none;
-            background: $dark;
+            background: #ececec;
+            opacity: 70%;
             -webkit-border-radius: 100%;
             -moz-border-radius: 100%;
             border-radius: 100%;
-            width: 45px;
-            height: 45px;
+            width: 55px;
+            height: 55px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            &:hover {
+                opacity: 100%;
+            }
         }
 
         .slick-arrow:before {
             font-family: FontAwesome;
             color: $light;
             display: inline-block;
-            font-size: 16px;
+            font-size: 20px;
             opacity: 1;
         }
 
         .slick-next:before {
-            content: '\f054';
+            content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="M530.565-480.41 339.796-671.436l35.794-35.794 226.563 226.82L375.59-253.847l-35.794-35.794L530.565-480.41Z"/></svg>') !important;
+
+            margin-left: 5px;
+
         }
 
         .slick-prev:before {
-            content: '\f053';
+            content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" height="40" viewBox="0 -960 960 960" width="40"><path d="M560.41-253.847 333.847-480.41 560.41-707.23l35.794 35.794L405.435-480.41l190.769 190.769-35.794 35.794Z"/></svg>') !important;
+
         }
 
         .slick-slide {
@@ -834,20 +839,20 @@
         }
 
         .slick-next {
-            right: -70px $mw-importance;
+            right: -70px !important;
         }
 
         .slick-prev {
-            left: -70px $mw-importance;
+            left: -70px !important;
         }
 
         @media screen and (max-width: 1050px) {
             .slick-next {
-                right: 15px $mw-importance;
+                right: 15px !important;
             }
 
             .slick-prev {
-                left: 15px $mw-importance;
+                left: 15px !important;
             }
 
         }

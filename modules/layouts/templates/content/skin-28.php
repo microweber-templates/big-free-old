@@ -26,13 +26,15 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 
-<section class="section <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-content-skin-28-<?php print $params['id'] ?>" rel="module">
-    <div class="container">
+<section class="section <?php print $layout_classes; ?> ">
+    <module type="background" id="background-layout--<?php print $params['id'] ?>" />
+    <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
+    <div class="container mw-layout-container no-element allow-drop edit" field="layout-content-skin-28-<?php print $params['id'] ?>" rel="module">
         <div class="row">
             <div class="col-12 col-sm-10 col-lg-8 mx-auto pb-5 text-center d-flex align-items-center">
                 <div class="allow-drop">
                     <h5 class="mb-4 font-weight-normal">Stu Unger Rise And Fall Of A Poker Genius</h5>
-                    <h1 class="mb-5">Myspace Layouts The Missing Element</h1>
+                    <h3 class="mb-5">Myspace Layouts The Missing Element</h3>
                     <img src="<?php print template_url(); ?>assets/img/layouts/content-28.jpg" class=" "/>
 
                     <br/>
@@ -45,4 +47,6 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             </div>
         </div>
     </div>
+   <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />
+
 </section>

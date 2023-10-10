@@ -29,17 +29,49 @@ description: Posts 11
                     <?php if (!isset($show_fields) or $show_fields == false or in_array('created_at', $show_fields)): ?>
 
                         <div class="mb-3">
-                        <small class=" "><?php echo date(get_date_format_raw(), strtotime($item['created_at'])); ?></small>
+                        <small class=" "><?php echo date_system_format($item['created_at']) ; ?></small>
                     </div>
                     <?php endif; ?>
 
                     <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
-                        <a href="<?php print $item['link'] ?>" class="btn btn-link text-dark"><h1 class="mb-2"><?php print $item['title'] ?></h1></a>
+                        <a href="<?php print $item['link'] ?>" class="   text-dark"><h1 class="mb-2"><?php print $item['title'] ?></h1></a>
                     <?php endif; ?>
 
                     <?php if (!isset($show_fields) or $show_fields == false or in_array('description', $show_fields)): ?>
                         <p class="lead"><?php echo $item['description'];?></p>
                     <?php endif; ?>
+
+                    <?php if (isset($item['created_by'])): ?>
+                        <?php
+                        $user = get_user_by_id($item['created_by']);
+                        ?>
+
+                        <div class="d-flex d-sm-flex align-items-center justify-content-center">
+                            <?php if (isset($user['thumbnail'])): ?>
+                                <div class="me-2">
+                                    <?php if (!isset($show_fields) or $show_fields == false or in_array('thumbnail', $show_fields)): ?>
+
+                                        <div class="w-40">
+                                            <div class="img-as-background rounded-circle square">
+                                                <img src="<?php echo thumbnail($user['thumbnail'], 80, 80); ?>" />
+                                            </div>
+                                        </div>
+                                    <?php endif; ?>
+
+                                </div>
+                            <?php endif; ?>
+
+                            <div>
+                                <small class="mb-1 font-weight-bold d-block">
+                                    <?php if (isset($user['first_name'])): ?><?php echo $user['first_name']; ?><?php endif; ?>&nbsp;
+                                    <?php if (isset($user['last_name'])): ?><?php echo $user['last_name']; ?><?php endif; ?>
+                                </small>
+                                <?php if (isset($user['user_information'])): ?><small class="mb-0 text-dark"><?php echo $user['user_information']; ?></small><?php endif; ?>
+                            </div>
+                        </div>
+
+                    <?php endif; ?>
+
                 </div>
             </div>
         <?php endforeach; ?>

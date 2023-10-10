@@ -4,11 +4,11 @@
 
 type: layout
 
-name: Tony 4
+name: Price Lists 8
 
-position: 4
+position: 8
 
-categories: tony
+categories: Price Lists
 
 */
 
@@ -62,8 +62,11 @@ if (!$classes['padding_bottom']) {
 $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
 ?>
 
-<section class=" <?php print $layout_classes; ?> section edit safe-mode  " field="layout-tony-skin-4-<?php print $params['id'] ?>" rel="module">
-    <div class="container-fluid">
+<section class=" <?php print $layout_classes; ?> section edit    nodrop  " field="layout-tony-skin-8-<?php print $params['id'] ?>" rel="module">
+
+     <module type="background" id="background-layout--<?php print $params['id'] ?>" />
+    <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
+    <div class="mw-layout-container no-element allow-drop container-fluid">
         <div class="row mx-auto justify-content-center">
            <div class="col-xl-10">
                <div class="text-center">
@@ -190,6 +193,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
            </div>
         </div>
     </div>
+
+<module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />
 
 </section>
 

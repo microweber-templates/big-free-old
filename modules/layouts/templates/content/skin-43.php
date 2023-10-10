@@ -26,12 +26,14 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 
-<section class="section <?php print $layout_classes; ?> edit safe-mode nodrop" field="layout-content-skin-43-<?php print $params['id'] ?>" rel="module">
-    <div class="container d-flex justify-content-center align-items-center">
+<section class="section <?php print $layout_classes; ?> ">
+    <module type="background" id="background-layout--<?php print $params['id'] ?>" />
+    <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
+    <div class="container mw-layout-container no-element allow-drop d-flex justify-content-center align-items-center edit nodrop" field="layout-content-skin-43-<?php print $params['id'] ?>" rel="module">
         <div class="text-center">
             <div class="row text-center nodrop">
                 <div class="col-12 col-lg-10 col-lg-8 mx-auto allow-drop">
-                    <h1>Addiction When Gambling Becomes A Problem</h1>
+                    <h3>Addiction When Gambling Becomes A Problem</h3>
                     <p class="lead">Are you considering buying a compatible inkjet cartridge for your printer? There are many reputed companies like Canon, Epson, Dell, and Lexmark.</p>
                     <br />
                     <br />
@@ -40,4 +42,6 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             </div>
         </div>
     </div>
+   <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />
+
 </section>

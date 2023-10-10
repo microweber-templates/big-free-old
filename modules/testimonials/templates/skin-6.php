@@ -52,6 +52,11 @@ description: Skin-6
             right: -60px;
         }
     }
+
+    <?php echo '#' . $params['id'] . ' '; ?>
+    .slick-list {
+        overflow: hidden;
+    }
 </style>
 
 <div class="slick-arrows-1">
@@ -67,10 +72,22 @@ description: Skin-6
                         </div>
                     <?php endif; ?>
 
-                    <p class="lead"><?php print character_limiter($item['content'], $limit); ?></p>
+                    <p><?php print character_limiter($item['content'], $limit); ?></p>
                     <br/>
-                    <h6 class="mb-1"><?php print $item['name']; ?></h6>
-                    <p><?php print $item['client_role']; ?></p> &nbsp;
+                    <?php if ($item['name']): ?>
+                        <h5 class=" mb-0"><?php print $item['name']; ?></h5>
+                    <?php endif; ?>
+                    <?php if ($item['client_company']): ?>
+                        <p class="mb-0"><?php print $item['client_company']; ?></p>
+                    <?php endif; ?>
+
+                    <?php if ($item['client_website']): ?>
+                        <a class="my-1 d-block" href="<?php print $item['client_website']; ?>"><?php print $item['client_website'] ?></a>
+                    <?php endif; ?>
+
+                    <?php if ($item['client_role']): ?>
+                        <p><?php print $item['client_role']; ?></p>
+                    <?php endif; ?>
                 </div>
             </div>
         <?php endforeach; ?>

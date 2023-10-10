@@ -25,27 +25,22 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 
+<section class="section mw-layout-dark-background py-0 mw-layout-parallax d-flex align-items-center justify-content-center">
+    <module type="background" data-background-image="<?php print template_url(); ?>assets/img/hero.jpg"/>
+    <div class="mw-layout-container container mh-100vh d-flex align-items-center justify-content-center no-element edit nodrop no-typing no-select" field="layout-header-skin-24-<?php print $params['id'] ?>" rel="module">
+        <div class="row text-center">
 
-<div data-overlay="0" data-parallax data-overlay-color="dark" background-position="center bottom" class="edit safe-mode nodrop" field="layout-skin-cover-<?php print $params['id'] ?>" rel="module">
-    <section class="section mw-layout-overlay-wrapper <?php print $layout_classes; ?>   d-flex flex-center background-image-holder"
-             style="background-image: url('<?php print template_url(); ?>assets/img/hero.jpg');
-                 min-height: calc(100vh - 70px);
-                 background-position: center bottom;
-                 background-attachment: fixed;">
+            <div class="col-12  safe-mode  d-flex flex-column justify-content-center align-items-center  allow-drop">
+                <div class="allow-select">
+                    <h1 data-mwplaceholder="<?php _e('Enter title here'); ?>" class="header-section-title display-1 mb-lg-3" style="font-weight: 800; letter-spacing: 8px;">CATHERINE<br class="d-lg-none"><span class="text-dark"> & </span><br class="d-lg-none">OLIVER</h1>
+                    <p data-mwplaceholder="<?php _e('Enter text here'); ?>" class="header-section-p lead-2" style="font-weight: 400;">12th of July. Downtown Brooklyn, New York.</p>
 
-        <div class="mw-layout-overlay"></div>
-        <div class="container mw-layout-overlay-container align-self-center mb-lg-10 text-center">
-            <div class="row">
-                <div class="col-12 d-flex flex-column justify-content-center align-items-center allow-drop">
-                    <h1 class="header-section-title display-1 mb-lg-3" style="font-weight: 800; letter-spacing: 8px;">CATHERINE<br class="d-lg-none"><span class="text-dark"> & </span><br class="d-lg-none">OLIVER</h1>
-                    <p class="header-section-p lead-2" style="font-weight: 400;">12th of July. Downtown Brooklyn, New York.</p>
+
                 </div>
             </div>
         </div>
-    </section>
-</div>
-
-
+    </div>
+</section>
 
 
 
