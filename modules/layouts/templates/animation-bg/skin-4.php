@@ -12,5 +12,4 @@ categories: Animated Backgrounds
 
 */
 
- 
 ?>
