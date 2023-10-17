@@ -267,7 +267,7 @@
 }
 
 .nav-link {
-    color: var(--primaryColor);
+    color: var(--primaryColor) !important;
 }
 
 .mw-big-dropdown.dropdown-menu > li > a:hover {
@@ -439,7 +439,7 @@
     }
 
     .swiper-pagination-horizontal {
-        bottom: 0;
+        bottom: 15px;
     }
 
 
@@ -550,18 +550,22 @@
 
 a {
     color: var(--links) !important;
+    line-height: var(--lineHeight);
+    letter-spacing: var(--letterSpacing);
+
 }
 
-.btn {
+.btn:not(.btn-link) {
     border-radius: var(--btnBorderRadius);
     border-color: var(--btnBorderColor);
     border-width: var(--btnBorderSize);
     border-style: var(--btnBorderStyle);
-    color: var(--btnTextColor) !important;
+    color: var(--btnText) !important;
 
-     a {
-        color: var(--btnTextColor) !important;
+    a:not(.btn-outline, .btn-outline-secondary, .btn-outline-primary), &.a:not(.btn-outline, .btn-outline-secondary, .btn-outline-primary) {
+        color: var(--btnText) !important;
      }
+
     background-color: var(--btnBackground);
     &:hover, &:focus, &.active, &:active {
         background-color: var(--btnBackgroundHover);
@@ -578,12 +582,26 @@ a {
 }
 
 .btn-secondary {
-    color: var(--btnSecondaryTextColor);
-    background-color: var(--btnSecondaryBackground);
+    color: var(--btnSecondaryText) !important;
+    background-color: var(--btnSecondaryBackground) !important;
 
     &:hover, &:focus, &.active, &:active {
-        background-color: var(--btnSecondaryBackgroundHover);
-        color: var(--btnSecondaryTextHoverColor);
+        background-color: var(--btnSecondaryBackgroundHover) !important;
+        color: var(--btnSecondaryTextHoverColor) !important;
+    }
+}
+
+.btn.btn-outline, .btn.btn-outline-primary, .btn.btn-outline-secondary {
+    color: var(--btnOutlineText) !important;
+    background-color: var(--btnOutlineBackground) !important;
+
+    &:hover, &:focus, &.active, &:active {
+        background-color: var(--btnOutlineBackgroundHover) !important;
+        color: var(--btnOutlineTextHoverColor) !important;
+    }
+
+    a, &.a {
+        color: var(--btnOutlineText) !important;
     }
 }
 
@@ -592,13 +610,12 @@ a {
     font-size: var(--formLabelFontSize);
 }
 
-input.form-control, textarea.form-control {
+input.form-control, textarea.form-control, select.form-control, select.form-select {
     border-radius: var(--formControlBorderRadius);
     border-color: var(--formControlBorderColor);
     border-width: var(--formControlBorderSize);
     border-style: var(--formControlBorderStyle);
     background-color: var(--formControlBackground);
-    padding-top: var(--formControlPaddingTop);
     padding-block: var(--formControlPaddingBlock);
     padding-inline: var(--formControlPaddingInline);
     color: var(--formControlTextColor);
@@ -612,26 +629,26 @@ input.form-control, textarea.form-control {
     }
 
 }
-textarea:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus,
-.uneditable-input:focus {
-    border-color: color-mix(in srgb, var(--formControlBackground) 50%, transparent);
-    box-shadow: none;
-    outline: 0 none;
-}
+//textarea:focus,
+//input[type="text"]:focus,
+//input[type="password"]:focus,
+//input[type="datetime"]:focus,
+//input[type="datetime-local"]:focus,
+//input[type="date"]:focus,
+//input[type="month"]:focus,
+//input[type="time"]:focus,
+//input[type="week"]:focus,
+//input[type="number"]:focus,
+//input[type="email"]:focus,
+//input[type="url"]:focus,
+//input[type="search"]:focus,
+//input[type="tel"]:focus,
+//input[type="color"]:focus,
+//.uneditable-input:focus {
+//    border-color: color-mix(in srgb, var(--formControlBackground) 50%, transparent);
+//    box-shadow: none;
+//    outline: 0 none;
+//}
 
 .testimonials-background-variable {
     background-color: var(--testimonialBackgroundVariable);
@@ -643,6 +660,8 @@ input[type="color"]:focus,
 p {
     font-size: var(--paragraphSize);
     color: var(--paragraphColor);
+    line-height: var(--lineHeight);
+    letter-spacing: var(--letterSpacing);
 }
 
 .mw-layout-dark-background{
@@ -720,4 +739,32 @@ h6 {
     font-weight: var(--fontWeight);
     letter-spacing: var(--letterSpacing);
     line-height: var(--lineHeight);
+}
+
+.mw-scale-hover-effect {
+    transform: scale(1);
+    transition: all 0.3s ease-in-out;
+}
+
+.mw-scale-hover-effect:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.mw_form {
+    .alert-danger {
+        width: 50%;
+        margin: 20px auto;
+
+        ul {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.layouts-grids-background {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }

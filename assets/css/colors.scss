@@ -5,9 +5,10 @@ $dark:     #212529;
 $blue:     #0044de;
 $gray:     #6c757d;
 $black:    #000000;
+$orange:   #f4a261;
 
 $body-bg:               $white !default;
-$primary:               $blue !default;
+$primary:               $orange !default;
 $secondary:             $gray !default;
 $textDark:              $dark !default;
 $textLight:             $light !default;
@@ -35,14 +36,14 @@ $headingSix:            20px !default;
 $testimonialBackgroundVariable: $white !default;
 $testimonialBorderVariable: $black !default;
 
-$btnBorderRadius: 0 !default;
-$btnBorderColor: $black !default;
-$btnBorderSize: 0 !default;
+$btnBorderRadius: 33px !default;
+$btnBorderColor: $orange !default;
+$btnBorderSize: 2px !default;
 $btnBorderStyle: solid !default;
-$btnPaddingBlock: 10px !default;
-$btnPaddingInline: 10px !default;
-$btnBackground: #FF5E00 !default;
-$btnBackgroundHover: $black !default;
+$btnPaddingBlock: 15px !default;
+$btnPaddingInline: 24px !default;
+$btnBackground: $orange !default;
+$btnBackgroundHover: #e76f51 !default;
 $btnText:            $white !default;
 $btnTextHoverColor: $white !default;
 
@@ -51,11 +52,16 @@ $btnSecondaryBackgroundHover: $black !default;
 $btnSecondaryText:            $white !default;
 $btnSecondaryTextHoverColor: $white !default;
 
+$btnOutlineBackground: transparent !default;
+$btnOutlineBackgroundHover: $orange !default;
+$btnOutlineText: $orange !default;
+$btnOutlineTextHoverColor: $white !default;
 
-$formControlBorderRadius: 1px !default;
-$formControlBorderSize: 1px !default;
-$formControlBorderStyle: normal !default;
-$formControlBorderColor: $black !default;
+
+$formControlBorderRadius: 2px !default;
+$formControlBorderSize: 2px !default;
+$formControlBorderStyle: solid !default;
+$formControlBorderColor: #ced4da !default;
 $formControlPaddingBlock: 15px !default;
 $formControlPaddingInline: 15px !default;
 $formControlPlaceholderColor: $gray !default;
@@ -74,7 +80,7 @@ $footerHoverLinkColor:  $black !default;
 
 $headerBtnColor:        $white !default;
 
-$font-family-sans-serif:      'Inter', sans-serif !default;
+$font-family-sans-serif:      'Jost', sans-serif !default;
 $font-family-base:            $font-family-sans-serif !default;
 
 $font-family-base: $font-family-sans-serif;
@@ -146,6 +152,16 @@ $textOnDarkBackground: $white !default;
     --btnBackground: #{$btnBackground};
     --btnBackgroundHover: #{$btnBackgroundHover};
     --btnTextHoverColor: #{$btnTextHoverColor};
+
+    --btnSecondaryBackground: #{$btnSecondaryBackground};
+    --btnSecondaryBackgroundHover: #{$btnSecondaryBackgroundHover};
+    --btnSecondaryText: #{$btnSecondaryText};
+    --btnSecondaryTextHoverColor: #{$btnSecondaryTextHoverColor};
+
+    --btnOutlineBackground: #{$btnOutlineBackground};
+    --btnOutlineBackgroundHover: #{$btnOutlineBackgroundHover};
+    --btnOutlineText: #{$btnOutlineText};
+    --btnOutlineTextHoverColor: #{$btnOutlineTextHoverColor};
 
     --formControlBorderRadius: #{$formControlBorderRadius};
     --formControlBorderSize: #{$formControlBorderSize};

@@ -26,11 +26,7 @@
                         "unit": "px"
                     }
                 },
-                {
-                    "title": "Global Text Styles",
-                    "description": "Your global styles appear across your site.",
-                    "fieldType": "infoBox"
-                },
+
                 {
                     "title": "Spacing",
                     "description": "Pick a spacing style, and customize it to achieve the style you want.",
@@ -244,6 +240,9 @@
                             "fieldSettings": {
                                 "property": "--testimonialBorderVariable"
                             }
+                        },
+                        {
+
                         }
                     ]
                 }
@@ -932,6 +931,64 @@
                                     }
                                 }
                             ]
+                        },
+                        {
+                            "title": "Outline Button",
+                            "description": "Choose a outline button color to use for your site.",
+                            "settings": [
+                                {
+                                    "title": "Button Background Color",
+                                    "description": "Choose a button background color to use for your site.",
+                                    "fieldType": "colorPicker",
+                                    "selectors":[":root"],
+                                    "fieldSettings": {
+                                        "property": "--btnOutlineBackground"
+                                    }
+                                },
+                                {
+                                    "title": "Button Text Color",
+                                    "description": "Choose a button text color to use for your site.",
+                                    "fieldType": "colorPicker",
+                                    "selectors":[":root"],
+                                    "fieldSettings": {
+                                        "property": "--btnOutlineText"
+                                    }
+                                },
+
+                                {
+                                    "title": "Button Background Hover Color",
+                                    "description": "Choose a button background hover color to use for your site.",
+                                    "fieldType": "colorPicker",
+                                    "selectors":[":root"],
+                                    "fieldSettings": {
+                                        "property": "--btnOutlineBackgroundHover"
+                                    }
+                                },
+                                {
+                                    "title": "Button Text Hover Color",
+                                    "description": "Choose a button text hover color to use for your site.",
+                                    "fieldType": "colorPicker",
+                                    "selectors":[":root"],
+                                    "fieldSettings": {
+                                        "property": "--btnOutlineTextHoverColor"
+                                    }
+                                },
+                                {
+                                    "title": "Clear All",
+                                    "description": "Clear all button styles you have set for your site.",
+                                    "fieldType": "clearAll",
+                                    "selectors":[":root"],
+                                    "fieldSettings": {
+                                        "properties": [
+                                            "--btnBackground",
+                                            "--btnBackgroundHover",
+                                            "--btnTextColor",
+                                            "--btnTextHoverColor",
+                                            "--btnBorderColor"
+                                        ]
+                                    }
+                                }
+                            ]
                         }
                     ]
                 },
@@ -1087,6 +1144,7 @@
                 }
             ]
         }
+
     ]
 }
 

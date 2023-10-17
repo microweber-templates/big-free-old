@@ -17,9 +17,9 @@
     <module type="custom_fields" for-id="<?php print $params['id'] ?>" data-for="module"
             default-fields="Name[type=text,field_size=6,show_placeholder=true],Email[type=email,field_size=6,show_placeholder=true],Message[type=textarea,field_size=12,show_placeholder=true]" input_class="form-control"/>
 
-    <div class="text-center">
-        <module type="btn" button_action="submit" class="mb-2" button_style="btn-primary w-100 justify-content-center" button_size="px-5" button_text="<?php _lang("Send", 'template/big'); ?>"/>
-    </div>
+    <br><br>
+        <module type="btn" button_action="submit" button_style="btn-primary w-100 justify-content-center" button_text="<?php _lang("Send", 'template/big'); ?>"/>
+
 
     <?php if ($show_newsletter_subscription == 'y' && !$newsletter_subscribed): ?>
         <div class="form-group">

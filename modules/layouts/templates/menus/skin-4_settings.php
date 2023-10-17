@@ -21,4 +21,6 @@ include(__DIR__.'/settings_is_multilanguage.php');
 
 
 // THIS IS PREMIUM LAYOUT, PLEASE BUY LICENSE KEY FROM https://microweber.com
+
+// THIS IS PREMIUM LAYOUT, PLEASE BUY LICENSE KEY FROM https://microweber.com
 ?>

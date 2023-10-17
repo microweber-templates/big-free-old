@@ -9,19 +9,19 @@
 
 <form class="mw_form" data-form-id="<?php print $form_id ?>" name="<?php print $form_id ?>" method="post">
 
-    <div class="message-sent" id="msg<?php print $form_id ?>" style="display: none;">
+    <div class="message-sent alert alert-success" id="msg<?php print $form_id ?>" style="display: none;">
         <span class="message-sent-icon"></span>
-        <p class="text-success"><?php _lang("Your Email was sent successfully", 'template/big'); ?></p>
+        <p class="text-success"><?php print $thank_you_message; ?></p>
     </div>
 
-    <div class="row justify-content-center">
+    <div class="row justify-content-center align-items-end">
         <div class="col-md-8">
-            <module type="custom_fields" for-id="<?php print $params['id'] ?>" data-for="module" template="bootstrap5_flex"
+            <module type="custom_fields" for-id="<?php print $params['id'] ?>" data-for="module" template="bootstrap5"
                     default-fields="Email[type=email,field_size=12,show_placeholder=true]" input_class="form-control">
         </div>
 
         <div class="col-md-4">
-            <module type="btn" button_action="submit" class="mb-2" button_style="btn-primary" button_size="w-100 justify-content-center" button_text="<?php _lang("Join", 'template/big'); ?>">
+            <module type="btn" button_action="submit" button_style="btn-primary" button_size="w-100 justify-content-center" button_text="<?php _lang("Join", 'template/big'); ?>">
         </div>
     </div>
 

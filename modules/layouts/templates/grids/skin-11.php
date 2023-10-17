@@ -30,22 +30,16 @@ if (page_title()) {
 }
 ?>
 
-<section class="section <?php print $layout_classes; ?> edit    nodrop" field="layout-grids-skin-11-<?php print $params['id'] ?>" rel="module">
+<section class="section <?php print $layout_classes; ?> edit  safe-mode no-typing nodrop" field="layout-grids-skin-11-<?php print $params['id'] ?>" rel="module">
 
      <module type="background" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <div class="mw-layout-container no-element allow-drop container">
+    <div class="mw-layout-container no-element allow-drop container safe-mode">
         <div class="row">
-            <div class="col-12 col-lg-6 mb-2 cloneable">
-                <div class="cube">
-                    <h3>Look Up In The Sky</h3>
-                    <p>In the history of modern astronomy, there is probably no one greater leap forward than the building and launch of the space telescope known as the Hubble. While NASA has had many ups and downs.</p>
-                </div>
-            </div>
-            <div class="col-12 col-lg-6 mb-2 cloneable">
-                <div class="cube">
-                    <h3>How To Look Up</h3>
-                    <p>In the history of modern astronomy, there is probably no one greater leap forward than the building and launch of the space telescope known as the Hubble. While NASA has had many ups and downs.</p>
+            <div class="col-12 col-lg-12 mb-2 cloneable element safe-mode layouts-grids-background">
+                <div class="cube text-center">
+                    <h1 data-mwplaceholder="<?php _e('Enter title here'); ?>">Asteroids</h1>
+                    <p data-mwplaceholder="<?php _e('Enter text here'); ?>">When television was young, there was a hugely popular show based on the still<br> popular functional character of Superman. The opening of that show had a familiar<br> phrase that went.</p>
                 </div>
             </div>
         </div>

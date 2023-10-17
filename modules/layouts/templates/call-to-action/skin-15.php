@@ -28,23 +28,21 @@ if (!$classes['padding_bottom']) {
 $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
 ?>
 
-<section class="section form-control-outline-dark<?php print $layout_classes; ?> edit nodrop" field="layout-call-to-action-skin-15-<?php print $params['id'] ?>" rel="module">
+<section class="section form-control-outline-dark<?php print $layout_classes; ?> ">
 
 
-    <div class="mw-layout-background-block">
-        <div class="mw-layout-background-node"></div>
-        <div class="mw-layout-background-overlay"></div>
-    </div>
+       <module type="background" id="background-layout--<?php print $params['id'] ?>" />
+
 
  <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <div class="mw-layout-container no-element-allow-drop container">
+    <div class="mw-layout-container no-element-allow-drop container edit nodrop no-typing" field="layout-call-to-action-skin-15-<?php print $params['id'] ?>" rel="module">
         <div class="row d-flex align-items-center justify-content-center justify-content-lg-end text-center text-lg-start">
-            <div class="col-12 col-sm-10 col-lg-4 allow-drop py-4">
-                <h1 class="m-0">Sign up to newsletter</h1>
+            <div class="col-12 col-sm-10 col-lg-4 allow-drop py-4 safe-mode">
+                <h1 data-mwplaceholder="<?php _e('Enter title here'); ?>" class="m-0">Sign up to newsletter</h1>
             </div>
 
             <div class="col-12 col-sm-10 col-lg-8 allow-drop py-4">
-                <module type="contact_form" template="subscribe-5"/>
+                <module type="contact_form" template="subscribe-6"/>
             </div>
         </div>
     </div>

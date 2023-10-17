@@ -26,23 +26,23 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 
-<section class="section <?php print $layout_classes; ?> edit safe-mode" field="layout-contacts-skin-12-<?php print $params['id'] ?>" rel="module" data-background-position="center center" data-bg-contain="true">
+<section class="section">
 
-     <module type="background" id="background-layout--<?php print $params['id'] ?>" />
+     <module type="background" data-background-color="#f0f0f0" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <div class="mw-layout-container no-element allow-drop container">
+    <div class="mw-layout-container no-element allow-drop container edit safe-mode no-typing" field="layout-contacts-skin-12-<?php print $params['id'] ?>" rel="module">
         <div class="row justify-content-center text-center">
-            <div class="cloneable mb-5">
-                <p class="lead font-weight-bold">FEEL FREE TO CONTACT US</p>
+            <div class="cloneable element safe-mode">
+                <h3 data-mwplaceholder="<?php _e('Enter title here'); ?>">Contact Us</h3>
             </div>
 
-            <div class="mx-auto mb-5 cloneable">
-                    <h6>001 234 567 890</h6>
-                    <h6><a href="mailto:info@company.com">info@company.com</a></h6>
+            <div class="mx-auto cloneable element safe-mode">
+                <h6 data-mwplaceholder="<?php _e('Enter text here'); ?>">001 234 567 890</h6>
+                <h6 data-mwplaceholder="<?php _e('Enter text here'); ?>"><a href="mailto:info@company.com">info@company.com</a></h6>
             </div>
 
-            <div class="mx-auto mb-5 cloneable">
-                <p>Follow us on social media</p>
+            <div class="mx-auto cloneable element safe-mode">
+                <p data-mwplaceholder="<?php _e('Enter text here'); ?>">Follow us on social media</p>
                 <module type="social_links" template="skin-1"/>
             </div>
         </div>

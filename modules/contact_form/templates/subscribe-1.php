@@ -18,7 +18,7 @@
         <div class="form-group d-flex">
             <module type="custom_fields" for-id="<?php print $params['id'] ?>" data-for="module"
                     default-fields="Email[type=email,field_size=12,show_placeholder=true]" input_class="form-control-lg">
-
+                <br><br>
                 <module type="btn" button_action="submit" class="ms-2" button_style="btn-primary mb-3" button_text="<?php _lang("Subscribe", 'template/big'); ?>">
         </div>
     </div>

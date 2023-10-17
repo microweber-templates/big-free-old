@@ -16,7 +16,7 @@
 
     <module type="custom_fields" for-id="<?php print $params['id'] ?>" data-for="module"
             default-fields="Full Name[type=text,field_size=12,show_placeholder=true],Email[type=email,field_size=12,show_placeholder=true]" input_class="form-control"/>
-
+    <br><br>
     <module type="btn" button_action="submit" class="mb-2" button_style="btn-primary" button_size="px-5 d-block w-100" button_text="<?php _lang("Subscribe", 'template/big'); ?>"/>
 
     <?php if ($show_newsletter_subscription == 'y' && !$newsletter_subscribed): ?>

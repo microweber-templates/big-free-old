@@ -29,19 +29,20 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 <section class="section <?php print $layout_classes; ?> ">
     <module type="background" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <div class="container mw-layout-container no-element allow-drop edit nodrop" field="layout-content-skin-54-<?php print $params['id'] ?>" rel="module">
+    <div class="container mw-layout-container no-element allow-drop edit nodrop no-typing" field="layout-content-skin-54-<?php print $params['id'] ?>" rel="module">
         <div class="row">
             <div class="col-12 col-lg-10 col-lg-6 mx-auto text-center allow-drop">
-                <h3>Free Philippine Real Estate Ads Forums And Classifieds</h3>
-                <p>Ah, the technical interview. Nothing like it. Not only does it cause anxiety, but it causes anxiety for several different reasons.</p>
+                <h3 data-mwplaceholder="<?php _e('Enter title here'); ?>">Your Title Here</h3>
+                <p data-mwplaceholder="<?php _e('Enter title here'); ?>">Ah, the technical interview. Nothing like it. Not only does it cause anxiety,
+                    <br> but it causes anxiety for several different reasons.</p>
                 <br/>
 
                 <div class="d-flex align-items-center justify-content-center nodrop">
-                    <div class="cloneable mx-2">
-                        <module type="btn" button_style="btn-primary" button_size="btn-md px-5" text="Button"/>
+                    <div class="cloneable element mx-2">
+                        <module type="btn" button_style="btn-primary"  text="Buy"/>
                     </div>
-                    <div class="cloneable mx-2">
-                        <module type="btn" button_style="btn-link" button_size="btn-md px-5" text="Learn More"/>
+                    <div class="cloneable element mx-2">
+                        <module type="btn" button_style="btn-link" text="Learn More"/>
                     </div>
                 </div>
             </div>

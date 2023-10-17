@@ -25,24 +25,24 @@ if (!$classes['padding_bottom']) {
 $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
 ?>
 
-<section class="section <?php print $layout_classes; ?> form-control-outline-dark edit safe-mode" field="layout-contacts-skin-13-<?php print $params['id'] ?>" rel="module">
+<section class="section <?php print $layout_classes; ?> ">
 
      <module type="background" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <div class="mw-layout-container no-element allow-drop container">
-        <div class="row">
+    <div class="mw-layout-container no-element allow-drop container edit safe-mode safe-mode no-typing" field="layout-contacts-skin-13-<?php print $params['id'] ?>" rel="module">
+        <div class="row safe-mode">
 
-            <h3 class="text-center mb-5">Our contacts</h3>
+            <h3 data-mwplaceholder="<?php _e('Enter title here'); ?>" class="text-center mb-5">Our Contacts</h3>
 
             <div class="col-md-6 mx-auto mt-5">
-                    <p class="lead">Phone: +1-123-456-78</p>
-                    <p class="lead">Email:  <a href="mailto:info@company.com">info@company.com</a></p>
+                    <h6 data-mwplaceholder="<?php _e('Enter text here'); ?>" >Phone: +1-123-456-78</h6>
+                    <h6 data-mwplaceholder="<?php _e('Enter text here'); ?>" >Email:  <a href="mailto:info@company.com">info@company.com</a></h6>
                 <br/>
                 <br/>
                 <br/>
 
 
-                <p class="lead">Add your company address here</p>
+                <p data-mwplaceholder="<?php _e('Enter text here'); ?>" >Add your company address here</p>
                 <module type="social_links" template="skin-1" />
             </div>
 

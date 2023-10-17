@@ -1,12 +1,12 @@
 <?php
-namespace MicroweberPackages\Template\BigFree\tests;
+namespace MicroweberPackages\Template\Big\tests;
 
 
 use MicroweberPackages\Core\tests\TestCase;
 
 class BasicTemplateTest extends TestCase
 {
-    public $template_name = 'big-free';
+    public $template_name = 'template-big';
 
     public function testHomepage()
     {

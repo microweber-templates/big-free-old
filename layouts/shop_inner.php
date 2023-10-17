@@ -45,7 +45,7 @@ $prev = prev_content();
                         <div class="product-info">
                             <div class="product-info-content">
                                 <div class="heading mt-sm-4 mt-md-0 pb-0 mb-2">
-                                    <h1 class="edit d-inline-block" field="title" rel="content"><?php print content_title(); ?></h1>
+                                    <h1 class="edit d-inline-block plain-text" field="title" rel="content"><?php print content_title(); ?></h1>
 
                                     <div class="next-previous-content float-end">
                                         <?php if ($prev != false) { ?>

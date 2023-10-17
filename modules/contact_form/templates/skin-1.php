@@ -19,6 +19,6 @@
     <?php if ($require_terms && $require_terms_when == 'b'): ?>
         <module type="users/terms" data-for="contact_form_default"/>
     <?php endif; ?>
-
+    <br><br>
     <module type="btn" button_action="submit" button_style="btn-primary" button_size="btn-lg btn-block w-100 justify-content-center" button_text="<?php _lang("Send", 'template/big'); ?>"/>
 </form>
