@@ -14,12 +14,12 @@ $config['group_elements_by_category'] = true;
 $config['settings']['autoload_namespace'] = [
     [
         'path' => __DIR__ . '/src/',
-        'namespace' => 'MicroweberPackages\\Template\\BigFree\\'
+        'namespace' => 'MicroweberPackages\\Template\\Big\\'
     ],
 ];
 
 $config['settings']['service_provider'] = [
-    \MicroweberPackages\Template\BigFree\TemplateServiceProvider::class
+    \MicroweberPackages\Template\Big\TemplateServiceProvider::class
 ];
 
 
