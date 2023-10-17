@@ -14,6 +14,5 @@
 
 include(__DIR__.'/settings_is_sticky_nav_front.php');
 
-
-// THIS IS PREMIUM LAYOUT, PLEASE BUY LICENSE KEY FROM https://microweber.com
+ 
 ?>
