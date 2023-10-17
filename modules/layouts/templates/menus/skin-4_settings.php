@@ -19,13 +19,4 @@ include(__DIR__.'/settings_is_sticky_nav.php');
 include(__DIR__.'/settings_is_multilanguage.php');
 
 
-
-
-
-
-
-
- 
- 
- 
 ?>

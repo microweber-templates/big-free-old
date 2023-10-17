@@ -17,13 +17,4 @@ include(__DIR__.'/settings_is_phone.php');
 include(__DIR__.'/settings_is_profile_link.php');
 include(__DIR__.'/settings_is_sticky_nav.php');
 include(__DIR__.'/settings_is_multilanguage.php');
-
-
-
-
-
-
- 
- 
- 
 ?>

@@ -5,13 +5,4 @@ if ($sticky_navigation == '') {
     $sticky_navigation = $default_is_sticky_nav;
 }
 
-
-
-
-
-
-
- 
- 
- 
 ?>

@@ -5,13 +5,4 @@ if ($multilanguage == '') {
     $multilanguage = $default_multilanguage;
 }
 
-
-
-
-
-
-
- 
- 
- 
 ?>
