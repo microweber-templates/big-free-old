@@ -40,6 +40,11 @@ $itemTags = content_tags(CONTENT_ID);
 
         </div>
     </div>
+    <div class="container">
+
+        <module   type="breadcrumb" />
+
+    </div>
 </div>
 
 <?php include template_dir() . "footer.php"; ?>

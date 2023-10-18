@@ -18,10 +18,13 @@ position: 4
     <module type="layouts" template="skin-16"/>
 </div>
 
+<div class="container">
 
+    <module   type="breadcrumb" />
 
-<module type="shop" />
+    <module type="shop" />
 
+</div>
 
 <div class="edit" rel="content" field="shop-after-content">
     <p class="element"></p>

@@ -136,6 +136,12 @@ $prev = prev_content();
                         </div>
                     </div>
                 </div>
+
+                <div class="row">
+
+                    <module   type="breadcrumb" />
+
+                </div>
             </div>
         </div>
     </section>
