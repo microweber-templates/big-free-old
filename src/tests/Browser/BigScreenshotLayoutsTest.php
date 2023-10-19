@@ -10,7 +10,7 @@ use Tests\DuskTestCase;
 
 class BigScreenshotLayoutsTest extends DuskTestCase
 {
-    public $template_name = 'template-big';
+    public $template_name = 'big';
 
     public function bootTemplate()
     {
