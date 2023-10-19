@@ -54,9 +54,10 @@ class BigScreenshotLayoutsTest extends DuskTestCase
 
                     if (str_contains($layout['filename'], 'header') !== false) {
                         $browser->resize(900, 600);
-                    }
-                    if (strpos($layout['filename'], 'contact_form') !== false) {
+                    } else if (strpos($layout['filename'], 'contact_form') !== false) {
                         $browser->resize(480, 1200);
+                    } else {
+                        $browser->resize(1360, 800);
                     }
 
                    // dump('/preview-skin?module='.$module['module'].'&skin=' . $layoutName . '&no_editmode=1');
