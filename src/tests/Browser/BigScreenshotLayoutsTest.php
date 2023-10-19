@@ -74,7 +74,8 @@ class BigScreenshotLayoutsTest extends DuskTestCase
                         $previewLayoutContentElement->takeElementScreenshot($layout['screenshot_file']);
                         $src = $layout['screenshot_file'];
                         $tn = new Thumbnailer($src);
-                        $thumbOptions = array('height' => 640, 'width' => 480);
+                      //  $thumbOptions = array('height' => 640, 'width' => 480);
+                        $thumbOptions = array('height' => 240, 'width' => 320);
                        // $thumbOptions['crop'] = true;
                         $tn->createThumb($thumbOptions, $layout['screenshot_file']);
 
