@@ -22,7 +22,7 @@ if (!isset($tn[1])) {
 ?>
 
 <?php if (!empty($data)): ?>
-    <div class="row shop-products pt-7">
+    <div class="row shop-products">
         <?php foreach ($data as $item): ?>
             <?php $categories = content_categories($item['id']); ?>
 
@@ -55,9 +55,9 @@ if (!isset($tn[1])) {
                 }
             }
             ?>
-            <div class="mx-auto mx-md-0 col-sm-10 col-md-6 col-lg-4 mb-5 item-<?php print $item['id'] ?>" data-masonry-filter="<?php print $itemCats; ?>" itemscope itemtype="<?php print $schema_org_item_type_tag ?>">
-                <div class="product h-100 d-flex flex-column px-sm-3 position-relative">
-                    <div class="h-100 d-flex flex-column">
+            <div class="mx-auto <?php echo $in_stock ? 'mw-layout-product-stock' : 'mw-layout-product-outOfStock'; ?> mx-md-0 col-sm-10 col-md-6 col-lg-4 item-<?php print $item['id'] ?>" data-masonry-filter="<?php print $itemCats; ?>" itemscope itemtype="<?php print $schema_org_item_type_tag ?>">
+                <div class="product d-flex flex-column">
+                    <div class="d-flex flex-column">
                         <?php if (is_array($item['prices'])): ?>
                             <?php foreach ($item['prices'] as $k => $v): ?>
                                 <input type="hidden" name="price" value="<?php print $v ?>"/>
@@ -106,38 +106,35 @@ if (!isset($tn[1])) {
                             </a>
                         <?php endif; ?>
 
-                        <div class="pt-4 pb-6">
-                            <?php if ($show_fields == false or in_array('title', $show_fields)): ?>
-                                <a href="<?php print $item['link'] ?>" class="text-dark text-decoration-none text-center">
-                                    <h5 class="mt-3 mb-3 font-weight-normal"><?php print $item['title'] ?></h5>
-                                </a>
-                            <?php endif; ?>
+                        <div class="d-flex align-items-center justify-content-between pt-2">
 
-                            <div class="row">
-                                <div class="col-6 price-holder">
-                                    <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
-                                        <?php if (isset($item['prices']) and is_array($item['prices'])): ?>
-                                            <?php
-                                            $vals2 = array_values($item['prices']);
-                                            $val1 = array_shift($vals2);
-                                            ?>
-                                            <p>
-                                                <?php if (isset($item['original_price']) and $item['original_price'] != ''): ?>
-                                                    <span class="price-old"><?php print currency_format($item['original_price']); ?></span>
-                                                <?php endif; ?>
-                                                <span class="price"><?php print currency_format($val1); ?></span>
-                                            </p>
-                                        <?php endif; ?>
-                                    <?php endif; ?>
-                                </div>
+                          <div class="col-sm-7 d-flex justify-content-start">
+                              <?php if ($show_fields == false or in_array('title', $show_fields)): ?>
+                                  <a href="<?php print $item['link'] ?>" class="text-decoration-none text-start">
+                                      <h6><?php print $item['title'] ?></h6>
+                                  </a>
+                              <?php endif; ?>
+                          </div>
 
-                                <div class="col-6 text-end text-right">
-                                    <a href="<?php print $item['link'] ?>" class="btn btn-link px-0">View details</a>
-                                    <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
-                                        <!--<a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>//');" class="btn btn-outline-primary"><i class="mw-micon-Shopping-Cart"></i> Add to cart</a>-->
-                                    <?php endif; ?>
-                                </div>
-                            </div>
+                           <div class="col-sm-5 d-flex justify-content-end">
+                               <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
+                                   <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
+                                       <?php if (isset($item['prices']) and is_array($item['prices'])): ?>
+                                           <?php
+                                           $vals2 = array_values($item['prices']);
+                                           $val1 = array_shift($vals2);
+                                           ?>
+                                           <p>
+                                               <?php if (isset($item['original_price']) and $item['original_price'] != ''): ?>
+                                                   <span class="price-old"><?php print currency_format($item['original_price']); ?></span>
+                                               <?php endif; ?>
+                                               <span class="price"><?php print currency_format($val1); ?></span>
+                                           </p>
+                                       <?php endif; ?>
+                                   <?php endif; ?>
+
+                               <?php endif; ?>
+                           </div>
                         </div>
                     </div>
                 </div>

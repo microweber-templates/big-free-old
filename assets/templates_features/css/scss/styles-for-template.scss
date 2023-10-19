@@ -575,11 +575,14 @@ a {
         border-color: color-mix(in srgb, var(--formControlBackground) 50%, transparent) !important;
 
     }
+}
 
+.btn:not(.btn-link, .btn-sm) {
     padding-block: var(--btnPaddingBlock);
     padding-inline: var(--btnPaddingInline);
-
 }
+
+
 
 .btn-secondary {
     color: var(--btnSecondaryText) !important;
@@ -767,4 +770,41 @@ h6 {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.mw-layout-product-outOfStock {
+    opacity: .5;
+}
+
+.mw-layout-product-stock {
+    opacity: 1;
+}
+
+.page-item {
+    &.active {
+        .page-link {
+            background-color: var(--primaryColor) !important;
+            border-color: var(--primaryColor) !important;
+            color: var(--btnTextColor) !important;
+        }
+    }
+
+    .page-link {
+        font-weight: normal !important;
+        border-radius: 50% !important;
+        width: 40px !important;
+        height: 40px !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+
+
+    }
+}
+
+
+
+.page-item.active .page-link {
+
+
 }
