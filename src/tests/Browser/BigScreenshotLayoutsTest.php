@@ -5,6 +5,7 @@ namespace MicroweberPackages\Template\Big\tests\Browser;
 use Illuminate\Support\Facades\Auth;
 use Laravel\Dusk\Browser;
 use MicroweberPackages\User\Models\User;
+use MicroweberPackages\Utils\Media\Thumbnailer;
 use Tests\Browser\Components\AdminLogin;
 use Tests\DuskTestCase;
 
@@ -52,13 +53,14 @@ class BigScreenshotLayoutsTest extends DuskTestCase
                     $layoutName = $layout['layout_file'];
                     $layoutName = str_replace('.php', '', $layoutName);
 
-                    if (str_contains($layout['filename'], 'header') !== false) {
-                        $browser->resize(900, 600);
-                    } else if (strpos($layout['filename'], 'contact_form') !== false) {
-                        $browser->resize(480, 1200);
-                    } else {
-                        $browser->resize(1360, 800);
-                    }
+//                    if (str_contains($layout['filename'], 'header') !== false) {
+//                        $browser->resize(900, 600);
+//                    } else if (strpos($layout['filename'], 'contact_form') !== false) {
+//                        $browser->resize(480, 1200);
+//                    } else {
+//                        $browser->resize(1360, 800);
+//                    }
+
 
                    // dump('/preview-skin?module='.$module['module'].'&skin=' . $layoutName . '&no_editmode=1');
 
@@ -70,6 +72,13 @@ class BigScreenshotLayoutsTest extends DuskTestCase
 
                         $previewLayoutContentElement = $browser->element('#preview-skin-file .module');
                         $previewLayoutContentElement->takeElementScreenshot($layout['screenshot_file']);
+                        $src = $layout['screenshot_file'];
+                        $tn = new Thumbnailer($src);
+                        $thumbOptions = array('height' => 640, 'width' => 480);
+                       // $thumbOptions['crop'] = true;
+                        $tn->createThumb($thumbOptions, $layout['screenshot_file']);
+
+
                     } catch (\Exception $e) {
 
                     }
