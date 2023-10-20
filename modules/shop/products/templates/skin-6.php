@@ -22,7 +22,7 @@ if (!isset($tn[1])) {
 ?>
 
 <?php if (!empty($data)): ?>
-    <div class="row shop-products pt-7">
+    <div class="row shop-products">
         <?php foreach ($data as $item): ?>
             <?php $categories = content_categories($item['id']); ?>
 
@@ -117,41 +117,45 @@ if (!isset($tn[1])) {
                             </a>
                         <?php endif; ?>
 
-                        <div class="pt-2">
+                        <div class="py-2 mb-2">
                             <div class="d-none">
                                 <?php echo $itemCats; ?>
                             </div>
-                            <div class="row mt-1">
-                                <div class="col">
+                            <div>
+                                <div class="col-12">
                                     <?php if ($show_fields == false or in_array('title', $show_fields)): ?>
                                         <a href="<?php print $item['link'] ?>" class="text-dark text-decoration-none">
                                             <h5><?php print $item['title'] ?></h5>
                                         </a>
                                     <?php endif; ?>
 
-                                    <div class="price-holder">
+
+                                </div>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class="price-holder d-flex align-items-center">
                                         <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
                                             <?php if (isset($item['prices']) and is_array($item['prices'])): ?>
                                                 <?php
                                                 $vals2 = array_values($item['prices']);
                                                 $val1 = array_shift($vals2);
                                                 ?>
-                                                <p>
-                                                    <?php if (isset($item['original_price']) and $item['original_price'] != ''): ?>
-                                                        <span class="price-old"><?php print currency_format($item['original_price']); ?></span>
-                                                    <?php endif; ?>
-                                                    <span class="price"><?php print currency_format($val1); ?></span>
-                                                </p>
+
+                                                <?php if (isset($item['original_price']) and $item['original_price'] != ''): ?>
+                                                    <span class="price-old"><?php print currency_format($item['original_price']); ?></span>
+                                                <?php endif; ?>
+                                                <span class="price"><?php print currency_format($val1); ?></span>
+
                                             <?php endif; ?>
                                         <?php endif; ?>
                                     </div>
-                                </div>
-                                <div class="col-auto">
-                                    <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
-                                        <?php if ($in_stock == true): ?>
-                                            <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-outline-primary   px-3 btn-sm"> <?php _lang("Buy", 'templates/big') ?></a>
-                                        <?php endif; ?>
-                                    <?php endif; ?>
+
+                                   <div>
+                                       <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
+                                           <?php if ($in_stock == true): ?>
+                                               <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-outline-primary  btn-sm"> <?php _lang("Buy", 'templates/big') ?></a>
+                                           <?php endif; ?>
+                                       <?php endif; ?>
+                                   </div>
                                 </div>
                             </div>
                         </div>

@@ -65,7 +65,7 @@ if (!isset($tn[1])) {
             }
             ?>
 
-            <div class=" mx-auto mx-md-0 col-lg-12 py-5 mb-3 item-<?php print $item['id'] ?>" data-masonry-filter="<?php print $itemCats; ?>" itemscope="" itemtype="<?php print $schema_org_item_type_tag ?>">
+            <div class=" mx-auto mx-md-0 col-lg-12 mb-4 item-<?php print $item['id'] ?>" data-masonry-filter="<?php print $itemCats; ?>" itemscope="" itemtype="<?php print $schema_org_item_type_tag ?>">
                 <div class="product h-100 d-flex flex-column position-relative">
                     <div class="h-100">
                         <?php if (is_array($item['prices'])): ?>
@@ -77,7 +77,7 @@ if (!isset($tn[1])) {
 
                         <?php if ($show_fields == false or in_array('thumbnail', $show_fields)): ?>
 
-                            <a class="col-md-6 col-12" href="<?php print $item['link'] ?>">
+                            <a class="col-md-6 col-12 d-block mx-auto" href="<?php print $item['link'] ?>">
 
                                 <?php if (isset($itemData['label-type']) && $itemData['label-type'] === 'text'): ?>
                                     <div class="position-absolute  top-0 left-0 m-2" style="z-index: 3;">
@@ -113,11 +113,12 @@ if (!isset($tn[1])) {
                                     <?php endif; ?>
                                 <?php endif; ?>
 
-                                <module type="pictures" template="skin-12" content-id="<?php print $item['id'] ?>"/>
+                                <img class="w-100" src="<?php print thumbnail($item['image'], 1350, 1350); ?>"/>
+
                             </a>
                         <?php endif; ?>
 
-                        <div class="col-md-6 col-12 p-5 text-center justify-content-center mx-auto">
+                        <div class="col-md-6 col-12 p-2 text-center justify-content-center mx-auto">
                             <div class="d-none">
                                 <?php echo $itemCats; ?>
                             </div>
@@ -125,13 +126,13 @@ if (!isset($tn[1])) {
                                 <div class="col">
                                     <?php if ($show_fields == false or in_array('title', $show_fields)): ?>
                                         <a href="<?php print $item['link'] ?>" class="text-dark text-decoration-none">
-                                            <h2><?php print $item['title'] ?></h2>
+                                            <h4><?php print $item['title'] ?></h4>
                                         </a>
                                     <?php endif; ?>
 
                                     <?php if (isset($item['description'])): ?>
-                                        <div class="py-4">
-                                            <p class="lead"><?php print $item['description'] ?></p>
+                                        <div class="py-2">
+                                            <p><?php print $item['description'] ?></p>
                                         </div>
                                     <?php endif; ?>
 
@@ -142,12 +143,12 @@ if (!isset($tn[1])) {
                                                 $vals2 = array_values($item['prices']);
                                                 $val1 = array_shift($vals2);
                                                 ?>
-                                                <p>
-                                                    <?php if (isset($item['original_price']) and $item['original_price'] != ''): ?>
-                                                        <span class="price-old"><?php print currency_format($item['original_price']); ?></span>
-                                                    <?php endif; ?>
-                                                    <span class="price"><?php print currency_format($val1); ?></span>
-                                                </p>
+
+                                                <?php if (isset($item['original_price']) and $item['original_price'] != ''): ?>
+                                                    <h6 class="price-old mb-0"><?php print currency_format($item['original_price']); ?></h6>
+                                                <?php endif; ?>
+                                                <h6 class="price mb-0"><?php print currency_format($val1); ?></h6>
+
                                             <?php endif; ?>
                                         <?php endif; ?>
                                     </div>

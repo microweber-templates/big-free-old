@@ -22,7 +22,7 @@ if (!isset($tn[1])) {
 ?>
 
 <?php if (!empty($data)): ?>
-    <div class="row shop-products pt-7 ">
+    <div class="row shop-products ">
         <?php foreach ($data as $item): ?>
             <?php $categories = content_categories($item['id']); ?>
 
@@ -64,8 +64,8 @@ if (!isset($tn[1])) {
                 }
             }
             ?>
-            <div class="mx-auto mx-md-0 col-10 col-sm-8 col-md-6 col-lg-6 mb-5 item-<?php print $item['id'] ?>" data-masonry-filter="<?php print $itemCats; ?>" itemscope="" itemtype="<?php print $schema_org_item_type_tag ?>">
-                <div class="product h-100 d-flex flex-column px-3 position-relative show-on-hover-root">
+            <div class="mx-auto <?php echo $in_stock ? 'mw-layout-product-stock' : 'mw-layout-product-outOfStock'; ?> mx-md-0 col-10 col-sm-8 col-md-6 col-lg-6 mb-5 item-<?php print $item['id'] ?>" data-masonry-filter="<?php print $itemCats; ?>" itemscope="" itemtype="<?php print $schema_org_item_type_tag ?>">
+                <div class="product h-100 d-flex flex-column">
                     <div class="h-100 d-flex flex-column">
                         <?php if (is_array($item['prices'])): ?>
                             <?php foreach ($item['prices'] as $k => $v): ?>
@@ -110,23 +110,20 @@ if (!isset($tn[1])) {
                                             </div>
                                         <?php endif; ?>
                                     <?php endif; ?>
-                                    <img src="<?php print thumbnail($item['image'], 650, 650); ?>" class=""/>
+                                    <img src="<?php print thumbnail($item['image'], 1250, 1250); ?>" class=""/>
                                 </div>
                             </a>
                         <?php endif; ?>
 
-                        <div class="pt-4 pb-6">
-                            <div class="text-center d-none">
-                                <?php echo $itemCats; ?>
-                            </div>
+                        <div class="pt-2">
                             <?php if ($show_fields == false or in_array('title', $show_fields)): ?>
                                 <a href="<?php print $item['link'] ?>" class="text-dark text-decoration-none">
-                                    <h4 class="mt-3 mb-2"><?php print $item['title'] ?></h4>
+                                    <h4><?php print $item['title'] ?></h4>
                                 </a>
                             <?php endif; ?>
 
                             <div class="row">
-                                <div class="col-6">
+                                <div class="col-6 d-flex align-items-center">
                                     <div class="price-holder">
                                         <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
                                             <?php if (isset($item['prices']) and is_array($item['prices'])): ?>
@@ -136,15 +133,15 @@ if (!isset($tn[1])) {
                                                 ?>
                                                 <p>
                                                     <?php if (isset($item['original_price']) and $item['original_price'] != ''): ?>
-                                                        <span class="price-old"><?php print currency_format($item['original_price']); ?></span>
+                                                        <h6 class="price-old mb-0"><?php print currency_format($item['original_price']); ?></h6>
                                                     <?php endif; ?>
-                                                    <span class="price"><?php print currency_format($val1); ?></span>
+                                                    <h6 class="price mb-0"><?php print currency_format($val1); ?></h6>
                                                 </p>
                                             <?php endif; ?>
                                         <?php endif; ?>
                                     </div>
                                 </div>
-                                <div class="col-6 text-end text-right">
+                                <div class="col-6 text-end text-right justify-content-end d-flex align-items-center">
                                     <a href="<?php print $item['link'] ?>" class="btn btn-outline-primary">Learn More</a>
                                     <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
                                         <!--<a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-link text-dark px-2">Buy</a>-->

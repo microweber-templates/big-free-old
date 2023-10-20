@@ -24,7 +24,7 @@ if (!isset($tn[1])) {
 
 ?>
 <?php if (!empty($data)): ?>
-    <div class="row shop-products pt-7">
+    <div class="row shop-products">
         <?php foreach ($data as $item): ?>
             <?php $categories = content_categories($item['id']); ?>
 
@@ -58,7 +58,7 @@ if (!isset($tn[1])) {
             ?>
 
             <div class="col-12 col-md-4 item-<?php print $item['id'] ?>" data-masonry-filter="<?php print $itemCats; ?>" itemscope itemtype="<?php print $schema_org_item_type_tag ?>">
-                <div class="product">
+                <div class="product mb-4 <?php echo $in_stock ? 'mw-layout-product-stock' : 'mw-layout-product-outOfStock'; ?> ">
                     <?php if (is_array($item['prices'])): ?>
                         <?php foreach ($item['prices'] as $k => $v): ?>
                             <input type="hidden" name="price" value="<?php print $v ?>"/>
@@ -68,7 +68,7 @@ if (!isset($tn[1])) {
 
                     <?php if ($show_fields == false or in_array('thumbnail', $show_fields)): ?>
 
-                        <div class="image" style="background-image: url('<?php print thumbnail($item['image'], 450, 450); ?>');">
+                        <div class="image" style="background-image: url('<?php print thumbnail($item['image'], 1250, 1250); ?>'); height: 500px;">
                             <?php if (isset($itemData['label-type']) && $itemData['label-type'] === 'text'): ?>
                                 <div class="position-absolute  top-0 left-0 m-2" style="z-index: 3;">
                                     <div class="badge text-white px-3 pb-1 pt-2 rounded-0" style="background-color: <?php echo $itemData['label-color']; ?>;"><?php echo $itemData['label']; ?></div>
@@ -115,9 +115,9 @@ if (!isset($tn[1])) {
                     <?php endif; ?>
 
 
-                    <div class="p-4">
+                    <div>
                         <?php if ($show_fields == false or in_array('title', $show_fields)): ?>
-                            <a href="<?php print $item['link'] ?>">
+                            <a href="<?php print $item['link'] ?>" class="text-decoration-none">
                                 <div class="heading-holder text-md-start text-center">
                                     <h5><?php print $item['title'] ?></h5>
                                 </div>
@@ -125,7 +125,7 @@ if (!isset($tn[1])) {
                         <?php endif; ?>
 
                         <div class="row justify-content-center">
-                            <div class="col-6 price-holder justify-content-md-start justify-content-center">
+                            <div class="col-6 price-holder justify-content-md-start align-items-center justify-content-center">
                                 <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
                                     <?php if (isset($item['prices']) and is_array($item['prices'])) { ?>
                                         <?php
@@ -143,13 +143,13 @@ if (!isset($tn[1])) {
                             </div>
 
                             <div class="col-sm-6 col-12 d-flex justify-content-md-end justify-content-center">
-                                <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
-                                    <?php if ($in_stock == true): ?>
-                                        <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-outline-primary"><i class="mw-micon-Shopping-Cart"></i></a>
-                                    <?php else: ?>
-                                        <span class="text-danger"><i class="fa fa-circle me-1" style="font-size: 11px;"></i></span>
-                                    <?php endif; ?>
-                                <?php endif; ?>
+                              <div>
+                                  <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
+                                      <?php if ($in_stock == true): ?>
+                                          <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-outline-primary btn-sm"> <?php _lang("Buy", 'templates/big') ?></a>
+                                      <?php endif; ?>
+                                  <?php endif; ?>
+                              </div>
                             </div>
                         </div>
                     </div>

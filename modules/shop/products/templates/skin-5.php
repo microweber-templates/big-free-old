@@ -26,7 +26,7 @@ description: Skin-5
 
 <div class="slick-arrows-1">
     <?php if (!empty($data)): ?>
-        <div class="slickslider slick-dots-relative shop-products pt-7">
+        <div class="slickslider slick-dots-relative shop-products">
             <?php foreach ($data as $item): ?>
                 <?php $categories = content_categories($item['id']); ?>
 
@@ -61,7 +61,7 @@ description: Skin-5
                 }
                 ?>
                 <div class="mb-5 item-<?php print $item['id'] ?>" itemscope="" itemtype="<?php print $schema_org_item_type_tag ?>">
-                    <div class="product h-100 d-flex flex-column px-sm-3 position-relative show-on-hover-root">
+                    <div class="product h-100 d-flex flex-column px-sm-2 position-relative show-on-hover-root">
                         <div class="h-100 d-flex flex-column">
                             <?php if (is_array($item['prices'])): ?>
                                 <?php foreach ($item['prices'] as $k => $v): ?>
@@ -112,13 +112,10 @@ description: Skin-5
                                 </a>
                             <?php endif; ?>
 
-                            <div class="pt-4 pb-6 mt-auto">
-                                <div class="text-center d-none">
-                                    <?php echo $itemCats; ?>
-                                </div>
+                            <div class="pt-2 mt-auto">
                                 <?php if ($show_fields == false or in_array('title', $show_fields)): ?>
                                     <a href="<?php print $item['link'] ?>" class="text-dark text-decoration-none text-center">
-                                        <h5 class="mt-3 mb-2"><?php print $item['title'] ?></h5>
+                                        <h5><?php print $item['title'] ?></h5>
                                     </a>
                                 <?php endif; ?>
 
@@ -142,14 +139,8 @@ description: Skin-5
                                         </div>
                                     </div>
                                     <div class="col-6 text-end text-right">
-                                        <a href="<?php print $item['link'] ?>" class="btn btn-link text-dark">View</a>
-                                        <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
-                                            <?php if ($in_stock == true): ?>
-                                                <a href="javascript:;" onclick="mw.cart.add('.shop-products .item-<?php print $item['id'] ?>');" class="btn btn-link text-dark px-2"><?php _lang("Buy", 'templates/big') ?></a>
-                                            <?php else: ?>
+                                        <a href="<?php print $item['link'] ?>" class="btn btn-outline-primary btn-sm">View</a>
 
-                                            <?php endif; ?>
-                                        <?php endif; ?>
                                     </div>
                                 </div>
 

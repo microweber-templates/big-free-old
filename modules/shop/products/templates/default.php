@@ -106,7 +106,7 @@ if (!isset($tn[1])) {
                             </a>
                         <?php endif; ?>
 
-                        <div class="d-flex align-items-center justify-content-between pt-2">
+                        <div class="d-flex align-items-top justify-content-between pt-2">
 
                           <div class="col-sm-7 d-flex justify-content-start">
                               <?php if ($show_fields == false or in_array('title', $show_fields)): ?>

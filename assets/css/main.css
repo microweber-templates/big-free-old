@@ -9704,14 +9704,10 @@ body.page-loaded .js-ajax-loading {
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden; }
-.shop-products .product .price,
-.shop-products .product .price-old {
-  font-size: 18px;
-  font-weight: normal; }
 .shop-products .product .price {
   color: var(--primaryColor); }
 .shop-products .product .price-old {
-  color: lightgray;
+  color: #ccc;
   text-decoration: line-through;
   margin-right: 10px; }
 .shop-products .product .product-label {
@@ -9728,13 +9724,6 @@ body.page-loaded .js-ajax-loading {
   font-weight: bold;
   z-index: 1;
   padding: 6px 10px; }
-
-.price-old {
-  font-size: 24px;
-  font-weight: normal;
-  color: #6c757d;
-  text-decoration: line-through;
-  margin-right: 10px; }
 
 .related-products .product .image .related-title {
   font-size: 28px;

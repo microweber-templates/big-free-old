@@ -30,48 +30,11 @@ if (!isset($tn[1])) {
         border-radius: 20px 0 20px 0;
     }
 
-    .flower-ecommerce-btn.btn.btn-primary {
-        border-radius: 100px 0 100px 100px!important;
-        background-color: #ffffff!important;
-        color: #000000!important;
-        padding: 15px 25px;
-    }
-
-    .flower-ecommerce-btn.btn.btn-primary:hover {
-        background-color: #FF2359!important;
-        color: #ffffff!important;
-
-    }
-
-
-    .flower-ecommerce-card .price {
-        color: #000000!important;
-        font-size: 18px!important;
-        font-weight: 600!important;
-    }
-
-    @media (min-width: 1460px) {
-        .flower-ecommerce-card .price {
-
-            font-size: 26px!important;
-
-        }
-    }
-
-    @media (min-width: 1760px) {
-        .flower-ecommerce-card .price {
-
-            font-size: 40px!important;
-
-        }
-    }
-
-
 
 </style>
 
 <?php if (!empty($data)): ?>
-    <div class="row shop-products pt-7">
+    <div class="row shop-products">
         <?php foreach ($data as $item): ?>
             <?php $categories = content_categories($item['id']); ?>
 
@@ -170,12 +133,12 @@ if (!isset($tn[1])) {
                                             $vals2 = array_values($item['prices']);
                                             $val1 = array_shift($vals2);
                                             ?>
-                                            <p>
-                                                <?php if (isset($item['original_price']) and $item['original_price'] != ''): ?>
-                                                    <span class="price-old"><?php print currency_format($item['original_price']); ?></span>
-                                                <?php endif; ?>
-                                                <span class="price"><?php print currency_format($val1); ?></span>
-                                            </p>
+
+                                            <?php if (isset($item['original_price']) and $item['original_price'] != ''): ?>
+                                                <h5 class="price-old mb-0"><?php print currency_format($item['original_price']); ?></h5>
+                                            <?php endif; ?>
+                                            <h5 class="price mb-0"><?php print currency_format($val1); ?></h5>
+
                                         <?php endif; ?>
                                     <?php endif; ?>
                                 </div>

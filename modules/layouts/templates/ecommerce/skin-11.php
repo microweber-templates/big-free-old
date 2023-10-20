@@ -4,9 +4,9 @@
 
 type: layout
 
-name: Ecommerce 10
+name: Ecommerce 11
 
-position: 10
+position: 11
 
 categories: Ecommerce
 
