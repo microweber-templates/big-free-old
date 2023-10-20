@@ -118,7 +118,7 @@ if (!isset($tn[1])) {
                     <div>
                         <?php if ($show_fields == false or in_array('title', $show_fields)): ?>
                             <a href="<?php print $item['link'] ?>" class="text-decoration-none">
-                                <div class="heading-holder text-md-start text-center">
+                                <div class="heading-holder text-md-start text-center mt-3">
                                     <h5><?php print $item['title'] ?></h5>
                                 </div>
                             </a>
