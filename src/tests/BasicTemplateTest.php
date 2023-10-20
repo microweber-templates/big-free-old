@@ -6,7 +6,7 @@ use MicroweberPackages\Core\tests\TestCase;
 
 class BasicTemplateTest extends TestCase
 {
-    public $template_name = 'template-big';
+    public $template_name = 'big';
 
     public function testHomepage()
     {
