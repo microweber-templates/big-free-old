@@ -23,32 +23,7 @@ if (is_array($data)): ?>
         <div class="shop-inner-gallery row">
 
             <div class="shop-inner-big-image position-relative">
-                <?php $price = get_product_prices(content_id(), true);
 
-                if (isset($price[0]) and isset($price[0]['original_value'])): ?>
-
-                    <?php
-                    $oldFigure = floatval($price[0]['custom_value']);
-                    $newFigure = floatval($price[0]['original_value']);
-                    $percentChange = 0;
-
-                    ?>
-
-                    <?php if ($oldFigure < $newFigure): ?>
-                        <?php
-                        $percentChange = (1 - $oldFigure / $newFigure) * 100;
-                        ?>
-                    <?php endif; ?>
-
-                    <?php if ($percentChange > 0): ?>
-                        <div class="discount-label">
-                            <span class="discount-percentage">
-                                    <?php echo number_format($percentChange, 2); ?>%
-                            </span>
-                            <span class="discount-label-text"><?php _lang("Discount"); ?></span>
-                        </div>
-                    <?php endif; ?>
-                <?php endif; ?>
                 <img src="<?php print thumbnail($data[0]['filename'], 1080, 1080); ?>" id="<?php print $pictureElementId; ?>" />
             </div>
 

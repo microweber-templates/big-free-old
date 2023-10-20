@@ -26,125 +26,155 @@ if (!isset($itemData['label-color'])) {
     $itemData['label-color'] = '';
 }
 
-$next = next_content();
-$prev = prev_content();
+$next = next_content($content['id']);
+$prev = prev_content($content['id']);
 
 
 ?>
 
 <div class="shop-inner-page shop-products" id="shop-content-<?php print CONTENT_ID; ?>" field="shop-inner-page" rel="page">
-    <section class="pt-md-5 fx-particles">
-        <div class="container-fluid mw-m-t-30">
-            <div class="row justify-content-center">
-                <div class="row product-holder">
-                    <div class="col-12 col-md-6 col-lg-6">
-                        <module type="pictures" rel="content" template="skin-14"/>
-                    </div>
 
-                    <div class="col-12 col-md-6 col-lg-6 relative product-info-wrapper product">
-                        <div class="product-info">
-                            <div class="product-info-content">
-                                <div class="mt-sm-4 mt-md-0 pb-0 mb-2">
-                                    <h4 class="edit " field="title" rel="content"><?php print content_title(); ?></h4>
+    <div class="container-fluid mw-m-t-30">
+        <div class="row justify-content-center">
+            <div class="row product-holder px-0">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <module type="pictures" rel="content" template="skin-14"/>
+                </div>
 
-                                    <div class="next-previous-content float-end">
-                                        <?php if ($prev != false) { ?>
-                                            <a href="<?php print content_link($prev['id']); ?>" class="btn btn-outline-primary" data-tip="#prev-tip">
-                                                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M400-240 160-480l240-240 56 58-142 142h486v80H314l142 142-56 58Z"/></svg>                                            </a>
-                                            <div id="prev-tip" style="display: none">
-                                                <div class="next-previous-tip-content text-center">
-                                                    <img src="<?php print get_picture($prev['id']); ?>" alt="" width="90"/>
-                                                    <h6><?php print $prev['title']; ?></h6>
-                                                </div>
-                                            </div>
-                                        <?php } ?>
+                <div class="col-12 col-md-6 col-lg-6 relative product-info-wrapper product">
+                    <div class="product-info">
+                        <div class="product-info-content ps-md-5 ms-md-4">
+                            <module type="breadcrumb"/>
+                            <div class="mt-sm-4 mt-md-0 pb-0 mb-2">
+                                <h4 class="edit " field="title" rel="content"><?php print content_title(); ?></h4>
 
-                                        <?php if ($next != false) { ?>
-                                            <a href="<?php print $next['url']; ?>" class="btn btn-outline-primary" data-tip="#next-tip">
-                                                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>                                            </a>
-
-                                            <div id="next-tip" style="display: none">
-                                                <div class="next-previous-tip-content text-center">
-                                                    <img src="<?php print get_picture($next['id']); ?>" alt="" width="90"/>
-
-                                                    <h6><?php print $next['title']; ?></h6>
-                                                </div>
-                                            </div>
-                                        <?php } ?>
-                                    </div>
-                                </div>
-
-                                <div class="row pt-1">
-                                   <div class="col-6 price-holder">
-                                       <?php $prices = get_product_prices(content_id(), true); ?>
-                                       <?php if (isset($prices[0]) and is_array($prices)) { ?>
-
-                                           <?php if (isset($prices[0]['original_value'])): ?><span class="price-old"><?php print currency_format($prices[0]['original_value']); ?></span><?php endif; ?>
-                                           <?php if (isset($prices[0]['value'])): ?><span class="price"><?php print currency_format($prices[0]['value']); ?></span><?php endif; ?>
-
-                                       <?php } ?>
-                                   </div>
-
-                                    <div class="availability col-6 text-end text-right align-self-center ">
-                                        <?php if ($in_stock == true): ?>
-                                            <span class="text-success"><i class="fa fa-circle" style="font-size: 8px;"></i> <?php _lang("In Stock", 'templates/big') ?></span>
-                                        <?php else: ?>
-                                            <span class="text-danger"><i class="fa fa-circle" style="font-size: 8px;"></i> <?php _lang("Out of Stock", 'templates/big') ?></span>
-                                        <?php endif; ?>
-                                    </div>
-                                </div>
-
-                                        <?php if (isset($content_data['sku'])): ?>
-                                        <div class="row">
-                                            <div class="col-12 mt-3">
-                                                <?php _lang("SKU", 'templates/big') ?>
-                                                - <?php print $content_data['sku']; ?>
+                                <div class="next-previous-content float-end">
+                                    <?php if ($prev != false) { ?>
+                                        <a href="<?php print content_link($prev['id']); ?>" class=" btn btn-outline-primary" data-tip="#prev-tip">
+                                            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M400-240 160-480l240-240 56 58-142 142h486v80H314l142 142-56 58Z"/></svg>                                            </a>
+                                        <div id="prev-tip" style="display: none">
+                                            <div class="next-previous-tip-content text-center">
+                                                <img src="<?php print get_picture($prev['id']); ?>" alt="" width="90"/>
+                                                <h6><?php print $prev['title']; ?></h6>
                                             </div>
                                         </div>
-                                        <?php endif; ?>
+                                    <?php } ?>
 
-                                <div class="row">
-                                    <div class="col-12">
-                                        <div class="description">
-                                            <div class="edit" field="content_body" rel="content">
-                                                <p><?php _lang("How to write product descriptions that sell", 'templates/big') ?></p>
-                                                <p><?php _lang("One of the best things you can do to make your store successful is invest some time in writing great product descriptions. You want to provide detailed yet concise information that will entice potential customers to buy.", 'templates/big') ?></p>
+                                    <?php if ($next != false) { ?>
+                                        <a href="<?php print $next['url']; ?>" class="btn btn-outline-primary" data-tip="#next-tip">
+                                            <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>                                            </a>
 
-                                                <p><?php _lang("Think like a consumer", 'templates/big') ?></p>
-                                                <p><?php _lang("Think about what you as a consumer would want to know, then include those features in your description. For clothes: materials and fit. For food: ingredients and how it was prepared. Bullets are your friends when listing
-                                                        features — try to
-                                                        limit each one to 5-8 words.", 'templates/big') ?></p>
+                                        <div id="next-tip" style="display: none">
+                                            <div class="next-previous-tip-content text-center">
+                                                <img src="<?php print get_picture($next['id']); ?>" alt="" width="90"/>
+
+                                                <h6><?php print $next['title']; ?></h6>
                                             </div>
+                                        </div>
+                                    <?php } ?>
+                                </div>
+                            </div>
+
+                            <div class="row pt-1 pe-3">
+                               <div class="col-6 price-holder px-0">
+                                   <?php $prices = get_product_prices(content_id(), true); ?>
+                                   <?php if (isset($prices[0]) and is_array($prices)) { ?>
+
+                                       <?php if (isset($prices[0]['original_value'])): ?>
+                                           <h5 class="price-old mb-0"><?php print currency_format($prices[0]['original_value']); ?></h5>
+                                       <?php endif; ?>
+
+                                       <?php $price = get_product_prices(content_id(), true);
+
+                                       if (isset($price[0]) and isset($price[0]['original_value'])): ?>
+
+                                           <?php
+                                           $oldFigure = floatval($price[0]['custom_value']);
+                                           $newFigure = floatval($price[0]['original_value']);
+                                           $percentChange = 0;
+
+                                           ?>
+
+                                           <?php if ($oldFigure < $newFigure): ?>
+                                               <?php
+                                               $percentChange = (1 - $oldFigure / $newFigure) * 100;
+                                               ?>
+                                           <?php endif; ?>
+
+                                           <?php if ($percentChange > 0): ?>
+                                              <span class="btn btn-primary btn-sm me-2" style="cursor: auto;">
+                                                  Save:
+                                                    <?php echo number_format($percentChange); ?>%
+                                              </span>
+                                           <?php endif; ?>
+                                       <?php endif; ?>
+                                       <?php if (isset($prices[0]['value'])): ?>
+                                           <h5 class="price mb-0"><?php print currency_format($prices[0]['value']); ?></h5>
+                                       <?php endif; ?>
+
+                                   <?php } ?>
+                               </div>
+
+                                <div class="availability col-6 text-end text-right align-self-center px-0 ">
+                                    <?php if ($in_stock == true): ?>
+                                        <span class="text-success"><i class="fa fa-circle" style="font-size: 8px;"></i> <?php _lang("In Stock", 'templates/big') ?></span>
+                                    <?php else: ?>
+                                        <span class="text-danger"><i class="fa fa-circle" style="font-size: 8px;"></i> <?php _lang("Out of Stock", 'templates/big') ?></span>
+                                    <?php endif; ?>
+                                </div>
+                            </div>
+
+                                    <?php if (isset($content_data['sku'])): ?>
+                                    <div class="row">
+                                        <div class="col-12 mt-3">
+                                            <?php _lang("SKU", 'templates/big') ?>
+                                            - <?php print $content_data['sku']; ?>
+                                        </div>
+                                    </div>
+                                    <?php endif; ?>
+
+                            <div class="row">
+                                <div class="col-12">
+                                    <div class="description">
+                                        <div class="edit" field="content_body" rel="content">
+                                            <p><?php _lang("How to write product descriptions that sell", 'templates/big') ?></p>
+                                            <p><?php _lang("One of the best things you can do to make your store successful is invest some time in writing great product descriptions. You want to provide detailed yet concise information that will entice potential customers to buy.", 'templates/big') ?></p>
+
+                                            <p><?php _lang("Think like a consumer", 'templates/big') ?></p>
+                                            <p><?php _lang("Think about what you as a consumer would want to know, then include those features in your description. For clothes: materials and fit. For food: ingredients and how it was prepared. Bullets are your friends when listing
+                                                    features — try to
+                                                    limit each one to 5-8 words.", 'templates/big') ?></p>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
 
-                                <div class="bold">
-                                    <module type="shop/cart_add"/>
-                                </div>
+                            <div class="bold">
+                                <module type="shop/cart_add"/>
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="edit safe-mode nodrop py-5" field="related_products" rel="content">
-                        <div class="col-12 text-start text-left mb-4">
-                            <h2 class="related-title"><?php _lang('Related products', 'templates/shopmag'); ?></h2>
-                        </div>
+                <div class="edit safe-mode nodrop py-5" field="related_products" rel="content">
+                    <div class="col-12 text-start text-left mb-4">
+                        <h2 class="related-title"><?php _lang('Related products', 'templates/shopmag'); ?></h2>
+                    </div>
 
-                        <div class="col-12">
-                            <module type="shop/products" template="skin-2" related="true" limit="4" hide_paging="true"/>
-                        </div>
+                    <div class="col-12">
+                        <module type="shop/products" template="skin-2" related="true" limit="4" hide_paging="true"/>
                     </div>
                 </div>
+            </div>
 
-                <div class="row">
+            <div class="row">
 
-                    <module   type="breadcrumb" />
+                <module   type="breadcrumb" />
 
-                </div>
             </div>
         </div>
-    </section>
+    </div>
+
 </div>
 
 <?php include template_dir() . "footer.php"; ?>

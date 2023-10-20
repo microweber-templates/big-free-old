@@ -26,7 +26,7 @@
 
     <?php if ($show_newsletter_subscription == 'y' && !$newsletter_subscribed): ?>
         <div class="form-group">
-            <div class="custom-control custom-checkbox">
+            <div class="custom-control custom-checkbox my-2">
                 <label class="mw-ui-check" style="padding-top:0">
                     <input type="checkbox" name="newsletter_subscribe" value="1" autocomplete="off"/> <span></span>
                     <span><?php _lang("Please email me your monthly news and special offers", 'template/big'); ?></span>
