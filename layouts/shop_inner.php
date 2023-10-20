@@ -44,7 +44,9 @@ $prev = prev_content($content['id']);
                 <div class="col-12 col-md-6 col-lg-6 relative product-info-wrapper product">
                     <div class="product-info">
                         <div class="product-info-content ps-md-5 ms-md-4">
-                            <module type="breadcrumb"/>
+                            <div class="mb-5">
+                                <module type="breadcrumb"/>
+                            </div>
                             <div class="mt-sm-4 mt-md-0 pb-0 mb-2">
                                 <h4 class="edit " field="title" rel="content"><?php print content_title(); ?></h4>
 
