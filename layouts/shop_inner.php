@@ -32,7 +32,7 @@ $prev = prev_content();
 
 ?>
 
-<div class="shop-inner-page " id="shop-content-<?php print CONTENT_ID; ?>" field="shop-inner-page" rel="page">
+<div class="shop-inner-page shop-products" id="shop-content-<?php print CONTENT_ID; ?>" field="shop-inner-page" rel="page">
     <section class="pt-md-5 fx-particles">
         <div class="container-fluid mw-m-t-30">
             <div class="row justify-content-center">
@@ -41,15 +41,16 @@ $prev = prev_content();
                         <module type="pictures" rel="content" template="skin-14"/>
                     </div>
 
-                    <div class="col-12 col-md-6 col-lg-6 relative product-info-wrapper">
+                    <div class="col-12 col-md-6 col-lg-6 relative product-info-wrapper product">
                         <div class="product-info">
                             <div class="product-info-content">
-                                <div class="heading mt-sm-4 mt-md-0 pb-0 mb-2">
-                                    <h1 class="edit d-inline-block plain-text" field="title" rel="content"><?php print content_title(); ?></h1>
+                                <div class="mt-sm-4 mt-md-0 pb-0 mb-2">
+                                    <h4 class="edit " field="title" rel="content"><?php print content_title(); ?></h4>
 
                                     <div class="next-previous-content float-end">
                                         <?php if ($prev != false) { ?>
-                                            <a href="<?php print content_link($prev['id']); ?>" class="prev-content tip btn btn-outline-primary" data-tip="#prev-tip"><i class="mdi mdi-arrow-left"></i></a>
+                                            <a href="<?php print content_link($prev['id']); ?>" class="btn btn-outline-primary" data-tip="#prev-tip">
+                                                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M400-240 160-480l240-240 56 58-142 142h486v80H314l142 142-56 58Z"/></svg>                                            </a>
                                             <div id="prev-tip" style="display: none">
                                                 <div class="next-previous-tip-content text-center">
                                                     <img src="<?php print get_picture($prev['id']); ?>" alt="" width="90"/>
@@ -59,7 +60,8 @@ $prev = prev_content();
                                         <?php } ?>
 
                                         <?php if ($next != false) { ?>
-                                            <a href="<?php print $next['url']; ?>" class="next-content tip btn btn-outline-primary" data-tip="#next-tip"><i class="mdi mdi-arrow-right"></i></a>
+                                            <a href="<?php print $next['url']; ?>" class="btn btn-outline-primary" data-tip="#next-tip">
+                                                <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m560-240-56-58 142-142H160v-80h486L504-662l56-58 240 240-240 240Z"/></svg>                                            </a>
 
                                             <div id="next-tip" style="display: none">
                                                 <div class="next-previous-tip-content text-center">
@@ -72,36 +74,34 @@ $prev = prev_content();
                                     </div>
                                 </div>
 
-                                <div class="row main-price">
-                                    <div class="col-12 d-flex">
-                                       <div class="col-6">
-                                           <?php $prices = get_product_prices(content_id(), true); ?>
-                                           <?php if (isset($prices[0]) and is_array($prices)) { ?>
-                                               <p>
-                                                   <?php if (isset($prices[0]['original_value'])): ?><span class="price-old"><?php print currency_format($prices[0]['original_value']); ?></span><?php endif; ?>
-                                                   <?php if (isset($prices[0]['value'])): ?><span class="price"><?php print currency_format($prices[0]['value']); ?></span><?php endif; ?>
-                                               </p>
-                                           <?php } ?>
-                                       </div>
+                                <div class="row pt-1">
+                                   <div class="col-6 price-holder">
+                                       <?php $prices = get_product_prices(content_id(), true); ?>
+                                       <?php if (isset($prices[0]) and is_array($prices)) { ?>
 
-                                        <div class="availability col-6 text-end text-right align-self-center">
-                                            <?php if ($in_stock == true): ?>
-                                                <span class="text-success"><i class="fa fa-circle" style="font-size: 8px;"></i> <?php _lang("In Stock", 'templates/big') ?></span> <span class="text-muted"><?php if ($available_qty != ''): ?>(<?php echo $available_qty; ?>)<?php endif; ?></span>
-                                            <?php else: ?>
-                                                <span class="text-danger"><i class="fa fa-circle" style="font-size: 8px;"></i> <?php _lang("Out of Stock", 'templates/big') ?></span>
-                                            <?php endif; ?>
-                                        </div>
-                                    </div>
-                                </div>
+                                           <?php if (isset($prices[0]['original_value'])): ?><span class="price-old"><?php print currency_format($prices[0]['original_value']); ?></span><?php endif; ?>
+                                           <?php if (isset($prices[0]['value'])): ?><span class="price"><?php print currency_format($prices[0]['value']); ?></span><?php endif; ?>
 
-                                <div class="row">
-                                    <div class="col-12 mt-3">
-                                        <?php if (isset($content_data['sku'])): ?>
-                                            <?php _lang("SKU", 'templates/big') ?>
-                                            - <?php print $content_data['sku']; ?>
+                                       <?php } ?>
+                                   </div>
+
+                                    <div class="availability col-6 text-end text-right align-self-center ">
+                                        <?php if ($in_stock == true): ?>
+                                            <span class="text-success"><i class="fa fa-circle" style="font-size: 8px;"></i> <?php _lang("In Stock", 'templates/big') ?></span>
+                                        <?php else: ?>
+                                            <span class="text-danger"><i class="fa fa-circle" style="font-size: 8px;"></i> <?php _lang("Out of Stock", 'templates/big') ?></span>
                                         <?php endif; ?>
                                     </div>
                                 </div>
+
+                                        <?php if (isset($content_data['sku'])): ?>
+                                        <div class="row">
+                                            <div class="col-12 mt-3">
+                                                <?php _lang("SKU", 'templates/big') ?>
+                                                - <?php print $content_data['sku']; ?>
+                                            </div>
+                                        </div>
+                                        <?php endif; ?>
 
                                 <div class="row">
                                     <div class="col-12">
