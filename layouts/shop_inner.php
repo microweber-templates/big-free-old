@@ -38,7 +38,7 @@ $prev = prev_content();
             <div class="row justify-content-center">
                 <div class="row product-holder">
                     <div class="col-12 col-md-6 col-lg-6">
-                        <module type="pictures" rel="content" template="shop-inner-templates"/>
+                        <module type="pictures" rel="content" template="skin-14"/>
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-6 relative product-info-wrapper">
@@ -49,7 +49,7 @@ $prev = prev_content();
 
                                     <div class="next-previous-content float-end">
                                         <?php if ($prev != false) { ?>
-                                            <a href="<?php print content_link($prev['id']); ?>" class="prev-content tip btn btn-outline-default" data-tip="#prev-tip"><i class="mdi mdi-arrow-left"></i></a>
+                                            <a href="<?php print content_link($prev['id']); ?>" class="prev-content tip btn btn-outline-primary" data-tip="#prev-tip"><i class="mdi mdi-arrow-left"></i></a>
                                             <div id="prev-tip" style="display: none">
                                                 <div class="next-previous-tip-content text-center">
                                                     <img src="<?php print get_picture($prev['id']); ?>" alt="" width="90"/>
@@ -59,7 +59,7 @@ $prev = prev_content();
                                         <?php } ?>
 
                                         <?php if ($next != false) { ?>
-                                            <a href="<?php print $next['url']; ?>" class="next-content tip btn btn-outline-default" data-tip="#next-tip"><i class="mdi mdi-arrow-right"></i></a>
+                                            <a href="<?php print $next['url']; ?>" class="next-content tip btn btn-outline-primary" data-tip="#next-tip"><i class="mdi mdi-arrow-right"></i></a>
 
                                             <div id="next-tip" style="display: none">
                                                 <div class="next-previous-tip-content text-center">
