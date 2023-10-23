@@ -19,7 +19,8 @@ $itemTags = content_tags(CONTENT_ID);
 <div class="blog-inner-page py-5" id="blog-content-<?php print CONTENT_ID; ?>">
     <div class="container mw-m-t-30 mw-m-b-50">
         <div class="row">
-
+            <module type="breadcrumb" />
+                <br>
                 <h2 class="mt-5 text-center  text-dark edit plain-text" field="title" rel="content"><?php echo $post['title']; ?></h2>
                 <p class="text-dark text-center"><?php echo date('d M Y', strtotime($post['created_at'])); ?></p>
 
@@ -40,7 +41,7 @@ $itemTags = content_tags(CONTENT_ID);
                 <module type="sharer" id="post-bottom-sharer" class=" mt-5 py-3 float-start"/>
 
 
-            <module type="breadcrumb" />
+
         </div>
     </div>
 

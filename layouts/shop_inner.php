@@ -37,13 +37,13 @@ $prev = prev_content($content['id']);
     <div class="container-fluid mw-m-t-30">
         <div class="row justify-content-center">
             <div class="row product-holder px-0">
-                <div class="col-12 col-md-6 col-lg-6">
+                <div class="col-12 col-lg-6">
                     <module type="pictures" rel="content" template="skin-14"/>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-6 relative product-info-wrapper product">
+                <div class="col-12 col-lg-6 relative product-info-wrapper product">
                     <div class="product-info">
-                        <div class="product-info-content ps-md-5 ms-md-4">
+                        <div class="product-info-content ps-xl-5 ms-xl-4">
                             <div class="mb-5">
                                 <module type="breadcrumb"/>
                             </div>
@@ -78,7 +78,7 @@ $prev = prev_content($content['id']);
                             </div>
 
                             <div class="row pt-1 pe-3">
-                               <div class="col-6 price-holder px-0">
+                               <div class="col-sm-9 price-holder px-0">
                                    <?php $prices = get_product_prices(content_id(), true); ?>
                                    <?php if (isset($prices[0]) and is_array($prices)) { ?>
 
@@ -117,7 +117,7 @@ $prev = prev_content($content['id']);
                                    <?php } ?>
                                </div>
 
-                                <div class="availability col-6 text-end text-right align-self-center px-0 ">
+                                <div class="availability col-sm-3 text-end text-right align-self-center px-0 ">
                                     <?php if ($in_stock == true): ?>
                                         <span class="text-success"><i class="fa fa-circle" style="font-size: 8px;"></i> <?php _lang("In Stock", 'templates/big') ?></span>
                                     <?php else: ?>
@@ -167,12 +167,6 @@ $prev = prev_content($content['id']);
                         <module type="shop/products" template="skin-2" related="true" limit="4" hide_paging="true"/>
                     </div>
                 </div>
-            </div>
-
-            <div class="row">
-
-                <module type="breadcrumb" />
-
             </div>
         </div>
     </div>
