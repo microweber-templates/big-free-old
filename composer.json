@@ -20,6 +20,7 @@
     },
     "extra": {
         "preview_url": "https://templates.microweber.com/big/",
+        "premium_package": "microweber-templates/big",
         "premium_layouts": [
             "/layouts/templates/misc/skin-6.php",
             "/layouts/templates/misc/skin-8.php",
