@@ -39,4 +39,6 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             </div>
         </div>
     </div>
+    <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />
+
 </section>
