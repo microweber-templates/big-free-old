@@ -171,7 +171,7 @@ $prev = prev_content($content['id']);
 
             <div class="row">
 
-                <module   type="breadcrumb" />
+                <module type="breadcrumb" />
 
             </div>
         </div>

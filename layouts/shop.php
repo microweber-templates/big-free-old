@@ -15,11 +15,12 @@ position: 4
 <?php include template_dir() . "header.php"; ?>
 
 <div class="edit" rel="content" field="content">
-    <module type="layouts" template="skin-16"/>
+    <module type="layouts" template="titles/skin-1"/>
 </div>
 
 
-    <module type="shop" />
+<module type="layouts" template="ecommerce/skin-1"/>
+
 
 
 <div class="edit" rel="content" field="shop-after-content">
