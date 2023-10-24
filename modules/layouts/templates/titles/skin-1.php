@@ -33,6 +33,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     <div class="mw-layout-container no-element allow-drop container">
         <div class="row text-center mb-5">
             <div class="col-lg-10 mx-auto">
+                <module type="breadcrumb"/>
                 <h1 class="mb-3">Design Concept</h1>
                 <p class="lead">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
             </div>

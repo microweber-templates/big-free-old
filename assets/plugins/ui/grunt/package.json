@@ -17,7 +17,7 @@
     "grunt-contrib-uglify": "*",
     "ion-rangeslider": "2.3.1",
     "jquery": "v.3.5.0",
-
+ "minimist": ">=1.2.6",
     "lightbox2": "2.11.1",
     "lightcase": "2.5.0",
     "matchdep": "*",

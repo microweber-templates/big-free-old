@@ -15,6 +15,7 @@ position: 4
 <?php include template_dir() . "header.php"; ?>
 
 <div class="edit" rel="content" field="content">
+
     <module type="layouts" template="titles/skin-1"/>
 </div>
 
