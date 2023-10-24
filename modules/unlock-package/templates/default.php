@@ -24,6 +24,10 @@ description: Default
         font-weight: 700;
     }
 
+    .font-weight-normal {
+        font-weight: 500;
+    }
+
     .unlock-package-right-side-img {
         position: absolute;
         bottom: 0;
@@ -67,9 +71,9 @@ description: Default
     <div class="col-md-3 px-0 unlock-package-columns position-relative" style="background-color: #f5f5f5;">
 
         <div class="ps-5">
-            <h1><span class="font-weight-bold">350</span>Layouts</h1>
-            <h2><span class="font-weight-bold">20</span>Categories</h2>
-            <h3><span class="font-weight-bold">75</span>Modules</h3>
+            <h1><span class="font-weight-bold">350</span><span class="form-weight-normal">Layouts</span></h1>
+            <h2><span class="font-weight-bold">20</span><span class="form-weight-normal">Categories</span></h2>
+            <h3><span class="font-weight-bold">75</span><span class="form-weight-normal">Modules</span></h3>
             <h4> Updates</h4>
             <h4> Live Support</h4>
             <h4> and more ...</h4>
