@@ -77,7 +77,7 @@ $prev = prev_content($content['id']);
                                 </div>
                             </div>
 
-                            <div class="row pt-1 pe-3">
+                            <div class="row pt-1 pe-3 ps-2">
                                <div class="col-sm-9 price-holder px-0">
                                    <?php $prices = get_product_prices(content_id(), true); ?>
                                    <?php if (isset($prices[0]) and is_array($prices)) { ?>

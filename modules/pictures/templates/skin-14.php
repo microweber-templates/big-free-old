@@ -22,7 +22,7 @@ if (is_array($data)): ?>
 
         <div class="shop-inner-gallery row">
 
-            <div class="shop-inner-big-image position-relative">
+            <div class="shop-inner-big-image position-relative ps-lg-0">
 
                 <img src="<?php print thumbnail($data[0]['filename'], 1080, 1080); ?>" id="<?php print $pictureElementId; ?>" />
             </div>

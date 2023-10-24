@@ -1,4 +1,10 @@
 @charset "UTF-8";
+@media screen and (max-width: 380px) {
+  .menu-header-skin-1 .navT-header-menu {
+    top: 26px;
+    right: 10px;
+    position: absolute;
+    width: auto !important; } }
 @media screen and (min-width: 1200px) {
   .navigation-holder.not-transparent.scrolled .menu-header-skin-1 .navT-header-menu {
     background-color: var(--headerBg); }
