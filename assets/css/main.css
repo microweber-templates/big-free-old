@@ -11334,9 +11334,7 @@ i.icon-size-88px {
   color: var(--primaryColor); }
 
 .text-primary {
-  background: var(--primaryColor);
-  border-color: var(--primaryColor);
-  color: var(--textDark); }
+  color: var(--primaryColor) !important; }
 
 .text-dark {
   color: var(--textDark); }
