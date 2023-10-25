@@ -12,6 +12,4 @@
 
 */
 
-include(__DIR__.'/settings_is_sticky_nav_front.php');
-
 ?>
