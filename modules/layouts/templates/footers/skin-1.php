@@ -73,7 +73,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
         <div class="col-12 d-md-flex text-center">
             <small class="col-sm-6 text-md-start text-center edit" field="footer-reserved-skin-1-<?php print $params['id'] ?>" rel="module">
 
-            © All Rights Reserved. Your Website Design</small>
+            © All Rights Reserved.</small>
             <small class="col-sm-6 mb-0 noedit text-md-end text-center"><?php print powered_by_link(); ?></small>
         </div>
     </div>
