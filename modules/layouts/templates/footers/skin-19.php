@@ -29,6 +29,10 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     .footer-19-menu ul li a:first-child{
         padding-left: 0;
     }
+
+    .footer-19-menu ul{
+       display: flex;
+    }
 </style>
 
 <div class="  footer-background py-0 <?php print $layout_classes; ?>">
@@ -45,7 +49,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                 </div>
                 <div class="edit "
                      field="layout-footer-skin-19-p-<?php print $params['id'] ?>" rel="module">
-                    <p class="ms-3 mb-5">Lorem Ipsum is simply dummy text <br> of the printing and typesetting industry.
+                    <p class="mb-5">Lorem Ipsum is simply dummy text <br> of the printing and typesetting industry.
                     </p>
                 </div>
 
