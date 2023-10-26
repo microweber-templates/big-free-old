@@ -31,10 +31,6 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
     <div class="container mw-layout-container no-element allow-drop edit  " field="layout-blog-skin-2-<?php print $params['id'] ?>" rel="module">
         <module type="posts" template="skin-2"/>
-
-        <div class="text-center">
-            <a href="#" class="btn btn-outline-primary   ">Learn More</a>
-        </div>
     </div>
 <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />
 

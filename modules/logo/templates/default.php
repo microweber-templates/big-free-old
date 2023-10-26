@@ -5,7 +5,7 @@ if($size != 'auto') {
 
 ?>
 
-<a href="<?php if (!in_live_edit()): ?><?php echo site_url(); ?><?php else: ?><?php print 'javascript:mw.drag.module_settings();void(0);'; ?><?php endif; ?>" class="navbar-brand me-0">
+<a href="<?php echo site_url(); ?>" class="navbar-brand me-0">
     <?php if ($logoimage == '' and $text == ''): ?>
         <?php if (is_live_edit()) : ?>
         <span class="mw-logo-no-values"><?php _lang('Logo', 'template/big'); ?></span>
@@ -15,13 +15,9 @@ if($size != 'auto') {
     <?php if ($logoimage != '' and $logoimage != false): ?>
         <span class="mw-ui-col-x" style="width: <?php print $size; ?>">
                     <?php if ($logoimage_inverse != '' and $logoimage_inverse != false): ?>
-                        <img src="<?php print $logoimage_inverse; ?>" alt="" style="max-width: 100%; width: <?php print $size; ?>;" class="logo logo-dark" <?php if (in_live_edit()) {
-                            print 'onclick="javascript:mw.drag.module_settings();void(0);"';
-                        } ?>/>
+                        <img src="<?php print $logoimage_inverse; ?>" alt="" style="max-width: 100%; width: <?php print $size; ?>;" class="logo logo-dark" />
                     <?php endif; ?>
-            <img src="<?php print $logoimage; ?>" alt="" style="max-width: 100%; width: <?php print $size; ?>;" class="logo logo-light" <?php if (in_live_edit()) {
-                print 'onclick="javascript:mw.drag.module_settings();void(0);"';
-            } ?>/>
+            <img src="<?php print $logoimage; ?>" alt="" style="max-width: 100%; width: <?php print $size; ?>;" class="logo logo-light" />
                 </span>
     <?php else: ?>
         <span class="mw-logo-no-values"><?php _lang('Logo', 'template/big'); ?></span>

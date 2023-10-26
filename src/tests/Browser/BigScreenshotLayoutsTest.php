@@ -35,7 +35,8 @@ class BigScreenshotLayoutsTest extends DuskTestCase
     {
         $this->bootTemplate();
 
-        $sample = templates_path() . '/big/mw_default_content.zip';
+        $tempaltePathMain = userfiles_path() . 'templates' . DS . $this->template_name;
+        $sample = $tempaltePathMain . '/mw_default_content.zip';
         $sample = normalize_path($sample, false);
 
         if (!is_file($sample)) {
@@ -55,11 +56,11 @@ class BigScreenshotLayoutsTest extends DuskTestCase
         $importStatus = $manager->start();
         $this->assertTrue($importStatus['done']);
 
-        $this->browse(function (Browser $browser) {
+        $this->browse(function (Browser $browser) use($tempaltePathMain) {
             $browser->visit('/');
             $browser->pause(5000);
 
-            $screenshotFile = __DIR__ . '/screenshot.jpg';
+            $screenshotFile = $tempaltePathMain . '/screenshot.jpg';
             $browser->driver->takeScreenshot($screenshotFile);
 
             $tn = new Thumbnailer($screenshotFile);
@@ -67,7 +68,7 @@ class BigScreenshotLayoutsTest extends DuskTestCase
 
         });
 
-        $this->browse(function (Browser $browser) {
+        $this->browse(function (Browser $browser) use($tempaltePathMain) {
 
             $browser->visit('/');
 
@@ -84,7 +85,7 @@ class BigScreenshotLayoutsTest extends DuskTestCase
 
             $browser->pause(5000);
 
-            $browser->driver->takeScreenshot(__DIR__ . '/screenshot_large.jpg');
+            $browser->driver->takeScreenshot($tempaltePathMain . '/screenshot_large.jpg');
         });
     }
 
@@ -253,6 +254,10 @@ class BigScreenshotLayoutsTest extends DuskTestCase
                     try {
                         $previewLayoutContentElement = $browser->element('#preview-layout-file');
                         $previewLayoutContentElement->takeElementScreenshot($layout['screenshot_file']);
+
+//                        $tn = new Thumbnailer($layout['screenshot_file']);
+//                        $tn->createThumb(array('width' => 840, 'height' => 600), $layout['screenshot_file']);
+
                     } catch (\Exception $e) {
                         //dump($e->getMessage());
                     }
