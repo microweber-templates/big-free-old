@@ -6,8 +6,11 @@ use Facebook\WebDriver\WebDriverBy;
 use Facebook\WebDriver\WebDriverDimension;
 use Illuminate\Support\Facades\Auth;
 use Laravel\Dusk\Browser;
+use MicroweberPackages\Content\Models\Content;
+use MicroweberPackages\ContentField\Models\ContentField;
 use MicroweberPackages\Export\SessionStepper;
 use MicroweberPackages\Import\Import;
+use MicroweberPackages\Menu\Models\Menu;
 use MicroweberPackages\User\Models\User;
 use MicroweberPackages\Utils\Media\Thumbnailer;
 use Tests\Browser\Components\AdminLogin;
@@ -39,21 +42,29 @@ class BigScreenshotLayoutsTest extends DuskTestCase
             $this->markTestSkipped('File not found for template test: ' . $sample);
         }
 
+        Menu::truncate();
+        Content::truncate();
+        ContentField::truncate();
+
         $sessionId = SessionStepper::generateSessionId(1);
 
         $manager = new Import();
         $manager->setSessionId($sessionId);
         $manager->setFile($sample);
         $manager->setBatchImporting(false);
-
         $importStatus = $manager->start();
         $this->assertTrue($importStatus['done']);
-
 
         $this->browse(function (Browser $browser) {
             $browser->visit('/');
             $browser->pause(5000);
-            $browser->driver->takeScreenshot(__DIR__ . '/screenshot.jpg');
+
+            $screenshotFile = __DIR__ . '/screenshot.jpg';
+            $browser->driver->takeScreenshot($screenshotFile);
+
+            $tn = new Thumbnailer($screenshotFile);
+            $tn->createThumb(array('width' => 820, 'height'=>460), $screenshotFile);
+
         });
 
         $this->browse(function (Browser $browser) {
@@ -62,6 +73,9 @@ class BigScreenshotLayoutsTest extends DuskTestCase
 
             $body = $browser->driver->findElement(WebDriverBy::tagName('body'));
             if (!empty($body)) {
+
+                $browser->script("document.body.classList.add('js-dusk-browser-test')");
+
                 $currentSize = $body->getSize();
                 //set window to full height
                 $size = new WebDriverDimension(1300, $currentSize->getHeight());
@@ -70,14 +84,12 @@ class BigScreenshotLayoutsTest extends DuskTestCase
 
             $browser->pause(5000);
 
-            $browser->driver->takeScreenshot(__DIR__ . '/screenshot.jpg');
             $browser->driver->takeScreenshot(__DIR__ . '/screenshot_large.jpg');
         });
     }
 
     public function testCreateModulesScreenshots()
     {
-
         $this->bootTemplate();
         $modules = get_modules('ui=1');
 //        $modules = [
@@ -143,8 +155,6 @@ class BigScreenshotLayoutsTest extends DuskTestCase
 
     public function testCreateScreenshots()
     {
-
-        return;
         $this->bootTemplate();
         $layouts = module_templates('layouts');
 
