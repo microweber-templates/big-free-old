@@ -821,3 +821,25 @@ body.js-dusk-browser-test {
         min-height: 500px !important;
     }
 }
+
+.mw-shop-module-wrapper {
+    input, .btn:not(.btn-sm), select {
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+    }
+}
+
+.irs--round .irs-handle {
+    border-color: #000 !important;
+}
+
+.irs--round .irs-to:before, .irs--round .irs-from:before {
+    border-top-color: #000 !important;
+}
+
+.irs--round .irs-from, .irs--round .irs-to, .irs--round .irs-single, .irs--round .irs-bar {
+    background-color: #000 !important;
+}

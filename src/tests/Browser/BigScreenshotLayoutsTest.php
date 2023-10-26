@@ -11,6 +11,7 @@ use MicroweberPackages\ContentField\Models\ContentField;
 use MicroweberPackages\Export\SessionStepper;
 use MicroweberPackages\Import\Import;
 use MicroweberPackages\Menu\Models\Menu;
+use MicroweberPackages\Page\Models\Page;
 use MicroweberPackages\User\Models\User;
 use MicroweberPackages\Utils\Media\Thumbnailer;
 use Tests\Browser\Components\AdminLogin;
@@ -56,6 +57,36 @@ class BigScreenshotLayoutsTest extends DuskTestCase
         $importStatus = $manager->start();
         $this->assertTrue($importStatus['done']);
 
+        $pageLinks = [];
+        $getPages = Page::get();
+        foreach ($getPages as $page) {
+            $pageLinks[] = $page->url;
+        }
+
+        $this->browse(function (Browser $browser) use($tempaltePathMain,$pageLinks) {
+
+            foreach ($pageLinks as $pageLink) {
+
+                $browser->visit($pageLink);
+
+                $body = $browser->driver->findElement(WebDriverBy::tagName('body'));
+                if (!empty($body)) {
+
+                    $browser->script("document.body.classList.add('js-dusk-browser-test')");
+
+                    $currentSize = $body->getSize();
+                    //set window to full height
+                    $size = new WebDriverDimension(1300, $currentSize->getHeight());
+                    $browser->driver->manage()->window()->setSize($size);
+                }
+
+                $browser->pause(5000);
+
+                $browser->driver->takeScreenshot($tempaltePathMain . '/screenshots/'.$pageLink.'.jpg');
+            }
+        });
+
+
         $this->browse(function (Browser $browser) use($tempaltePathMain) {
             $browser->visit('/');
             $browser->pause(5000);
@@ -87,6 +118,8 @@ class BigScreenshotLayoutsTest extends DuskTestCase
 
             $browser->driver->takeScreenshot($tempaltePathMain . '/screenshot_large.jpg');
         });
+
+
     }
 
     public function testCreateModulesScreenshots()

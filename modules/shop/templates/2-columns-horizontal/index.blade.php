@@ -29,7 +29,7 @@ description: 2 columns horizontal
         );
     }
 </script>
-<div class="container-fluid">
+<div class="">
     <div class="row shop-products pt-7">
 
         @if($products->hasFilter())
