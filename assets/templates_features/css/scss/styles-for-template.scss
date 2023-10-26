@@ -785,7 +785,7 @@ h6 {
 }
 
 .page-item {
-    &.active {
+    &.active, &:hover, &:focus {
         .page-link {
             background-color: var(--primaryColor) !important;
             border-color: var(--primaryColor) !important;

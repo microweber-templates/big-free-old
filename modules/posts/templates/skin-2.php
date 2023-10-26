@@ -46,5 +46,5 @@ description: Posts 2
 
 
 <?php if (isset($pages_count) and $pages_count > 1 and isset($paging_param)): ?>
-    <module type="pagination" pages_count="<?php echo $pages_count; ?>" paging_param="<?php echo $paging_param; ?>"/>
+    <module type="pagination" template="default" pages_count="<?php echo $pages_count; ?>" paging_param="<?php echo $paging_param; ?>"/>
 <?php endif; ?>

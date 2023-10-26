@@ -19,7 +19,7 @@ description: Blog
             <module type="breadcrumb" />
         </div>
 
-        <module type="layouts" template="blog/skin-1"/>
+        <module type="layouts" template="blog/skin-2"/>
 
     </div>
 
