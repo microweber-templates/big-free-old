@@ -14,7 +14,11 @@
 
 ?>
 
+
+
 <?php
+
+
 $header_top_menu = get_option('header_top_menu', 'header-layout');
 if ($header_top_menu) {
     ?>
@@ -46,7 +50,7 @@ if ($header_top_menu) {
 
             <div class="menu-header-skin-1 menu-header-skin-1-hamburger-button col-auto d-flex align-items-center justify-content-end">
                 <div class="mw-vhmbgr--navigation">
-                    <module type="menu" name="header_menu" id="header_menu-<?php print $params['id']; ?>12" template="skin-1"/>
+                    <module type="menu" name="header_menu" id="header_menu-<?php print $params['id']; ?>12" template="navbar"/>
                 </div>
             </div>
         </div>
