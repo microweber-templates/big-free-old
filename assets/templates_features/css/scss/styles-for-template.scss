@@ -814,3 +814,10 @@ h6 {
 .mw-breadcrumb-current{
     color: var(--primaryColor);
 }
+
+
+body.js-dusk-browser-test {
+    .mh-100vh {
+        height: 100% !important;
+    }
+}
