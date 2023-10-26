@@ -36,9 +36,8 @@ if ($header_top_menu) {
          addEventListener('DOMContentLoaded', e => {
             mw.MWSiteMobileMenu({
                 threshold: 1024,
-                size: '35px',
+                size: '25px',
                 color: 'var(--primaryColor)',
-
             }, 5);
         });
     </script>
@@ -48,7 +47,7 @@ if ($header_top_menu) {
         <div class="row col-12 d-flex justify-content-center ">
             <module type="logo" id="header-logo-<?php print $params['id']; ?>" class="me-auto col-auto col-xl-4 mw-big-header-logo w-auto align-self-center  my-md-0 my-1 module module-logo "/>
 
-            <div class="col-auto d-flex align-items-center justify-content-end">
+            <div class="menu-header-skin-1 col-auto d-flex align-items-center justify-content-end">
                 <div class="mw-vhmbgr--navigation">
                     <module type="menu" name="header_menu" id="header_menu-<?php print $params['id']; ?>12" template="navbar"/>
                 </div>

@@ -112,10 +112,15 @@
 
     .top-header-background {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
         min-height: 45px;
         list-style: none;
+         {
+
+        }
+
         padding: 5px 20px;
         margin-bottom: 0;
     }
