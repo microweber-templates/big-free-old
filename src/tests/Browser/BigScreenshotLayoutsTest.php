@@ -89,6 +89,7 @@ class BigScreenshotLayoutsTest extends DuskTestCase
 
         $this->browse(function (Browser $browser) use($tempaltePathMain) {
             $browser->visit('/');
+            $browser->resize(1360, 800);
             $browser->pause(5000);
 
             $screenshotFile = $tempaltePathMain . '/screenshot.jpg';
