@@ -76,7 +76,7 @@ if (!isset($tn[1])) {
                 }
             }
             ?>
-            <div class="mx-auto <?php echo $in_stock ? 'mw-layout-product-stock' : 'mw-layout-product-outOfStock'; ?> mx-sm-0 col-10 col-sm-6 col-md-4 col-lg-3 mb-5 item-<?php print $item['id'] ?>" data-masonry-filter="<?php print $itemCats; ?>" itemscope="" itemtype="<?php print $schema_org_item_type_tag ?>">
+            <div class="mx-auto <?php echo $in_stock ? 'mw-layout-product-stock' : 'mw-layout-product-outOfStock'; ?> mx-sm-0 col-12 col-sm-6 col-md-4 col-lg-3 mb-5 item-<?php print $item['id'] ?>" data-masonry-filter="<?php print $itemCats; ?>" itemscope="" itemtype="<?php print $schema_org_item_type_tag ?>">
                 <div class="product h-100 d-flex flex-column position-relative show-on-hover-root">
                     <div class="h-100 d-flex flex-column">
                         <?php if (is_array($item['prices'])): ?>
