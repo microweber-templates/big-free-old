@@ -64,6 +64,12 @@ if (isset($json) == false or count($json) == 0) {
         color: gray;
         line-height: 1 !important;
         font-size: 20px !important;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
     }
 
     .card.card-collapse .card-header:after {
@@ -83,22 +89,20 @@ if (isset($json) == false or count($json) == 0) {
             ?>
             <div class="card sk1 card-collapse mb-3 <?php if ($key == 0) : ?> active_sk1 <?php endif; ?>" >
                 <div class="card-header p-0" id="header-item-<?php print $edit_field_key ?>">
-                    <button class="btn p-5 w-100" data-bs-toggle="collapse" data-bs-target="#collapse-accordion-item-<?php print $edit_field_key . '-' . $key ?>" aria-expanded="true" aria-controls="collapse-accordion-item-<?php print $edit_field_key . '-' . $key ?>">
+                    <button class="btn w-100 rounded-0" data-bs-toggle="collapse" data-bs-target="#collapse-accordion-item-<?php print $edit_field_key . '-' . $key ?>" aria-expanded="true" aria-controls="collapse-accordion-item-<?php print $edit_field_key . '-' . $key ?>">
                         <?php //module icon -
                         //print isset($slide['icon']) ? $slide['icon'] . ' ' : '';
                         ?>
                         <h4> <?php print isset($slide['title']) ? $slide['title'] : ''; ?> </h4>
-                        <i class="mdi arrow sk1 border rounded-circle ms-auto me-0 d-md-block d-none <?php if ($key == 0) : ?>mdi-chevron-down<?php else : ?>mdi-chevron-down <?php endif; ?>"></i>
+                        <i class="mdi arrow sk1 rounded-circle <?php if ($key == 0) : ?>mdi-chevron-down<?php else : ?>mdi-chevron-down <?php endif; ?>"></i>
                     </button>
                 </div>
-
-
 
                 <div class="lead text-black collapse"  id="collapse-accordion-item-<?php print $edit_field_key . '-' . $key ?>" class="collapse <?php if ($key == 0) : ?> show <?php endif; ?>" aria-labelledby="header-item-<?php print $edit_field_key ?>" data-parent="#mw-accordion-module-<?php print $params['id'] ?>">
                     <div class="card-body px-5 pt-0 pb-5">
                         <div class="allow-drop edit" field="accordion-item-<?php print $edit_field_key ?>" rel="module-<?php print $params['id'] ?>">
                             <div class="element">
-                                <p class="lead text-black"> <?php print isset($slide['content']) ? $slide['content'] : 'Accordion content' ?></p>
+                                <h6 class="pt-3"> <?php print isset($slide['content']) ? $slide['content'] : 'Accordion content' ?></h6>
                             </div>
                         </div>
                     </div>

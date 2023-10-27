@@ -33,7 +33,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     <div class="mw-layout-container no-element allow-drop container">
         <div class="row text-center">
             <div class="col-12 col-lg-10 col-lg-8 mx-auto allow-drop">
-                <h3 data-mwplaceholder="<?php _e('Enter title here'); ?>" >The Feature Title </h3>
+                <h3  data-mwplaceholder="<?php _e('Enter title here'); ?>" >The Feature Title </h3>
             </div>
         </div>
 
@@ -46,8 +46,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                 </div>
 
                 <div class="text-center mt-sm-6 mt-3 allow-drop">
-                    <h4 data-mwplaceholder="<?php _e('Enter title here'); ?>" >Feature Title</h4>
-                    <p data-mwplaceholder="<?php _e('Enter text here'); ?>">Speaking comes to most people as naturally as breathing. On many occasions our words are.</p>
+                    <h4  data-mwplaceholder="<?php _e('Enter title here'); ?>" >Feature Title</h4>
+                    <p  data-mwplaceholder="<?php _e('Enter text here'); ?>">Speaking comes to most people as naturally as breathing. On many occasions our words are.</p>
                 </div>
             </div>
 
@@ -59,8 +59,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                 </div>
 
                 <div class="text-center mt-sm-6 mt-3 allow-drop">
-                    <h4 data-mwplaceholder="<?php _e('Enter title here'); ?>" >Feature Title</h4>
-                    <p data-mwplaceholder="<?php _e('Enter text here'); ?>">Speaking comes to most people as naturally as breathing. On many occasions our words are.</p>
+                    <h4  data-mwplaceholder="<?php _e('Enter title here'); ?>" >Feature Title</h4>
+                    <p  data-mwplaceholder="<?php _e('Enter text here'); ?>">Speaking comes to most people as naturally as breathing. On many occasions our words are.</p>
                 </div>
             </div>
 
@@ -72,8 +72,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                 </div>
 
                 <div class="text-center mt-sm-6 mt-3 allow-drop">
-                    <h4 data-mwplaceholder="<?php _e('Enter title here'); ?>" >Feature Title</h4>
-                    <p data-mwplaceholder="<?php _e('Enter text here'); ?>">Speaking comes to most people as naturally as breathing. On many occasions our words are.</p>
+                    <h4  data-mwplaceholder="<?php _e('Enter title here'); ?>" >Feature Title</h4>
+                    <p  data-mwplaceholder="<?php _e('Enter text here'); ?>">Speaking comes to most people as naturally as breathing. On many occasions our words are.</p>
                 </div>
             </div>
         </div>

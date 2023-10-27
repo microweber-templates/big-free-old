@@ -30,12 +30,12 @@ if (page_title()) {
 }
 ?>
 
-<section class="section <?php print $layout_classes; ?> allow-drop cloneable edit" field="layout-misc-skin-2-<?php print $params['id'] ?>" rel="module">
+<section class="section <?php print $layout_classes; ?> ">
 
      <module type="background" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <div class="mw-layout-container no-element allow-drop container">
-        <div class="row">
+    <div class="mw-layout-container no-element allow-drop container nodrop edit safe-mode no-typing" field="layout-misc-skin-2-<?php print $params['id'] ?>" rel="module">
+        <div class="row safe-mode">
             <div class="col-12">
                 <module type="accordion" template="skin-1" />
             </div>

@@ -32,7 +32,7 @@
 
                                 <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
                                 <div class="img-as-background">
-                                    <img style="max-height: 750px; width: auto; position: relative !important;" src="<?php print thumbnail($item['image'], 600, 600); ?>"/>
+                                    <img style="max-height: 750px; width: auto; position: relative !important;" src="<?php print thumbnail($item['image'], 1200, 1200); ?>"/>
                                 </div>
                                 <?php endif; ?>
                             </a>
@@ -64,7 +64,7 @@
                                     <?php if (!isset($show_fields) or $show_fields == false or in_array('thumbnail', $show_fields)): ?>
 
                                     <div class="img-as-background">
-                                        <img height="150" width="250" src="<?php print thumbnail($item['image'], 450, 450); ?>" style="position: relative !important;"/>
+                                        <img height="150" width="250" src="<?php print thumbnail($item['image'], 1200, 1200); ?>" style="position: relative !important;"/>
                                     </div>
                                     <?php endif; ?>
 

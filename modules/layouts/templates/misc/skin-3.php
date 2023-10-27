@@ -30,17 +30,17 @@ if (page_title()) {
 }
 ?>
 
-<section class="section <?php print $layout_classes; ?> allow-drop edit" field="layout-misc-skin-3-<?php print $params['id'] ?>" rel="module">
+<section class="section <?php print $layout_classes; ?> ">
 
      <module type="background" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <div class="mw-layout-container no-element allow-drop container">
-        <div class="row">
+    <div class="mw-layout-container no-element allow-drop container nodrop safe-mode no-typing edit" field="layout-misc-skin-3-<?php print $params['id'] ?>" rel="module">
+        <div class="row allow-drop safe-mode">
                 <div class="col-12">
-                    <h5 class="font-weight-bold text-center  "><?php _lang("The amazing hubble","templates/big"); ?></h5>
-                    <h1 class="text-center"><?php _lang("To appreciate what is really exciting about radio astronomy, first we have to shift how we view astronomy","templates/big"); ?>.</h1>
+                    <h5 data-mwplaceholder="<?php _e('Enter title here'); ?>" class="font-weight-bold text-center  "><?php _lang("The amazing hubble","templates/big"); ?></h5>
+                    <h1 data-mwplaceholder="<?php _e('Enter text here'); ?>" class="text-center"><?php _lang("To appreciate what is really exciting about radio astronomy, first we have to shift how we view astronomy","templates/big"); ?>.</h1>
 
-                    <div class="col-8 mx-auto mt-10">
+                    <div class="col-md-8 mx-auto mt-5">
                         <module type="accordion" template="skin-2"/>
                     </div>
                 </div>
