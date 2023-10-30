@@ -623,11 +623,32 @@ $icons-sizes-list: 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 5
                     color: var(--menuHoverColor)$mw-importance;
                 }
             }
-        }
-    }
 
-    .dropdown-toggle::after {
-        border: none$mw-importance;
+            > ul {
+
+                ul {
+
+                left: 100%;
+                top: 0;
+                }
+            }
+            > ul {
+                opacity: 0;
+
+            }
+
+            &:hover {
+               > ul {
+                    position: absolute;
+                    display: block;
+                   opacity: 1;
+
+                }
+
+            }
+        }
+
+        transition: .6s;
     }
 }
 
