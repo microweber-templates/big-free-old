@@ -73,8 +73,6 @@
     h2,
     h3 {
 
-        color: $textDark;
-        font-weight: 400;
         margin-bottom: 5px;
 
     }
@@ -83,14 +81,12 @@
     h5,
     h6 {
 
-        font-weight: 400;
         margin-bottom: 5px;
     }
 
     p {
 
         margin-bottom: 5px;
-        font-weight: 400;
     }
 
     .info-holder {
@@ -120,7 +116,7 @@
     h6 {
         font-weight: bold;
         margin-bottom: 20px;
-        color: $dark;
+
         position: relative;
     }
 

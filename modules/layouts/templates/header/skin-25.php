@@ -4,7 +4,7 @@
 
 type: layout
 
-name: Header 25
+name: Header 25 - Parallax
 
 position: 25
 
