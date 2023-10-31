@@ -90,7 +90,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 <div class="py-2" style="background-color: #f5f5f5;">
     <div class="mw-layout-container no-element allow-drop container py-2" >
         <div class="col-12 d-md-flex text-center">
-            <small class="col-sm-6 text-md-start text-center edit" field="footer-reserved-skin-19-<?php print $params['id'] ?>" rel="module">
+            <small class="col-sm-6 text-md-start text-center" field="footer-reserved-skin-19-<?php print $params['id'] ?>" rel="module">
                 © All Rights Reserved.</small>
             <small class="col-sm-6 mb-0 noedit text-md-end text-center"><?php print powered_by_link(); ?></small>
         </div>
