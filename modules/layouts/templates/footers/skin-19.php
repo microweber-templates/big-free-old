@@ -41,7 +41,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     <module type="background" id="background-layout--<?php print $params['id'] ?>" />
 
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <!-- Footer --
+
     <div class="mw-layout-container no-element allow-drop container">
         <div class="row text-md-start text-center">
             <div class="col-md-5 col text-md-start text-md-left">
