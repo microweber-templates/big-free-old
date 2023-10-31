@@ -575,6 +575,12 @@ a {
         border-color: color-mix(in srgb, var(--formControlBackground) 50%, transparent) !important;
 
     }
+
+    &:hover, &.focus, &.active, &:active {
+        i {
+            color: var(--btnTextHoverColor);
+        }
+    }
 }
 
 .btn:not(.btn-link, .btn-sm) {
@@ -892,3 +898,10 @@ body.js-dusk-browser-test {
         color: #fff;
     }
 }
+
+.mw-le--page-preview {
+    .mw-notification {
+        display: none;
+    }
+}
+

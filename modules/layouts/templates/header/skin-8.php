@@ -4,7 +4,7 @@
 
 type: layout
 
-name: Header 8
+name: Header 8 - Slider
 
 position: 8
 
@@ -26,7 +26,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 <section class="section py-0 d-flex align-items-center justify-content-center">
-    <module type="background" />
+    <module type="background" id="background-layout--<?php print $params['id'] ?>"/>
     <div class="mw-layout-container container mh-100vh d-flex align-items-center justify-content-center no-element edit nodrop no-typing no-select" field="layout-header-skin-4-<?php print $params['id'] ?>" rel="module">
         <div class="row text-center">
             <div class="col-12  safe-mode  col-sm-10 col-lg-6 mx-auto mb-5 px-0 ">
