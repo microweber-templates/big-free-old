@@ -59,4 +59,8 @@ description: Skin-1
     <?php if ($medium_enabled) { ?>
         <li class="me-3"><a href="//medium.com/<?php print $medium_url; ?>" target="_blank"  ><i class="fab fa-medium mdi-40px"></i></a></li>
     <?php } ?>
+
+    <?php if ($discord_enabled) { ?>
+        <li class="mx-1"><a href="//discord.com/invite/<?php print $discord_url; ?>" target="_blank" class=" "><i class="mdi mdi-discord mdi-40px"></i></a></li>
+    <?php } ?>
 </ul>

@@ -58,4 +58,10 @@ description: Skin-7
     <?php if ($medium_enabled) { ?>
         <li class="py-0 d-flex align-items-center"><a href="//medium.com/<?php print $medium_url; ?>" target="_blank" class=" "><i class="fab fa-medium mdi-36px"></i></a><span class="ms-2">Medium</span></li>
     <?php } ?>
+
+    <?php if ($discord_enabled) { ?>
+        <li class="py-0 d-flex align-items-center"><a href="//discord.com/invite/<?php print $discord_url; ?>" target="_blank" class=" "><i class="mdi mdi-discord mdi-36px"></i></a><span class="ms-2">Medium</span></li>
+
+
+    <?php } ?>
 </ul>

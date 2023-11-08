@@ -41,8 +41,30 @@ if ($columns_xl != null OR $columns_xl != false OR $columns_xl != '') {
 }
 ?>
 
+<style>
+    #posts-<?php print $params['id']; ?> .big-news .post-holder .thumbnail{
+        height: 250px;
+        margin: -20px -20px 0 -20px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    #posts-<?php print $params['id']; ?> .big-news .post-holder h3 a{
+        text-decoration: none;
+    }
+    #posts-<?php print $params['id']; ?> .big-news .post-holder {
+        padding: 25px;
+        background: var(--background);
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        margin: 20px 0;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        text-align: left;
+    }
+</style>
 
-    <div class="row">
+
+    <div class="row" id="posts-<?php print $params['id']; ?>">
         <div class="col-lg-12 mx-auto">
             <div class="row big-news">
                 <?php if (!empty($data)): ?>
@@ -73,19 +95,28 @@ if ($columns_xl != null OR $columns_xl != false OR $columns_xl != '') {
                                         <?php endif; ?>
                                     </div>
                                 </a>
-
                                 <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
-                                    <a href="<?php print $item['link'] ?>"><h3 class="m-b-10"><?php print $item['title'] ?></h3></a>
+                                    <h3 class="m-0"><a href="<?php print $item['link'] ?>"><?php print $item['title'] ?></a></h3>
                                 <?php endif; ?>
 
-                                <small><?php echo date_system_format($item['created_at']) ; ?></small>
+                                <?php if (!isset($show_fields) or $show_fields == false or in_array('created_at', $show_fields)): ?>
+                                    <small class="text-muted"><?php echo date_system_format($item['created_at']) ; ?></small>
+                                <?php endif; ?>
+
+
 
                                 <?php if (!isset($show_fields) or $show_fields == false or in_array('description', $show_fields)): ?>
-                                    <p><?php print $item['description'] ?></p>
+                                    <p class="mt-3"><?php print $item['description'] ?></p>
                                 <?php endif; ?>
 
                                 <?php if (!isset($show_fields) or $show_fields == false or in_array('read_more', $show_fields)): ?>
-                                    <a href="<?php print $item['link'] ?>" itemprop="url" class="button-8 m-t-20"><span>Read more</span></a>
+                                    <a href="<?php print $item['link'] ?>" itemprop="url" class="button-8 m-t-20"><span><?php
+                                            if($read_more_text){
+                                                print $read_more_text;
+                                            } else {
+                                                print 'Read more';
+                                            }
+                                        ?></span></a>
                                 <?php endif; ?>
                             </div>
                         </div>
