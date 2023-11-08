@@ -4,7 +4,7 @@ $config = array();
 $config['name'] = "Big Template - FREE VERSION";
 $config['author'] = "Microweber CMS";
 
-$config['version'] = "8.1";
+$config['version'] = "8.2";
  
 $config['url'] = "http://microweber.com";
 

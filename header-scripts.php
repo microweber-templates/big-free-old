@@ -46,7 +46,7 @@
 
 
     <?php print get_template_stylesheet(); ?>
-    <link href="<?php print template_url(); ?>assets/fonts/jost/font.css" rel="stylesheet"/>
+    <link href="<?php print template_url(); ?>assets/fonts/jost-font/font.css" rel="stylesheet"/>
 
     <link href="<?php print template_url(); ?>assets/css/main.css" rel="stylesheet"/>
     <link href="<?php print template_url(); ?>assets/templates_features/css/scss/styles-for-template.css" rel="stylesheet"/>
