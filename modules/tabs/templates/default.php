@@ -28,7 +28,7 @@ if (isset($json) == false or count($json) == 0) {
         foreach ($json as $slide) {
             $count++;
             ?>
-            <a class="btn btn-primary df mb-3 <?php if ($count == 1) { ?> active <?php } ?>" href="javascript:;"><?php print isset($slide['icon']) ? $slide['icon'] . ' ' : ''; ?><h6 class="mb-0"><?php print isset($slide['title']) ? $slide['title'] : 'Tab title 1'; ?></h6></a>
+            <a class="btn btn-primary df mb-3 <?php if ($count == 1) { ?> active <?php } ?>" href="javascript:;"><?php print isset($slide['icon']) ? $slide['icon'] . ' ' : ''; ?><span class="mb-0"><?php print isset($slide['title']) ? $slide['title'] : 'Tab title 1'; ?></span></a>
         <?php } ?>
     </div>
     <div class="mw-ui-box">

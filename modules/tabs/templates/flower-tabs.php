@@ -75,9 +75,9 @@ if (isset($json) == false or count($json) == 0) {
                  style="<?php if ($count != 1) { ?> display: none; <?php } else { ?>display: block; <?php } ?>">
                 <div class="edit allow-drop" field="tab-item-<?php print $edit_field_key ?>"
                      rel="module-<?php print $params['id'] ?>">
-                    <div class="element"> <h6><?php print isset($slide['content']) ? $slide['content'] : 'Tab content ' . $count ?></h6>
-                        <br>
-                        <module type="shop/products" template="skin-12"/>
+                    <div class="element">
+                        <h6>
+                            <?php print isset($slide['content']) ? $slide['content'] : 'Tab content ' . $count . '<P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</P> ' ?></h6>
 
                     </div>
                 </div>
