@@ -34,7 +34,7 @@ if (page_title()) {
 
      <module type="background" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <div class="mw-layout-container no-element allow-drop container nodrop safe-mode no-typing edit" field="layout-misc-skin-3-<?php print $params['id'] ?>" rel="module">
+    <div class="mw-layout-container no-element allow-drop container    safe-mode     edit" field="layout-misc-skin-3-<?php print $params['id'] ?>" rel="module">
         <div class="row allow-drop safe-mode">
                 <div class="col-12">
                     <h5 data-mwplaceholder="<?php _e('Enter title here'); ?>" class="font-weight-bold text-center  "><?php _lang("The amazing hubble","templates/big"); ?></h5>

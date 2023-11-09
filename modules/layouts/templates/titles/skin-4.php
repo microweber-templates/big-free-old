@@ -26,11 +26,11 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 
-<section class="section <?php print $layout_classes; ?> edit safe-mode nodrop no-typing no-select" field="layout-titles-skin-4-<?php print $params['id'] ?>" rel="module">
+<section class="section <?php print $layout_classes; ?> ">
 
      <module type="background" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <div class="mw-layout-container no-element allow-drop container allow-select safe-mode">
+    <div class="mw-layout-container no-element allow-drop container   safe-mode edit" field="layout-titles-skin-4-<?php print $params['id'] ?>" rel="module">
         <div class="row text-center mb-5">
             <div class="col-lg-10 mx-auto text-left">
                 <h4 data-mwplaceholder="<?php _e('Enter title here'); ?>">A memory warm and happy as a bird flew to me. <br>

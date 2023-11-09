@@ -26,13 +26,12 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 
-<section class="footer-background py-0 <?php print $layout_classes; ?> edit nodrop "
-         field="layout-footer-skin-1-<?php print $params['id'] ?>" rel="module">
+<section class="footer-background py-0 <?php print $layout_classes; ?> ">
 
      <module type="background" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
     <!-- Footer -->
-<div class="mw-layout-container no-element allow-drop container text-md-start text-center">
+<div class="mw-layout-container no-element allow-drop container text-md-start text-center edit" field="layout-footer-skin-1-<?php print $params['id'] ?>" rel="module">
    <div class="row">
        <div class="col-md-2 col me-4">
            <div class="pb-7">

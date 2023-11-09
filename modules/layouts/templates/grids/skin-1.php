@@ -30,10 +30,10 @@ if (page_title()) {
 }
 ?>
 
-<section class="section <?php print $layout_classes; ?> edit  safe-mode no-typing nodrop" field="layout-grids-skin-1-<?php print $params['id'] ?>" rel="module">
+<section class="section <?php print $layout_classes; ?> ">
      <module type="background" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <div class="mw-layout-container no-element allow-drop container safe-mode">
+    <div class="mw-layout-container no-element allow-drop container safe-mode edit" field="layout-grids-skin-1-<?php print $params['id'] ?>" rel="module">
         <div class="row safe-mode">
             <div class="col-12 col-sm-8 safe-mode img-as-background" style="min-height: 350px;">
                 <img class="me-sm-3" src="<?php print template_url(); ?>assets/img/layouts/gallery-1-5.jpg">
