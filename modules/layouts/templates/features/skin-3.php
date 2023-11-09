@@ -30,11 +30,11 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     }
 </style>
 
-<section class="section <?php print $layout_classes; ?> edit   nodrop" field="layout-feature-skin-3-<?php print $params['id'] ?>" rel="module">
+<section class="section <?php print $layout_classes; ?> ">
 
      <module type="background" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <div class="mw-layout-container no-element allow-drop container">
+    <div class="mw-layout-container no-element allow-drop container edit   " field="layout-feature-skin-3-<?php print $params['id'] ?>" rel="module">
         <div class="row mb-3 py-4 text-center text-sm-start">
             <div class="col-sm-10 col-md-12 col-lg-6 mb-6 cloneable element ">
                 <div class="d-block d-sm-flex align-items-center  border p-sm-5 p-3 background-color-element">

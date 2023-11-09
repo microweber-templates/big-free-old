@@ -26,11 +26,11 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 
-<section class="section mw-layout-parallax mw-layout-dark-background py-0 edit nodrop mh-650 d-flex align-items-end justify-content-center" field="layout-content-skin-8-<?php print $params['id'] ?>" rel="module" data-background-position="center bottom">
+<section class="section mw-layout-parallax mw-layout-dark-background py-0  mh-650 d-flex align-items-end justify-content-center " data-background-position="center bottom">
 
     <module type="background" data-background-image="<?php print template_url(); ?>assets/img/layouts/gallery-1-2.jpg" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <div class="mw-layout-container no-element allow-drop">
+    <div class="mw-layout-container no-element allow-drop edit" field="layout-content-skin-8-<?php print $params['id'] ?>" rel="module">
         <div class="container <?php print $layout_classes; ?>">
             <div class="row text-center">
                 <div class="col-12 col-lg-10 col-lg-8 mx-auto allow-drop">
@@ -39,7 +39,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                 </div>
             </div>
 
-            <div class="allow-drop mt-7 text-center nodrop">
+            <div class="allow-drop mt-7 text-center ">
                 <module type="btn" button_style="btn-primary" button_size="btn-md" text="Learn more"/>
             </div>
         </div>

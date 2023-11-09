@@ -25,11 +25,11 @@ if (!$classes['padding_bottom']) {
 $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom'] . ' ';
 ?>
 
-<section class="<?php print $layout_classes; ?> section edit nodrop " field="layout-content-skin-1-<?php print $params['id'] ?>" rel="module">
+<section class="<?php print $layout_classes; ?> section ">
     <module type="background" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <div class="container mw-layout-container no-element allow-drop text-center">
-        <div class="row text-center nodrop safe-mode">
+    <div class="container mw-layout-container no-element allow-drop text-center edit  " field="layout-content-skin-1-<?php print $params['id'] ?>" rel="module">
+        <div class="row text-center  safe-mode">
             <div class="col-12 col-lg-10 col-lg-8 mx-auto allow-drop  safe-mode">
                 <h3 data-mwplaceholder="<?php _e('Enter title here'); ?>">Your Story Should Evolve Over Time</h3>
                 <p data-mwplaceholder="<?php _e('Enter text here'); ?>">Update your audience on new developments and how you're overcoming challenges.</p>

@@ -26,11 +26,11 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 
-<section class="section <?php print $layout_classes; ?> edit   nodrop" field="layout-feature-skin-4-<?php print $params['id'] ?>" rel="module">
+<section class="section <?php print $layout_classes; ?> ">
 
      <module type="background" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <div class="mw-layout-container no-element allow-drop container">
+    <div class="mw-layout-container no-element allow-drop container edit   " field="layout-feature-skin-4-<?php print $params['id'] ?>" rel="module">
         <div class="row text-center">
             <div class="col-12 col-lg-10 col-lg-8 mx-auto allow-drop">
                 <h3  data-mwplaceholder="<?php _e('Enter title here'); ?>" >The Feature Title </h3>
