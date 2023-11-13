@@ -34,7 +34,7 @@ description: Posts 2
             <small class="my-2 d-block"><?php echo date_system_format($item['created_at']) ; ?></small>
 
             <?php if (!isset($show_fields) or $show_fields == false or in_array('description', $show_fields)): ?>
-                <p class="lead"><?php print $item['description'] ?></p>
+                <p  "><?php print $item['description'] ?></p>
             <?php endif; ?>
 
             </div>

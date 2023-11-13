@@ -39,7 +39,7 @@ description: Skin-4
 
                     <div class="show-on-hover position-absolute bg-body border border-color-primary   mh-400 w-100 top-0 mb-3 p-5">
                         <i class="mdi mdi-format-quote-close icon-size-46px  "></i>
-                        <p class="lead-2 mw-big-team-bio"><?php print array_get($slide, 'bio'); ?></p>
+                        <p  -2 mw-big-team-bio"><?php print array_get($slide, 'bio'); ?></p>
                     </div>
 
                     <div class="allow-drop">

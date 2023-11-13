@@ -32,9 +32,9 @@ description: Posts Slider 4
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('created_at', $show_fields)): ?>
 
                         <div class="col-auto text-center">
-                            <p class="lead mb-0"><?php echo date('M', strtotime($item['created_at'])); ?></p>
+                            <p   mb-0"><?php echo date('M', strtotime($item['created_at'])); ?></p>
                             <hr class="thin my-2" style="min-width: 65px;"/>
-                            <p class="lead-2"><?php echo date('d', strtotime($item['created_at'])); ?></p>
+                            <p  -2"><?php echo date('d', strtotime($item['created_at'])); ?></p>
                         </div>
                         <?php endif; ?>
 

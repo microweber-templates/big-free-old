@@ -41,7 +41,7 @@ description: Posts 14
                         <?php endif; ?>
 
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('description', $show_fields)): ?>
-                            <p class="lead"><?php print $item['description'] ?></p>
+                            <p  "><?php print $item['description'] ?></p>
                         <?php endif; ?>
                     </div>
                 </div>

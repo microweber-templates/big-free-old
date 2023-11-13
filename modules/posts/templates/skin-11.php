@@ -38,7 +38,7 @@ description: Posts 11
                     <?php endif; ?>
 
                     <?php if (!isset($show_fields) or $show_fields == false or in_array('description', $show_fields)): ?>
-                        <p class="lead"><?php echo $item['description'];?></p>
+                        <p  "><?php echo $item['description'];?></p>
                     <?php endif; ?>
 
                     <?php if (isset($item['created_by'])): ?>

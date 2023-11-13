@@ -56,7 +56,7 @@ description: Skin-1
                         <div class="row text-center">
                             <div class="col-12 col-lg-10 col-lg-8 mx-auto">
                                 <i class="mdi mdi-format-quote-close icon-size-46px   d-block mb-5"></i>
-                                <p class="lead-2"><?php print character_limiter($item['content'], $limit); ?></p>
+                                <p  -2"><?php print character_limiter($item['content'], $limit); ?></p>
                             </div>
                         </div>
                     </div>

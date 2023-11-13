@@ -59,8 +59,8 @@ description slider
 
 
                         <h1 class="mb-1"><?php print array_get($teamData, 'name'); ?></h1>
-                        <p class="lead mb-3"><?php print array_get($teamData, 'role'); ?></p>
-                        <p class="lead"><?php print array_get($teamData, 'bio'); ?></p>
+                        <p   mb-3"><?php print array_get($teamData, 'role'); ?></p>
+                        <p  "><?php print array_get($teamData, 'bio'); ?></p>
                         <a href="<?php print $teamData['website']; ?>" target="_blank"> <?php print array_get($teamData, 'website'); ?></a>
 
                     </div>

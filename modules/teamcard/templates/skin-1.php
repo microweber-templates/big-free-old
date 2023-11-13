@@ -46,8 +46,8 @@ description: Skin-1
             <?php foreach ($data as $key => $slide): ?>
                 <div class="js-member" data-id="<?php echo $key; ?>" style="<?php if ($key > 0): ?>display: none; <?php endif; ?>">
                     <h1 class="mb-1"><?php print array_get($slide, 'name'); ?></h1>
-                    <p class="lead mb-3"><?php print array_get($slide, 'role'); ?></p>
-                    <p class="lead"><?php print array_get($slide, 'bio'); ?></p>
+                    <p   mb-3"><?php print array_get($slide, 'role'); ?></p>
+                    <p  "><?php print array_get($slide, 'bio'); ?></p>
                     <module type="social_links" template="skin-2"/>
                 </div>
             <?php endforeach; ?>

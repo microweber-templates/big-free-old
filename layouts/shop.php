@@ -14,18 +14,32 @@ position: 4
 
 <?php include template_dir() . "header.php"; ?>
 
-<div class="edit" rel="content" field="content">
 
-    <module type="layouts" template="titles/skin-1"/>
+<div class="container-fluid">
+    <div class="edit" rel="content" field="content">
+
+        <module type="layouts" template="titles/skin-1"/>
+    </div>
+
+
+    <div class="row justify-content-between">
+        <div class="col-12 col-md-8 col-lg-9 col-lg-9">
+            <div class="edit" rel="content" field="shop-content">
+                <module type="layouts" template="ecommerce/skin-1"/>
+
+            </div>
+        </div>
+
+
+        <div class="col-12 col-md-4 col-lg-3 col-lg-2">
+            <div class="edit" rel="content" field="shop-sidebar">
+                <?php include(__DIR__ . DS .'shop_sidebar.php'); ?>
+            </div>
+        </div>
+
+    </div>
 </div>
 
 
-<module type="layouts" template="ecommerce/skin-1"/>
-
-
-
-<div class="edit" rel="content" field="shop-after-content">
-    <p class="element"></p>
-</div>
 
 <?php include template_dir() . "footer.php"; ?>

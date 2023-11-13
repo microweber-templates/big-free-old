@@ -98,7 +98,7 @@ if (isset($json) == false or count($json) == 0) {
                     <div class="card-body px-5 pt-0 pb-5">
                         <div class="allow-drop edit" field="accordion-item-<?php print $edit_field_key ?>" rel="module-<?php print $params['id'] ?>">
                             <div class="element">
-                                <p class="lead text-black"> <?php print isset($slide['content']) ? $slide['content'] : 'Accordion content' ?></p>
+                                <p   text-black"> <?php print isset($slide['content']) ? $slide['content'] : 'Accordion content' ?></p>
                             </div>
                         </div>
                     </div>

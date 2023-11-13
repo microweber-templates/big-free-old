@@ -59,8 +59,8 @@ description: Skin-2
                             <div class="col-sm-12 col-md-6">
                                 <div>
                                     <h1 class="mb-1"><?php print array_get($slide, 'name'); ?></h1>
-                                    <p class="lead mb-3"><?php print array_get($slide, 'role'); ?></p>
-                                    <p class="lead"><?php print array_get($slide, 'bio'); ?></p>
+                                    <p   mb-3"><?php print array_get($slide, 'role'); ?></p>
+                                    <p  "><?php print array_get($slide, 'bio'); ?></p>
                                     <module type="social_links" template="skin-3"/>
                                 </div>
                             </div>

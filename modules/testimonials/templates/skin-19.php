@@ -121,7 +121,7 @@ description: Skin-19
                 <div class="col-xl-6 col-md-10 col-12 me-xl-auto mx-auto text-xl-start text-center">
                     <h4 class="mb-1"><?php print $item['name']; ?></h4>
                     <p><?php print $item['client_role']; ?></p> &nbsp;
-                    <p class="lead"><?php print character_limiter($item['content'], $limit); ?></p>
+                    <p  "><?php print character_limiter($item['content'], $limit); ?></p>
                 </div>
 
             </div>

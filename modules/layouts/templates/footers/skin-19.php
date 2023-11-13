@@ -50,8 +50,10 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                 </div>
                 <div class="edit "
                      field="layout-footer-skin-19-p-<?php print $params['id'] ?>" rel="module">
-                    <p class="mb-5">Lorem Ipsum is simply dummy text <br> of the printing and typesetting industry.
-                    </p>
+                    <p class="font-weight-bold">Website Builder and CMS </p>
+                    <br>
+                    <small>Microweber is a website builder and content management system of new generation.</small>
+                    <br>
                 </div>
 
                 <module type="menu" class="footer-19-menu d-lg-flex justify-content-lg-start justify-content-center ps-0 mt-3" template="simple" name="footer_menu"/>
