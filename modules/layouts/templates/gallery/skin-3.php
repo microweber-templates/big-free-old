@@ -30,7 +30,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
      <module type="background" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <div class="mw-layout-container no-element allow-drop container edit nodrop" field="layout-gallery-skin-3-<?php print $params['id'] ?>" rel="module">
+    <div class="mw-layout-container no-element allow-drop container edit  " field="layout-gallery-skin-3-<?php print $params['id'] ?>" rel="module">
         <module type="layout_content" colMdCalculate="3" align="center"/>
     </div>
    <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-bottom" />

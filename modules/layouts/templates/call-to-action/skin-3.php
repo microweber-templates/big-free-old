@@ -31,7 +31,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     <module type="background" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
 
-    <div class="mw-layout-container no-element-allow-drop container edit  nodrop no-typing " field="layout-call-to-action-skin-3-<?php print $params['id'] ?>" rel="module">
+    <div class="mw-layout-container no-element-allow-drop container edit    no-typing " field="layout-call-to-action-skin-3-<?php print $params['id'] ?>" rel="module">
         <div class="row">
             <div class="col-12 col-sm-10 col-lg-12 col-lg-12 mx-auto allow-drop safe-mode">
                 <h1 data-mwplaceholder="<?php _e('Enter title here'); ?>" class="m-0">Get closer to the biggest</h1>

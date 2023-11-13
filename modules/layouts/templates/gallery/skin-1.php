@@ -36,19 +36,19 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
         <div class="row m-0 no-element">
             <div class="d-flex flex-wrap pe-md-5 pb-5 col-12 col-lg-6 no-element">
                 <div class="col-6 pe-2">
-                    <div class="img-as-background nodrop square">
+                    <div class="img-as-background   square">
                         <img src="<?php print template_url(); ?>assets/img/layouts/gallery-1-2.jpg" class=" ">
                     </div>
                 </div>
 
                 <div class="col-6 ps-2">
-                    <div class="img-as-background nodrop square">
+                    <div class="img-as-background   square">
                         <img src="<?php print template_url(); ?>assets/img/layouts/gallery-1-3.jpg" class=" ">
                     </div>
                 </div>
 
                 <div class="col-12 pt-5">
-                    <div class="img-as-background nodrop square">
+                    <div class="img-as-background   square">
                         <img src="<?php print template_url(); ?>assets/img/layouts/gallery-1-1.jpg" class=" ">
                     </div>
                 </div>
@@ -56,19 +56,19 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
             <div class="d-flex flex-wrap col-12 col-lg-6 pe-md-5 pb-5 no-element">
                 <div class="col-12 pb-5">
-                    <div class="img-as-background nodrop square">
+                    <div class="img-as-background   square">
                         <img src="<?php print template_url(); ?>assets/img/layouts/gallery-1-4.jpg" class=" ">
                     </div>
                 </div>
 
                 <div class="col-6 pe-2">
-                    <div class="img-as-background nodrop square">
+                    <div class="img-as-background   square">
                         <img src="<?php print template_url(); ?>assets/img/layouts/gallery-1-5.jpg" class=" ">
                     </div>
                 </div>
 
                 <div class="col-6 ps-2">
-                    <div class="img-as-background nodrop square">
+                    <div class="img-as-background   square">
                         <img src="<?php print template_url(); ?>assets/img/layouts/gallery-1-6.jpg" class=" ">
                     </div>
                 </div>

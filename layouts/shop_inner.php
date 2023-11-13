@@ -158,7 +158,7 @@ $prev = prev_content($content['id']);
                     </div>
                 </div>
 
-                <div class="edit safe-mode nodrop py-5" field="related_products" rel="content">
+                <div class="edit safe-mode   py-5" field="related_products" rel="content">
                     <div class="col-12 text-start text-left mb-4">
                         <h2 class="related-title"><?php _lang('Related products', 'templates/shopmag'); ?></h2>
                     </div>

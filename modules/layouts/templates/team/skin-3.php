@@ -29,7 +29,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
     <module type="background" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <div class="mw-layout-container no-element allow-drop container edit    nodrop" field="layout-team-skin-3-<?php print $params['id'] ?>" rel="module">
+    <div class="mw-layout-container no-element allow-drop container edit     " field="layout-team-skin-3-<?php print $params['id'] ?>" rel="module">
         <div class="row text-center">
             <div class="col-12 col-lg-10 col-lg-8 mx-auto allow-drop mb-3">
                 <h3>Meet our Team</h3>

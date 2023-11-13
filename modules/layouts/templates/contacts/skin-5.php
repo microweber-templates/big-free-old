@@ -28,7 +28,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 <section class="section <?php print $layout_classes; ?> ">
      <module type="background" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <div class="mw-layout-container no-element allow-drop container edit nodrop safe-mode no-typing" field="layout-contacts-skin-5-<?php print $params['id'] ?>" rel="module">
+    <div class="mw-layout-container no-element allow-drop container edit   safe-mode no-typing" field="layout-contacts-skin-5-<?php print $params['id'] ?>" rel="module">
         <div class="row text-center">
             <div class="mx-auto col-sm-6 col-md-4 cloneable element safe-mode background-color-element">
                 <i class="mw-micon-Map-Marker2 safe-element" style="font-size: 40px;"></i>

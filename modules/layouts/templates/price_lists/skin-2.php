@@ -26,7 +26,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 ?>
 
 
-<section class="section <?php print $layout_classes; ?> edit    nodrop" field="layout-price-lists-skin-2-<?php print $params['id'] ?>" rel="module">
+<section class="section <?php print $layout_classes; ?> edit     " field="layout-price-lists-skin-2-<?php print $params['id'] ?>" rel="module">
 
      <module type="background" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
