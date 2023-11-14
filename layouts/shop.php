@@ -23,7 +23,7 @@ position: 4
 
 
     <div class="row justify-content-between">
-        <div class="col-12 col-md-8 col-lg-9 col-lg-9">
+        <div class="col-12 col-lg-9">
             <div class="edit" rel="content" field="shop-content">
                 <module type="layouts" template="ecommerce/skin-1"/>
 
@@ -31,7 +31,7 @@ position: 4
         </div>
 
 
-        <div class="col-12 col-md-4 col-lg-3 col-lg-2">
+        <div class="col-12 col-lg-3">
             <div class="edit" rel="content" field="shop-sidebar">
                 <?php include(__DIR__ . DS .'shop_sidebar.php'); ?>
             </div>

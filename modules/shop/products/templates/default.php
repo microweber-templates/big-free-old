@@ -106,9 +106,9 @@ if (!isset($tn[1])) {
                             </a>
                         <?php endif; ?>
 
-                        <div class="d-flex align-items-top justify-content-between pt-2">
+                        <div class="d-flex align-items-top flex-wrap justify-content-between pt-2">
 
-                          <div class="col-sm-7 d-flex justify-content-start">
+                          <div class="col-xxl-7 d-flex justify-content-start">
                               <?php if ($show_fields == false or in_array('title', $show_fields)): ?>
                                   <a href="<?php print $item['link'] ?>" class="text-decoration-none text-start">
                                       <h6><?php print $item['title'] ?></h6>
@@ -116,7 +116,7 @@ if (!isset($tn[1])) {
                               <?php endif; ?>
                           </div>
 
-                           <div class="col-sm-5 d-flex justify-content-end">
+                           <div class="col-xxl-5 d-flex justify-content-end">
                                <?php if ($show_fields == false or ($show_fields != false and in_array('add_to_cart', $show_fields))): ?>
                                    <?php if ($show_fields == false or in_array('price', $show_fields)): ?>
                                        <?php if (isset($item['prices']) and is_array($item['prices'])): ?>
