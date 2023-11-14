@@ -46,7 +46,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
         <div class="row text-md-start text-center">
             <div class="col-md-5 col text-md-start text-md-left">
                 <div class="pb-3">
-                    <module type="logo" id="footer-logo-<?php print $params['id']; ?>" />
+                   Your text here
                 </div>
                 <div class="edit "
                      field="layout-footer-skin-19-p-<?php print $params['id'] ?>" rel="module">

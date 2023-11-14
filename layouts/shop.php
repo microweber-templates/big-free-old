@@ -4,7 +4,7 @@
 
 type: layout
 content_type: dynamic
-name: Shop
+name: Shop with sidebar
 is_shop: y
 description: Showcase shop items in a sylish grid arrangement.
 position: 4
