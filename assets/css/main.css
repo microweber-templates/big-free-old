@@ -25,7 +25,7 @@
   --bs-warning: #ffc107;
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
-  --bs-dark: #212529; 
+  --bs-dark: #212529;
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)); }
@@ -8408,19 +8408,15 @@ textarea.form-control-lg {
   .guesthouse-header .h2,
   .guesthouse-header h3,
   .guesthouse-header .h3 {
-    color: #4e5862;
-    font-weight: 400;
     margin-bottom: 5px; }
   .guesthouse-header h4, .guesthouse-header .h4,
   .guesthouse-header h5,
   .guesthouse-header .h5,
   .guesthouse-header h6,
   .guesthouse-header .h6 {
-    font-weight: 400;
     margin-bottom: 5px; }
   .guesthouse-header p {
-    margin-bottom: 5px;
-    font-weight: 400; }
+    margin-bottom: 5px; }
   .guesthouse-header .info-holder {
     background: #ffffff;
     width: auto;
@@ -8448,7 +8444,6 @@ textarea.form-control-lg {
   .feature-40 .h6 {
     font-weight: bold;
     margin-bottom: 20px;
-    color: #212529;
     position: relative; }
   .feature-40 .timeline {
     position: relative;
