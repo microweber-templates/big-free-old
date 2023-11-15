@@ -43,7 +43,7 @@ description: Posts 15
 
 
                         <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
-                            <a href="<?php print $item['link'] ?>" class="  px-md-0 px-2"><h4 class="text-start text-left" style="color: #ffffff;"><?php print $item['title'] ?></h4></a>
+                            <a href="<?php print $item['link'] ?>" class="  px-md-0 px-2"><h4 class="text-start text-left"><?php print $item['title'] ?></h4></a>
                         <?php endif; ?>
 
                     </div>

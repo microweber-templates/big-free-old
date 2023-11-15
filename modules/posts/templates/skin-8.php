@@ -26,7 +26,7 @@ description: Posts 8
             <div class="mx-auto col-sm-10 mx-md-0 col-md-6 col-lg-4 mb-6 " itemscope itemtype="<?php print $schema_org_item_type_tag ?>">
                 <div class="h-100 d-flex flex-column hover-bg-body text-dark pb-3 pt-5 ">
                     <div class="d-block d-sm-flex align-items-center h-100">
-                        <div class="d-flex flex-column w-100 h-100 justify-content-center align-items-start">
+                        <div class="d-flex flex-column w-100 h-100 justify-content-start align-items-start">
                             <?php echo $itemCats; ?>
                             <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
                                 <a href="<?php print $item['link'] ?>" class="text-start    text-dark"><h4><?php print $item['title'] ?></h4></a>

@@ -25,20 +25,20 @@ description: Posts 6
             ?>
 
             <div class="mx-auto col-sm-10 mx-md-0 col-md-4 mb-5" itemscope itemtype="<?php print $schema_org_item_type_tag ?>">
-                <div class="pt-6 px-5 h-100">
+                <div class=" px-5 h-100">
                     <div class="d-flex flex-column h-100">
                         <div>
-                            <?php if (!isset($show_fields) or $show_fields == false or in_array('created_at', $show_fields)): ?>
-
-                            <div class="mb-3">
-                                <?php echo $itemCats; ?>
-                                <small class=" "><?php echo date_system_format($item['created_at']) ; ?></small>
-                            </div>
-                            <?php endif; ?>
-
 
                             <?php if (!isset($show_fields) or $show_fields == false or in_array('title', $show_fields)): ?>
                                 <a href="<?php print $item['link'] ?>" class="text-dark text-decoration-none"><h4 class="mb-2"><?php print $item['title'] ?></h4></a>
+                            <?php endif; ?>
+
+                            <?php if (!isset($show_fields) or $show_fields == false or in_array('created_at', $show_fields)): ?>
+
+                                <div class="mb-3">
+                                    <!--                                --><?php //echo $itemCats; ?>
+                                    <small class=" "><?php echo date_system_format($item['created_at']) ; ?></small>
+                                </div>
                             <?php endif; ?>
 
                             <?php if (!isset($show_fields) or $show_fields == false or in_array('description', $show_fields)): ?>
