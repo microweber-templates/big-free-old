@@ -8,7 +8,7 @@
 
 <form class="col-xl-10 mw_form d-flex flex-wrap align-items-center justify-content-center mx-auto flower-cta-div-form" data-form-id="<?php print $form_id ?>" name="<?php print $form_id ?>" method="post">
 
-    <div class="message-sent" id="msg<?php print $form_id ?>" style="display: none;">
+    <div class="mw-message-form-wrapper message-sent" id="msg<?php print $form_id ?>" style="display: none;">
         <span class="message-sent-icon"></span>
         <p class="text-success"><?php _lang("Your Email was sent successfully", 'template/big'); ?></p>
     </div>
