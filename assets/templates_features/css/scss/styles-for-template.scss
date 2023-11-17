@@ -561,10 +561,10 @@ a {
     border-color: var(--btnBorderColor);
     border-width: var(--btnBorderSize);
     border-style: var(--btnBorderStyle);
-    color: var(--btnText) !important;
+    color: var(--btnTextColor) !important;
 
     a:not(.btn-outline, .btn-outline-secondary, .btn-outline-primary), &.a:not(.btn-outline, .btn-outline-secondary, .btn-outline-primary) {
-        color: var(--btnText) !important;
+        color: var(--btnTextColor) !important;
      }
 
     background-color: var(--btnBackground);

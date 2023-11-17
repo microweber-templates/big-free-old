@@ -45,7 +45,7 @@ if ($header_top_menu) {
 
     <div class="container-fluid px-xl-5 px-0 justify-content-center">
         <div class="row col-12 d-flex justify-content-center ">
-            033333333333333333333333333333333333333333333333333333333333333333333600000000000000<module type="logo" id="header-logo-<?php print $params['id']; ?>" class="me-auto col-auto col-xl-4 mw-big-header-logo w-auto align-self-center  my-md-0 my-1 module module-logo "/>
+           <module type="logo" id="header-logo-<?php print $params['id']; ?>" class="me-auto col-auto col-xl-4 mw-big-header-logo w-auto align-self-center  my-md-0 my-1 module module-logo "/>
 
             <div class="menu-header-skin-1 col-auto d-flex align-items-center justify-content-end">
                 <div class="mw-vhmbgr--navigation">
