@@ -609,6 +609,24 @@
                                     "fieldSettings": {
                                         "property": "--menuColor"
                                     }
+                                },
+                                {
+                                    "title": "Menu Hover Color",
+                                    "description": "Choose a menu hover color to use for your site.",
+                                    "fieldType": "colorPicker",
+                                    "selectors":[":root"],
+                                    "fieldSettings": {
+                                        "property": "--navLinkHoverColor"
+                                    }
+                                },
+                                {
+                                    "title": "Menu Active Color",
+                                    "description": "Choose a menu active color to use for your site.",
+                                    "fieldType": "colorPicker",
+                                    "selectors":[":root"],
+                                    "fieldSettings": {
+                                        "property": "--navLinkActiveColor"
+                                    }
                                 }
                             ]
                         }

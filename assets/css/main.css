@@ -11303,31 +11303,6 @@ i.icon-size-88px {
 .navbar-collapse {
   width: 100%; }
 
-.module-menu ul {
-  transition: .6s; }
-  @media screen and (max-width: 767px) {
-    .module-menu ul li a {
-      text-align: center; } }
-  .module-menu ul li a {
-    font-family: var(--menuFontFamily) !important;
-    font-size: var(--menuFontSize) !important; }
-  .module-menu ul li a {
-    color: var(--menuColor) !important;
-    display: inline-block;
-    position: relative; }
-  @media screen and (min-width: 991px) {
-    .module-menu ul li a:hover, .module-menu ul li a:hover span {
-      color: var(--menuHoverColor); } }
-  .module-menu ul li > ul ul {
-    left: 100%;
-    top: 0; }
-  .module-menu ul li > ul {
-    opacity: 0; }
-  .module-menu ul li:hover > ul {
-    position: absolute;
-    display: block;
-    opacity: 1; }
-
 .navbar-toggler {
   border: 1px solid var(--primaryColor);
   padding: 5px;

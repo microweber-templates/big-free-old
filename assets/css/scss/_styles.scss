@@ -593,64 +593,7 @@ $icons-sizes-list: 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 5
     width: 100%;
 }
 
-.module-menu {
 
-    ul {
-        li {
-            @media screen and (max-width: 767px) {
-
-                a {
-                text-align: center;
-                }
-            }
-
-            a {
-                font-family: var(--menuFontFamily) !important;
-                font-size: var(--menuFontSize) !important;
-
-            }
-
-            a {
-                color: var(--menuColor) !important;
-                display: inline-block $mw-importance;
-                position: relative $mw-importance;
-
-            }
-
-
-            @media screen and (min-width: 991px) {
-                a:hover, a:hover span {
-                    color: var(--menuHoverColor)$mw-importance;
-                }
-            }
-
-            > ul {
-
-                ul {
-
-                left: 100%;
-                top: 0;
-                }
-            }
-            > ul {
-                opacity: 0;
-
-            }
-
-            &:hover {
-               > ul {
-                    position: absolute;
-                    display: block;
-                   opacity: 1;
-
-                }
-
-            }
-        }
-
-        transition: .6s;
-    }
-}
 
 
 .navbar-toggler {

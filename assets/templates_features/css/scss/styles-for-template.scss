@@ -509,20 +509,78 @@
     }
 }
 
+.module-menu {
+
+    ul {
+        li {
+            @media screen and (max-width: 767px) {
+
+                a {
+                    text-align: center;
+                }
+            }
+
+            a {
+                font-family: var(--menuFontFamily) !important;
+                font-size: var(--menuFontSize) !important;
+
+            }
+
+            a {
+                color: var(--menuColor) !important;
+                display: inline-block ;
+                position: relative ;
+
+            }
+
+
+            a:hover, a:hover span {
+                color: var(--menuHoverColor);
+            }
+
+
+            > ul {
+
+                ul {
+
+                    left: 100%;
+                    top: 0;
+                }
+            }
+            > ul {
+                opacity: 0;
+
+            }
+
+            &:hover {
+                > ul {
+                    position: absolute;
+                    display: block;
+                    opacity: 1;
+
+                }
+
+            }
+        }
+
+        transition: .6s;
+    }
+}
+
 
 .header-background {
     background-color: var(--headerBg);
     padding: 10px;
 
     .nav-link {
-        color: var(--navLinkFontColor);
-        font-size: var(--navLinkFontSize);
-        font-family: var(--navLinkFontFamily);
-        &:hover {
-            color: var(--navLinkHoverColor);
+        color: var(--navLinkFontColor) !important;
+        font-size: var(--navLinkFontSize) !important;
+        font-family: var(--navLinkFontFamily) !important;
+        &:hover, &:hover span {
+            color: var(--navLinkHoverColor) !important;
         }
-        &.active {
-            color: var(--navLinkActiveColor);
+        &.active, &:active span {
+            color: var(--navLinkActiveColor) !important;
         }
     }
 
@@ -538,7 +596,14 @@
     }
     a {
         color: var(--footerLinkColor) !important;
-        &:hover {
+        &:hover, &:hover span {
+            color: var(--footerHoverLinkColor) !important;
+        }
+    }
+
+    .module-menu ul li a {
+        color: var(--footerLinkColor) !important;
+        &:hover, &:hover span {
             color: var(--footerHoverLinkColor) !important;
         }
     }
