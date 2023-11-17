@@ -992,3 +992,16 @@ body.js-dusk-browser-test {
 
     font-size: 27px;
 }
+
+.module-categories, .js-filter-category-tree {
+    ul {
+        padding: 0;
+        margin-bottom: 10px;
+
+        li {
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+}
