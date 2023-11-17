@@ -993,15 +993,79 @@ body.js-dusk-browser-test {
     font-size: 27px;
 }
 
-.module-categories, .js-filter-category-tree {
+.module-categories, .mw-shop-module-wrapper {
     ul {
         padding: 0;
-        margin-bottom: 10px;
+        margin: 0;
 
         li {
+            margin-bottom: 5px !important;
             a {
                 text-decoration: none;
             }
         }
+    }
+}
+
+
+.mw-admin-action-links {
+    position: relative;
+    text-decoration: none !important;
+    color: #000;
+
+    &:disabled{
+        opacity: .3;
+        pointer-events: none;
+    }
+
+    &.mw-adm-liveedit-tabs {
+        font-weight: 600;
+
+        &:active, &:focus, &.active {
+            font-weight: 700;
+
+        }
+
+        &.text-danger {
+            color: red !important;
+
+            &:after {
+                background-color: red;
+            }
+
+            &:hover {
+                color: red !important;
+            }
+        }
+    }
+
+    &.mw-liveedit-button-animation-component {
+        background: transparent;
+        border: none;
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+        bottom: 5px;
+        left: 0;
+        height: 2px;
+        width: 0;
+        background-color: #000;
+        opacity: 0;
+        transition: .5s;
+    }
+
+    &:hover, &:active, &:focus, &.active, &.mw-action-links-with-accordion:not(.collapsed) {
+        &:after {
+            width: 100%;
+            opacity: 1;
+        }
+        color: #000 !important;
+        font-weight: 500;
+    }
+
+    &:not(&.btn) {
+        padding-bottom: 12px !important;
     }
 }
