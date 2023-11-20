@@ -1,4 +1,5 @@
 <?php if ($footer == 'true'): ?>
+
     <module type="layouts" template="footers/skin-19" id="footer-layout" template-filter="footers" />
 <?php endif; ?>
 

@@ -613,12 +613,14 @@
     padding: 7px 11px !important;
 }
 
+a i:before {
+    color: var(--primaryColor);
+}
 
-a {
+a, .btn-link {
     color: var(--links) !important;
     line-height: var(--lineHeight);
     letter-spacing: var(--letterSpacing);
-
 }
 
 .btn:not(.btn-link) {

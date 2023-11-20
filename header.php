@@ -2,13 +2,6 @@
 include_once 'header-scripts.php';
 ?>
 
-<?php if ($preloader == 'true'): ?>
-    <div class="js-ajax-loading">
-        <module type="logo" id="header-logo-loading" logo-name="header-logo" class="w-100"/>
-    </div>
-<?php endif; ?>
-
-
 <?php
 $sticky_navigation = get_option('sticky_navigation', 'header-layout');
 

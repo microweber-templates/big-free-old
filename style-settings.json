@@ -607,7 +607,7 @@
                                     "fieldType": "colorPicker",
                                     "selectors":[":root"],
                                     "fieldSettings": {
-                                        "property": "--menuColor"
+                                        "property": "--navLinkFontColor"
                                     }
                                 },
                                 {

@@ -48,7 +48,7 @@ if($size != 'auto') {
                     <span class="logo-text">
                         <span
                             id="fitty-<?php print $params['id'] ?>-2"
-                            style="font-family: <?php print $font_family_safe; ?>;font-size:<?php print $font_size_display; ?>;">
+                            style="color: <?php print $text_color; ?>; font-family: <?php print $font_family_safe; ?>;font-size:<?php print $font_size_display; ?>;">
                             <?php print $text; ?>
                         </span>
                     </span>
