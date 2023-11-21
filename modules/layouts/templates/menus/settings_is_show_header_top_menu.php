@@ -71,4 +71,3 @@ return [
         'default' => get_option('multilanguage', $params['id']),
     ]
 ];
-?>
