@@ -1,11 +1,11 @@
 <div class="d-flex justify-content-between">
     <div>
-        <label>Search 2</label>
+        <label>Search</label>
         <input type="text" class="form-control" wire:model="keywords" placeholder="Type to search...">
     </div>
     <div class="d-flex gap-2">
         <div>
-            <label>Sort 2</label>
+            <label>Sort</label>
             <div>
                 <select class="form-control">
                     <option wire:click="filterSort('created_by', 'asc')">Newest</option>
@@ -18,7 +18,7 @@
             </div>
         </div>
         <div>
-            <label>Limit 2</label>
+            <label>Limit</label>
             <div>
                 <select class="form-control">
                     <option wire:click="filterLimit(1)">1</option>

@@ -22,7 +22,7 @@ class TemplateServiceProvider extends PackageServiceProvider
 
         $this->loadMigrationsFrom(__DIR__ . '/migrations/');
 
-        View::addNamespace('microweber-module-shop',
+        View::prependNamespace('microweber-module-shop',
             __DIR__ . '/resources/views/modules/shop/templates');
 
     }
