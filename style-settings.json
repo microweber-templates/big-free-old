@@ -384,8 +384,6 @@
                                     "--testimonialBorderVariable": "#000000",
                                     "--textOnDarkBackground": "#ffffff"
                                 }
-
-
                             },
                             {
                                 "name": "Bamboo",
@@ -478,7 +476,105 @@
                                     "--testimonialBorderVariable": "#000000",
                                     "--textOnDarkBackground": "#ffffff"
                                 }
+                            },
 
+                            { "name": "Yoga Studio", "mainColors": [ "#ff4551", "#6c757d", "#212529", "#ff4551", "#3ED0EB" ], "properties": { "--primaryColor": "#ff4551", "--links": "#3ED0EB", "--background": "#ffffff", "--secondary": "#6c757d", "--textDark": "#212529", "--textLight": "#ffffff", "--section": "#ffffff", "--headerBg": "#ffffff", "--topHeaderBg": "#000000", "--topHeaderElements": "#ffffff", "--menuColor": "#000000", "--menuHoverColor": "#1e1e1e", "--btnText": "#ffffff", "--textTransform": "none", "--paragraphColor": "#212529", "--headingColor": "#212529", "--btnBorderColor": "#ff4551", "--btnBackground": "#ff4551", "--btnBackgroundHover": "#e23b47", "--btnTextHoverColor": "#ffffff", "--btnSecondaryBackground": "#3ED0EB", "--btnSecondaryBackgroundHover": "#000000", "--btnSecondaryText": "#ffffff", "--btnSecondaryTextHoverColor": "#ffffff", "--btnOutlineBackground": "transparent", "--btnOutlineBackgroundHover": "#ff4551", "--btnOutlineText": "#ff4551", "--btnOutlineTextHoverColor": "#ffffff", "--formControlBorderColor": "#ced4da", "--formControlPlaceholderColor": "#6c757d", "--formControlBackground": "#ffffff", "--formControlTextColor": "#212529", "--formControlTextHoverColor": "#212529", "--formLabel": "#212529", "--footerBg": "#ffffff", "--footerTextColor": "#212529", "--footerLinkColor": "#3ED0EB", "--footerHoverLinkColor": "#000000", "--headerBtnColor": "#ffffff", "--navFontColor": "#212529", "--navLinkFontColor": "#212529", "--navLinkHoverColor": "#6c757d", "--navLinkActiveColor": "#6c757d", "--hamburgerBorderColor": "#000000", "--hamburgerBackground": "transparent", "--hamburgerIconColor": "#000000", "--testimonialBackgroundVariable": "#ffffff", "--testimonialBorderVariable": "#000000", "--textOnDarkBackground": "#ffffff" } },
+                            { "name": "Ians Birthday", "mainColors": [ "#1A0E3E", "#1F1A70", "#DB488B", "#FF83F6", "#3ED0EB" ], "properties": { "--primaryColor": "#1A0E3E", "--links": "#DB488B", "--background": "#FF83F6", "--secondary": "#1A0E3E", "--textDark": "#1F1A70", "--textLight": "#1F1A70", "--section": "#3ED0EB", "--bodyFontSize": "16px", "--fontFamily": "Jost, sans-serif", "--headerBg": "#FF83F6", "--topHeaderBg": "#1A0E3E", "--topHeaderElements": "#FFFFFF", "--menuColor": "#1A0E3E", "--menuHoverColor": "#1A0E3E", "--btnText": "#FFFFFF", "--menuFontSize": "16px", "--menuFontFamily": "Jost, sans-serif", "--lineHeight": "1.5", "--letterSpacing": "0", "--fontWeight": "400", "--textTransform": "none", "--paragraphColor": "#1F1A70", "--headingColor": "#1F1A70", "--paragraphSize": "1rem", "--headingOne": "64px", "--headingTwo": "52px", "--headingThree": "44px", "--headingFour": "32px", "--headingFive": "24px", "--headingSix": "20px", "--btnBorderRadius": "33px", "--btnBorderColor": "#1A0E3E", "--btnBorderSize": "2px", "--btnBorderStyle": "solid", "--btnPaddingBlock": "15px", "--btnPaddingInline": "24px", "--btnBackground": "#FF83F6", "--btnBackgroundHover": "#DB488B", "--btnTextHoverColor": "#FFFFFF", "--btnSecondaryBackground": "#3ED0EB", "--btnSecondaryBackgroundHover": "#1A0E3E", "--btnSecondaryText": "#FFFFFF", "--btnSecondaryTextHoverColor": "#FFFFFF", "--btnOutlineBackground": "transparent", "--btnOutlineBackgroundHover": "#1A0E3E", "--btnOutlineText": "#1A0E3E", "--btnOutlineTextHoverColor": "#FFFFFF", "--formControlBorderRadius": "2px", "--formControlBorderSize": "2px", "--formControlBorderStyle": "solid", "--formControlBorderColor": "#212529", "--formControlPaddingBlock": "15px", "--formControlPaddingInline": "15px", "--formControlPlaceholderColor": "#6c757d", "--formControlBackground": "#FFFFFF", "--formControlTextColor": "#1F1A70", "--formControlTextHoverColor": "#1F1A70", "--formLabel": "#1F1A70", "--formLabelFontSize": "16px", "--footerBg": "#FF83F6", "--footerTextColor": "#1F1A70", "--footerLinkColor": "#1F1A70", "--footerHoverLinkColor": "#1F1A70", "--headerBtnColor": "#FFFFFF", "--navFontColor": "#1F1A70", "--navFontSize": "16px", "--navFontFamily": "Jost, sans-serif", "--navLinkFontColor": "#1F1A70", "--navLinkFontSize": "16px", "--navLinkFontFamily": "Jost, sans-serif", "--navLinkHoverColor": "#1A0E3E", "--navLinkActiveColor": "#1A0E3E", "--hamburgerBorderRadius": "0", "--hamburgerBorderSize": "1px", "--hamburgerBorderStyle": "solid", "--hamburgerBorderColor": "#1F1A70", "--hamburgerBackground": "transparent", "--hamburgerIconSize": "16px", "--hamburgerIconColor": "#1F1A70", "--testimonialBackgroundVariable": "#FFFFFF", "--testimonialBorderVariable": "#1F1A70", "--textOnDarkBackground": "#FFFFFF" } },
+
+
+                            {
+                                "name": "Green Globe On Moss - Environmental Concept",
+                                "mainColors": [
+                                    "#042940",
+                                    "#005C53",
+                                    "#9FC131",
+                                    "#DBF227",
+                                    "#D6D58E"
+                                ],
+                                "properties": {
+                                    "--fontFamily": "Jost, sans-serif",
+                                    "--primaryColor": "#9FC131",
+                                    "--links": "#042940",
+                                    "--background": "#DBF227",
+                                    "--secondary": "#005C53",
+                                    "--textDark": "#042940",
+                                    "--textLight": "#D6D58E",
+                                    "--section": "#ffffff",
+                                    "--bodyFontSize": "16px",
+                                    "--headerBg": "#ffffff",
+                                    "--topHeaderBg": "#042940",
+                                    "--topHeaderElements": "#ffffff",
+                                    "--menuColor": "#042940",
+                                    "--menuHoverColor": "#042940",
+                                    "--btnText": "#ffffff",
+                                    "--menuFontSize": "16px",
+                                    "--menuFontFamily": "Jost, sans-serif",
+                                    "--lineHeight": "1.5",
+                                    "--letterSpacing": "0",
+                                    "--fontWeight": "400",
+                                    "--textTransform": "none",
+                                    "--paragraphColor": "#042940",
+                                    "--headingColor": "#042940",
+                                    "--paragraphSize": "1rem",
+                                    "--headingOne": "64px",
+                                    "--headingTwo": "52px",
+                                    "--headingThree": "44px",
+                                    "--headingFour": "32px",
+                                    "--headingFive": "24px",
+                                    "--headingSix": "20px",
+                                    "--btnBorderRadius": "33px",
+                                    "--btnBorderColor": "#9FC131",
+                                    "--btnBorderSize": "2px",
+                                    "--btnBorderStyle": "solid",
+                                    "--btnPaddingBlock": "15px",
+                                    "--btnPaddingInline": "24px",
+                                    "--btnBackground": "#9FC131",
+                                    "--btnBackgroundHover": "#DBF227",
+                                    "--btnTextHoverColor": "#ffffff",
+                                    "--btnSecondaryBackground": "#005C53",
+                                    "--btnSecondaryBackgroundHover": "#000000",
+                                    "--btnSecondaryText": "#ffffff",
+                                    "--btnSecondaryTextHoverColor": "#ffffff",
+                                    "--btnOutlineBackground": "transparent",
+                                    "--btnOutlineBackgroundHover": "#9FC131",
+                                    "--btnOutlineText": "#9FC131",
+                                    "--btnOutlineTextHoverColor": "#ffffff",
+                                    "--formControlBorderRadius": "2px",
+                                    "--formControlBorderSize": "2px",
+                                    "--formControlBorderStyle": "solid",
+                                    "--formControlBorderColor": "#ced4da",
+                                    "--formControlPaddingBlock": "15px",
+                                    "--formControlPaddingInline": "15px",
+                                    "--formControlPlaceholderColor": "#005C53",
+                                    "--formControlBackground": "#ffffff",
+                                    "--formControlTextColor": "#042940",
+                                    "--formControlTextHoverColor": "#042940",
+                                    "--formLabel": "#042940",
+                                    "--formLabelFontSize": "16px",
+                                    "--footerBg": "#ffffff",
+                                    "--footerTextColor": "#042940",
+                                    "--footerLinkColor": "#042940",
+                                    "--footerHoverLinkColor": "#042940",
+                                    "--headerBtnColor": "#ffffff",
+                                    "--navFontColor": "#042940",
+                                    "--navFontSize": "16px",
+                                    "--navFontFamily": "Jost, sans-serif",
+                                    "--navLinkFontColor": "#042940",
+                                    "--navLinkFontSize": "16px",
+                                    "--navLinkFontFamily": "Jost, sans-serif",
+                                    "--navLinkHoverColor": "#005C53",
+                                    "--navLinkActiveColor": "#005C53",
+                                    "--hamburgerBorderRadius": "0",
+                                    "--hamburgerBorderSize": "1px",
+                                    "--hamburgerBorderStyle": "solid",
+                                    "--hamburgerBorderColor": "#042940",
+                                    "--hamburgerBackground": "transparent",
+                                    "--hamburgerIconSize": "16px",
+                                    "--hamburgerIconColor": "#042940",
+                                    "--testimonialBackgroundVariable": "#ffffff",
+                                    "--testimonialBorderVariable": "#042940",
+                                    "--textOnDarkBackground": "#ffffff"
+                                }
                             },
                             {
                                 "name": "Flower",
@@ -571,9 +667,6 @@
                                     "--testimonialBorderVariable": "#000000",
                                     "--textOnDarkBackground": "#ffffff"
                                 }
-
-
-
                             },
                             {
                                 "name": "Urban",
@@ -603,8 +696,7 @@
                                     "--navLinkFontColor": "#000000",
                                     "--paragraph": "22px",
                                     "--topHeaderBg": "#000000"
-                                 }
-
+                                }
                             },
                             {
                                 "name": "Private School",
