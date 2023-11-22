@@ -142,7 +142,7 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,w
 
   &-secondary {
     &, > th, > td {
-      background-color: var(--secodnary);
+      background-color: var(--secondary);
     }
   }
 
@@ -390,7 +390,7 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,w
   }
 
   &-secondary {
-    background-color: var(--secodnary);
+    background-color: var(--secondary);
     border-color: darken($secondary, 5%);
   }
 

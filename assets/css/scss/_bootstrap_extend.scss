@@ -595,7 +595,7 @@ hr {
 }
 
 .hover-bg-secondary:hover {
-    background-color: var(--secodnary);
+    background-color: var(--secondary);
 
     &.hover-text-light {
         &:hover {
@@ -650,7 +650,7 @@ hr {
 }
 
 .hover-text-secondary:hover {
-    color: var(--secodnary);
+    color: var(--secondary);
 }
 
 .hover-text-success:hover {
@@ -685,7 +685,7 @@ hr {
 }
 
 .border-color-secondary {
-    border-color: var(--secodnary);
+    border-color: var(--secondary);
 }
 
 .border-color-success {
@@ -717,7 +717,7 @@ hr {
 }
 
 .hover-border-color-secondary:hover {
-    border-color: var(--secodnary);
+    border-color: var(--secondary);
 }
 
 .hover-border-color-success:hover {

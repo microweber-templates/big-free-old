@@ -133,7 +133,7 @@ $web-font-path: "https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,
     }
 
     &.btn-secondary ~ .dropdown-menu {
-      background-color: var(--secodnary);
+      background-color: var(--secondary);
       border-color: darken($secondary, 5%);
 
       .dropdown-item {
@@ -238,7 +238,7 @@ table {
 
   &-secondary {
     &, > th, > td {
-      background-color: var(--secodnary);
+      background-color: var(--secondary);
     }
   }
 
@@ -455,7 +455,7 @@ label,
 
   &-secondary {
     &, > th, > td {
-      background-color: var(--secodnary);
+      background-color: var(--secondary);
     }
   }
 

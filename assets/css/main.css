@@ -9122,7 +9122,7 @@ body.page-loaded .js-ajax-loading {
     -webkit-transform: scale(1);
     transform: scale(1); } }
 .mw-ui-btn.df {
-  background-color: var(--secodnary);
+  background-color: var(--secondary);
   color: #212529; }
 
 .mw-ui-bg-info, .mw-ui-btn-info, .mw-ui-btn.active-info {
@@ -17046,7 +17046,7 @@ hr {
   color: #212529; }
 
 .hover-bg-secondary:hover {
-  background-color: var(--secodnary); }
+  background-color: var(--secondary); }
   .hover-bg-secondary:hover.hover-text-light:hover .text-primary {
     color: #f8f9fa; }
   .hover-bg-secondary:hover.hover-text-dark:hover .text-primary {
@@ -17077,7 +17077,7 @@ hr {
   color: var(--primaryColor); }
 
 .hover-text-secondary:hover {
-  color: var(--secodnary); }
+  color: var(--secondary); }
 
 .hover-text-success:hover {
   color: #198754; }
@@ -17101,7 +17101,7 @@ hr {
   border-color: var(--primaryColor); }
 
 .border-color-secondary {
-  border-color: var(--secodnary); }
+  border-color: var(--secondary); }
 
 .border-color-success {
   border-color: #198754; }
@@ -17125,7 +17125,7 @@ hr {
   border-color: var(--primaryColor); }
 
 .hover-border-color-secondary:hover {
-  border-color: var(--secodnary); }
+  border-color: var(--secondary); }
 
 .hover-border-color-success:hover {
   border-color: #198754; }
