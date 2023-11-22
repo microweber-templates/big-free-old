@@ -7,7 +7,9 @@
                 {
                     "title": "Font Pack",
                     "description": "Choose a font pack to use for your site.",
-                    "selectors":[":root"],
+                    "selectors": [
+                        ":root"
+                    ],
                     "fieldType": "fontFamily",
                     "fieldSettings": {
                         "property": "--fontFamily"
@@ -17,7 +19,9 @@
                     "title": "Font Size",
                     "description": "Choose a font size to use for your site.",
                     "fieldType": "rangeSlider",
-                    "selectors":[":root"],
+                    "selectors": [
+                        ":root"
+                    ],
                     "fieldSettings": {
                         "property": "--bodyFontSize",
                         "min": 1,
@@ -26,7 +30,6 @@
                         "unit": "px"
                     }
                 },
-
                 {
                     "title": "Spacing",
                     "description": "Pick a spacing style, and customize it to achieve the style you want.",
@@ -35,7 +38,9 @@
                             "title": "Line Height",
                             "description": "Choose a line height to use for your site.",
                             "fieldType": "rangeSlider",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--lineHeight",
                                 "min": 0.5,
@@ -48,7 +53,9 @@
                             "title": "Letter Spacing",
                             "description": "Choose a letter spacing to use for your site.",
                             "fieldType": "rangeSlider",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--letterSpacing",
                                 "min": 1,
@@ -61,7 +68,9 @@
                             "title": "Clear All",
                             "description": "Clear all spacing styles.",
                             "fieldType": "clearAll",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "properties": [
                                     "--lineHeight",
@@ -79,7 +88,9 @@
                             "title": "Heading 1",
                             "description": "Heading 1 is typically used for page titles. Changes affect all Heading 1s.",
                             "fieldType": "rangeSlider",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--headingOne",
                                 "min": 1,
@@ -92,7 +103,9 @@
                             "title": "Heading 2",
                             "description": "Heading 3 is typically used for page titles. Changes affect all Heading 1s.",
                             "fieldType": "rangeSlider",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--headingTwo",
                                 "min": 1,
@@ -105,7 +118,9 @@
                             "title": "Heading 3",
                             "description": "Heading 3 is typically used for page titles. Changes affect all Heading 1s.",
                             "fieldType": "rangeSlider",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--headingThree",
                                 "min": 1,
@@ -118,7 +133,9 @@
                             "title": "Heading 4",
                             "description": "Heading 4 is typically used for page titles. Changes affect all Heading 1s.",
                             "fieldType": "rangeSlider",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--headingFor",
                                 "min": 1,
@@ -131,7 +148,9 @@
                             "title": "Heading 5",
                             "description": "Heading 5 is typically used for page titles. Changes affect all Heading 1s.",
                             "fieldType": "rangeSlider",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--headingFive",
                                 "min": 1,
@@ -144,7 +163,9 @@
                             "title": "Heading 6",
                             "description": "Heading 6 is typically used for page titles. Changes affect all Heading 1s.",
                             "fieldType": "rangeSlider",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--headingSix",
                                 "min": 1,
@@ -157,7 +178,9 @@
                             "title": "Clear All",
                             "description": "Clear all heading styles.",
                             "fieldType": "clearAll",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "properties": [
                                     "--headingOne",
@@ -179,7 +202,9 @@
                             "title": "Paragraph",
                             "description": "Paragraphs are typically used for body text. Changes affect all paragraphs.",
                             "fieldType": "rangeSlider",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--paragraphSize",
                                 "min": 1,
@@ -192,7 +217,9 @@
                             "title": "Clear All",
                             "description": "Clear all heading styles.",
                             "fieldType": "clearAll",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "properties": [
                                     "--paragraphSize"
@@ -205,7 +232,9 @@
                     "title": "Clear All",
                     "description": "Clear all font styles.",
                     "fieldType": "clearAll",
-                    "selectors":[":root"],
+                    "selectors": [
+                        ":root"
+                    ],
                     "fieldSettings": {
                         "properties": [
                             "--fontFamily",
@@ -227,7 +256,9 @@
                             "title": "Testimonials box background",
                             "description": "Choose a background color for the testimonials box.",
                             "fieldType": "colorPicker",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--testimonialBackgroundVariable"
                             }
@@ -236,19 +267,19 @@
                             "title": "Testimonials border color",
                             "description": "Choose a border color for the testimonials box.",
                             "fieldType": "colorPicker",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--testimonialBorderVariable"
                             }
                         },
                         {
-
                         }
                     ]
                 }
             ]
         },
-
         {
             "title": "Colors",
             "description": "Pick a color palette, and customize it to achieve the style you want.",
@@ -256,229 +287,71 @@
                 {
                     "title": "Color Palette",
                     "description": "Choose a color palette to use for your site.",
-                    "selectors":[":root"],
+                    "selectors": [
+                        ":root"
+                    ],
                     "fieldType": "colorPalette",
                     "fieldSettings": {
                         "colors": [
                             {
-                                "name": "Outer Space",
+                                "name": "Urban",
                                 "mainColors": [
-                                    "#212c31",
-                                    "#486972",
-                                    "#e1ebec"
+                                    "#ff8181",
+                                    "#ffffff",
+                                    "#ffffff"
                                 ],
                                 "properties": {
-                                    "--background": "#e1ebec",
-                                    "--section": "#e1ebec",
-                                    "--primaryColor": "#486972",
-                                    "--headingColor": "#212c31",
-                                    "--paragraphColor": "#212c31",
-                                    "--menuColor": "#212c31",
-                                    "--headerBg": "#e1ebec",
-                                    "--topHeaderBg": "#486972",
-                                    "--topHeaderElements": "#212c31",
-                                    "--footerBg": "#e1ebec",
-                                    "--lineHeight":  "1em",
-                                    "--letterSpacing": "0.5px",
-                                    "--headingOne": "64px",
-                                    "--headingTwo": "52px",
-                                    "--headingThree": "43px",
-                                    "--headingFour": "34px",
-                                    "--headingFive": "28px",
-                                    "--headingSix": "20px",
-                                    "--btnBorderRadius": "13px",
-                                    "--btnBorderColor": "#486972",
-                                    "--btnBorderSize": "0px",
-                                    "--btnBorderStyle": "solid",
-                                    "--formControlBorderRadius": "13px",
-                                    "--formControlBorderSize": "2px",
-                                    "--formControlBorderStyle": "solid",
-                                    "--formControlBorderColor": "#486972",
-                                    "--formControlBackground": "#e1ebec",
-                                    "--formControlColor": "#212c31",
-                                    "--formControlPlaceholderColor": "#486972",
-                                    "--formControlPaddingTop": "14px",
-                                    "--formControlPaddingBottom": "14px",
-                                    "--formControlPaddingRight": "14px",
-                                    "--formControlPaddingLeft": "14px",
-                                    "--formLabelColor": "#212c31",
-                                    "--formLabelFontSize": "14px"
-                                }
-                            },
-                            {
-                                "name": "Bleached Cedar",
-                                "mainColors": [
-                                    "#281f32",
-                                    "#926ebd",
-                                    "#ebe8f7"
-                                ],
-                                "properties": {
-                                    "--background": "#ebe8f7",
-                                    "--section": "#ebe8f7",
-                                    "--primaryColor": "#926ebd",
-                                    "--headingColor": "#281f32",
-                                    "--paragraphColor": "#281f32",
-                                    "--menuColor": "#281f32",
-                                    "--headerBg": "#eefbf4",
-                                    "--topHeaderBg": "#ebe8f7",
-                                    "--topHeaderElements": "#281f32",
-                                    "--footerBg": "#ebe8f7",
-                                    "--lineHeight":  "1em",
-                                    "--letterSpacing": "0.5px",
-                                    "--headingOne": "64px",
-                                    "--headingTwo": "52px",
-                                    "--headingThree": "43px",
-                                    "--headingFour": "34px",
-                                    "--headingFive": "28px",
-                                    "--headingSix": "20px",
-                                    "--btnBorderRadius": "13px",
-                                    "--btnBorderColor": "#926ebd",
-                                    "--btnBorderSize": "0px",
-                                    "--btnBorderStyle": "solid",
-                                    "--formControlBorderRadius": "13px",
-                                    "--formControlBorderSize": "2px",
-                                    "--formControlBorderStyle": "solid",
-                                    "--formControlBorderColor": "#926ebd",
-                                    "--formControlBackground": "#e1ebec",
-                                    "--formControlColor": "#212c31",
-                                    "--formControlPlaceholderColor": "#926ebd",
-                                    "--formControlPaddingTop": "14px",
-                                    "--formControlPaddingBottom": "14px",
-                                    "--formControlPaddingRight": "14px",
-                                    "--formControlPaddingLeft": "14px"
-                                }
-                            },
-                            {
-                                "name": "Genoa",
-                                "mainColors": [
-                                    "#08261d",
-                                    "#19825c",
-                                    "#eefbf4"
-                                ],
-                                "properties": {
-                                    "--background": "#eefbf4",
-                                    "--section": "#eefbf4",
-                                    "--primaryColor": "#19825c",
-                                    "--headingColor": "#08261d",
-                                    "--paragraphColor": "#08261d",
-                                    "--menuColor": "#08261d",
-                                    "--headerBg": "#eefbf4",
-                                    "--topHeaderBg": "#27a272",
-                                    "--topHeaderElements": "#19825c",
-                                    "--footerBg": "#eefbf4",
-                                    "--lineHeight":  "1em",
-                                    "--letterSpacing": "0.5px",
-                                    "--headingOne": "64px",
-                                    "--headingTwo": "52px",
-                                    "--headingThree": "43px",
-                                    "--headingFour": "34px",
-                                    "--headingFive": "28px",
-                                    "--headingSix": "20px",
-                                    "--btnBorderRadius": "13px",
-                                    "--btnBorderColor": "#19825c",
-                                    "--btnBorderSize": "0px",
-                                    "--btnBorderStyle": "solid",
-                                    "--formControlBorderRadius": "13px",
-                                    "--formControlBorderSize": "2px",
-                                    "--formControlBorderStyle": "solid",
-                                    "--formControlBorderColor": "#19825c",
-                                    "--formControlBackground": "#e1ebec",
-                                    "--formControlColor": "#212c31",
-                                    "--formControlPlaceholderColor": "#19825c",
-                                    "--formControlPaddingTop": "14px",
-                                    "--formControlPaddingBottom": "14px",
-                                    "--formControlPaddingRight": "14px",
-                                    "--formControlPaddingLeft": "14px"
-                                }
-                            },
-                            {
-                                "name": "Merlot",
-                                "mainColors": [
-                                    "#4d0417",
-                                    "#f63d58",
-                                    "#fff1f2"
-                                ],
-                                "properties": {
-                                    "--background": "#fff1f2",
-                                    "--section": "#fff1f2",
-                                    "--primaryColor": "#f63d58",
-                                    "--headingColor": "#4d0417",
-                                    "--paragraphColor": "#4d0417",
-                                    "--menuColor": "#4d0417",
-                                    "--headerBg": "#fff1f2",
-                                    "--topHeaderBg": "#f63d58",
-                                    "--topHeaderElements": "#4d0417",
-                                    "--footerBg": "#fff1f2",
-                                    "--lineHeight":  "1em",
-                                    "--letterSpacing": "0.5px",
-                                    "--headingOne": "64px",
-                                    "--headingTwo": "52px",
-                                    "--headingThree": "43px",
-                                    "--headingFour": "34px",
-                                    "--headingFive": "28px",
-                                    "--headingSix": "20px",
-                                    "--btnBorderRadius": "13px",
-                                    "--btnBorderColor": "#f63d58",
-                                    "--btnBorderSize": "0px",
-                                    "--btnBorderStyle": "solid",
-                                    "--formControlBorderRadius": "13px",
-                                    "--formControlBorderSize": "2px",
-                                    "--formControlBorderStyle": "solid",
-                                    "--formControlBorderColor": "#f63d58",
-                                    "--formControlBackground": "#e1ebec",
-                                    "--formControlColor": "#212c31",
-                                    "--formControlPlaceholderColor": "#f63d58",
-                                    "--formControlPaddingTop": "14px",
-                                    "--formControlPaddingBottom": "14px",
-                                    "--formControlPaddingRight": "14px",
-                                    "--formControlPaddingLeft": "14px"
-                                }
-                            },
+                                    "--fontFamily": "Vollkorn",
+                                    "--primaryColor": "#ff8181",
+                                    "--btnBackground": "#ff8181",
+                                    "--btnBorderColor": "#ff8181",
+                                    "--btnBackgroundHover": "#ff8181",
+                                    "--btnSecondaryBackground": "#ff8181",
+                                    "--btnSecondaryTextColor": "#ff8181",
+                                    "--btnOutlineText": "#ff8181",
+                                    "--btnOutlineBackgroundHover": "#ff8181",
+                                    "--btnTextColor": "#ffffff",
+                                    "--footerBg": "#000000",
+                                    "--footerTextColor": "#ffffff",
+                                    "--footerHoverLinkColor": "#ff8181",
+                                    "--footerLinkColor": "#ffffff",
+                                    "--headerBg": "#ffffff",
+                                    "--navLinkHoverColor": "#ff8181",
+                                    "--navLinkActiveColor": "#ff8181",
+                                    "--navLinkFontColor": "#000000",
+                                    "--paragraph": "22px",
+                                    "--topHeaderBg": "#000000"
+                                 }
 
+                            },
                             {
-                                "name": "Persian Indigo",
+                                "name": "Private School",
                                 "mainColors": [
-                                    "#241362",
-                                    "#7961f1",
-                                    "#f3f3ff"
+                                    "#135200",
+                                    "#ffffff",
+                                    "#000000"
                                 ],
                                 "properties": {
-                                    "--background": "#f3f3ff",
-                                    "--section": "#f3f3ff",
-                                    "--primaryColor": "#7961f1",
-                                    "--headingColor": "#241362",
-                                    "--paragraphColor": "#241362",
-                                    "--menuColor": "#241362",
-                                    "--headerBg": "#f3f3ff",
-                                    "--topHeaderBg": "#f3f3ff",
-                                    "--topHeaderElements": "#241362",
-                                    "--footerBg": "#f3f3ff",
-                                    "--lineHeight":  "1em",
-                                    "--letterSpacing": "0.5px",
-                                    "--headingOne": "64px",
-                                    "--headingTwo": "52px",
-                                    "--headingThree": "43px",
-                                    "--headingFour": "34px",
-                                    "--headingFive": "28px",
-                                    "--headingSix": "20px",
-                                    "--btnBorderRadius": "13px",
-                                    "--btnBorderColor": "#7961f1",
-                                    "--btnBorderSize": "0px",
-                                    "--btnBorderStyle": "solid",
-                                    "--formControlBorderRadius": "13px",
-                                    "--formControlBorderSize": "2px",
-                                    "--formControlBorderStyle": "solid",
-                                    "--formControlBorderColor": "#7961f1",
-                                    "--formControlBackground": "#e1ebec",
-                                    "--formControlColor": "#212c31",
-                                    "--formControlPlaceholderColor": "#7961f1",
-                                    "--formControlPaddingTop": "14px",
-                                    "--formControlPaddingBottom": "14px",
-                                    "--formControlPaddingRight": "14px",
-                                    "--formControlPaddingLeft": "14px"
+                                    "--headerBg": "#135200",
+                                    "--navLinkFontColor": "#ffffff",
+                                    "--primaryColor": "#000000",
+                                    "--btnBackground": "#135208",
+                                    "--btnBorderColor": "#135208",
+                                    "--btnTextColor": "#ffffff",
+                                    "--btnSecondaryBackground": "#135208",
+                                    "--btnOutlineText": "#135208",
+                                    "--btnBackgroundHover": "#0d3d05",
+                                    "--btnOutlineBackgroundHover": "#135208",
+                                    "--fontFamily": "Lora",
+                                    "--footerTextColor": "#ffffff",
+                                    "--footerLinkColor": "#ffffff",
+                                    "--footerHoverLinkColor": "#c4ffcd",
+                                    "--linkColor": "#000000",
+                                    "--links": "#000000",
+                                    "--btnOutlineTextHoverColor": "#ffffff",
+                                    "--background": "#f3f3ff"
                                 }
                             }
-
                         ]
                     }
                 },
@@ -491,7 +364,9 @@
                     "title": "Body Background",
                     "description": "Choose a body background to use for your site.",
                     "fieldType": "colorPicker",
-                    "selectors":[":root"],
+                    "selectors": [
+                        ":root"
+                    ],
                     "fieldSettings": {
                         "property": "--background"
                     }
@@ -500,7 +375,9 @@
                     "title": "Section Background",
                     "description": "Choose a section background to use for your site.",
                     "fieldType": "colorPicker",
-                    "selectors":[":root"],
+                    "selectors": [
+                        ":root"
+                    ],
                     "fieldSettings": {
                         "property": "--section"
                     }
@@ -509,7 +386,9 @@
                     "title": "Primary Color",
                     "description": "Choose a primary color to use for your site.",
                     "fieldType": "colorPicker",
-                    "selectors":[":root"],
+                    "selectors": [
+                        ":root"
+                    ],
                     "fieldSettings": {
                         "property": "--primaryColor"
                     }
@@ -518,7 +397,9 @@
                     "title": "Paragraph Color",
                     "description": "Choose a paragraph color to use for your site.",
                     "fieldType": "colorPicker",
-                    "selectors":[":root"],
+                    "selectors": [
+                        ":root"
+                    ],
                     "fieldSettings": {
                         "property": "--paragraphColor"
                     }
@@ -527,7 +408,9 @@
                     "title": "Heading Color",
                     "description": "Choose a heading color to use for your site.",
                     "fieldType": "colorPicker",
-                    "selectors":[":root"],
+                    "selectors": [
+                        ":root"
+                    ],
                     "fieldSettings": {
                         "property": "--headingColor"
                     }
@@ -536,7 +419,9 @@
                     "title": "Text on Dark Background",
                     "description": "Choose a text on dark background color to use for your site.",
                     "fieldType": "colorPicker",
-                    "selectors":[":root"],
+                    "selectors": [
+                        ":root"
+                    ],
                     "fieldSettings": {
                         "property": "--textOnDarkBackground"
                     }
@@ -545,7 +430,9 @@
                     "title": "Clear All",
                     "description": "Clear all the styles you have set for your site.",
                     "fieldType": "clearAll",
-                    "selectors":[":root"],
+                    "selectors": [
+                        ":root"
+                    ],
                     "fieldSettings": {
                         "properties": [
                             "--background",
@@ -570,7 +457,6 @@
                 }
             ]
         },
-
         {
             "title": "Header",
             "description": "Pick a header style, and customize it to achieve the style you want.",
@@ -583,7 +469,9 @@
                             "title": "Header Background",
                             "description": "Choose a header background to use for your site.",
                             "fieldType": "colorPicker",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--headerBg"
                             }
@@ -592,7 +480,9 @@
                             "title": "Top Header Background",
                             "description": "Choose a top header background to use for your site.",
                             "fieldType": "colorPicker",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--topHeaderBg"
                             }
@@ -605,7 +495,9 @@
                                     "title": "Menu Color",
                                     "description": "Choose a menu color to use for your site.",
                                     "fieldType": "colorPicker",
-                                    "selectors":[":root"],
+                                    "selectors": [
+                                        ":root"
+                                    ],
                                     "fieldSettings": {
                                         "property": "--navLinkFontColor"
                                     }
@@ -614,7 +506,9 @@
                                     "title": "Menu Hover Color",
                                     "description": "Choose a menu hover color to use for your site.",
                                     "fieldType": "colorPicker",
-                                    "selectors":[":root"],
+                                    "selectors": [
+                                        ":root"
+                                    ],
                                     "fieldSettings": {
                                         "property": "--navLinkHoverColor"
                                     }
@@ -623,7 +517,9 @@
                                     "title": "Menu Active Color",
                                     "description": "Choose a menu active color to use for your site.",
                                     "fieldType": "colorPicker",
-                                    "selectors":[":root"],
+                                    "selectors": [
+                                        ":root"
+                                    ],
                                     "fieldSettings": {
                                         "property": "--navLinkActiveColor"
                                     }
@@ -636,12 +532,10 @@
                     "title": "Sizes",
                     "description": "Choose a header sizes to use for your site.",
                     "settings": [
-
                     ]
                 }
             ]
         },
-
         {
             "title": "Forms",
             "description": "Pick a form style, and customize it to achieve the style you want.",
@@ -654,7 +548,9 @@
                             "title": "Form Input Background Color",
                             "description": "Choose a form input background color to use for your site.",
                             "fieldType": "colorPicker",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--formControlBackground"
                             }
@@ -663,7 +559,9 @@
                             "title": "Form Label Color",
                             "description": "Choose a form label color to use for your site.",
                             "fieldType": "colorPicker",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--formLabelColor"
                             }
@@ -672,7 +570,9 @@
                             "title": "Form Input Text Color",
                             "description": "Choose a form input text color to use for your site.",
                             "fieldType": "colorPicker",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--formControlTextColor"
                             }
@@ -681,7 +581,9 @@
                             "title": "Form Input Text Hover Color",
                             "description": "Choose a form input text hover color to use for your site.",
                             "fieldType": "colorPicker",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--formControlTextHoverColor"
                             }
@@ -690,7 +592,9 @@
                             "title": "Form Input Border Color",
                             "description": "Choose a button border color to use for your site.",
                             "fieldType": "colorPicker",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--formControlBorderColor"
                             }
@@ -699,7 +603,9 @@
                             "title": "Form Input Placeholder Color",
                             "description": "Choose a button placeholder color to use for your site.",
                             "fieldType": "colorPicker",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--formControlPlaceholderColor"
                             }
@@ -708,7 +614,9 @@
                             "title": "Clear All",
                             "description": "Clear all form inputs styles you have set for your site.",
                             "fieldType": "clearAll",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "properties": [
                                     "--formControlBackground",
@@ -730,7 +638,9 @@
                             "title": "Form Label Font Size",
                             "description": "Choose a form label font size to use for your site.",
                             "fieldType": "rangeSlider",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--formLabelFontSize",
                                 "min": 1,
@@ -743,7 +653,9 @@
                             "title": "Form Input Border Radius",
                             "description": "Choose a form input border radius to use for your site.",
                             "fieldType": "rangeSlider",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--formControlBorderRadius",
                                 "min": 1,
@@ -756,7 +668,9 @@
                             "title": "Form Input Border Size",
                             "description": "Choose a form input border size to use for your site.",
                             "fieldType": "rangeSlider",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--formControlBorderSize",
                                 "min": 1,
@@ -769,7 +683,9 @@
                             "title": "Form Input Padding Horizontal",
                             "description": "Choose a form input padding horizontal to use for your site.",
                             "fieldType": "rangeSlider",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--formControlPaddingInline",
                                 "min": 1,
@@ -782,7 +698,9 @@
                             "title": "Form Input Padding Vertical",
                             "description": "Choose a form input padding vertical to use for your site.",
                             "fieldType": "rangeSlider",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--formControlPaddingBlock",
                                 "min": 1,
@@ -795,7 +713,9 @@
                             "title": "Clear All",
                             "description": "Clear all form inputs styles you have set for your site.",
                             "fieldType": "clearAll",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "properties": [
                                     "--formControlBorderRadius",
@@ -809,7 +729,6 @@
                 }
             ]
         },
-
         {
             "title": "Buttons",
             "description": "Pick a button style, and customize it to achieve the style you want.",
@@ -826,7 +745,9 @@
                                     "title": "Button Background Color",
                                     "description": "Choose a button background color to use for your site.",
                                     "fieldType": "colorPicker",
-                                    "selectors":[":root"],
+                                    "selectors": [
+                                        ":root"
+                                    ],
                                     "fieldSettings": {
                                         "property": "--btnBackground"
                                     }
@@ -835,7 +756,9 @@
                                     "title": "Button Text Color",
                                     "description": "Choose a button text color to use for your site.",
                                     "fieldType": "colorPicker",
-                                    "selectors":[":root"],
+                                    "selectors": [
+                                        ":root"
+                                    ],
                                     "fieldSettings": {
                                         "property": "--btnTextColor"
                                     }
@@ -844,7 +767,9 @@
                                     "title": "Button Border Color",
                                     "description": "Choose a button border color to use for your site.",
                                     "fieldType": "colorPicker",
-                                    "selectors":[":root"],
+                                    "selectors": [
+                                        ":root"
+                                    ],
                                     "fieldSettings": {
                                         "property": "--btnBorderColor"
                                     }
@@ -853,7 +778,9 @@
                                     "title": "Button Background Hover Color",
                                     "description": "Choose a button background hover color to use for your site.",
                                     "fieldType": "colorPicker",
-                                    "selectors":[":root"],
+                                    "selectors": [
+                                        ":root"
+                                    ],
                                     "fieldSettings": {
                                         "property": "--btnBackgroundHover"
                                     }
@@ -862,7 +789,9 @@
                                     "title": "Button Text Hover Color",
                                     "description": "Choose a button text hover color to use for your site.",
                                     "fieldType": "colorPicker",
-                                    "selectors":[":root"],
+                                    "selectors": [
+                                        ":root"
+                                    ],
                                     "fieldSettings": {
                                         "property": "--btnTextHoverColor"
                                     }
@@ -871,7 +800,9 @@
                                     "title": "Clear All",
                                     "description": "Clear all button styles you have set for your site.",
                                     "fieldType": "clearAll",
-                                    "selectors":[":root"],
+                                    "selectors": [
+                                        ":root"
+                                    ],
                                     "fieldSettings": {
                                         "properties": [
                                             "--btnBackground",
@@ -892,7 +823,9 @@
                                     "title": "Button Background Color",
                                     "description": "Choose a button background color to use for your site.",
                                     "fieldType": "colorPicker",
-                                    "selectors":[":root"],
+                                    "selectors": [
+                                        ":root"
+                                    ],
                                     "fieldSettings": {
                                         "property": "--btnSecondaryBackground"
                                     }
@@ -901,7 +834,9 @@
                                     "title": "Button Text Color",
                                     "description": "Choose a button text color to use for your site.",
                                     "fieldType": "colorPicker",
-                                    "selectors":[":root"],
+                                    "selectors": [
+                                        ":root"
+                                    ],
                                     "fieldSettings": {
                                         "property": "--btnSecondaryTextColor"
                                     }
@@ -910,7 +845,9 @@
                                     "title": "Button Border Color",
                                     "description": "Choose a button border color to use for your site.",
                                     "fieldType": "colorPicker",
-                                    "selectors":[":root"],
+                                    "selectors": [
+                                        ":root"
+                                    ],
                                     "fieldSettings": {
                                         "property": "--btnSecondaryBorderColor"
                                     }
@@ -919,7 +856,9 @@
                                     "title": "Button Background Hover Color",
                                     "description": "Choose a button background hover color to use for your site.",
                                     "fieldType": "colorPicker",
-                                    "selectors":[":root"],
+                                    "selectors": [
+                                        ":root"
+                                    ],
                                     "fieldSettings": {
                                         "property": "--btnSecondaryBackgroundHover"
                                     }
@@ -928,7 +867,9 @@
                                     "title": "Button Text Hover Color",
                                     "description": "Choose a button text hover color to use for your site.",
                                     "fieldType": "colorPicker",
-                                    "selectors":[":root"],
+                                    "selectors": [
+                                        ":root"
+                                    ],
                                     "fieldSettings": {
                                         "property": "--btnSecondaryTextHoverColor"
                                     }
@@ -937,7 +878,9 @@
                                     "title": "Clear All",
                                     "description": "Clear all button styles you have set for your site.",
                                     "fieldType": "clearAll",
-                                    "selectors":[":root"],
+                                    "selectors": [
+                                        ":root"
+                                    ],
                                     "fieldSettings": {
                                         "properties": [
                                             "--btnSecondaryBackground",
@@ -958,7 +901,9 @@
                                     "title": "Button Background Color",
                                     "description": "Choose a button background color to use for your site.",
                                     "fieldType": "colorPicker",
-                                    "selectors":[":root"],
+                                    "selectors": [
+                                        ":root"
+                                    ],
                                     "fieldSettings": {
                                         "property": "--btnOutlineBackground"
                                     }
@@ -967,17 +912,20 @@
                                     "title": "Button Text Color",
                                     "description": "Choose a button text color to use for your site.",
                                     "fieldType": "colorPicker",
-                                    "selectors":[":root"],
+                                    "selectors": [
+                                        ":root"
+                                    ],
                                     "fieldSettings": {
                                         "property": "--btnOutlineText"
                                     }
                                 },
-
                                 {
                                     "title": "Button Background Hover Color",
                                     "description": "Choose a button background hover color to use for your site.",
                                     "fieldType": "colorPicker",
-                                    "selectors":[":root"],
+                                    "selectors": [
+                                        ":root"
+                                    ],
                                     "fieldSettings": {
                                         "property": "--btnOutlineBackgroundHover"
                                     }
@@ -986,7 +934,9 @@
                                     "title": "Button Text Hover Color",
                                     "description": "Choose a button text hover color to use for your site.",
                                     "fieldType": "colorPicker",
-                                    "selectors":[":root"],
+                                    "selectors": [
+                                        ":root"
+                                    ],
                                     "fieldSettings": {
                                         "property": "--btnOutlineTextHoverColor"
                                     }
@@ -995,7 +945,9 @@
                                     "title": "Clear All",
                                     "description": "Clear all button styles you have set for your site.",
                                     "fieldType": "clearAll",
-                                    "selectors":[":root"],
+                                    "selectors": [
+                                        ":root"
+                                    ],
                                     "fieldSettings": {
                                         "properties": [
                                             "--btnBackground",
@@ -1018,7 +970,9 @@
                             "title": "Border Radius",
                             "description": "Choose a button border radius to use for your site.",
                             "fieldType": "rangeSlider",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--btnBorderRadius",
                                 "min": 1,
@@ -1031,7 +985,9 @@
                             "title": "Border Size",
                             "description": "Choose a button border size to use for your site.",
                             "fieldType": "rangeSlider",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--btnBorderSize",
                                 "min": 1,
@@ -1044,7 +1000,9 @@
                             "title": "Padding Vertical",
                             "description": "Choose a button padding vertical to use for your site.",
                             "fieldType": "rangeSlider",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--btnPaddingBlock",
                                 "min": 1,
@@ -1057,7 +1015,9 @@
                             "title": "Padding Horizontal",
                             "description": "Choose a button padding horizontal to use for your site.",
                             "fieldType": "rangeSlider",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "property": "--btnPaddingInline",
                                 "min": 1,
@@ -1070,7 +1030,9 @@
                             "title": "Clear All",
                             "description": "Clear all button styles you have set for your site.",
                             "fieldType": "clearAll",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "properties": [
                                     "--btnBorderRadius",
@@ -1084,7 +1046,6 @@
                 }
             ]
         },
-
         {
             "title": "Footer",
             "description": "Pick a footer style, and customize it to achieve the style you want.",
@@ -1141,7 +1102,9 @@
                             "title": "Clear All",
                             "description": "Clear all footer styles you have set for your site.",
                             "fieldType": "clearAll",
-                            "selectors":[":root"],
+                            "selectors": [
+                                ":root"
+                            ],
                             "fieldSettings": {
                                 "properties": [
                                     "--footerBg",
@@ -1157,12 +1120,10 @@
                     "title": "Sizes",
                     "description": "Choose a footer sizes to use for your site.",
                     "settings": [
-
                     ]
                 }
             ]
         }
-
     ]
 }
 
