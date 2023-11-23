@@ -1,6 +1,6 @@
-<div style="background:#f1f1f1;border-radius:5px;padding-top:15px;">
+
     <a class="text-decoration-none" href="{{content_link($product->id)}}">
-        <div class="img-as-background square-75 h-350 position-relative">
+        <div class="background-image-holder" style="background-image: url('{{$product->thumbnail(1000,1000)}}'); height: 450px; background-size: contain;">
 
             <div @if($product->getContentDataByFieldName('label-color'))
                  style="background-color: {{$product->getContentDataByFieldName('label-color')}} "
@@ -21,8 +21,6 @@
                     </div>
                 @endif
             </div>
-
-            <img src="{{$product->thumbnail(1000,1000)}}" />
 
         </div>
         <h6 class="mt-3">{{$product->title}}</h6>
@@ -45,4 +43,4 @@
     @foreach($product->tags as $tag)
         <span class="badge badge-lg"><a href="?tags[]={{$tag->slug}}">{{$tag->name}}</a></span>
     @endforeach
-</div>
+

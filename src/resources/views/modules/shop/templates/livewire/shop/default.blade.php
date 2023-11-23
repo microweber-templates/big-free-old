@@ -3,7 +3,7 @@
 
     <div class="d-flex gap-4">
         <div style="width:440px">
-            <div style="background:#f1f1f1;border-radius:5px;padding:15px;">
+
 
                 @if(!empty($availableCategories) && !$filterSettings['disable_categories_filtering'])
                     @include('microweber-module-shop::livewire.shop.filters.categories.index')
@@ -21,7 +21,7 @@
                     @include('microweber-module-shop::livewire.shop.filters.tags.index')
                 @endif
 
-            </div>
+
         </div>
         <div style="width:100%">
 
