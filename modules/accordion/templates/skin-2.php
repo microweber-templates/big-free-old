@@ -101,9 +101,9 @@ if (isset($json) == false or count($json) == 0) {
                         <i class="mdi arrow sk2 rounded-circle <?php if ($key == 0) : ?>mdi-chevron-down<?php else : ?>mdi-chevron-down<?php endif; ?>"></i>
                     </button>
                 </div>
-                <div class="collapse allow-drop"   id="collapse-accordion-item-<?php print $edit_field_key . '-' . $key ?>" class="collapse <?php if ($key == 0) : ?> show <?php endif; ?>" aria-labelledby="header-item-<?php print $edit_field_key ?>" data-parent="#mw-accordion-module-<?php print $params['id'] ?>">
+                <div class="collapse  "   id="collapse-accordion-item-<?php print $edit_field_key . '-' . $key ?>" class="collapse <?php if ($key == 0) : ?> show <?php endif; ?>" aria-labelledby="header-item-<?php print $edit_field_key ?>" data-parent="#mw-accordion-module-<?php print $params['id'] ?>">
                     <div class="card-body px-5 pt-0 pb-5">
-                        <div class="allow-drop edit" field="accordion-item-<?php print $edit_field_key ?>" rel="module-<?php print $params['id'] ?>">
+                        <div class="  edit" field="accordion-item-<?php print $edit_field_key ?>" rel="module-<?php print $params['id'] ?>">
                             <div class="element">
                                 <h6 class="mt-3"> <?php print isset($slide['content']) ? $slide['content'] : 'Accordion content' ?></h6>
                             </div>

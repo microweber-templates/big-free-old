@@ -30,7 +30,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
      <module type="background" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <div class="mw-layout-container no-element allow-drop container">
+    <div class="mw-layout-container no-element   container">
         <div class="row col-12">
             <div class="col-12 col-sm-10 col-lg-6 mx-auto cloneable">
                 <div class="pe-lg-5 text-lg-start pb-5  ">

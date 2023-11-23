@@ -30,17 +30,17 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
 
  <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <div class="mw-layout-container no-element-allow-drop container edit   no-typing" field="layout-call-to-action-skin-5-<?php print $params['id'] ?>" rel="module">
-        <div class="col-12 col-sm-10 col-lg-10 col-lg-7 mx-auto text-center allow-drop safe-mode">
+    <div class="mw-layout-container no-element-  container edit   no-typing" field="layout-call-to-action-skin-5-<?php print $params['id'] ?>" rel="module">
+        <div class="col-12 col-sm-10 col-lg-10 col-lg-7 mx-auto text-center   safe-mode">
             <h1 data-mwplaceholder="<?php _e('Enter title here'); ?>">Your Title Here</h1>
             <br/>
             <p data-mwplaceholder="<?php _e('Enter title here'); ?>">Subscribe for our newsletter to receive information about the new stuff.</p>
         </div>
 
-        <div class="allow-drop"><br/><br/><br/></div>
+        <div class=" "><br/><br/><br/></div>
 
         <div class="row">
-            <div class="col-12 col-sm-10 col-lg-10 col-lg-7 mx-auto text-center allow-drop">
+            <div class="col-12 col-sm-10 col-lg-10 col-lg-7 mx-auto text-center  ">
                 <module type="contact_form" template="subscribe-7"/>
             </div>
         </div>

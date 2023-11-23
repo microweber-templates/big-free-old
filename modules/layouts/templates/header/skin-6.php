@@ -29,7 +29,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     <module type="background" />
     <div class="mw-layout-container py-4 container-fluid mh-100vh d-flex align-items-center justify-content-center no-element edit   no-typing no-select" field="layout-header-skin-6-<?php print $params['id'] ?>" rel="module">
         <div class="row d-flex align-items-center justify-content-center allow-select">
-            <div class="col-12  safe-mode  col-lg-7 allow-drop py-4">
+            <div class="col-12  safe-mode  col-lg-7   py-4">
                 <h1 data-mwplaceholder="<?php _e('Enter title here'); ?>" class="header-section-title mb-7">Describe your company </h1>
                 <p data-mwplaceholder="<?php _e('Enter text here'); ?>" class="header-section-p mb-7">Describe your company and services with few words and explain why you are the best choice.</p>
 

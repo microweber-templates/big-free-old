@@ -32,7 +32,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
             <div class="col-12  safe-mode  mx-auto ">
                 <div class="row d-flex align-items-center justify-content-center safe-mode ">
                     <div class="col-12  safe-mode  col-md-6 p-4 cloneable element  ">
-                        <div class="col-md-10 mx-auto m-4 safe-mode allow-drop allow-select">
+                        <div class="col-md-10 mx-auto m-4 safe-mode   allow-select">
                             <h1 data-mwplaceholder="<?php _e('Enter title here'); ?>" class="header-section-title mb-7">Describe your company </h1>
                             <p data-mwplaceholder="<?php _e('Enter text here'); ?>" class="header-section-p mb-7">Describe your company and services with few words and explain why you are the best choice.</p>
                             <module type="btn" button_style="btn-primary   " button_size="btn-lg px-5" text="Call to action"/>

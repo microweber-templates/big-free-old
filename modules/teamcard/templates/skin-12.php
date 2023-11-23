@@ -43,7 +43,7 @@ description: Skin-12
                         </div>
                     </div>
 
-                    <div class="allow-drop position-relative ps-5 py-3">
+                    <div class="  position-relative ps-5 py-3">
                         <div class="border-end position-absolute h-100 left-0 top-0 d-none d-sm-block  "></div>
 
                         <h4><?php print array_get($slide, 'name'); ?></h4>

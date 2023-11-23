@@ -1,4 +1,4 @@
-<div class="edit allow-drop" field="new-world_shop_sidebar" rel="inherit">
+<div class="edit  " field="new-world_shop_sidebar" rel="inherit">
     <module type="spacer" id="spacer-layout-shop-sidebar-top" />
 
     <div class="sidebar">

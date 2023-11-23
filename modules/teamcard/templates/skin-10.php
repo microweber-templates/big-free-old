@@ -41,7 +41,7 @@ description: Skin-10
                         </div>
                     </div>
 
-                    <div class="col-9 allow-drop mx-auto order-2 order-md-1" style="max-width: 320px;">
+                    <div class="col-9   mx-auto order-2 order-md-1" style="max-width: 320px;">
                         <h3><?php print array_get($slide, 'name'); ?></h3>
                         <p><?php print array_get($slide, 'role'); ?></p>
                         <p class="mw-big-team-bio"><?php print array_get($slide, 'bio'); ?></p>

@@ -35,7 +35,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
             <div class="col-12  safe-mode  col-sm-10 col-lg-6 mx-auto text-center text-lg-start d-flex align-items-center mb-5 ">
 
-                <div class="allow-drop ps-lg-5 allow-select">
+                <div class="  ps-lg-5 allow-select">
                     <h1 data-mwplaceholder="<?php _e('Enter title here'); ?>" class="header-section-title mb-7">Describe your company </h1>
                     <p data-mwplaceholder="<?php _e('Enter text here'); ?>" class="header-section-p mb-7">Describe your company and services with few words and explain why you are the best choice.</p>
 

@@ -30,9 +30,9 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
      <module type="background" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <div class="mw-layout-container no-element allow-drop container edit   " field="layout-feature-skin-4-<?php print $params['id'] ?>" rel="module">
+    <div class="mw-layout-container no-element   container edit   " field="layout-feature-skin-4-<?php print $params['id'] ?>" rel="module">
         <div class="row text-center">
-            <div class="col-12 col-lg-10 col-lg-8 mx-auto allow-drop">
+            <div class="col-12 col-lg-10 col-lg-8 mx-auto  ">
                 <h3  data-mwplaceholder="<?php _e('Enter title here'); ?>" >The Feature Title </h3>
             </div>
         </div>
@@ -45,7 +45,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                     </div>
                 </div>
 
-                <div class="text-center mt-sm-6 mt-3 allow-drop">
+                <div class="text-center mt-sm-6 mt-3  ">
                     <h4  data-mwplaceholder="<?php _e('Enter title here'); ?>" >Feature Title</h4>
                     <p  data-mwplaceholder="<?php _e('Enter text here'); ?>">Speaking comes to most people as naturally as breathing. On many occasions our words are.</p>
                 </div>
@@ -58,7 +58,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                     </div>
                 </div>
 
-                <div class="text-center mt-sm-6 mt-3 allow-drop">
+                <div class="text-center mt-sm-6 mt-3  ">
                     <h4  data-mwplaceholder="<?php _e('Enter title here'); ?>" >Feature Title</h4>
                     <p  data-mwplaceholder="<?php _e('Enter text here'); ?>">Speaking comes to most people as naturally as breathing. On many occasions our words are.</p>
                 </div>
@@ -71,7 +71,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
                     </div>
                 </div>
 
-                <div class="text-center mt-sm-6 mt-3 allow-drop">
+                <div class="text-center mt-sm-6 mt-3  ">
                     <h4  data-mwplaceholder="<?php _e('Enter title here'); ?>" >Feature Title</h4>
                     <p  data-mwplaceholder="<?php _e('Enter text here'); ?>">Speaking comes to most people as naturally as breathing. On many occasions our words are.</p>
                 </div>

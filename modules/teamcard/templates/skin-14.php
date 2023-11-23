@@ -37,7 +37,7 @@ description: Skin-14
                         <img src="<?php print template_url() ?>modules/teamcard/templates/default-image.svg"/>
                     </div>
                 <?php } ?>
-                <div class="allow-drop">
+                <div class=" ">
                     <h3><?php print array_get($slide, 'name'); ?></h3>
                     <p><?php print array_get($slide, 'role'); ?></p>
                     <p class="mw-big-team-bio"><?php print array_get($slide, 'bio'); ?></p>

@@ -73,7 +73,7 @@ if (isset($json) == false or count($json) == 0) {
             ?>
             <div class="column mw-ui-box-tab-content pt-3 text-center"
                  style="<?php if ($count != 1) { ?> display: none; <?php } else { ?>display: block; <?php } ?>">
-                <div class="edit allow-drop" field="tab-item-<?php print $edit_field_key ?>"
+                <div class="edit  " field="tab-item-<?php print $edit_field_key ?>"
                      rel="module-<?php print $params['id'] ?>">
                     <div class="element">
                         <h6>

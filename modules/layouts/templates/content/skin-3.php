@@ -29,13 +29,13 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 <section class="section <?php print $layout_classes; ?> ">
     <module type="background" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
-    <div class="container-fluid mw-layout-container no-element allow-drop edit " field="layout-content-skin-3-<?php print $params['id'] ?>" rel="module">
+    <div class="container-fluid mw-layout-container no-element   edit " field="layout-content-skin-3-<?php print $params['id'] ?>" rel="module">
         <div class="row">
-            <div class="col-12 col-lg-6 allow-drop text-center">
+            <div class="col-12 col-lg-6   text-center">
                 <img src="<?php print template_url(); ?>assets/img/layouts/gallery-1-4.jpg"/>
             </div>
 
-            <div class="col-12 col-lg-6 px-md-5 cloneable element background-color-element safe-mode allow-drop">
+            <div class="col-12 col-lg-6 px-md-5 cloneable element background-color-element safe-mode  ">
                 <h3 data-mwplaceholder="<?php _e('Enter title here'); ?>">Your Story Should Evolve <br> Over Time</h3>
                 <br><br>
 

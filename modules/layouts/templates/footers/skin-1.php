@@ -31,7 +31,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
      <module type="background" id="background-layout--<?php print $params['id'] ?>" />
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
     <!-- Footer -->
-<div class="mw-layout-container no-element allow-drop container text-md-start text-center edit" field="layout-footer-skin-1-<?php print $params['id'] ?>" rel="module">
+<div class="mw-layout-container no-element   container text-md-start text-center edit" field="layout-footer-skin-1-<?php print $params['id'] ?>" rel="module">
    <div class="row">
        <div class="col-md-2 col me-4">
            <div class="pb-7">
@@ -70,7 +70,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 </section>
 
 <section class="py-2 element background-color-element" style="background-color: #f5f5f5;">
-    <div class="mw-layout-container no-element allow-drop container py-2" >
+    <div class="mw-layout-container no-element   container py-2" >
         <div class="col-12 d-md-flex text-center">
             <small class="col-sm-6 text-md-start text-center edit element safe-element" field="footer-reserved-skin-1-<?php print $params['id'] ?>" rel="module">
 

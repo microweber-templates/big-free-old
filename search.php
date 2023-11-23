@@ -24,7 +24,7 @@ $searchType = strip_tags($searchType);
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <div class="m-auto allow-drop" style="max-width: 800px;">
+                    <div class="m-auto  " style="max-width: 800px;">
                         <h1 class="hr">Results found<span class="text-primary">.</span></h1>
                         <p  "><em><?php _lang('Mentioning', 'template/big'); ?></em> &ldquo;<?php print $keywords; ?>&rdquo;</p>
                     </div>

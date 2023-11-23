@@ -42,7 +42,7 @@ description: Skin-4
                         <p  -2 mw-big-team-bio"><?php print array_get($slide, 'bio'); ?></p>
                     </div>
 
-                    <div class="allow-drop">
+                    <div class=" ">
                         <h4 class="mb-1"><?php print array_get($slide, 'name'); ?></h4>
                         <p class="mb-3"><?php print array_get($slide, 'role'); ?></p>
                     </div>

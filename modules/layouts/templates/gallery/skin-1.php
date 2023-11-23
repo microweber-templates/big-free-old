@@ -32,7 +32,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
 
     <module type="spacer" id="spacer-layout--<?php print $params['id'] ?>-top" />
 
-    <div class="mw-layout-container no-element allow-drop container edit no-typing" field="layout-gallery-skin-1-<?php print $params['id'] ?>" rel="module">
+    <div class="mw-layout-container no-element   container edit no-typing" field="layout-gallery-skin-1-<?php print $params['id'] ?>" rel="module">
         <div class="row m-0 no-element">
             <div class="d-flex flex-wrap pe-md-5 pb-5 col-12 col-lg-6 no-element">
                 <div class="col-6 pe-2">
