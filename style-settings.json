@@ -284,6 +284,7 @@
             "title": "Colors",
             "description": "Pick a color palette, and customize it to achieve the style you want.",
             "settings": [
+
                 {
                     "title": "Color Palette",
                     "description": "Choose a color palette to use for your site.",
@@ -292,6 +293,9 @@
                     ],
                     "fieldType": "colorPalette",
                     "fieldSettings": {
+                        "colorPaletteFromTemplateFilesLibrary": [
+                            "assets/color-palettes.json"
+                        ],
                         "colors": [
                             {
                                 "name": "Big",
@@ -667,36 +671,14 @@
                                     "--textOnDarkBackground": "#ffffff"
                                 }
                             },
-                            {
-                                "name": "Urban",
-                                "mainColors": [
-                                    "#ff8181",
-                                    "#ffffff",
-                                    "#ffffff"
-                                ],
-                                "properties": {
-                                    "--fontFamily": "Vollkorn",
-                                    "--primaryColor": "#ff8181",
-                                    "--btnBackground": "#ff8181",
-                                    "--btnBorderColor": "#ff8181",
-                                    "--btnBackgroundHover": "#ff8181",
-                                    "--btnSecondaryBackground": "#ff8181",
-                                    "--btnSecondaryTextColor": "#ff8181",
-                                    "--btnOutlineText": "#ff8181",
-                                    "--btnOutlineBackgroundHover": "#ff8181",
-                                    "--btnTextColor": "#ffffff",
-                                    "--footerBg": "#000000",
-                                    "--footerTextColor": "#ffffff",
-                                    "--footerHoverLinkColor": "#ff8181",
-                                    "--footerLinkColor": "#ffffff",
-                                    "--headerBg": "#ffffff",
-                                    "--navLinkHoverColor": "#ff8181",
-                                    "--navLinkActiveColor": "#ff8181",
-                                    "--navLinkFontColor": "#000000",
-                                    "--paragraph": "22px",
-                                    "--topHeaderBg": "#000000"
-                                }
-                            },
+
+
+
+                            { "name": "Swans Down", "mainColors": [ "#e4e1d8", "#7BC5AE", "#028C6A", "black", "#D1EDE1" ], "properties": { "--primaryColor": "#e4e1d8", "--links": "#7BC5AE", "--background": "#028C6A", "--secondary": "black", "--textDark": "#D1EDE1", "--textLight": "#D1EDE1", "--section": "#e4e1d8", "--headerBg": "#e4e1d8", "--topHeaderBg": "black", "--topHeaderElements": "#e4e1d8", "--menuColor": "black", "--menuHoverColor": "black", "--btnText": "#e4e1d8", "--textTransform": "none", "--paragraphColor": "black", "--headingColor": "black", "--btnBorderColor": "#e4e1d8", "--btnBackground": "#e4e1d8", "--btnBackgroundHover": "#7BC5AE", "--btnTextHoverColor": "#e4e1d8", "--btnSecondaryBackground": "#028C6A", "--btnSecondaryBackgroundHover": "black", "--btnSecondaryText": "#e4e1d8", "--btnSecondaryTextHoverColor": "#e4e1d8", "--btnOutlineBackground": "transparent", "--btnOutlineBackgroundHover": "#e4e1d8", "--btnOutlineText": "#e4e1d8", "--btnOutlineTextHoverColor": "#e4e1d8", "--formControlBorderColor": "#D1EDE1", "--formControlPlaceholderColor": "black", "--formControlBackground": "#e4e1d8", "--formControlTextColor": "black", "--formControlTextHoverColor": "black", "--formLabel": "black", "--footerBg": "#e4e1d8", "--footerTextColor": "black", "--footerLinkColor": "black", "--footerHoverLinkColor": "black", "--headerBtnColor": "#e4e1d8", "--navFontColor": "black", "--navLinkFontColor": "black", "--navLinkHoverColor": "#7BC5AE", "--navLinkActiveColor": "#7BC5AE", "--hamburgerBorderColor": "black", "--hamburgerBackground": "transparent", "--hamburgerIconColor": "black", "--testimonialBackgroundVariable": "#e4e1d8", "--testimonialBorderVariable": "black", "--textOnDarkBackground": "#D1EDE1" } }    ,
+
+                            { "name": "Blue Brown", "mainColors": [ "#9ebbcb", "#fdfbfa", "#655d5b", "#aaa9a8", "#000000" ], "properties": { "--primaryColor": "#9ebbcb", "--links": "#000000", "--background": "#fdfbfa", "--secondary": "#655d5b", "--textDark": "#655d5b", "--textLight": "#fdfbfa", "--section": "#fdfbfa", "--headerBg": "#9ebbcb", "--topHeaderBg": "#000000", "--topHeaderElements": "#fdfbfa", "--menuColor": "#000000", "--menuHoverColor": "#655d5b", "--btnText": "#fdfbfa", "--textTransform": "none", "--paragraphColor": "#655d5b", "--headingColor": "#655d5b", "--btnBorderColor": "#9ebbcb", "--btnBackground": "#9ebbcb", "--btnBackgroundHover": "#aaa9a8", "--btnTextHoverColor": "#fdfbfa", "--btnSecondaryBackground": "#000000", "--btnSecondaryBackgroundHover": "#9ebbcb", "--btnSecondaryText": "#fdfbfa", "--btnSecondaryTextHoverColor": "#fdfbfa", "--btnOutlineBackground": "transparent", "--btnOutlineBackgroundHover": "#9ebbcb", "--btnOutlineText": "#9ebbcb", "--btnOutlineTextHoverColor": "#fdfbfa", "--formControlBorderColor": "#655d5b", "--formControlPlaceholderColor": "#655d5b", "--formControlBackground": "#fdfbfa", "--formControlTextColor": "#655d5b", "--formControlTextHoverColor": "#655d5b", "--formLabel": "#655d5b", "--footerBg": "#fdfbfa", "--footerTextColor": "#655d5b", "--footerLinkColor": "#655d5b", "--footerHoverLinkColor": "#655d5b", "--headerBtnColor": "#fdfbfa", "--navFontColor": "#fdfbfa", "--navLinkFontColor": "#655d5b", "--navLinkHoverColor": "#9ebbcb", "--navLinkActiveColor": "#9ebbcb", "--hamburgerBorderColor": "#000000", "--hamburgerBackground": "transparent", "--hamburgerIconColor": "#000000", "--testimonialBackgroundVariable": "#fdfbfa", "--testimonialBorderVariable": "#655d5b", "--textOnDarkBackground": "#fdfbfa" } }    ,
+                            {"name": "Tulip Tree and Punga", "mainColors": ["#F2AB39", "#563C16", "black"], "properties": { "--primaryColor": "#F2AB39", "--links": "#000000", "--background": "#ffffff", "--secondary": "#563C16", "--textDark": "#212529", "--textLight": "#ffffff", "--section": "#ffffff", "--headerBg": "#ffffff", "--topHeaderBg": "#000000", "--topHeaderElements": "#ffffff", "--menuColor": "#000000", "--menuHoverColor": "#000000", "--btnText": "#ffffff", "--textTransform": "none", "--paragraphColor": "#000000", "--headingColor": "#000000", "--btnBorderColor": "#F2AB39", "--btnBackground": "#F2AB39", "--btnBackgroundHover": "#BB7E24", "--btnTextHoverColor": "#ffffff", "--btnSecondaryBackground": "#000000", "--btnSecondaryBackgroundHover": "#FF5E00", "--btnSecondaryText": "#ffffff", "--btnSecondaryTextHoverColor": "#ffffff", "--btnOutlineBackground": "transparent", "--btnOutlineBackgroundHover": "#F2AB39", "--btnOutlineText": "#F2AB39", "--btnOutlineTextHoverColor": "#ffffff", "--formControlBorderColor": "#CED4DA", "--formControlPlaceholderColor": "#6C757D", "--formControlBackground": "#ffffff", "--formControlTextColor": "#000000", "--formControlTextHoverColor": "#000000", "--formLabel": "#000000", "--footerBg": "#ffffff", "--footerTextColor": "#000000", "--footerLinkColor": "#000000", "--footerHoverLinkColor": "#000000", "--headerBtnColor": "#ffffff", "--navFontColor": "#000000", "--navLinkFontColor": "#000000", "--navLinkHoverColor": "#6C757D", "--navLinkActiveColor": "#6C757D", "--hamburgerBorderColor": "#000000", "--hamburgerBackground": "transparent", "--hamburgerIconColor": "#000000", "--testimonialBackgroundVariable": "#ffffff", "--testimonialBorderVariable": "#000000", "--textOnDarkBackground": "#ffffff" } },
+
                             {
                                 "name": "Private School",
                                 "mainColors": [
@@ -710,6 +692,8 @@
                                     "--primaryColor": "#000000",
                                     "--btnBackground": "#135208",
                                     "--btnBorderColor": "#135208",
+                                    "--btnHoverBottomBorderSize": "20px",
+                                    "--btnHoverTextDecoration": "underline",
                                     "--btnTextColor": "#ffffff",
                                     "--btnSecondaryBackground": "#135208",
                                     "--btnOutlineText": "#135208",
