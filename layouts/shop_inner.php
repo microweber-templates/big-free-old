@@ -36,6 +36,8 @@ $prev = prev_content($content['id']);
 
     <div class="container-fluid mw-m-t-30">
         <div class="row justify-content-center">
+            <module type="breadcrumb" template="shop_inner"/>
+
             <div class="row product-holder px-0">
                 <div class="col-12 col-lg-6">
                     <module type="pictures" rel="content" template="skin-14"/>
@@ -45,7 +47,6 @@ $prev = prev_content($content['id']);
                     <div class="product-info">
                         <div class="product-info-content ps-xl-5 ms-xl-4">
                             <div class="mb-5">
-                                <module type="breadcrumb"/>
                             </div>
                             <div class="mt-sm-4 mt-md-0 pb-0 mb-2">
                                 <h4 class="edit " field="title" rel="content"><?php print content_title(); ?></h4>
