@@ -389,6 +389,8 @@
                                     "--textOnDarkBackground": "#ffffff"
                                 }
                             },
+                            {"name":"Color Scheme","mainColors":["#0000a3","#0067b3","#40b0df","#ffd53d","green"],"properties":{"--primaryColor":"#0067b3","--links":"#0067b3","--background":"#ffffff","--secondary":"#ffd53d","--textDark":"#212529","--textLight":"#ffffff","--section":"#ffffff","--headerBg":"#0067b3","--topHeaderBg":"#000000","--topHeaderElements":"#ffffff","--menuColor":"#ffffff","--menuHoverColor":"#ffffff","--btnText":"#ffffff","--textTransform":"none","--paragraphColor":"#212529","--headingColor":"#212529","--btnBorderColor":"#0067b3","--btnBackground":"#0067b3","--btnBackgroundHover":"#40b0df","--btnTextHoverColor":"#ffffff","--btnSecondaryBackground":"#ffd53d","--btnSecondaryBackgroundHover":"#0067b3","--btnSecondaryText":"#212529","--btnSecondaryTextHoverColor":"#ffffff","--btnOutlineBackground":"transparent","--btnOutlineBackgroundHover":"#0067b3","--btnOutlineText":"#0067b3","--btnOutlineTextHoverColor":"#ffffff","--formControlBorderColor":"#ced4da","--formControlPlaceholderColor":"#6c757d","--formControlBackground":"#ffffff","--formControlTextColor":"#212529","--formControlTextHoverColor":"#212529","--formLabel":"#212529","--footerBg":"#ffffff","--footerTextColor":"#212529","--footerLinkColor":"#0000a3","--footerHoverLinkColor":"#0067b3","--headerBtnColor":"#ffffff","--navFontColor":"#ffffff","--navLinkFontColor":"#ffffff","--navLinkHoverColor":"#ffd53d","--navLinkActiveColor":"#ffd53d","--hamburgerBorderColor":"#ffffff","--hamburgerBackground":"transparent","--hamburgerIconColor":"#ffffff","--testimonialBackgroundVariable":"#ffffff","--testimonialBorderVariable":"#212529","--textOnDarkBackground":"#ffffff"}},
+
                             {
                                 "name": "Bamboo",
                                 "mainColors": [
@@ -1480,6 +1482,29 @@
                     ]
                 }
             ]
+        },
+
+
+
+        {
+            "title": "Styles Library",
+            "description": "Pick the general styles you want to use for your site.",
+            "settings": [
+                {
+                    "fieldType": "button",
+                    "onClick": "alert('hello')" ,
+                    "title": "Open Styles Library",
+                    "description": "Pick the general styles you want to use for your site."
+                } ,    {
+                    "fieldType": "styleEditor",
+                     "title": "styleEditor",
+                    "description": "styleEditor"
+                }
+
+            ]
+
+
+
         }
     ]
 }
