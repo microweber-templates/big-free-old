@@ -24,7 +24,7 @@
     </div>
 
     <script>
-        mw.lib.require('noUIiSliderStyled');
+        mw.lib.require('noUIiSliderStyled', true);
         $(document).ready(function() {
             let priceRangeElement = document.getElementById('js-shop-price-range');
             let shopPriceRange = noUiSlider.create(priceRangeElement, {
