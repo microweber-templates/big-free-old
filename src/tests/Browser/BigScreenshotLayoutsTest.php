@@ -11,6 +11,7 @@ use MicroweberPackages\ContentField\Models\ContentField;
 use MicroweberPackages\Export\SessionStepper;
 use MicroweberPackages\Import\Import;
 use MicroweberPackages\Menu\Models\Menu;
+use MicroweberPackages\Option\Models\Option;
 use MicroweberPackages\Page\Models\Page;
 use MicroweberPackages\User\Models\User;
 use MicroweberPackages\Utils\Media\Thumbnailer;
@@ -44,18 +45,23 @@ class BigScreenshotLayoutsTest extends DuskTestCase
             $this->markTestSkipped('File not found for template test: ' . $sample);
         }
 
+        // START BACKUP
+        Option::truncate();
         Menu::truncate();
         Content::truncate();
         ContentField::truncate();
-
-        $sessionId = SessionStepper::generateSessionId(1);
-
+        $sessionId = SessionStepper::generateSessionId(0);
         $manager = new Import();
         $manager->setSessionId($sessionId);
         $manager->setFile($sample);
         $manager->setBatchImporting(false);
+        $manager->setToDeleteOldContent(true);
+        $manager->setToDeleteOldCssFiles(true);
+        $manager->setOvewriteById(true);
         $importStatus = $manager->start();
         $this->assertTrue($importStatus['done']);
+        clearcache();
+        // END BACKUP
 
         $pageLinks = [];
         $getPages = Page::get();
