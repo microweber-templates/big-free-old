@@ -1072,3 +1072,14 @@ body.js-dusk-browser-test {
         padding-bottom: 12px !important;
     }
 }
+
+.list-group-item.active {
+    background-color: #000;
+    border-left-color: #000;
+}
+
+.input-group-text {
+    background-color: #000 !important;
+    border-color: #000 !important;
+    color: #fff !important;
+}

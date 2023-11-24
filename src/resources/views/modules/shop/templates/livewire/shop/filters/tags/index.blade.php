@@ -1,4 +1,4 @@
-<div class="mt-4 text-left">
+<div class="text-left">
     <div>Tags</div>
     <div>
         @foreach($availableTags as $tagSlug=>$tagName)

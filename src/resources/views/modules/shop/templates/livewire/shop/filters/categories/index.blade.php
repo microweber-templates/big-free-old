@@ -1,4 +1,4 @@
-<div class="mt-4 text-left">
+<div class="text-left">
     <div>Categories</div>
     <div class="mt-2 list-group list-group-flush">
         <div>
