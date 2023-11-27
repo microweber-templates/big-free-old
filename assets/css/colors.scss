@@ -1,8 +1,8 @@
 :root {
 
     --tblr-body-bg: #ffffff;
-    --tblr-primary: #206bc4;
-    --tblr-primary-rgb: 32,107,196;
+    --tblr-primary: #f4a261;
+    --tblr-primary-rgb: var(--tblr-primary);
     --tblr-primary-fg: var(--tblr-light);
     --tblr-primary-darken: #1d60b0;
     --tblr-primary-lt: #e9f0f9;
@@ -334,4 +334,56 @@
     --tblr-box-shadow-card-hover: rgba(var(--tblr-body-color-rgb), 0.16) 0 2px 16px 0;
     --tblr-box-shadow-dropdown: 0 16px 24px 2px rgba(0, 0, 0, 0.07),0 6px 30px 5px rgba(0, 0, 0, 0.06),0 8px 10px -5px rgba(0, 0, 0, 0.1);
     --tblr-btn-bg: var(--tblr-bg-surface);
+    --tblr-link-hover-color-rgb: rgb(from var(--tblr-primary) r g b / 0.4);
+    --tblr-btn-border-color: transparent;
+    --tblr-btn-hover-border-color: transparent;
+    --tblr-btn-active-border-color: transparent;
+    --tblr-btn-color: var(--tblr-primary-fg);
+    --tblr-btn-hover-color: var(--tblr-primary-fg);
+    --tblr-btn-hover-bg: rgb(from var(--tblr-primary) r g b / 0.4);
+    --tblr-btn-active-color: var(--tblr-primary-fg);
+    --tblr-btn-active-bg: rgb(from var(--tblr-primary) r g b / 0.4);
+    --tblr-btn-disabled-bg: var(--tblr-primary);
+    --tblr-btn-disabled-color: var(--tblr-primary-fg);
+    --tblr-btn-box-shadow: var(--tblr-box-shadow-input);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

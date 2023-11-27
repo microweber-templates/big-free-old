@@ -226,26 +226,8 @@ $textOnDarkBackground: $white !default;
 
 
 
-
-
-
-
-
-
 @import "animation-backgrounds";
 @import "header-menus";
-
-
-
-
-
-
-
-
-
-
-
-
 
 @media screen and (min-width: 1200px) {
 
@@ -634,7 +616,7 @@ $textOnDarkBackground: $white !default;
     }
 
     .absolute-container {
-         top: -35%;
+        top: -35%;
         left: 25%;
         border-radius: 10px;
 
@@ -662,8 +644,8 @@ $textOnDarkBackground: $white !default;
 .mw-layout-parallax {
     .mw-layout-background-block {
         .mw-layout-background-node {
-             background-position: center bottom;
-             background-attachment: fixed !important;
+            background-position: center bottom;
+            background-attachment: fixed !important;
         }
     }
 }
@@ -867,19 +849,18 @@ a, .btn-link {
 
 .btn:not(.btn-link) {
     border-radius: var(--btnBorderRadius);
-    border-color: var(--btnBorderColor);
+
     border-width: var(--btnBorderSize);
     border-style: var(--btnBorderStyle);
     color: var(--btnTextColor) !important;
 
     a:not(.btn-outline, .btn-outline-secondary, .btn-outline-primary), &.a:not(.btn-outline, .btn-outline-secondary, .btn-outline-primary) {
         color: var(--btnTextColor) !important;
-     }
+    }
 
-    background-color: var(--tblr-btn-bg)  ;
     &:hover, &:focus, &.active, &:active {
-        background-color: var(--btnBackgroundHover);
-        color: var(--btnTextHoverColor);
+
+
         outline: 0 none !important;
         box-shadow: none !important;
         border-color: color-mix(in srgb, var(--formControlBackground) 50%, transparent) !important;
@@ -888,7 +869,7 @@ a, .btn-link {
 
     &:hover, &.focus, &.active, &:active {
         i {
-            color: var(--btnTextHoverColor);
+
         }
     }
 }
@@ -1228,7 +1209,7 @@ body.js-dusk-browser-test {
 }
 
 .mw-message-form-wrapper .text-success {
-   position: relative;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1325,3 +1306,4 @@ body.js-dusk-browser-test {
     border-color: #000 !important;
     color: #fff !important;
 }
+
