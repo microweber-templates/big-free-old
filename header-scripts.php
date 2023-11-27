@@ -47,11 +47,11 @@
     <link href="<?php print template_url(); ?>assets/css/main_tabler.css" rel="stylesheet"/>
 
     <script src="https://cdn.jsdelivr.net/npm/@tabler/core@latest/dist/js/tabler.min.js"></script>
+    <?php print get_template_stylesheet(); ?>
 
     <link href="<?php print template_url(); ?>assets/templates_features/css/scss/styles-for-template.css" rel="stylesheet"/>
     <script src="<?php print template_url(); ?>assets/templates_features/js/js-for-template.js"></script>
 
-    <?php print get_template_stylesheet(); ?>
 
 
 
