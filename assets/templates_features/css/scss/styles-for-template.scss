@@ -618,8 +618,7 @@ $textOnDarkBackground: $white !default;
     }
 
     .content-73-btn {
-        background-color: #ffffff!important;
-        color: #1F7CFF!important;
+
         border-color: #ffffff!important;
         border-radius: 10px!important;
         font-size: 18px!important;
@@ -627,8 +626,7 @@ $textOnDarkBackground: $white !default;
     }
 
     .content-73-btn-2 {
-        background-color: #1F7CFF!important;
-        color: #ffffff!important;
+
         border-color: #ffffff!important;
         border-radius: 10px!important;
         font-size: 18px!important;
@@ -636,13 +634,10 @@ $textOnDarkBackground: $white !default;
     }
 
     .absolute-container {
-        background-color: #1F7CFF!important;
-        top: -35%;
+         top: -35%;
         left: 25%;
         border-radius: 10px;
-        h1 {
-            color: #ffffff;
-        }
+
 
     }
 
@@ -881,7 +876,7 @@ a, .btn-link {
         color: var(--btnTextColor) !important;
      }
 
-    background-color: var(--tblr-btn-bg);
+    background-color: var(--tblr-btn-bg)  ;
     &:hover, &:focus, &.active, &:active {
         background-color: var(--btnBackgroundHover);
         color: var(--btnTextHoverColor);
