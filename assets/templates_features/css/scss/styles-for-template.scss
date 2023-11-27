@@ -892,9 +892,10 @@ h6 {
 
 
 body.js-dusk-browser-test {
-    .mh-100vh {
+    .mh-100vh, .module-background {
         min-height: 500px !important;
     }
+
 }
 
 .mw-shop-module-wrapper {
