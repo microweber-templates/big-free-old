@@ -45,9 +45,8 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     <div class="mw-layout-container no-element   container">
         <div class="row text-md-start text-center">
             <div class="col-md-5 col text-md-start text-md-left">
-                <div class="pb-3">
-                   Your text here
-                </div>
+
+
                 <div class="edit "
                      field="layout-footer-skin-19-p-<?php print $params['id'] ?>" rel="module">
                     <p class="font-weight-bold">Website Builder and CMS </p>
