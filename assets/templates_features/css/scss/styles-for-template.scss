@@ -1,5 +1,251 @@
+$font-size: 16px;
+$light:    var(--tblr-body-bg);
+$white:    #ffffff;
+$dark:     #212529;
+$blue:     #0044de;
+$gray:     #6c757d;
+$black:    #000000;
+$orange:   #f4a261;
+
+//
+//$font-size: 16px;
+//$light:    #212529;
+//$white:    #ffffff;
+//$dark:     #212529;
+//$blue:     #0044de;
+//$gray:     #6c757d;
+//$black:    #000000;
+//$orange:   #f4a261;
+
+$body-bg:               $white !default;
+$primary:               $orange !default;
+$secondary:             $gray !default;
+$textDark:              $dark !default;
+$textLight:             $light !default;
+$section:               $white !default;
+$headerBg:              $white !default;
+$topHeaderBg:           $black !default;
+$topHeaderElements:     $white !default;
+$menuColor:             $black !default;
+$menuHoverColor:        $black !default;
+$links:                 $black !default;
+$paragraphColor:        $black !default;
+$lineHeight:            1.5 !default;
+$letterSpacing:         0 !default;
+$fontWeight:            400 !default;
+$textTransform:         none !default;
+$headingColor:          $black !default;
+$paragraphSize:         1rem !default;
+$headingOne:            64px !default;
+$headingTwo:            52px !default;
+$headingThree:          44px !default;
+$headingFour:           32px !default;
+$headingFive:           24px !default;
+$headingSix:            20px !default;
+
+$testimonialBackgroundVariable: $white !default;
+$testimonialBorderVariable: $black !default;
+
+$btnBorderRadius: 33px !default;
+$btnBorderColor: $orange !default;
+$btnBorderSize: 2px !default;
+$btnBorderStyle: solid !default;
+$btnPaddingBlock: 15px !default;
+$btnPaddingInline: 24px !default;
+$btnBackground: var(--tblr-btn-bg) !default;
+$btnBackgroundHover: #e76f51 !default;
+$btnText:            $white !default;
+$btnTextHoverColor: $white !default;
+
+$btnSecondaryBackground: #FF5E00 !default;
+$btnSecondaryBackgroundHover: $black !default;
+$btnSecondaryText:            $white !default;
+$btnSecondaryTextHoverColor: $white !default;
+
+$btnOutlineBackground: transparent !default;
+$btnOutlineBackgroundHover: $orange !default;
+$btnOutlineText: $orange !default;
+$btnOutlineTextHoverColor: $white !default;
+
+
+$formControlBorderRadius: 2px !default;
+$formControlBorderSize: 2px !default;
+$formControlBorderStyle: solid !default;
+$formControlBorderColor: #ced4da !default;
+$formControlPaddingBlock: 15px !default;
+$formControlPaddingInline: 15px !default;
+$formControlPlaceholderColor: $gray !default;
+$formControlBackground: $white !default;
+$formControlBackgroundHover: $white !default;
+$formControlTextColor: $black !default;
+$formControlTextHoverColor: $black !default;
+$formLabel: $black !default;
+$formLabelFontSize: 16px !default;
+
+
+$footerBg:              $white !default;
+$footerTextColor:       $black !default;
+$footerLinkColor:       $black !default;
+$footerHoverLinkColor:  $black !default;
+
+$headerBtnColor:        $white !default;
+
+$font-family-sans-serif:      'Jost', sans-serif !default;
+$font-family-base:            $font-family-sans-serif !default;
+
+$font-family-base: $font-family-sans-serif;
+$bodyFontSize:     $font-size   !default;
+$menuFontSize:     $font-size !default;
+$body-text-align:  null !default;
+$fontFamily:       $font-family-base !default;
+$menuFontFamily:   $font-family-base !default;
+
+
+$hamburgerBorderRadius: 0 !default;
+$hamburgerBorderSize: 1px !default;
+$hamburgerBorderStyle: solid !default;
+$hamburgerBorderColor: $black !default;
+$hamburgerBackground: transparent !default;
+$hamburgerIconSize: 16px !default;
+$hamburgerIconColor: $black !default;
+
+$navFontColor: $black !default;
+$navFontSize: 16px !default;
+$navFontFamily: $font-family-sans-serif !default;
+$navLinkFontColor: $black !default;
+$navLinkFontSize: 16px !default;
+$navLinkFontFamily: $font-family-sans-serif !default;
+$navLinkHoverColor: $gray !default;
+$navLinkActiveColor: $gray !default;
+
+$textOnDarkBackground: $white !default;
+
+:root {
+    --primaryColor: #{$primary};
+    --links: #{$links};
+    --background: #{$body-bg};
+    --secondary: #{$secondary};
+    --textDark: #{$textDark};
+    --textLight: #{$textLight};
+    --section: #{$section};
+    --bodyFontSize: #{$bodyFontSize};
+    --fontFamily: #{$fontFamily};
+    --headerBg: #{$headerBg};
+    --topHeaderBg: #{$topHeaderBg};
+    --topHeaderElements: #{$topHeaderElements};
+    --menuColor: #{$menuColor};
+    --menuHoverColor: #{$menuHoverColor};
+    --btnText: #{$btnText};
+    --menuFontSize: #{$menuFontSize};
+    --menuFontFamily: #{$menuFontFamily};
+    --lineHeight: #{$lineHeight};
+    --letterSpacing: #{$letterSpacing};
+    --fontWeight: #{$fontWeight};
+    --textTransform: #{$textTransform};
+    --btnBackground: var(--tblr-btn-bg);
+
+
+
+    --paragraphColor: #000000;
+    --headingColor: #000000;
+    --paragraphSize: 1rem;
+    --headingOne: 64px;
+    --headingTwo: 52px;
+    --headingThree: 44px;
+    --headingFour: 32px;
+    --headingFive: 24px;
+    --headingSix: 20px;
+
+
+    --btnBorderRadius: #{$btnBorderRadius};
+    --btnBorderColor: #{$btnBorderColor};
+    --btnBorderSize: #{$btnBorderSize};
+    --btnBorderStyle: #{$btnBorderStyle};
+    --btnPaddingBlock: #{$btnPaddingBlock};
+    --btnPaddingInline: #{$btnPaddingInline};
+    --btnBackground: var(--tblr-btn-bg);
+    --btnBackgroundHover: #{$btnBackgroundHover};
+    --btnTextHoverColor: #{$btnTextHoverColor};
+
+    --btnSecondaryBackground: #{$btnSecondaryBackground};
+    --btnSecondaryBackgroundHover: #{$btnSecondaryBackgroundHover};
+    --btnSecondaryText: #{$btnSecondaryText};
+    --btnSecondaryTextHoverColor: #{$btnSecondaryTextHoverColor};
+
+    --btnOutlineBackground: #{$btnOutlineBackground};
+    --btnOutlineBackgroundHover: #{$btnOutlineBackgroundHover};
+    --btnOutlineText: #{$btnOutlineText};
+    --btnOutlineTextHoverColor: #{$btnOutlineTextHoverColor};
+
+    --formControlBorderRadius: #{$formControlBorderRadius};
+    --formControlBorderSize: #{$formControlBorderSize};
+    --formControlBorderStyle: #{$formControlBorderStyle};
+    --formControlBorderColor: #{$formControlBorderColor};
+    --formControlPaddingBlock: #{$formControlPaddingBlock};
+    --formControlPaddingInline: #{$formControlPaddingInline};
+    --formControlPlaceholderColor: #{$formControlPlaceholderColor};
+    --formControlBackground: #{$formControlBackground};
+    --formControlTextColor: #{$formControlTextColor};
+    --formControlTextHoverColor: #{$formControlTextHoverColor};
+    --formLabel: #{$formLabel};
+    --formLabelFontSize: #{$formLabelFontSize};
+
+    --footerBg: #{$footerBg};
+    --footerTextColor: #{$footerTextColor};
+    --footerLinkColor: #{$footerLinkColor};
+    --footerHoverLinkColor: #{$footerHoverLinkColor};
+    --headerBtnColor: #{$headerBtnColor};
+    --navFontColor: #{$navFontColor};
+    --navFontSize: #{$navFontSize};
+    --navFontFamily: #{$navFontFamily};
+    --navLinkFontColor: #{$navLinkFontColor};
+    --navLinkFontSize: #{$navLinkFontSize};
+    --navLinkFontFamily: #{$navLinkFontFamily};
+    --navLinkHoverColor: #{$navLinkHoverColor};
+    --navLinkActiveColor: #{$navLinkActiveColor};
+
+    --hamburgerBorderRadius: #{$hamburgerBorderRadius};
+    --hamburgerBorderSize: #{$hamburgerBorderSize};
+    --hamburgerBorderStyle: #{$hamburgerBorderStyle};
+    --hamburgerBorderColor: #{$hamburgerBorderColor};
+    --hamburgerBackground: #{$hamburgerBackground};
+    --hamburgerIconSize: #{$hamburgerIconSize};
+    --hamburgerIconColor: #{$hamburgerIconColor};
+
+    --testimonialBackgroundVariable: #{$testimonialBackgroundVariable};
+    --testimonialBorderVariable: #{$testimonialBorderVariable};
+
+    --textOnDarkBackground: #{$textOnDarkBackground};
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @import "animation-backgrounds";
 @import "header-menus";
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 1200px) {
 
@@ -635,7 +881,7 @@ a, .btn-link {
         color: var(--btnTextColor) !important;
      }
 
-    background-color: var(--btnBackground);
+    background-color: var(--tblr-btn-bg);
     &:hover, &:focus, &.active, &:active {
         background-color: var(--btnBackgroundHover);
         color: var(--btnTextHoverColor);
