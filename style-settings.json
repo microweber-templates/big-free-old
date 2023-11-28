@@ -1395,17 +1395,31 @@
                     "onClick": "alert('hello')" ,
                     "title": "Open Styles Library",
                     "description": "Pick the general styles you want to use for your site."
-                } ,    {
-                    "fieldType": "styleEditor",
-                     "title": "styleEditor",
-                    "description": "styleEditor"
                 }
-
             ]
 
 
 
         }
+
+        ,
+        {
+            "title": "Styles Library",
+            "description": "Pick the general styles you want to use for your site.",
+            "settings": [
+                {
+                    "fieldType": "button",
+                    "onClick": "alert('hello')" ,
+                    "title": "Open Styles Library",
+                    "description": "Pick the general styles you want to use for your site."
+                }
+            ]
+
+
+
+        }
+
+
     ]
 }
 

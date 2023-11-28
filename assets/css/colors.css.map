@@ -1,6 +1,6 @@
 {
 "version": 3,
-"mappings": "AAEA,KAAM;EACF,cAAc,CAAC,QAAQ;EAEvB,gBAAgB,CAAC,QAAQ;EACzB,iBAAiB,CAAC,QAAQ;EAC1B,oBAAoB,CAAC,SAAS;EAC9B,aAAa,CAAC,QAAQ;EAMrB,2BAA2B,CAAC,qBAAqB;;AAOtD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2CA4J2C",
+"mappings": "AAEA,KAAM;EACF,cAAc,CAAC,QAAQ;EACvB,gBAAgB,CAAC,QAAQ;EACzB,aAAa,CAAC,QAAQ;EACtB,iBAAiB,CAAC,QAAQ;EAC1B,oBAAoB,CAAC,SAAS;EAC9B,iBAAiB,CAAC,kBAAkB;EACpC,2BAA2B,CAAC,qBAAqB;EACjD,gBAAgB,CAAC,4BAA4B;;AAOjD;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;2CA4J2C",
 "sources": ["colors.scss"],
 "names": [],
 "file": "colors.css"

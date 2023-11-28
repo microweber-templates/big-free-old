@@ -1,10 +1,12 @@
 :root {
   --tblr-primary: #f4a261;
   --tblr-secondary: #000000;
+  --tblr-accent: #f4a261;
   --tblr-body-color: #000000;
   --tblr-heading-color: #000000 ;
-  --tblr-accent: #f4a261;
-  --tblr-bg-surface-secondary: var(--tblr-gray-100); }
+  --tblr-bg-surface: var(--tblr-white);
+  --tblr-bg-surface-secondary: var(--tblr-gray-100);
+  --tblr-navbar-bg: var(--tblr-bg-surface-dark); }
 
 /*
 

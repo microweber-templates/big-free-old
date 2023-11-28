@@ -131,7 +131,7 @@ $textOnDarkBackground: $white !default;
     --bodyFontSize: #{$bodyFontSize};
     --fontFamily: #{$fontFamily};
     --headerBg: #{$headerBg};
-    --topHeaderBg: #{$topHeaderBg};
+    --topHeaderBg: var(--tblr-navbar-bg);
     --topHeaderElements: #{$topHeaderElements};
     --menuColor: #{$menuColor};
     --menuHoverColor: #{$menuHoverColor};
