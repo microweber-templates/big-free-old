@@ -142,12 +142,12 @@ $textOnDarkBackground: $white !default;
     --letterSpacing: #{$letterSpacing};
     --fontWeight: #{$fontWeight};
     --textTransform: #{$textTransform};
+
     --btnBackground: var(--tblr-btn-bg);
+    --headingColor: var(--tblr-heading-color);
+    --paragraphColor: var(--tblr-body-color);
 
 
-
-    --paragraphColor: #000000;
-    --headingColor: #000000;
     --paragraphSize: 1rem;
     --headingOne: 64px;
     --headingTwo: 52px;
@@ -190,9 +190,9 @@ $textOnDarkBackground: $white !default;
     --formLabel: #{$formLabel};
     --formLabelFontSize: #{$formLabelFontSize};
 
-    --footerBg: #{$footerBg};
-    --footerTextColor: #{$footerTextColor};
-    --footerLinkColor: #{$footerLinkColor};
+    --footerBg: var(--tblr-bg-surface-secondary);
+    --footerTextColor: var(--tblr-secondary);
+    --footerLinkColor:  var(--tblr-secondary);
     --footerHoverLinkColor: #{$footerHoverLinkColor};
     --headerBtnColor: #{$headerBtnColor};
     --navFontColor: #{$navFontColor};
@@ -848,7 +848,7 @@ a, .btn-link {
 }
 .btn-primary {
     --tblr-btn-hover-bg: color-mix(in srgb, var(--tblr-primary) 50%, transparent);
-}
+ }
 .btn:not(.btn-link) {
     border-radius: var(--btnBorderRadius);
 
