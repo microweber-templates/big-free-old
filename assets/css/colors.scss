@@ -3,12 +3,17 @@
 :root {
     --tblr-primary: #f4a261;
     --tblr-secondary: #000000;
-    --tblr-accent: #f4a261;
+
+
     --tblr-body-color: #000000;
-    --tblr-heading-color: #000000 ;
-    --tblr-bg-surface: var(--tblr-white);
-    --tblr-bg-surface-secondary: var(--tblr-gray-100);
-    --tblr-navbar-bg: var(--tblr-bg-surface-dark);
+    --tblr-heading-color: var(--tblr-body-color);
+    --tblr-link-color: var(--tblr-body-color);
+    --tblr-link-color-hover: var(--tblr-body-color);
+    --tblr-bg-surface: var(--tblr-body-bg);
+
+    --tblr-navbar-bg: var(--tblr-body-color);
+    scrollbar-color: var(--tblr-body-color);
+    scrollbar-width: thin;
 
  }
 
