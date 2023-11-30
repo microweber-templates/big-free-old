@@ -34,19 +34,21 @@ include(__DIR__.'/settings_is_multilanguage_front.php');
 
 ?>
 
-<div class="top-header-background">
-   <div>
-       <?php include template_dir() . "partials/header/parts/socials.php"; ?>
-   </div>
+<div class="top-header-background header-top navbar">
 
-   <div class="d-flex align-items-center flex-wrap">
-       <?php include template_dir() . "partials/header/parts/multilanguage.php"; ?>
-       <?php include template_dir() . "partials/header/parts/phone.php"; ?>
-       <?php include template_dir() . "partials/header/parts/contact.php"; ?>
-       <?php include template_dir() . "partials/header/parts/search_bar.php"; ?>
-       <?php include template_dir() . "partials/header/parts/profile_link.php"; ?>
-       <?php include template_dir() . "partials/header/parts/shopping_cart.php"; ?>
-   </div>
+      <div>
+          <?php include template_dir() . "partials/header/parts/socials.php"; ?>
+      </div>
+
+      <div class="d-flex align-items-center flex-wrap">
+          <?php include template_dir() . "partials/header/parts/multilanguage.php"; ?>
+          <?php include template_dir() . "partials/header/parts/phone.php"; ?>
+          <?php include template_dir() . "partials/header/parts/contact.php"; ?>
+          <?php include template_dir() . "partials/header/parts/search_bar.php"; ?>
+          <?php include template_dir() . "partials/header/parts/profile_link.php"; ?>
+          <?php include template_dir() . "partials/header/parts/shopping_cart.php"; ?>
+      </div>
+
 </div>
 
 

@@ -1,0 +1,103 @@
+{
+    "settings": [
+        {
+            "title": "Color Scheme",
+            "description": "Pick a color scheme for your site.",
+            "settings": [
+                {
+                    "title": "Background color",
+                    "description": "Background color",
+                    "fieldType": "colorPicker",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "property": "--mw-background-color"
+                    }
+                },
+                {
+                    "title": "Section Background color",
+                    "description": "Section Background color",
+                    "fieldType": "colorPicker",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "property": "--mw-section-background-color"
+                    }
+                },
+                {
+                    "title": "Primary color",
+                    "description": "Primary color",
+                    "fieldType": "colorPicker",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "property": "--mw-primary-color"
+                    }
+                },
+                {
+                    "title": "Heading color",
+                    "description": "Heading color",
+                    "fieldType": "colorPicker",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "property": "--mw-heading-color"
+                    }
+                },
+                {
+                    "title": "Paragraph color",
+                    "description": "Paragraph color",
+                    "fieldType": "colorPicker",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "property": "--mw-paragraph-color"
+                    }
+                },
+                {
+                    "title": "Text on dark background color",
+                    "description": "Text on dark background color",
+                    "fieldType": "colorPicker",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "property": "--mw-text-on-dark-background-color"
+                    }
+                },
+
+                {
+                    "title": "Link color",
+                    "description": "Link color",
+                    "fieldType": "colorPicker",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "property": "--mw-link-color"
+                    }
+                },
+                {
+                    "title": "link color hover",
+                    "description": "Link color hover",
+                    "fieldType": "colorPicker",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "property": "--mw-link-hover-color"
+                    }
+                }
+
+            ]
+        }
+    ]
+}
+
+
+

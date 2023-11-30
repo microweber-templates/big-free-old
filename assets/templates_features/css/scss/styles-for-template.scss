@@ -1,149 +1,3 @@
-$font-size: 16px;
-
-$lineHeight:            1.5 !default;
-$letterSpacing:         0 !default;
-$fontWeight:            400 !default;
-$textTransform:         none !default;
-$paragraphSize:         1rem !default;
-$headingOne:            64px !default;
-$headingTwo:            52px !default;
-$headingThree:          44px !default;
-$headingFour:           32px !default;
-$headingFive:           24px !default;
-$headingSix:            20px !default;
-
-$btnBorderRadius: 33px !default;
-$btnBorderSize: 2px !default;
-$btnBorderStyle: solid !default;
-$btnPaddingBlock: 15px !default;
-$btnPaddingInline: 24px !default;
-
-
-$formControlBorderRadius: 2px !default;
-$formControlBorderSize: 2px !default;
-$formControlBorderStyle: solid !default;
-$formControlPaddingBlock: 15px !default;
-$formControlPaddingInline: 15px !default;
-$formLabelFontSize: 16px !default;
-
-
-$font-family-sans-serif:      'Jost', sans-serif !default;
-$font-family-base:            $font-family-sans-serif !default;
-
-$font-family-base: $font-family-sans-serif;
-$bodyFontSize:     $font-size   !default;
-$menuFontSize:     $font-size !default;
-$body-text-align:  null !default;
-$fontFamily:       $font-family-base !default;
-$menuFontFamily:   $font-family-base !default;
-
-$navFontSize: 16px !default;
-$navFontFamily: $font-family-sans-serif !default;
-$navLinkFontSize: 16px !default;
-$navLinkFontFamily: $font-family-sans-serif !default;
-
-:root {
-    --tblr-transparent: var(--tblr-transparent);
-
-    --formControlBackground: var(--tblr-light-bg-subtle);
-    --formControlBackgroundHover: var(--tblr-light-bg-subtle);
-    --formControlTextColor: var(--tblr-light-text);
-    --formControlTextHoverColor: var(--tblr-light-text);
-
-    --btnBackground: var(--tblr-primary);
-    --btnBackgroundHover: var(--tblr-warning);
-    --btnTextColor: var(--tblr-white);
-    --btnTextHoverColor: var(--tblr-white);
-    --btnBorderColor: var(--tblr-primary);
-
-    --btnSecondaryBackground: var(--tblr-warning);
-    --btnSecondaryBackgroundHover: var(--tblr-dark);
-    --btnSecondaryTextColor: var(--tblr-white);
-    --btnSecondaryTextHoverColor: var(--tblr-white);
-    --btnSecondaryBorderColor: var(--tblr-warning);
-
-
-    --btnOutlineBackground: var(--tblr-transparent);
-    --btnOutlineBackgroundHover: var(--tblr-primary);
-    --btnOutlineText: var(--tblr-primary);
-    --btnOutlineTextHoverColor: var(--tblr-white);
-    --btnOutlineBorderColor: var(--tblr-primary);
-
-    --testimonialBackgroundVariable: var(--tblr-light-bg-subtle);
-    --testimonialBorderVariable: var(--tblr-dark);
-
-    --footerBg: var(--tblr-bg-surface);
-    --footerTextColor: var(--tblr-body-color);
-    --footerLinkColor: var(--tblr-link-color);
-    --footerHoverLinkColor: var(--tblr-link-color-hover);
-
-    --headerBtnColor: var(--tblr-header-btn-color);
-    --navFontColor: var(--tblr-nav-font-color);
-    --navLinkFontColor: var(--tblr-nav-link-font-color);
-    --navLinkHoverColor: var(--tblr-nav-link-hover-color);
-    --navLinkActiveColor: var(--tblr-nav-link-active-color);
-
-    --primaryColor: var(--tblr-primary);
-    --background: var(--tblr-body-bg);
-    --secondary: var(--tblr-secondary);
-    --textDark: var(--tblr-body-color);
-    --textLight: var(--tblr-light-text);
-    --section: var(--tblr-body-bg);
-    --bodyFontSize: var(--tblr-body-font-size);
-    --fontFamily: var(--tblr-font-sans-serif);
-    --headerBg: var(--tblr-header-bg);
-    --topHeaderElements: var(--tblr-top-header-elements);
-    --menuColor: var(--tblr-menu-color);
-    --menuHoverColor: var(--tblr-menu-hover-color);
-    --btnText: var(--tblr-btn-text);
-
-    --headingColor: var(--tblr-heading-color);
-    --paragraphColor: var(--tblr-body-color);
-    --topHeaderBg: var(--tblr-navbar-bg);
-    --links: var(--tblr-link-color);
-
-    --formControlBorderColor: var(--tblr-border-color);
-    --formControlPlaceholderColor: var(--tblr-gray-500);
-    --formLabel: var(--tblr-gray-500);
-
-    --textOnDarkBackground: var(--tblr-bg-surface);
-
-    --paragraphSize: 1rem;
-    --headingOne: 64px;
-    --headingTwo: 52px;
-    --headingThree: 44px;
-    --headingFour: 32px;
-    --headingFive: 24px;
-    --headingSix: 20px;
-
-    --menuFontSize: #{$menuFontSize};
-    --menuFontFamily: #{$menuFontFamily};
-    --lineHeight: #{$lineHeight};
-    --letterSpacing: #{$letterSpacing};
-    --fontWeight: #{$fontWeight};
-    --textTransform: #{$textTransform};
-
-    --btnBorderRadius: #{$btnBorderRadius};
-    --btnBorderSize: #{$btnBorderSize};
-    --btnBorderStyle: #{$btnBorderStyle};
-    --btnPaddingBlock: #{$btnPaddingBlock};
-    --btnPaddingInline: #{$btnPaddingInline};
-
-    --formControlBorderRadius: #{$formControlBorderRadius};
-    --formControlBorderSize: #{$formControlBorderSize};
-    --formControlBorderStyle: #{$formControlBorderStyle};
-    --formControlPaddingBlock: #{$formControlPaddingBlock};
-    --formControlPaddingInline: #{$formControlPaddingInline};
-
-    --formLabelFontSize: #{$formLabelFontSize};
-
-    --navFontSize: #{$navFontSize};
-    --navFontFamily: #{$navFontFamily};
-    --navLinkFontSize: #{$navLinkFontSize};
-    --navLinkFontFamily: #{$navLinkFontFamily};
-
-}
-
 @import "animation-backgrounds";
 @import "header-menus";
 
@@ -324,22 +178,6 @@ $navLinkFontFamily: $font-family-sans-serif !default;
 
 [data-overlay] .background-image-holder:after {
     background-image: unset;
-}
-
-.mw-big-dropdown.dropdown-menu > li > a:hover {
-    background-color: var(--primaryColor)!important;
-}
-
-.nav-link {
-    color: var(--primaryColor);
-
-    &:hover {
-        color: var(--primaryColor);
-    }
-}
-
-.mw-big-dropdown.dropdown-menu > li > a:hover {
-    color: var(--links)!important;
 }
 
 .new-skin-shop {
@@ -569,268 +407,21 @@ $navLinkFontFamily: $font-family-sans-serif !default;
     }
 }
 
-.header-background {
-    background-color: var(--headerBg);
-    padding: 10px;
-
-    .nav-link {
-        color: var(--navLinkFontColor);
-        font-size: var(--navLinkFontSize) !important;
-        font-family: var(--navLinkFontFamily) !important;
-        &:hover, &:hover span {
-            color: var(--navLinkHoverColor) !important;
-        }
-        &.active, &:active span {
-            color: var(--navLinkActiveColor) !important;
-        }
-    }
-
-}
 
 
-.footer-background {
-    position: relative;
-    background-color: var(--footerBg);
-
-    p, small {
-        color: var(--footerTextColor);
-    }
-    a {
-        color: var(--footerLinkColor) !important;
-        &:hover, &:hover span {
-            color: var(--footerHoverLinkColor) !important;
-        }
-    }
-
-    .module-menu ul li a {
-        color: var(--footerLinkColor) !important;
-        &:hover, &:hover span {
-            color: var(--footerHoverLinkColor) !important;
-        }
-    }
-}
 
 .badge.badge-number, #btn-header-layout-btn {
     padding: 7px 11px !important;
 }
 
-a i:before {
-    color: var(--primaryColor);
-}
-
-
-a, .btn-link {
-    color: var(--links);
-    line-height: var(--lineHeight);
-    letter-spacing: var(--letterSpacing);
-}
 
 
 
-
-.btn:not(.btn-link) {
-    border-radius: var(--btnBorderRadius);
-    border-color: var(--btnBorderColor);
-    border-width: var(--btnBorderSize);
-    border-style: var(--btnBorderStyle);
-    color: var(--tblr-body-color);
-
-    &:hover, &:focus, &.active, &:active {
-        outline: 0 none !important;
-        box-shadow: none !important;
-        border-color: color-mix(in srgb, var(--formControlBackground) 50%, transparent);
-
-    }
-
-    &:hover, &.focus, &.active, &:active {
-        i {
-
-        }
-    }
-}
-
-.btn.btn-primary {
-    background-color: var(--btnBackground);
-    color: var(--btnTextColor);
-    border-color: var(--btnBorderColor);
-
-    &:hover, &:active {
-        background-color: var(--btnBackgroundHover);
-        color: var(--btnTextHoverColor);
-    }
-}
-
-.btn.btn-secondary {
-    background-color: var(--btnSecondaryBackground);
-    color: var(--btnSecondaryTextColor);
-    border-color: var(--btnSecondaryBorderColor);
-
-    &:hover, &:active {
-        background-color: var(--btnSecondaryBackgroundHover);
-        color: var(--btnSecondaryTextHoverColor);
-    }
-}
-
-.btn.btn-outline, .btn.btn-outline-primary, .btn.btn-outline-secondary {
-    border-color: var(--btnOutlineBorderColor);
-    color: var(--btnOutlineTextColor);
-
-    &:hover, &:active {
-        background-color: var(--btnOutlineBackgroundHover);
-        color: var(--btnOutlineTextHoverColor);
-    }
-}
-
-.btn:not(.btn-link, .btn-sm) {
-    padding-block: var(--btnPaddingBlock);
-    padding-inline: var(--btnPaddingInline);
-}
 
 .btn-sm {
     padding: 5px 15px;
 }
 
-
-
-
-
-
-
-.form-label {
-    color: var(--formLabelColor);
-    font-size: var(--formLabelFontSize);
-}
-
-input.form-control, textarea.form-control, select.form-control, select.form-select {
-    border-radius: var(--formControlBorderRadius);
-    border-color: var(--formControlBorderColor);
-    border-width: var(--formControlBorderSize);
-    border-style: var(--formControlBorderStyle);
-    background-color: var(--formControlBackground);
-    padding-block: var(--formControlPaddingBlock);
-    padding-inline: var(--formControlPaddingInline);
-    color: var(--formControlTextColor);
-    &:hover, &:focus, &.active, &:active {
-        color: var(--formControlTextHoverColor);
-        background-color: var(--formControlBackground);
-    }
-
-    &::placeholder {
-        color: var(--formControlPlaceholderColor);
-    }
-
-}
-//textarea:focus,
-//input[type="text"]:focus,
-//input[type="password"]:focus,
-//input[type="datetime"]:focus,
-//input[type="datetime-local"]:focus,
-//input[type="date"]:focus,
-//input[type="month"]:focus,
-//input[type="time"]:focus,
-//input[type="week"]:focus,
-//input[type="number"]:focus,
-//input[type="email"]:focus,
-//input[type="url"]:focus,
-//input[type="search"]:focus,
-//input[type="tel"]:focus,
-//input[type="color"]:focus,
-//.uneditable-input:focus {
-//    border-color: color-mix(in srgb, var(--formControlBackground) 50%, transparent);
-//    box-shadow: none;
-//    outline: 0 none;
-//}
-
-.testimonials-background-variable {
-    background-color: var(--testimonialBackgroundVariable);
-}
-
-.testimonialBorderVariable {
-    border-color: var(--testimonialBorderVariable) !important;
-}
-p {
-    font-size: var(--paragraphSize);
-    color: var(--paragraphColor);
-    line-height: var(--lineHeight);
-    letter-spacing: var(--letterSpacing);
-}
-
-.mw-layout-dark-background{
-    h1,h2,h3,h4,h5,h6,p {
-        color: var(--textOnDarkBackground);
-    }
-}
-
-h1 {
-    @media screen and (min-width: 615px) {
-        font-size: var(--headingOne);
-    }
-    color: var(--headingColor);
-    text-transform: var(--textTransform);
-    font-weight: var(--fontWeight);
-    letter-spacing: var(--letterSpacing);
-    line-height: var(--lineHeight);
-
-}
-
-h2 {
-    @media screen and (min-width: 615px) {
-        font-size: var(--headingTwo);
-    }
-    color: var(--headingColor);
-    text-transform: var(--textTransform);
-    font-weight: var(--fontWeight);
-    letter-spacing: var(--letterSpacing);
-    line-height: var(--lineHeight);
-}
-
-h3 {
-    @media screen and (min-width: 615px) {
-        font-size: var(--headingThree);
-    }
-    color: var(--headingColor);
-    text-transform: var(--textTransform);
-    font-weight: var(--fontWeight);
-    letter-spacing: var(--letterSpacing);
-    line-height: var(--lineHeight);
-}
-
-h4 {
-    @media screen and (min-width: 615px) {
-        font-size: var(--headingFour);
-    }
-
-    color: var(--headingColor);
-    text-transform: var(--textTransform);
-    font-weight: var(--fontWeight);
-    letter-spacing: var(--letterSpacing);
-    line-height: var(--lineHeight);
-
-}
-
-h5 {
-    @media screen and (min-width: 615px) {
-        font-size: var(--headingFive);
-    }
-
-    color: var(--headingColor);
-    text-transform: var(--textTransform);
-    font-weight: var(--fontWeight);
-    letter-spacing: var(--letterSpacing);
-    line-height: var(--lineHeight);
-}
-
-h6 {
-    @media screen and (min-width: 615px) {
-        font-size: var(--headingSix);
-    }
-
-    color: var(--headingColor);
-    text-transform: var(--textTransform);
-    font-weight: var(--fontWeight);
-    letter-spacing: var(--letterSpacing);
-    line-height: var(--lineHeight);
-}
 
 .mw-scale-hover-effect {
     transform: scale(1);
@@ -869,14 +460,6 @@ h6 {
 }
 
 .page-item {
-    &.active, &:hover, &:focus {
-        .page-link {
-            background-color: var(--primaryColor) !important;
-            border-color: var(--primaryColor) !important;
-            color: var(--btnTextColor) !important;
-        }
-    }
-
     .page-link {
         font-weight: normal !important;
         border-radius: 50% !important;
@@ -895,9 +478,6 @@ h6 {
     border-color: #000 !important;
 }
 
-.mw-breadcrumb-current{
-    color: var(--primaryColor);
-}
 
 
 body.js-dusk-browser-test {
