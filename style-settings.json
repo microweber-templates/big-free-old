@@ -74,7 +74,16 @@
                 "assets/design-styles/mw-styles/buttons-sizes.json"
 
             ],
-            "rootSelector" : ".bnt"
+            "rootSelector" : ".btn"
+
+        },
+        {
+            "title": "Forms",
+            "description": "Pick the general styles you want to use for forms of your site.",
+            "readSettingsFromFiles": [
+                "assets/design-styles/mw-styles/forms.json"
+            ],
+            "rootSelector" : ".mw_form"
 
         }
     ]

@@ -63,22 +63,22 @@ a, .btn-link {
 
 .form-label {
   color: var(--mw-form-label-color);
-  font-size: var(--mw-formLabel-font-size); }
+  font-size: var(--mw-form-label-font-size); }
 
-input.form-control, textarea.form-control, select.form-control, select.form-select {
+.form-control, textarea.form-control, select.form-control, select.form-select {
   border-radius: var(--mw-form-control-border-radius);
   border-color: var(--mw-form-control-border-color);
-  border-width: var(--mw-form-controlBorder-size);
+  border-width: var(--mw-form-control-border-size);
   border-style: var(--mw-form-control-border-style);
   background-color: var(--mw-form-control-background);
   padding-block: var(--mw-form-control-padding-block);
   padding-inline: var(--mw-form-control-padding-inline);
   color: var(--mw-form-control-text-color); }
-  input.form-control:hover, input.form-control:focus, input.form-control.active, input.form-control:active, textarea.form-control:hover, textarea.form-control:focus, textarea.form-control.active, textarea.form-control:active, select.form-control:hover, select.form-control:focus, select.form-control.active, select.form-control:active, select.form-select:hover, select.form-select:focus, select.form-select.active, select.form-select:active {
+  .form-control:hover, .form-control:focus, .form-control.active, .form-control:active, textarea.form-control:hover, textarea.form-control:focus, textarea.form-control.active, textarea.form-control:active, select.form-control:hover, select.form-control:focus, select.form-control.active, select.form-control:active, select.form-select:hover, select.form-select:focus, select.form-select.active, select.form-select:active {
     color: var(--mw-form-control-text-hover-color);
     background-color: var(--mw-form-control-background); }
-  input.form-control::placeholder, textarea.form-control::placeholder, select.form-control::placeholder, select.form-select::placeholder {
-    color: var(--formControl-placeholder-color); }
+  .form-control::placeholder, textarea.form-control::placeholder, select.form-control::placeholder, select.form-select::placeholder {
+    color: var(--mw-form-control-placeholder-color); }
 
 textarea:focus,
 input[type="text"]:focus,

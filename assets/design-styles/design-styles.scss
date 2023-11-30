@@ -145,13 +145,13 @@ a, .btn-link {
 
 .form-label {
     color: var(--mw-form-label-color);
-    font-size: var(--mw-formLabel-font-size);
+    font-size: var(--mw-form-label-font-size);
 }
 
-input.form-control, textarea.form-control, select.form-control, select.form-select {
+.form-control, textarea.form-control, select.form-control, select.form-select {
     border-radius: var(--mw-form-control-border-radius);
     border-color: var(--mw-form-control-border-color);
-    border-width: var(--mw-form-controlBorder-size);
+    border-width: var(--mw-form-control-border-size);
     border-style: var(--mw-form-control-border-style);
     background-color: var(--mw-form-control-background);
     padding-block: var(--mw-form-control-padding-block);
@@ -163,7 +163,7 @@ input.form-control, textarea.form-control, select.form-control, select.form-sele
     }
 
     &::placeholder {
-        color: var(--formControl-placeholder-color);
+        color: var(--mw-form-control-placeholder-color);
     }
 
 }
