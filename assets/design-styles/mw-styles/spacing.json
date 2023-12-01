@@ -1,0 +1,98 @@
+{
+  "settings": [
+    {
+        "title": "Line Height",
+        "description": "Choose a line height to use for your site.",
+        "fieldType": "rangeSlider",
+        "selectors": [
+            ":root"
+        ],
+        "fieldSettings": {
+            "property": "--mw-line-height",
+            "min": 0.5,
+            "max": 3,
+            "step": 0.1,
+            "unit": "em"
+        }
+    },
+    {
+        "title": "Letter Spacing",
+        "description": "Choose a letter spacing to use for your site.",
+        "fieldType": "rangeSlider",
+        "selectors": [
+            ":root"
+        ],
+        "fieldSettings": {
+            "property": "--mw-letter-spacing",
+            "min": 1,
+            "max": 120,
+            "step": 0.1,
+            "unit": "px"
+        }
+    },
+    {
+        "title": "Text Transform",
+        "description": "Choose a text-transform to use for your site.",
+        "fieldType": "rangeSlider",
+        "selectors": [
+            ":root"
+        ],
+        "fieldSettings": {
+            "property": "--mw-text-transform",
+            "min": 1,
+            "max": 120,
+            "step": 0.1,
+            "unit": "px"
+        }
+    },
+    {
+        "title": "Padding block",
+        "description": "Choose a padding block to use for your site.",
+        "fieldType": "rangeSlider",
+        "selectors": [
+            ":root"
+        ],
+        "fieldSettings": {
+            "property": "--mw-padding-block",
+            "min": 1,
+            "max": 120,
+            "step": 0.1,
+            "unit": "px"
+        }
+    },
+    {
+        "title": "Padding inline",
+        "description": "Choose a padding inline to use for your site.",
+        "fieldType": "rangeSlider",
+        "selectors": [
+            ":root"
+        ],
+        "fieldSettings": {
+            "property": "--mw-padding-inline",
+            "min": 1,
+            "max": 120,
+            "step": 0.1,
+            "unit": "px"
+        }
+    },
+      {
+          "title": "Clear All",
+          "description": "Clear all font styles.",
+          "fieldType": "clearAll",
+          "selectors": [
+              ":root"
+          ],
+          "fieldSettings": {
+              "properties": [
+                "--mw-line-height",
+                "--mw-letter-spacing",
+                "--mw-text-transform",
+                "--mw-padding-block",
+                "--mw-padding-inline"
+
+              ]
+          }
+      }
+
+  ]
+}

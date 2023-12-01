@@ -5,7 +5,8 @@
             "title": "Typography",
             "description": "Pick the general styles you want to use for your site.",
             "readSettingsFromFiles": [
-                "assets/design-styles/mw-styles/typography.json"
+                "assets/design-styles/mw-styles/typography.json",
+                "assets/design-styles/mw-styles/spacing.json"
             ],
 
             "settings": [
@@ -75,23 +76,22 @@
 
             ],
             "rootSelector" : ".btn",
-
             "settings": [
-
-
                 {
                     "selectors": [
                         ".btn"
                     ]
                 }
             ]
-
         },
         {
             "title": "Forms",
             "description": "Pick the general styles you want to use for forms of your site.",
             "readSettingsFromFiles": [
-                "assets/design-styles/mw-styles/forms.json"
+                "assets/design-styles/mw-styles/colors.json",
+                "assets/design-styles/mw-styles/button.json",
+                "assets/design-styles/mw-styles/spacing.json",
+                "assets/design-styles/mw-styles/border.json"
             ],
             "rootSelector" : ".mw_form"
 
