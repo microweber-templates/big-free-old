@@ -1,0 +1,249 @@
+{
+    "settings": [
+        {
+            "title": "Colors",
+            "description": "Pick a color scheme for your site.",
+            "settings": [
+                {
+                    "title": "Primary Button",
+                    "description": "Pick a color scheme for your primary button.",
+                    "settings": [
+
+                        {
+                            "title": "Primary Button color",
+                            "description": "Primary Button color",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--mw-primary-btn-background-color"
+                            }
+                        },
+                        {
+                            "title": "Primary Button hover color",
+                            "description": "Primary Button hover color",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--mw-primary-btn-background-color-hover"
+                            }
+                        },
+                        {
+                            "title": "Primary Button text color",
+                            "description": "Primary Button text color",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--mw-primary-btn-text-color"
+                            }
+                        },
+                        {
+                            "title": "Primary Button text color hover",
+                            "description": "Primary Button text color hover",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--mw-primary-btn-text-color-hover"
+                            }
+                        },
+                        {
+                            "title": "Primary Button border color",
+                            "description": "Primary Button border color",
+                            "fieldType": "unitNumber",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--mw-primary-btn-border-color"
+                            }
+                        },
+                        {
+                            "title": "Clear All",
+                            "description": "Clear all button styles you have set for your site.",
+                            "fieldType": "clearAll",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "properties": [
+                                    "--mw-primary-btn-background-color",
+                                    "--mw-primary-btn-background-color-hover",
+                                    "--mw-primary-btn-text-color",
+                                    "--mw-primary-btn-text-color-hover",
+                                    "--mw-primary-btn-border-color"
+                                ]
+                            }
+                        }
+                    ]
+                },
+                {
+                    "title": "Secondary Button",
+                    "description": "Pick a color scheme for your secondary button.",
+                    "settings": [
+
+                        {
+                            "title": "Secondary Button color",
+                            "description": "Secondary Button color",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--mw-secondary-btn-background-color"
+                            }
+                        },
+                        {
+                            "title": "Secondary Button hover color",
+                            "description": "Secondary Button hover color",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--mw-secondary-btn-background-color-hover"
+                            }
+                        },
+                        {
+                            "title": "Secondary Button text color",
+                            "description": "Secondary Button text color",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--mw-secondary-btn-text-color"
+                            }
+                        },
+                        {
+                            "title": "Secondary Button text color hover",
+                            "description": "Secondary Button text color hover",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--mw-secondary-btn-text-color-hover"
+                            }
+                        },
+                        {
+                            "title": "Secondary Button border color",
+                            "description": "Secondary Button border color",
+                            "fieldType": "unitNumber",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--mw-secondary-btn-border-color"
+                            }
+                        },
+                        {
+                            "title": "Clear All",
+                            "description": "Clear all button styles you have set for your site.",
+                            "fieldType": "clearAll",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "properties": [
+                                    "--mw-secondary-btn-background-color",
+                                    "--mw-secondary-btn-background-color-hover",
+                                    "--mw-secondary-btn-text-color",
+                                    "--mw-secondary-btn-text-color-hover",
+                                    "--mw-secondary-btn-border-color"
+                                ]
+                            }
+                        }
+
+                    ]
+                },
+                {
+                    "title": "Outline Button",
+                    "description": "Pick a color scheme for your secondary button.",
+                    "settings": [
+                        {
+                            "title": "Outline Button color",
+                            "description": "Outline Button color",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--mw-outline-btn-background-color"
+                            }
+                        },
+                        {
+                            "title": "Outline Button hover color",
+                            "description": "Outline Button hover color",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--mw-outline-btn-background-color-hover"
+                            }
+                        },
+                        {
+                            "title": "Outline Button text color",
+                            "description": "Outline Button text color",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--mw-outline-btn-text-color"
+                            }
+                        },
+                        {
+                            "title": "Outline Button text color hover",
+                            "description": "Outline Button text color hover",
+                            "fieldType": "colorPicker",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--mw-outline-btn-text-color-hover"
+                            }
+                        },
+                        {
+                            "title": "Outline Button border color",
+                            "description": "Outline Button border color",
+                            "fieldType": "unitNumber",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--mw-outline-btn-border-color"
+                            }
+                        },
+                        {
+                            "title": "Clear All",
+                            "description": "Clear all button styles you have set for your site.",
+                            "fieldType": "clearAll",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "properties": [
+                                    "--mw-outline-btn-background-color",
+                                    "--mw-outline-btn-background-color-hover",
+                                    "--mw-outline-btn-text-color",
+                                    "--mw-outline-btn-text-color-hover",
+                                    "--mw-outline-btn-border-color"
+                                ]
+                            }
+                        }
+                    ]
+
+                }
+            ]
+        }
+    ]
+}
+
