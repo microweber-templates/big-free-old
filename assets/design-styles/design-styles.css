@@ -7,11 +7,11 @@ body {
 section.section {
   background-color: var(--mw-section-background-color); }
 
-.header-top, .footer-background {
+.header-top, .footer-background, .header-background {
   background-color: var(--mw-background-color); }
-  .header-top i.mdi, .header-top a, .footer-background i.mdi, .footer-background a {
+  .header-top i.mdi, .header-top a, .footer-background i.mdi, .footer-background a, .header-background i.mdi, .header-background a {
     color: var(--mw-link-color); }
-    .header-top i.mdi:hover, .header-top a:hover, .footer-background i.mdi:hover, .footer-background a:hover {
+    .header-top i.mdi:hover, .header-top a:hover, .footer-background i.mdi:hover, .footer-background a:hover, .header-background i.mdi:hover, .header-background a:hover {
       color: var(--mw-link-hover-color); }
 
 a i:before {
@@ -22,29 +22,18 @@ a, .btn-link {
   line-height: var(--mw-line-height);
   letter-spacing: var(--mw-letter-spacing); }
 
-.btn.btn-primary, .btn {
-  background-color: var(--mw-primary-btn-background-color);
-  color: var(--mw-primary-btn-text-color);
-  border-color: var(--mw-primary-btn-border-color); }
-  .btn.btn-primary:hover, .btn.btn-primary:active, .btn:hover, .btn:active {
-    background-color: var(--mw-primary-btn-background-color-hover);
-    color: var(--mw-primary-btn-text-color-hover); }
-
-.btn.btn-secondary {
-  background-color: var(--mw-secondary-btn-background-color);
-  color: var(--mw-secondary-btn-text-color);
-  border-color: var(--mw-secondary-btn-border-color); }
-  .btn.btn-secondary:hover, .btn.btn-secondary:active {
-    background-color: var(--mw-secondary-btn-background-color-hover);
-    color: var(--mw-secondary-btn-text-color-hover); }
-
-.btn.btn-outline, .btn.btn-outline-primary, .btn.btn-outline-secondary {
-  background-color: var(--mw-outline-btn-background-color);
-  color: var(--mw-outline-btn-text-color);
-  border-color: var(--mw-outline-btn-border-color); }
-  .btn.btn-outline:hover, .btn.btn-outline:active, .btn.btn-outline-primary:hover, .btn.btn-outline-primary:active, .btn.btn-outline-secondary:hover, .btn.btn-outline-secondary:active {
-    background-color: var(--mw-outline-btn-background-color-hover);
-    color: var(--mw-outline-btn-text-color-hover); }
+.btn {
+  border-radius: var(--mw-border-radius);
+  border: var(--mw-border-size) var(--mw-border-style) var(--mw-border-color);
+  font-weight: var(--mw-font-weight);
+  padding: var(--mw-padding-block) var(--mw-padding-inline);
+  background-color: var(--mw-background-color);
+  font-size: var(--mw-font-size);
+  text-transform: var(--mw-text-transform);
+  color: var(--mw-text-color); }
+  .btn:hover, .btn:active {
+    background-color: var(--mw-btn-background-hover-color);
+    color: var(--mw-btn-text-hover-color); }
 
 .btn:not(.btn-link, .btn-sm) {
   padding-block: var(--mw-btn-padding-block);

@@ -26,6 +26,7 @@ $mw-letter-spacing:         0 !default;
 $mw-font-weight:            400 !default;
 $mw-text-transform:         none !default;
 $mw-paragraph-size:         1rem !default;
+
 $mw-heading-one:            64px !default;
 $mw-heading-two:            52px !default;
 $mw-heading-three:          44px !default;
@@ -33,37 +34,8 @@ $mw-heading-four:           32px !default;
 $mw-heading-five:           24px !default;
 $mw-heading-six:            20px !default;
 
-$mw-btn-border-radius: 33px !default;
-$mw-btn-border-size: 2px !default;
-$mw-btn-border-style: solid !default;
-$mw-btn-padding-block: 15px !default;
-$mw-btn-padding-inline: 24px !default;
-
-
-$mw-form-control-border-radius: 2px !default;
-$mw-form-control-border-size: 2px !default;
-$mw-form-control-border-style: solid !default;
-$mw-form-control-padding-block: 15px !default;
-$mw-form-control-padding-inline: 15px !default;
-$mw-form-label-font-size: 16px !default;
-
-
 $mw-font-family-sans-serif:      'Jost', sans-serif !default;
-$mw-font-family-base:            $mw-font-family-sans-serif !default;
 
-$mw-font-family-base: $mw-font-family-sans-serif;
-$mw-body-font-size:     $mw-font-size   !default;
-$mw-menu-font-size:     $mw-font-size !default;
-$mw-body-text-align:  null !default;
-$mw-font-family:       $mw-font-family-base !default;
-$mw-menu-font-family:   $mw-font-family-base !default;
-
-$mw-nav-Font-size: 16px !default;
-$mw-nav-Font-family: $mw-font-family-sans-serif !default;
-$mw-nav-Link-font-size: 16px !default;
-$mw-nav-Link-font-family: $mw-font-family-sans-serif !default;
-
-$text-on-dark-background: $mw-white-color !default;
 
 
 html {
@@ -78,7 +50,7 @@ section.section {
     background-color: var(--mw-section-background-color);
 }
 
-.header-top, .footer-background {
+.header-top, .footer-background, .header-background {
 
     background-color: var(--mw-background-color);
 
@@ -105,39 +77,55 @@ a, .btn-link {
     letter-spacing: var(--mw-letter-spacing);
 }
 
-.btn.btn-primary, .btn {
-    background-color: var(--mw-primary-btn-background-color);
-    color: var(--mw-primary-btn-text-color);
-    border-color: var(--mw-primary-btn-border-color);
+.btn {
+    border-radius: var(--mw-border-radius);
+    border: var(--mw-border-size) var(--mw-border-style) var(--mw-border-color);
+    font-weight: var(--mw-font-weight);
+    padding: var(--mw-padding-block) var(--mw-padding-inline);
+    background-color: var(--mw-background-color);
+    font-size: var(--mw-font-size);
+    text-transform: var(--mw-text-transform);
+    color: var(--mw-text-color);
 
     &:hover, &:active {
-        background-color: var(--mw-primary-btn-background-color-hover);
-        color: var(--mw-primary-btn-text-color-hover);
+        background-color: var(--mw-btn-background-hover-color);
+        color: var(--mw-btn-text-hover-color);
     }
 }
 
-.btn.btn-secondary {
-    background-color: var(--mw-secondary-btn-background-color);
-    color: var(--mw-secondary-btn-text-color);
-    border-color: var(--mw-secondary-btn-border-color);
-
-    &:hover, &:active {
-        background-color: var(--mw-secondary-btn-background-color-hover);
-        color: var(--mw-secondary-btn-text-color-hover);
-    }
-}
-
-
-.btn.btn-outline, .btn.btn-outline-primary, .btn.btn-outline-secondary {
-    background-color: var(--mw-outline-btn-background-color);
-    color: var(--mw-outline-btn-text-color);
-    border-color: var(--mw-outline-btn-border-color);
-
-    &:hover, &:active {
-        background-color: var(--mw-outline-btn-background-color-hover);
-        color: var(--mw-outline-btn-text-color-hover);
-    }
-}
+//.btn.btn-primary, .btn {
+//    background-color: var(--mw-primary-btn-background-color);
+//    color: var(--mw-primary-btn-text-color);
+//    border-color: var(--mw-primary-btn-border-color);
+//
+//    &:hover, &:active {
+//        background-color: var(--mw-primary-btn-background-color-hover);
+//        color: var(--mw-primary-btn-text-color-hover);
+//    }
+//}
+//
+//.btn.btn-secondary {
+//    background-color: var(--mw-secondary-btn-background-color);
+//    color: var(--mw-secondary-btn-text-color);
+//    border-color: var(--mw-secondary-btn-border-color);
+//
+//    &:hover, &:active {
+//        background-color: var(--mw-secondary-btn-background-color-hover);
+//        color: var(--mw-secondary-btn-text-color-hover);
+//    }
+//}
+//
+//
+//.btn.btn-outline, .btn.btn-outline-primary, .btn.btn-outline-secondary {
+//    background-color: var(--mw-outline-btn-background-color);
+//    color: var(--mw-outline-btn-text-color);
+//    border-color: var(--mw-outline-btn-border-color);
+//
+//    &:hover, &:active {
+//        background-color: var(--mw-outline-btn-background-color-hover);
+//        color: var(--mw-outline-btn-text-color-hover);
+//    }
+//}
 
 .btn:not(.btn-link, .btn-sm) {
     padding-block: var(--mw-btn-padding-block);

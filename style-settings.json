@@ -74,7 +74,17 @@
                 "assets/design-styles/mw-styles/buttons-sizes.json"
 
             ],
-            "rootSelector" : ".btn"
+            "rootSelector" : ".btn",
+
+            "settings": [
+
+                
+                {
+                    "selectors": [
+                        ".btn"
+                    ]
+                }
+            ]
 
         },
         {
