@@ -1,82 +1,76 @@
 {
     "settings": [
         {
-            "title": "Buttons",
-            "description": "Pick a color scheme for your site.",
-            "settings": [
-                {
-                    "title": "Button color",
-                    "description": "Primary Button color",
-                    "fieldType": "colorPicker",
-                    "selectors": [
-                        ":root"
-                    ],
-                    "fieldSettings": {
-                        "property": "--mw-background-color"
-                    }
-                },
-                {
-                    "title": "Button hover color",
-                    "description": "Primary Button hover color",
-                    "fieldType": "colorPicker",
-                    "selectors": [
-                        ":root"
-                    ],
-                    "fieldSettings": {
-                        "property": "--mw-background-hover-color"
-                    }
-                },
-                {
-                    "title": "Button text color",
-                    "description": "Button text color",
-                    "fieldType": "colorPicker",
-                    "selectors": [
-                        ":root"
-                    ],
-                    "fieldSettings": {
-                        "property": "--mw-text-color"
-                    }
-                },
-                {
-                    "title": "Button text color hover",
-                    "description": "Button text color hover",
-                    "fieldType": "colorPicker",
-                    "selectors": [
-                        ":root"
-                    ],
-                    "fieldSettings": {
-                        "property": "--mw-text-hover-color"
-                    }
-                },
-                {
-                    "title": "Button border color",
-                    "description": "Button border color",
-                    "fieldType": "unitNumber",
-                    "selectors": [
-                        ":root"
-                    ],
-                    "fieldSettings": {
-                        "property": "--mw-border-color"
-                    }
-                },
-                {
-                    "title": "Clear All",
-                    "description": "Clear all button styles you have set for your site.",
-                    "fieldType": "clearAll",
-                    "selectors": [
-                        ":root"
-                    ],
-                    "fieldSettings": {
-                        "properties": [
-                            "--mw-background-color",
-                            "--mw-background-hover-color",
-                            "--mw-text-color",
-                            "--mw-text-hover-color",
-                            "--mw-border-color"
-                        ]
-                    }
-                }
-            ]
+            "title": "Button color",
+            "description": "Primary Button color",
+            "fieldType": "colorPicker",
+            "selectors": [
+                ":root"
+            ],
+            "fieldSettings": {
+                "property": "--mw-background-color"
+            }
+        },
+        {
+            "title": "Button hover color",
+            "description": "Primary Button hover color",
+            "fieldType": "colorPicker",
+            "selectors": [
+                ":root"
+            ],
+            "fieldSettings": {
+                "property": "--mw-background-hover-color"
+            }
+        },
+        {
+            "title": "Button text color",
+            "description": "Button text color",
+            "fieldType": "colorPicker",
+            "selectors": [
+                ":root"
+            ],
+            "fieldSettings": {
+                "property": "--mw-text-color"
+            }
+        },
+        {
+            "title": "Button text color hover",
+            "description": "Button text color hover",
+            "fieldType": "colorPicker",
+            "selectors": [
+                ":root"
+            ],
+            "fieldSettings": {
+                "property": "--mw-text-hover-color"
+            }
+        },
+        {
+            "title": "Button border color",
+            "description": "Button border color",
+            "fieldType": "unitNumber",
+            "selectors": [
+                ":root"
+            ],
+            "fieldSettings": {
+                "property": "--mw-border-color"
+            }
+        },
+        {
+            "title": "Clear All",
+            "description": "Clear all button styles you have set for your site.",
+            "fieldType": "clearAll",
+            "selectors": [
+                ":root"
+            ],
+            "fieldSettings": {
+                "properties": [
+                    "--mw-background-color",
+                    "--mw-background-hover-color",
+                    "--mw-text-color",
+                    "--mw-text-hover-color",
+                    "--mw-border-color"
+                ]
+            }
         }
     ]
 }

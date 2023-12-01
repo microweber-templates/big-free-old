@@ -28,7 +28,7 @@
 
         },
         {
-            "title": "Headings",
+            "title": "Headings and paragraphs",
             "description": "Pick a element heading sizes, and customize it to achieve the style you want.",
             "settings": [
                 {
@@ -122,30 +122,6 @@
                     }
                 },
                 {
-                    "title": "Clear All",
-                    "description": "Clear all heading styles.",
-                    "fieldType": "clearAll",
-                    "selectors": [
-                        ":root"
-                    ],
-                    "fieldSettings": {
-                        "properties": [
-                            "--mw-heading-one",
-                            "--mw-heading-two",
-                            "--mw-heading-three",
-                            "--mw-heading-for",
-                            "--mw-heading-five",
-                            "--mw-heading-six"
-                        ]
-                    }
-                }
-            ]
-        },
-        {
-            "title": "Paragraphs",
-            "description": "Paragraphs are typically used for body text. Changes affect all paragraphs.",
-            "settings": [
-                {
                     "title": "Paragraph",
                     "description": "Paragraphs are typically used for body text. Changes affect all paragraphs.",
                     "fieldType": "rangeSlider",
@@ -160,6 +136,7 @@
                         "unit": "px"
                     }
                 },
+
                 {
                     "title": "Clear All",
                     "description": "Clear all heading styles.",
@@ -169,34 +146,19 @@
                     ],
                     "fieldSettings": {
                         "properties": [
+                            "--mw-heading-one",
+                            "--mw-heading-two",
+                            "--mw-heading-three",
+                            "--mw-heading-for",
+                            "--mw-heading-five",
+                            "--mw-heading-six",
                             "--mw-paragraph-size"
                         ]
                     }
                 }
             ]
-        },
-        {
-            "title": "Clear All",
-            "description": "Clear all font styles.",
-            "fieldType": "clearAll",
-            "selectors": [
-                ":root"
-            ],
-            "fieldSettings": {
-                "properties": [
-
-                    "--mw-font-family",
-                    "--mw-body-font-size",
-                    "--mw-heading-one",
-                    "--mw-heading-two",
-                    "--mw-heading-three",
-                    "--mw-heading-for",
-                    "--mw-heading-five",
-                    "--mw-heading-six",
-                    "--mw-paragraph-size"
-                ]
-            }
         }
+
     ]
 }
 

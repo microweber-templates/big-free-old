@@ -1,6 +1,5 @@
 {
     "settings": [
-
         {
             "title": "Typography",
             "description": "Pick the general styles you want to use for your site.",
@@ -71,7 +70,8 @@
             "title": "Buttons",
             "description": "Pick the general styles you want to use for Footer of your site.",
             "readSettingsFromFiles": [
-                "assets/design-styles/mw-styles/button.json"
+                "assets/design-styles/mw-styles/button.json",
+                "assets/design-styles/mw-styles/spacing.json"
 
 
             ],
