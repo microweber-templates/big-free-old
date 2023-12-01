@@ -1,46 +1,70 @@
-$font-size: 16px;
+$mw-font-size: 16px;
+$mw-light-color:    #212529;
+$mw-white-color:    #ffffff;
+$mw-dark-color:     #212529;
+$mw-blue-color:     #0044de;
+$mw-gray-color:     #6c757d;
+$mw-black-color:    #000000;
+$mw-orange-color:   #f4a261;
 
-$lineHeight:            1.5 !default;
-$letterSpacing:         0 !default;
-$fontWeight:            400 !default;
-$textTransform:         none !default;
-$paragraphSize:         1rem !default;
-$headingOne:            64px !default;
-$headingTwo:            52px !default;
-$headingThree:          44px !default;
-$headingFour:           32px !default;
-$headingFive:           24px !default;
-$headingSix:            20px !default;
+$mw-background-color:               $mw-white-color !default;
+$mw-section-background-color:       $mw-white-color !default;
+$mw-primary-color:                  $mw-orange-color !default;
+$mw-secondary:                      $mw-gray-color !default;
+$mw-textDark:                       $mw-dark-color !default;
+$mw-textLight:                      $mw-light-color !default;
+$mw-header-background:              $mw-white-color !default;
+$mw-top-header-background:          $mw-black-color !default;
+$mw-top-header-elements:            $mw-white-color !default;
+$mw-menu-color:                     $mw-black-color !default;
+$mw-menu-hover-color:               $mw-black-color !default;
+$mw-links:                          $mw-black-color !default;
+$mw-paragraph-color:                $mw-black-color !default;
 
-$btnBorderRadius: 33px !default;
-$btnBorderSize: 2px !default;
-$btnBorderStyle: solid !default;
-$btnPaddingBlock: 15px !default;
-$btnPaddingInline: 24px !default;
+$mw-line-height:            1.5 !default;
+$mw-letter-spacing:         0 !default;
+$mw-font-weight:            400 !default;
+$mw-text-transform:         none !default;
+$mw-paragraph-size:         1rem !default;
+$mw-heading-one:            64px !default;
+$mw-heading-two:            52px !default;
+$mw-heading-three:          44px !default;
+$mw-heading-four:           32px !default;
+$mw-heading-five:           24px !default;
+$mw-heading-six:            20px !default;
+
+$mw-btn-border-radius: 33px !default;
+$mw-btn-border-size: 2px !default;
+$mw-btn-border-style: solid !default;
+$mw-btn-padding-block: 15px !default;
+$mw-btn-padding-inline: 24px !default;
 
 
-$formControlBorderRadius: 2px !default;
-$formControlBorderSize: 2px !default;
-$formControlBorderStyle: solid !default;
-$formControlPaddingBlock: 15px !default;
-$formControlPaddingInline: 15px !default;
-$formLabelFontSize: 16px !default;
+$mw-form-control-border-radius: 2px !default;
+$mw-form-control-border-size: 2px !default;
+$mw-form-control-border-style: solid !default;
+$mw-form-control-padding-block: 15px !default;
+$mw-form-control-padding-inline: 15px !default;
+$mw-form-label-font-size: 16px !default;
 
 
-$font-family-sans-serif:      'Jost', sans-serif !default;
-$font-family-base:            $font-family-sans-serif !default;
+$mw-font-family-sans-serif:      'Jost', sans-serif !default;
+$mw-font-family-base:            $mw-font-family-sans-serif !default;
 
-$font-family-base: $font-family-sans-serif;
-$bodyFontSize:     $font-size   !default;
-$menuFontSize:     $font-size !default;
-$body-text-align:  null !default;
-$fontFamily:       $font-family-base !default;
-$menuFontFamily:   $font-family-base !default;
+$mw-font-family-base: $mw-font-family-sans-serif;
+$mw-body-font-size:     $mw-font-size   !default;
+$mw-menu-font-size:     $mw-font-size !default;
+$mw-body-text-align:  null !default;
+$mw-font-family:       $mw-font-family-base !default;
+$mw-menu-font-family:   $mw-font-family-base !default;
 
-$navFontSize: 16px !default;
-$navFontFamily: $font-family-sans-serif !default;
-$navLinkFontSize: 16px !default;
-$navLinkFontFamily: $font-family-sans-serif !default;
+$mw-nav-Font-size: 16px !default;
+$mw-nav-Font-family: $mw-font-family-sans-serif !default;
+$mw-nav-Link-font-size: 16px !default;
+$mw-nav-Link-font-family: $mw-font-family-sans-serif !default;
+
+$text-on-dark-background: $mw-white-color !default;
+
 
 html {
     font-size: var(--mw-body-font-size);
