@@ -15,12 +15,21 @@ $mw-textDark:                       $mw-dark-color !default;
 $mw-textLight:                      $mw-light-color !default;
 $mw-links:                          $mw-black-color !default;
 $mw-paragraph-color:                $mw-black-color !default;
+$mw-text-color:                   $mw-black-color !default;
 
 $mw-line-height:            1.5 !default;
 $mw-letter-spacing:         0 !default;
 $mw-font-weight:            400 !default;
-$mw-text-transform:         none !default;
+$mw-text-transform:         lowercase !default;
 $mw-paragraph-size:         16px !default;
+
+$mw-border-radius:          33px !default;
+$mw-border-width:           1px !default;
+$mw-border-color:           $mw-black-color !default;
+$mw-border-style:           solid !default;
+
+$mw-padding-block:          15px !default;
+$mw-padding-inline:         24px !default;
 
 $mw-heading-one:            64px !default;
 $mw-heading-two:            52px !default;
@@ -53,6 +62,14 @@ $mw-font-family-sans-serif:      'Jost', sans-serif !default;
     --mw-heading-five: #{$mw-heading-five};
     --mw-heading-six: #{$mw-heading-six};
     --mw-font-family-sans-serif: #{$mw-font-family-sans-serif};
+    --mw-border-radius: #{$mw-border-radius};
+    --mw-border-width: #{$mw-border-width};
+    --mw-border-color: #{$mw-border-color};
+    --mw-border-style: #{$mw-border-style};
+    --mw-padding-block: #{$mw-padding-block};
+    --mw-padding-inline: #{$mw-padding-inline};
+    --mw-text-color: #{$mw-text-color};
+
 }
 
 html {
@@ -164,11 +181,6 @@ a, .btn-link {
     letter-spacing: var(--mw-letter-spacing);
 }
 
-.btn:not(.btn-link, .btn-sm) {
-    padding-block: var(--mw-btn-padding-block);
-    padding-inline: var(--mw-btn-padding-inline);
-}
-
 
 .form-label {
     color: var(--mw-form-label-color);
@@ -177,7 +189,7 @@ a, .btn-link {
 
 .btn, .form-control, textarea.form-control, select.form-control, select.form-select {
     border-radius: var(--mw-border-radius);
-    border: var(--mw-border-size) var(--mw-border-style) var(--mw-border-color);
+    border: var(--mw-border-width) var(--mw-border-style) var(--mw-border-color);
     font-weight: var(--mw-font-weight);
     padding: var(--mw-padding-block) var(--mw-padding-inline);
     background-color: var(--mw-background-color);

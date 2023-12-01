@@ -2,7 +2,7 @@
     "settings": [
         {
             "title": "Button color",
-            "description": "Primary Button color",
+            "description": "Button color",
             "fieldType": "colorPicker",
             "selectors": [
                 ":root"
@@ -13,7 +13,7 @@
         },
         {
             "title": "Button hover color",
-            "description": "Primary Button hover color",
+            "description": "Button hover color",
             "fieldType": "colorPicker",
             "selectors": [
                 ":root"

@@ -72,17 +72,8 @@
             "readSettingsFromFiles": [
                 "assets/design-styles/mw-styles/button.json",
                 "assets/design-styles/mw-styles/spacing.json"
-
-
             ],
-            "rootSelector" : ".btn",
-            "settings": [
-                {
-                    "selectors": [
-                        ".btn"
-                    ]
-                }
-            ]
+            "rootSelector" : ".btn"
         },
         {
             "title": "Forms",

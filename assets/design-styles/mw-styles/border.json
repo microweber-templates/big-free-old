@@ -23,7 +23,7 @@
                 ":root"
             ],
             "fieldSettings": {
-                "property": "--mw-border-size",
+                "property": "--mw-border-width",
                 "min": 1,
                 "max": 120,
                 "step": 0.1,
@@ -31,49 +31,14 @@
             }
         },
         {
-            "title": "Border Style",
-            "description": "Choose a border style to use for your site.",
-            "fieldType": "rangeSlider",
+            "title": "Border color",
+            "description": "Border color",
+            "fieldType": "colorPicker",
             "selectors": [
                 ":root"
             ],
             "fieldSettings": {
-                "property": "--mw-border-size",
-                "min": 1,
-                "max": 120,
-                "step": 0.1,
-                "unit": "px"
-            }
-        },
-        {
-            "title": "Border Color",
-            "description": "Choose a border style to use for your site.",
-            "fieldType": "rangeSlider",
-            "selectors": [
-                ":root"
-            ],
-            "fieldSettings": {
-                "property": "--mw-border-size",
-                "min": 1,
-                "max": 120,
-                "step": 0.1,
-                "unit": "px"
-            }
-        },
-        {
-            "title": "Clear All",
-            "description": "Clear all spacing styles.",
-            "fieldType": "clearAll",
-            "selectors": [
-                ":root"
-            ],
-            "fieldSettings": {
-                "properties": [
-                    "--mw-line-height",
-                    "--mw-letter-spacing"
-
-
-                ]
+                "property": "--mw-border-color"
             }
         },
         {
@@ -85,17 +50,9 @@
             ],
             "fieldSettings": {
                 "properties": [
-                    "--mw-line-height",
-                    "--mw-letter-spacing",
-                    "--mw-font-family",
-                    "--mw-body-font-size",
-                    "--mw-heading-one",
-                    "--mw-heading-two",
-                    "--mw-heading-three",
-                    "--mw-heading-for",
-                    "--mw-heading-five",
-                    "--mw-heading-six",
-                    "--mw-paragraph-size"
+                    "--mw-border-radius",
+                    "--mw-border-width",
+                    "--mw-border-color"
                 ]
             }
         }

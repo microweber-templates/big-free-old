@@ -11,7 +11,7 @@
   --mw-line-height: 1.5;
   --mw-letter-spacing: 0;
   --mw-font-weight: 400;
-  --mw-text-transform: none;
+  --mw-text-transform: lowercase;
   --mw-paragraph-size: 16px;
   --mw-heading-one: 64px;
   --mw-heading-two: 52px;
@@ -19,7 +19,14 @@
   --mw-heading-four: 32px;
   --mw-heading-five: 24px;
   --mw-heading-six: 20px;
-  --mw-font-family-sans-serif: Jost, sans-serif; }
+  --mw-font-family-sans-serif: Jost, sans-serif;
+  --mw-border-radius: 33px;
+  --mw-border-width: 1px;
+  --mw-border-color: #000000;
+  --mw-border-style: solid;
+  --mw-padding-block: 15px;
+  --mw-padding-inline: 24px;
+  --mw-text-color: #000000; }
 
 html {
   font-size: var(--mw-body-font-size); }
@@ -96,17 +103,13 @@ a, .btn-link {
   line-height: var(--mw-line-height);
   letter-spacing: var(--mw-letter-spacing); }
 
-.btn:not(.btn-link, .btn-sm) {
-  padding-block: var(--mw-btn-padding-block);
-  padding-inline: var(--mw-btn-padding-inline); }
-
 .form-label {
   color: var(--mw-form-label-color);
   font-size: var(--mw-form-label-font-size); }
 
 .btn, .form-control, textarea.form-control, select.form-control, select.form-select {
   border-radius: var(--mw-border-radius);
-  border: var(--mw-border-size) var(--mw-border-style) var(--mw-border-color);
+  border: var(--mw-border-width) var(--mw-border-style) var(--mw-border-color);
   font-weight: var(--mw-font-weight);
   padding: var(--mw-padding-block) var(--mw-padding-inline);
   background-color: var(--mw-background-color);
