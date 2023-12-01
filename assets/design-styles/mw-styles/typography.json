@@ -29,6 +29,7 @@
                         "step": 0.1,
                         "unit": "px"
                     }
+
                 },
                 {
                     "title": "Spacing",
@@ -74,8 +75,9 @@
                             "fieldSettings": {
                                 "properties": [
                                     "--mw-line-height",
-                                    "--mw-letter-spacing"
-
+                                    "--mw-letter-spacing",
+                                    "--mw-font-family",
+                                    "--mw-body-font-size"
                                 ]
                             }
                         }
@@ -238,8 +240,17 @@
                     ],
                     "fieldSettings": {
                         "properties": [
+                            "--mw-line-height",
+                            "--mw-letter-spacing",
                             "--mw-font-family",
-                            "--mw-body-font-size"
+                            "--mw-body-font-size",
+                            "--mw-heading-one",
+                            "--mw-heading-two",
+                            "--mw-heading-three",
+                            "--mw-heading-for",
+                            "--mw-heading-five",
+                            "--mw-heading-six",
+                            "--mw-paragraph-size"
                         ]
                     }
                 }
