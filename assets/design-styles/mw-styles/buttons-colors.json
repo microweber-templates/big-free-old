@@ -1,7 +1,7 @@
 {
     "settings": [
         {
-            "title": "Colors",
+            "title": "Button colors",
             "description": "Pick a color scheme for your site.",
             "settings": [
                 {
@@ -17,7 +17,7 @@
                                 ":root"
                             ],
                             "fieldSettings": {
-                                "property": "--mw-primary-btn-background-color"
+                                "property": "--mw-btn-background-color"
                             }
                         },
                         {
@@ -28,7 +28,7 @@
                                 ":root"
                             ],
                             "fieldSettings": {
-                                "property": "--mw-primary-btn-background-color-hover"
+                                "property": "--mw-btn-background-hover-color"
                             }
                         },
                         {
@@ -39,7 +39,7 @@
                                 ":root"
                             ],
                             "fieldSettings": {
-                                "property": "--mw-primary-btn-text-color"
+                                "property": "--mw-btn-text-color"
                             }
                         },
                         {
@@ -50,20 +50,21 @@
                                 ":root"
                             ],
                             "fieldSettings": {
-                                "property": "--mw-primary-btn-text-color-hover"
+                                "property": "--mw-btn-text-hover-color"
                             }
                         },
                         {
                             "title": "Primary Button border color",
                             "description": "Primary Button border color",
-                            "fieldType": "unitNumber",
+                            "fieldType": "colorPicker",
                             "selectors": [
                                 ":root"
                             ],
                             "fieldSettings": {
-                                "property": "--mw-primary-btn-border-color"
+                                "property": "--mw-btn-border-color"
                             }
                         },
+
                         {
                             "title": "Clear All",
                             "description": "Clear all button styles you have set for your site.",
@@ -73,11 +74,11 @@
                             ],
                             "fieldSettings": {
                                 "properties": [
-                                    "--mw-primary-btn-background-color",
-                                    "--mw-primary-btn-background-color-hover",
-                                    "--mw-primary-btn-text-color",
-                                    "--mw-primary-btn-text-color-hover",
-                                    "--mw-primary-btn-border-color"
+                                    "--mw-btn-background-color",
+                                    "--mw-btn-background-hover-color",
+                                    "--mw-btn-text-color",
+                                    "--mw-btn-text-hover-color",
+                                    "--mw-btn-border-color"
                                 ]
                             }
                         }
@@ -96,7 +97,7 @@
                                 ":root"
                             ],
                             "fieldSettings": {
-                                "property": "--mw-secondary-btn-background-color"
+                                "property": "--mw-btn-secondary-background-color"
                             }
                         },
                         {
@@ -107,7 +108,7 @@
                                 ":root"
                             ],
                             "fieldSettings": {
-                                "property": "--mw-secondary-btn-background-color-hover"
+                                "property": "--mw-btn-secondary-background-hover-color"
                             }
                         },
                         {
@@ -118,7 +119,7 @@
                                 ":root"
                             ],
                             "fieldSettings": {
-                                "property": "--mw-secondary-btn-text-color"
+                                "property": "--mw-btn-secondary-text-color"
                             }
                         },
                         {
@@ -129,18 +130,18 @@
                                 ":root"
                             ],
                             "fieldSettings": {
-                                "property": "--mw-secondary-btn-text-color-hover"
+                                "property": "--mw-btn-secondary-text-hover-color"
                             }
                         },
                         {
                             "title": "Secondary Button border color",
                             "description": "Secondary Button border color",
-                            "fieldType": "unitNumber",
+                            "fieldType": "colorPicker",
                             "selectors": [
                                 ":root"
                             ],
                             "fieldSettings": {
-                                "property": "--mw-secondary-btn-border-color"
+                                "property": "--mw-btn-secondary-border-color"
                             }
                         },
                         {
@@ -152,11 +153,11 @@
                             ],
                             "fieldSettings": {
                                 "properties": [
-                                    "--mw-secondary-btn-background-color",
-                                    "--mw-secondary-btn-background-color-hover",
-                                    "--mw-secondary-btn-text-color",
-                                    "--mw-secondary-btn-text-color-hover",
-                                    "--mw-secondary-btn-border-color"
+                                    "--mw-btn-secondary-background-color",
+                                    "--mw-btn-secondary-background-hover-color",
+                                    "--mw-btn-secondary-text-color",
+                                    "--mw-btn-secondary-text-hover-color",
+                                    "--mw-btn-secondary-border-color"
                                 ]
                             }
                         }
@@ -175,7 +176,7 @@
                                 ":root"
                             ],
                             "fieldSettings": {
-                                "property": "--mw-outline-btn-background-color"
+                                "property": "--mw-btn-outline-background-color"
                             }
                         },
                         {
@@ -186,7 +187,7 @@
                                 ":root"
                             ],
                             "fieldSettings": {
-                                "property": "--mw-outline-btn-background-color-hover"
+                                "property": "--mw-btn-outline-background-hover-color"
                             }
                         },
                         {
@@ -197,7 +198,7 @@
                                 ":root"
                             ],
                             "fieldSettings": {
-                                "property": "--mw-outline-btn-text-color"
+                                "property": "--mw-btn-outline-text-color"
                             }
                         },
                         {
@@ -208,18 +209,18 @@
                                 ":root"
                             ],
                             "fieldSettings": {
-                                "property": "--mw-outline-btn-text-color-hover"
+                                "property": "--mw-btn-outline-text-hover-color"
                             }
                         },
                         {
                             "title": "Outline Button border color",
                             "description": "Outline Button border color",
-                            "fieldType": "unitNumber",
+                            "fieldType": "colorPicker",
                             "selectors": [
                                 ":root"
                             ],
                             "fieldSettings": {
-                                "property": "--mw-outline-btn-border-color"
+                                "property": "--mw-btn-outline-border-color"
                             }
                         },
                         {
@@ -231,11 +232,11 @@
                             ],
                             "fieldSettings": {
                                 "properties": [
-                                    "--mw-outline-btn-background-color",
-                                    "--mw-outline-btn-background-color-hover",
-                                    "--mw-outline-btn-text-color",
-                                    "--mw-outline-btn-text-color-hover",
-                                    "--mw-outline-btn-border-color"
+                                    "--mw-btn-outline-background-color",
+                                    "--mw-btn-outline-background-hover-color",
+                                    "--mw-btn-outline-text-color",
+                                    "--mw-btn-outline-text-hover-color",
+                                    "--mw-btn-outline-border-color"
                                 ]
                             }
                         }

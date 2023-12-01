@@ -1,11 +1,11 @@
 {
     "settings": [
+
         {
             "title": "Typography",
             "description": "Pick the general styles you want to use for your site.",
             "readSettingsFromFiles": [
-                "assets/design-styles/mw-styles/typography.json",
-                "assets/design-styles/mw-styles/spacing.json"
+                "assets/design-styles/mw-styles/typography.json"
             ],
 
             "settings": [
@@ -38,7 +38,7 @@
             "description": "Pick the general styles you want to use for Footer of your site.",
             "readSettingsFromFiles": [
                 "assets/design-styles/mw-styles/colors.json",
-                "assets/design-styles/mw-styles/button.json"
+                "assets/design-styles/mw-styles/buttons-colors.json"
 
             ],
             "rootSelector" : ".header-top"
@@ -49,7 +49,7 @@
             "description": "Pick the general styles you want to use for Header of your site.",
             "readSettingsFromFiles": [
                 "assets/design-styles/mw-styles/colors.json",
-                "assets/design-styles/mw-styles/button.json"
+                "assets/design-styles/mw-styles/buttons-colors.json"
 
             ],
             "rootSelector" : ".header-background"
@@ -60,7 +60,7 @@
             "description": "Pick the general styles you want to use for Footer of your site.",
             "readSettingsFromFiles": [
                 "assets/design-styles/mw-styles/colors.json",
-                "assets/design-styles/mw-styles/button.json"
+                "assets/design-styles/mw-styles/buttons-colors.json"
 
             ],
             "rootSelector" : ".footer-background"
@@ -70,19 +70,18 @@
             "title": "Buttons",
             "description": "Pick the general styles you want to use for Footer of your site.",
             "readSettingsFromFiles": [
-                "assets/design-styles/mw-styles/button.json",
-                "assets/design-styles/mw-styles/spacing.json"
+                "assets/design-styles/mw-styles/buttons-colors.json",
+                "assets/design-styles/mw-styles/buttons-sizes.json"
+
             ],
             "rootSelector" : ".btn"
+
         },
         {
             "title": "Forms",
             "description": "Pick the general styles you want to use for forms of your site.",
             "readSettingsFromFiles": [
-                "assets/design-styles/mw-styles/colors.json",
-                "assets/design-styles/mw-styles/button.json",
-                "assets/design-styles/mw-styles/spacing.json",
-                "assets/design-styles/mw-styles/border.json"
+                "assets/design-styles/mw-styles/forms.json"
             ],
             "rootSelector" : ".mw_form"
 

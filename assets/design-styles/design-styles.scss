@@ -13,23 +13,19 @@ $mw-primary-color:                  $mw-orange-color !default;
 $mw-secondary:                      $mw-gray-color !default;
 $mw-textDark:                       $mw-dark-color !default;
 $mw-textLight:                      $mw-light-color !default;
+$mw-header-background:              $mw-white-color !default;
+$mw-top-header-background:          $mw-black-color !default;
+$mw-top-header-elements:            $mw-white-color !default;
+$mw-menu-color:                     $mw-black-color !default;
+$mw-menu-hover-color:               $mw-black-color !default;
 $mw-links:                          $mw-black-color !default;
 $mw-paragraph-color:                $mw-black-color !default;
-$mw-text-color:                   $mw-black-color !default;
 
 $mw-line-height:            1.5 !default;
 $mw-letter-spacing:         0 !default;
 $mw-font-weight:            400 !default;
-$mw-text-transform:         lowercase !default;
-$mw-paragraph-size:         16px !default;
-
-$mw-border-radius:          33px !default;
-$mw-border-width:           1px !default;
-$mw-border-color:           $mw-black-color !default;
-$mw-border-style:           solid !default;
-
-$mw-padding-block:          15px !default;
-$mw-padding-inline:         24px !default;
+$mw-text-transform:         none !default;
+$mw-paragraph-size:         1rem !default;
 
 $mw-heading-one:            64px !default;
 $mw-heading-two:            52px !default;
@@ -40,37 +36,131 @@ $mw-heading-six:            20px !default;
 
 $mw-font-family-sans-serif:      'Jost', sans-serif !default;
 
+
+$text-on-dark-background: $mw-white-color !default;
+
+$mw-footer-background:       $mw-white-color !default;
+$mw-footer-text-color:       $mw-black-color !default;
+$mw-footer-link-color:       $mw-black-color !default;
+$mw-footer-hover-link-color: $mw-black-color !default;
+
+$mw-btn-border-radius: 33px !default;
+$mw-btn-border-size: 2px !default;
+$mw-btn-border-style: solid !default;
+$mw-btn-padding-block: 15px !default;
+$mw-btn-padding-inline: 24px !default;
+
+$mw-btn-border-color: $mw-orange-color !default;
+$mw-btn-background-color: $mw-orange-color !default;
+$mw-btn-background-hover-color: #e76f51 !default;
+$mw-btn-text-color:            $mw-white-color !default;
+$mw-btn-text-hover-color: $mw-white-color !default;
+
+$mw-btn-secondary-background: #FF5E00 !default;
+$mw-btn-secondary-backgroundHover: $mw-orange-color !default;
+$mw-btn-secondary-text:            $mw-white-color !default;
+$mw-btn-secondary-textHoverColor: $mw-white-color !default;
+$mw-btn-secondary-border-color:     $mw-orange-color !default;
+
+$mw-btn-outline-background: transparent !default;
+$mw-btn-outline-background-hover: $mw-orange-color !default;
+$mw-btn-outline-text: $mw-orange-color !default;
+$mw-btn-outline-text-hover-color: $mw-white-color !default;
+$mw-btn-outline-border-color: $mw-orange-color !default;
+
+
+
+$mw-form-control-border-radius: 2px !default;
+$mw-form-control-border-size: 2px !default;
+$mw-form-control-border-style: solid !default;
+$mw-form-control-padding-block: 15px !default;
+$mw-form-control-padding-inline: 15px !default;
+$mw-form-label-font-size: 16px !default;
+$mw-form-control-placeholder-color: $mw-gray-color !default;
+$mw-form-control-background: $mw-white-color !default;
+$mw-form-control-background-hover: $mw-white-color !default;
+$mw-form-control-text-color: $mw-black-color !default;
+$mw-form-control-text-hover-color: $mw-black-color !default;
+$mw-form-label: $mw-black-color !default;
+$mw-form-label-font-size: 16px !default;
+
 :root {
-    --mw-font-size: #{$mw-font-size};
     --mw-background-color: #{$mw-background-color};
     --mw-section-background-color: #{$mw-section-background-color};
     --mw-primary-color: #{$mw-primary-color};
     --mw-secondary: #{$mw-secondary};
     --mw-textDark: #{$mw-textDark};
     --mw-textLight: #{$mw-textLight};
+    --mw-header-background: #{$mw-header-background};
+    --mw-top-header-background: #{$mw-top-header-background};
+    --mw-top-header-elements: #{$mw-top-header-elements};
+    --mw-menu-color: #{$mw-menu-color};
+    --mw-menu-hover-color: #{$mw-menu-hover-color};
     --mw-links: #{$mw-links};
     --mw-paragraph-color: #{$mw-paragraph-color};
+
     --mw-line-height: #{$mw-line-height};
     --mw-letter-spacing: #{$mw-letter-spacing};
     --mw-font-weight: #{$mw-font-weight};
     --mw-text-transform: #{$mw-text-transform};
     --mw-paragraph-size: #{$mw-paragraph-size};
+
     --mw-heading-one: #{$mw-heading-one};
     --mw-heading-two: #{$mw-heading-two};
     --mw-heading-three: #{$mw-heading-three};
     --mw-heading-four: #{$mw-heading-four};
     --mw-heading-five: #{$mw-heading-five};
     --mw-heading-six: #{$mw-heading-six};
+
     --mw-font-family-sans-serif: #{$mw-font-family-sans-serif};
-    --mw-border-radius: #{$mw-border-radius};
-    --mw-border-width: #{$mw-border-width};
-    --mw-border-color: #{$mw-border-color};
-    --mw-border-style: #{$mw-border-style};
-    --mw-padding-block: #{$mw-padding-block};
-    --mw-padding-inline: #{$mw-padding-inline};
-    --mw-text-color: #{$mw-text-color};
+
+    --text-on-dark-background: #{$text-on-dark-background};
+
+    --mw-footer-background: #{$mw-footer-background};
+    --mw-footer-text-color: #{$mw-footer-text-color};
+    --mw-footer-link-color: #{$mw-footer-link-color};
+    --mw-footer-hover-link-color: #{$mw-footer-hover-link-color};
+
+    --mw-btn-border-radius: #{$mw-btn-border-radius};
+    --mw-btn-border-size: #{$mw-btn-border-size};
+    --mw-btn-border-style: #{$mw-btn-border-style};
+    --mw-btn-padding-block: #{$mw-btn-padding-block};
+    --mw-btn-padding-inline: #{$mw-btn-padding-inline};
+
+    --mw-btn-background-color: #{$mw-btn-background-color};
+    --mw-btn-background-hover-color: #{$mw-btn-background-hover-color};
+    --mw-btn-text-color: #{$mw-btn-text-color};
+    --mw-btn-text-hover-color: #{$mw-btn-text-hover-color};
+    --mw-btn-border-color: #{$mw-btn-border-color};
+
+    --mw-btn-secondary-background-color: #{$mw-btn-secondary-background};
+    --mw-btn-secondary-background-hover-color: #{$mw-btn-secondary-backgroundHover};
+    --mw-btn-secondary-text-color: #{$mw-btn-secondary-text};
+    --mw-btn-secondary-text-hover-color: #{$mw-btn-secondary-textHoverColor};
+    --mw-btn-secondary-border-color: #{$mw-btn-secondary-border-color};
+
+    --mw-btn-outline-background-color: #{$mw-btn-outline-background};
+    --mw-btn-outline-background-hover-color: #{$mw-btn-outline-background-hover};
+    --mw-btn-outline-text-color: #{$mw-btn-outline-text};
+    --mw-btn-outline-text-hover-color: #{$mw-btn-outline-text-hover-color};
+    --mw-btn-outline-border-color: #{$mw-btn-outline-border-color};
+
+    --mw-form-control-border-radius: #{$mw-form-control-border-radius};
+    --mw-form-control-border-size: #{$mw-form-control-border-size};
+    --mw-form-control-border-style: #{$mw-form-control-border-style};
+    --mw-form-control-padding-block: #{$mw-form-control-padding-block};
+    --mw-form-control-padding-inline: #{$mw-form-control-padding-inline};
+    --mw-form-label-font-size: #{$mw-form-label-font-size};
+    --mw-form-control-placeholder-color: #{$mw-form-control-placeholder-color};
+    --mw-form-control-background: #{$mw-form-control-background};
+    --mw-form-control-background-hover: #{$mw-form-control-background-hover};
+    --mw-form-control-text-color: #{$mw-form-control-text-color};
+    --mw-form-control-text-hover-color: #{$mw-form-control-text-hover-color};
+    --mw-form-label: #{$mw-form-label};
+
 
 }
+
 
 html {
     font-size: var(--mw-body-font-size);
@@ -98,6 +188,133 @@ section.section {
     }
 }
 
+
+a i:before {
+    color: var(--mw-primary-color);
+}
+
+
+
+a, .btn-link {
+    color: var(--mw-link-color);
+    line-height: var(--mw-line-height);
+    letter-spacing: var(--mw-letter-spacing);
+}
+
+.btn.btn-primary, .btn {
+    background-color: var(--mw-btn-background-color);
+    color: var(--mw-btn-text-color);
+    border-color: var(--mw-btn-border-color);
+
+    &:hover, &:active {
+        background-color: var(--mw-btn-background-hover-color);
+        color: var(--mw-btn-text-hover-color);
+    }
+}
+
+.btn.btn-secondary {
+    background-color: var(--mw-btn-secondary-background-color) !important;
+    color: var(--mw-btn-secondary-text-color) !important;
+    border-color: var(--mw-btn-secondary-border-color) !important;
+
+    &:hover, &:active {
+        background-color: var(--mw-btn-secondary-background-hover-color) !important;
+        color: var(--mw-btn-secondary-text-hover-color) !important;
+    }
+}
+
+
+.btn.btn-outline, .btn.btn-outline-primary, .btn.btn-outline-secondary {
+    background-color: var(--mw-btn-outline-background-color) !important;
+    color: var(--mw-btn-outline-text-color) !important;
+    border-color: var(--mw-btn-outline-border-color) !important;
+
+    &:hover, &:active {
+        background-color: var(--mw-btn-outline-background-hover-color) !important;
+        color: var(--mw-btn-outline-text-hover-color) !important;
+    }
+}
+
+.btn:not(.btn-link, .btn-sm) {
+    padding-block: var(--mw-btn-padding-block);
+    padding-inline: var(--mw-btn-padding-inline);
+}
+
+.btn:not(.btn-link) {
+    border-radius: var(--mw-btn-border-radius);
+    border-color: var(--mw-btn-border-color);
+    border-width: var(--mw-btn-border-size);
+    border-style: var(--mw-btn-border-style);
+    color: var(--mw-btn-text-color);
+
+    &:hover, &:focus, &.active, &:active {
+        outline: 0 none !important;
+        box-shadow: none !important;
+        border-color: color-mix(in srgb, var(--form-control-background) 50%, transparent);
+        color: var(--mw-btn-text-hover-color);
+    }
+
+    &:hover, &.focus, &.active, &:active {
+        i {
+
+        }
+    }
+}
+
+
+.form-label {
+    color: var(--mw-form-label-color);
+    font-size: var(--mw-form-label-font-size);
+}
+
+.form-control, textarea.form-control, select.form-control, select.form-select {
+    border-radius: var(--mw-form-control-border-radius);
+    border-color: var(--mw-form-control-border-color);
+    border-width: var(--mw-form-control-border-size);
+    border-style: var(--mw-form-control-border-style);
+    background-color: var(--mw-form-control-background);
+    padding-block: var(--mw-form-control-padding-block);
+    padding-inline: var(--mw-form-control-padding-inline);
+    color: var(--mw-form-control-text-color);
+    &:hover, &:focus, &.active, &:active {
+        color: var(--mw-form-control-text-hover-color);
+        background-color: var(--mw-form-control-background);
+    }
+
+    &::placeholder {
+        color: var(--mw-form-control-placeholder-color);
+    }
+
+}
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+    border-color: color-mix(in srgb, var(--mw-form-control-background) 50%, transparent);
+    box-shadow: none;
+    outline: 0 none;
+}
+
+//.testimonials-background-variable {
+//    background-color: var(--testimonialBackgroundVariable);
+//}
+//
+//.testimonialBorderVariable {
+//    border-color: var(--testimonialBorderVariable) !important;
+//}
+
 body {
     background-color: var(--mw-background-color);
     color: var(--mw-body-color);
@@ -116,13 +333,18 @@ p {
     letter-spacing: var(--mw-letter-spacing);
 }
 
+.mw-layout-dark-background{
+    h1,h2,h3,h4,h5,h6,p {
+        color: var(--mw-text-on-dark-background-color);
+    }
+}
+
 h1,h2,h3,h4,h5,h6 {
-    font-family: var(--mw-font-family);
-    font-weight: var(--mw-font-weight);
-    text-transform: var(--mw-text-transform);
-    line-height: var(--mw-line-height);
-    letter-spacing: var(--mw-letter-spacing);
     color: var(--mw-heading-color);
+    text-transform: var(--mw-text-transform);
+    font-weight: var(--mw-font-weight);
+    letter-spacing: var(--mw-letter-spacing);
+    line-height: var(--mw-line-height);
 }
 
 h1 {
@@ -159,74 +381,5 @@ h6 {
     @media screen and (min-width: 615px) {
         font-size: var(--mw-heading-six);
     }
+
 }
-
-.mw-layout-dark-background{
-    h1,h2,h3,h4,h5,h6,p {
-        color: var(--mw-text-on-dark-background-color);
-    }
-}
-
-
-
-a i:before {
-    color: var(--mw-primary-color);
-}
-
-
-
-a, .btn-link {
-    color: var(--mw-link-color);
-    line-height: var(--mw-line-height);
-    letter-spacing: var(--mw-letter-spacing);
-}
-
-
-.form-label {
-    color: var(--mw-form-label-color);
-    font-size: var(--mw-form-label-font-size);
-}
-
-.btn, .form-control, textarea.form-control, select.form-control, select.form-select {
-    border-radius: var(--mw-border-radius);
-    border: var(--mw-border-width) var(--mw-border-style) var(--mw-border-color);
-    font-weight: var(--mw-font-weight);
-    padding: var(--mw-padding-block) var(--mw-padding-inline);
-    background-color: var(--mw-background-color);
-    font-size: var(--mw-font-size);
-    text-transform: var(--mw-text-transform);
-    color: var(--mw-text-color);
-
-    &:hover, &:active {
-        background-color: var(--mw-btn-background-hover-color);
-        color: var(--mw-btn-text-hover-color);
-    }
-
-    &::placeholder {
-        color: var(--mw-form-control-placeholder-color);
-    }
-}
-
-
-textarea:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus,
-.uneditable-input:focus {
-    border-color: color-mix(in srgb, var(--mw-form-control-background) 50%, transparent);
-    box-shadow: none;
-    outline: 0 none;
-}
-
-

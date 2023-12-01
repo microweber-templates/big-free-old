@@ -52,13 +52,24 @@
                 },
                 {
                     "title": "Form Input Border Color",
-                    "description": "Choose a button border color to use for your site.",
+                    "description": "Choose a form input border color to use for your site.",
                     "fieldType": "colorPicker",
                     "selectors": [
                         ".form-control"
                     ],
                     "fieldSettings": {
                         "property": "--mw-form-control-border-color"
+                    }
+                },
+                {
+                    "title": "Form Input Placeholder Color",
+                    "description": "Choose a form input placeholder color to use for your site.",
+                    "fieldType": "colorPicker",
+                    "selectors": [
+                        ".form-control"
+                    ],
+                    "fieldSettings": {
+                        "property": "--mw-form-control-placeholder-color"
                     }
                 },
                 {
