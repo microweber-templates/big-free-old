@@ -1,9 +1,5 @@
 {
     "settings": [
-        {
-            "title": "Colors",
-            "description": "Pick a color scheme for your site.",
-            "settings": [
                 {
                     "title": "Background color",
                     "description": "Background color",
@@ -95,8 +91,7 @@
                 }
 
             ]
-        }
-    ]
+
 }
 
 

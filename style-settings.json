@@ -83,7 +83,7 @@
             "readSettingsFromFiles": [
                 "assets/design-styles/mw-styles/forms.json"
             ],
-            "rootSelector" : ".mw_form"
+            "rootSelector" : ".module-custom-fields"
 
         }
     ]

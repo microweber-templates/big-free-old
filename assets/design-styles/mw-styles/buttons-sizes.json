@@ -1,7 +1,7 @@
 {
     "settings": [
         {
-            "title": "Sizes",
+            "title": "Button sizes",
             "description": "Pick different sizes for your buttons.",
             "settings": [
                 {
@@ -14,8 +14,8 @@
                     "fieldSettings": {
                         "property": "--mw-btn-border-radius",
                         "min": 1,
-                        "max": 120,
-                        "step": 0.1,
+                        "max": 100,
+                        "step": 1,
                         "unit": "px"
                     }
                 },
@@ -30,7 +30,7 @@
                         "property": "--mw-btn-border-size",
                         "min": 1,
                         "max": 120,
-                        "step": 0.1,
+                        "step": 1,
                         "unit": "px"
                     }
                 },
@@ -45,7 +45,7 @@
                         "property": "--mw-btn-padding-block",
                         "min": 1,
                         "max": 120,
-                        "step": 0.1,
+                        "step": 1,
                         "unit": "px"
                     }
                 },
@@ -60,7 +60,7 @@
                         "property": "--mw-btn-padding-inline",
                         "min": 1,
                         "max": 120,
-                        "step": 0.1,
+                        "step": 1,
                         "unit": "px"
                     }
                 },

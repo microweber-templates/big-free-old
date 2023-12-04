@@ -1,9 +1,6 @@
 {
+
     "settings": [
-        {
-            "title": "Button colors",
-            "description": "Pick a color scheme for your site.",
-            "settings": [
                 {
                     "title": "Primary Button",
                     "description": "Pick a color scheme for your primary button.",
@@ -244,7 +241,6 @@
 
                 }
             ]
-        }
-    ]
+
 }
 

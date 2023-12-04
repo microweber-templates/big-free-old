@@ -1,9 +1,5 @@
 {
     "settings": [
-        {
-            "title": "Typography",
-            "description": "Customize your site's typography to achieve the style you want.",
-            "settings": [
                 {
                     "title": "Font Pack",
                     "description": "Choose a font pack to use for your site.",
@@ -26,7 +22,7 @@
                         "property": "--mw-body-font-size",
                         "min": 1,
                         "max": 120,
-                        "step": 0.1,
+                        "step": 1,
                         "unit": "px"
                     }
                 },
@@ -60,8 +56,40 @@
                                 "property": "--mw-letter-spacing",
                                 "min": 1,
                                 "max": 120,
-                                "step": 0.1,
+                                "step": 1,
                                 "unit": "px"
+                            }
+                        },
+                        {
+                            "title": "Font Weight",
+                            "description": "Choose a Font weight to use for your site.",
+                            "fieldType": "rangeSlider",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--mw-font-weight",
+                                "min": 200,
+                                "max": 900,
+                                "step": 100,
+                                "unit": ""
+                            }
+                        },
+                        {
+                            "title": "Text Transform",
+                            "description": "Choose a text transform to use for your site.",
+                            "fieldType": "dropdown",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--mw-text-transform",
+                                "options": {
+                                    "lowercase": "lowercase",
+                                    "uppercase": "uppercase",
+                                    "capitalize": "capitalize",
+                                    "none": "none"
+                                }
                             }
                         },
                         {
@@ -74,11 +102,14 @@
                             "fieldSettings": {
                                 "properties": [
                                     "--mw-line-height",
-                                    "--mw-letter-spacing"
+                                    "--mw-letter-spacing",
+                                    "--mw-text-transform",
+                                    "--mw-font-weight"
 
                                 ]
                             }
                         }
+
                     ]
                 },
                 {
@@ -96,7 +127,7 @@
                                 "property": "--mw-heading-one",
                                 "min": 1,
                                 "max": 120,
-                                "step": 0.1,
+                                "step": 1,
                                 "unit": "px"
                             }
                         },
@@ -111,7 +142,7 @@
                                 "property": "--mw-heading-two",
                                 "min": 1,
                                 "max": 120,
-                                "step": 0.1,
+                                "step": 1,
                                 "unit": "px"
                             }
                         },
@@ -126,7 +157,7 @@
                                 "property": "--mw-heading-three",
                                 "min": 1,
                                 "max": 120,
-                                "step": 0.1,
+                                "step": 1,
                                 "unit": "px"
                             }
                         },
@@ -141,7 +172,7 @@
                                 "property": "--mw-heading-four",
                                 "min": 1,
                                 "max": 120,
-                                "step": 0.1,
+                                "step": 1,
                                 "unit": "px"
                             }
                         },
@@ -156,7 +187,7 @@
                                 "property": "--mw-heading-five",
                                 "min": 1,
                                 "max": 120,
-                                "step": 0.1,
+                                "step": 1,
                                 "unit": "px"
                             }
                         },
@@ -171,7 +202,7 @@
                                 "property": "--mw-heading-six",
                                 "min": 1,
                                 "max": 120,
-                                "step": 0.1,
+                                "step": 1,
                                 "unit": "px"
                             }
                         },
@@ -210,7 +241,7 @@
                                 "property": "--mw-paragraph-size",
                                 "min": 1,
                                 "max": 120,
-                                "step": 0.1,
+                                "step": 1,
                                 "unit": "px"
                             }
                         },
@@ -244,8 +275,4 @@
                     }
                 }
             ]
-        }
-
-
-    ]
 }

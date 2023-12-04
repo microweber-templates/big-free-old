@@ -69,9 +69,8 @@ $mw-btn-outline-text-hover-color: $mw-white-color !default;
 $mw-btn-outline-border-color: $mw-orange-color !default;
 
 
-
-$mw-form-control-border-radius: 2px !default;
-$mw-form-control-border-size: 2px !default;
+$mw-form-control-border-radius: 0px !default;
+$mw-form-control-border-size: 1px !default;
 $mw-form-control-border-style: solid !default;
 $mw-form-control-padding-block: 15px !default;
 $mw-form-control-padding-inline: 15px !default;
@@ -81,8 +80,8 @@ $mw-form-control-background: $mw-white-color !default;
 $mw-form-control-background-hover: $mw-white-color !default;
 $mw-form-control-text-color: $mw-black-color !default;
 $mw-form-control-text-hover-color: $mw-black-color !default;
-$mw-form-label: $mw-black-color !default;
-$mw-form-label-font-size: 16px !default;
+$mw-form-label-color: $mw-black-color !default;
+
 
 :root {
     --mw-background-color: #{$mw-background-color};
@@ -156,7 +155,8 @@ $mw-form-label-font-size: 16px !default;
     --mw-form-control-background-hover: #{$mw-form-control-background-hover};
     --mw-form-control-text-color: #{$mw-form-control-text-color};
     --mw-form-control-text-hover-color: #{$mw-form-control-text-hover-color};
-    --mw-form-label: #{$mw-form-label};
+    --mw-form-label-color: #{$mw-form-label-color};
+
 
 
 }

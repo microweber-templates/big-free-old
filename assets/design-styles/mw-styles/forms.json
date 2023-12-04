@@ -22,7 +22,7 @@
                     "description": "Choose a form label color to use for your site.",
                     "fieldType": "colorPicker",
                     "selectors": [
-                        ".form-label"
+                        ":root"
                     ],
                     "fieldSettings": {
                         "property": "--mw-form-label-color"
@@ -33,7 +33,7 @@
                     "description": "Choose a form input text color to use for your site.",
                     "fieldType": "colorPicker",
                     "selectors": [
-                        ".form-control"
+                        ":root"
                     ],
                     "fieldSettings": {
                         "property": "--mw-form-control-text-color"
@@ -44,7 +44,7 @@
                     "description": "Choose a form input text hover color to use for your site.",
                     "fieldType": "colorPicker",
                     "selectors": [
-                        ".form-control:hover"
+                        ":root"
                     ],
                     "fieldSettings": {
                         "property": "--mw-form-control-text-hover-color"
@@ -55,7 +55,7 @@
                     "description": "Choose a form input border color to use for your site.",
                     "fieldType": "colorPicker",
                     "selectors": [
-                        ".form-control"
+                        ":root"
                     ],
                     "fieldSettings": {
                         "property": "--mw-form-control-border-color"
@@ -66,7 +66,7 @@
                     "description": "Choose a form input placeholder color to use for your site.",
                     "fieldType": "colorPicker",
                     "selectors": [
-                        ".form-control"
+                        ":root"
                     ],
                     "fieldSettings": {
                         "property": "--mw-form-control-placeholder-color"
@@ -77,9 +77,7 @@
                     "description": "Clear all form inputs styles you have set for your site.",
                     "fieldType": "clearAll",
                     "selectors": [
-                        ":root",
-                        ".form-label",
-                        ".form-control"
+                        ":root"
                     ],
                     "fieldSettings": {
                         "properties": [
@@ -109,7 +107,7 @@
                         "property": "--mw-form-label-font-size",
                         "min": 1,
                         "max": 120,
-                        "step": 0.1,
+                        "step": 1,
                         "unit": "px"
                     }
                 },
@@ -118,13 +116,13 @@
                     "description": "Choose a form input border radius to use for your site.",
                     "fieldType": "rangeSlider",
                     "selectors": [
-                        ".form-control"
+                        ":root"
                     ],
                     "fieldSettings": {
                         "property": "--mw-form-control-border-radius",
                         "min": 1,
                         "max": 120,
-                        "step": 0.1,
+                        "step": 1,
                         "unit": "px"
                     }
                 },
@@ -133,13 +131,13 @@
                     "description": "Choose a form input border size to use for your site.",
                     "fieldType": "rangeSlider",
                     "selectors": [
-                        ".form-control"
+                        ":root"
                     ],
                     "fieldSettings": {
                         "property": "--mw-form-control-border-size",
                         "min": 1,
                         "max": 120,
-                        "step": 0.1,
+                        "step": 1,
                         "unit": "px"
                     }
                 },
@@ -148,13 +146,13 @@
                     "description": "Choose a form input padding horizontal to use for your site.",
                     "fieldType": "rangeSlider",
                     "selectors": [
-                        ".form-control"
+                        ":root"
                     ],
                     "fieldSettings": {
                         "property": "--mw-form-control-padding-inline",
                         "min": 1,
                         "max": 120,
-                        "step": 0.1,
+                        "step": 1,
                         "unit": "px"
                     }
                 },
@@ -163,13 +161,13 @@
                     "description": "Choose a form input padding vertical to use for your site.",
                     "fieldType": "rangeSlider",
                     "selectors": [
-                        ".form-control"
+                        ":root"
                     ],
                     "fieldSettings": {
                         "property": "--mw-form-control-padding-block",
                         "min": 1,
                         "max": 120,
-                        "step": 0.1,
+                        "step": 1,
                         "unit": "px"
                     }
                 },
@@ -178,16 +176,15 @@
                     "description": "Clear all form inputs styles you have set for your site.",
                     "fieldType": "clearAll",
                     "selectors": [
-                        ":root",
-                        ".form-control"
-
+                        ":root"
                     ],
                     "fieldSettings": {
                         "properties": [
+                            "--mw-form-label-font-size",
                             "--mw-form-control-border-radius",
                             "--mw-form-control-border-size",
-                            "--mw-form-control-padding-block",
-                            "--mw-form-control-padding-inline"
+                            "--mw-form-control-padding-inline",
+                            "--mw-form-control-padding-block"
                         ]
                     }
                 }
