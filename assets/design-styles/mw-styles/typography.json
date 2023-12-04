@@ -93,6 +93,22 @@
                             }
                         },
                         {
+                            "title": "Body Text Align",
+                            "description": "Choose a text align for your site.",
+                            "fieldType": "dropdown",
+                            "selectors": [
+                                ":root"
+                            ],
+                            "fieldSettings": {
+                                "property": "--mw-text-align",
+                                "options": {
+                                    "left": "left",
+                                    "center": "center",
+                                    "right": "right"
+                                }
+                            }
+                        },
+                        {
                             "title": "Clear All",
                             "description": "Clear all spacing styles.",
                             "fieldType": "clearAll",
@@ -104,7 +120,8 @@
                                     "--mw-line-height",
                                     "--mw-letter-spacing",
                                     "--mw-text-transform",
-                                    "--mw-font-weight"
+                                    "--mw-font-weight",
+                                    "--mw-text-align"
 
                                 ]
                             }

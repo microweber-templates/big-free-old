@@ -77,7 +77,11 @@
                     "description": "Clear all form inputs styles you have set for your site.",
                     "fieldType": "clearAll",
                     "selectors": [
-                        ":root"
+                        ":root",
+                        ".form-label",
+                        ".form-control",
+                        ".form-select"
+
                     ],
                     "fieldSettings": {
                         "properties": [
@@ -188,7 +192,7 @@
                         ]
                     }
                 }
-            ]
+            ] 
         }
     ]
 }

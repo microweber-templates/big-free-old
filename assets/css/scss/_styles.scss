@@ -19,32 +19,10 @@ p.lead-3: 36px;
  ******************************************* */
 
 
-html {
-    font-size: var(--bodyFontSize);
-}
-
-body {
-    background-color: var(--background);
-}
-
-
-body, p , h1, h2, h3, h4, h5, h6, .navbar .logo-text {
-    font-family: var(--fontFamily);
-    font-display: swap;
-    text-align: var(--body-text-align);
-}
-
 .navbar .logo-text {
     color: var(--mw-primary-color);
 }
 
-
-
-body,
-p {
-    line-height: 1.6;
-
-}
 
 
 
