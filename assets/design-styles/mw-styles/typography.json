@@ -8,7 +8,7 @@
                     ],
                     "fieldType": "fontFamily",
                     "fieldSettings": {
-                        "property": "--mw-font-family"
+                        "property": "--mw-font-family-sans-serif"
                     }
                 },
                 {
@@ -269,7 +269,7 @@
                     ],
                     "fieldSettings": {
                         "properties": [
-                            "--mw-font-family",
+                            "--mw-font-family-sans-serif",
                             "--mw-body-font-size"
                         ]
                     }
