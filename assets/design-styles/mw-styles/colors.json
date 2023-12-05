@@ -88,6 +88,27 @@
                     "fieldSettings": {
                         "property": "--mw-link-hover-color"
                     }
+                },
+                {
+                    "title": "Clear All",
+                    "description": "Clear all colors styles you have set for your site.",
+                    "fieldType": "clearAll",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "properties": [
+                            "--mw-background-color",
+                            "--mw-section-background-color",
+                            "--mw-primary-color",
+                            "--mw-heading-color",
+                            "--mw-paragraph-color",
+                            "--mw-text-on-dark-background-color",
+                            "--mw-link-color",
+                            "--mw-link-hover-color"
+
+                        ]
+                    }
                 }
 
             ]

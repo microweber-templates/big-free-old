@@ -13,12 +13,23 @@ $mw-primary-color:                  $mw-orange-color !default;
 $mw-secondary:                      $mw-gray-color !default;
 $mw-textDark:                       $mw-dark-color !default;
 $mw-textLight:                      $mw-light-color !default;
-$mw-header-background:              $mw-white-color !default;
+
+
+$mw-header-background:          $mw-white-color !default;
+$mw-header-links-color:         $mw-black-color !default;
+$mw-header-links-hover-color:   $mw-orange-color !default;
+
 $mw-top-header-background:          $mw-black-color !default;
-$mw-top-header-elements:            $mw-white-color !default;
-$mw-menu-color:                     $mw-black-color !default;
-$mw-menu-hover-color:               $mw-black-color !default;
-$mw-link-color:                          $mw-black-color !default;
+$mw-top-header-primary-color:       $mw-orange-color !default;
+$mw-top-header-links-color:         $mw-orange-color !default;
+$mw-top-header-links-hover-color:   $mw-white-color !default;
+$mw-top-header-button-background-color: $mw-orange-color !default;
+$mw-top-header-button-background-hover-color: $mw-orange-color !default;
+$mw-top-header-button-text-color:   $mw-white-color !default;
+$mw-top-header-button-text-hover-color: $mw-white-color !default;
+
+
+$mw-link-color:                     $mw-black-color !default;
 $mw-paragraph-color:                $mw-black-color !default;
 
 $mw-line-height:            1.5 !default;
@@ -40,10 +51,15 @@ $mw-font-family-sans-serif:      'Jost', sans-serif !default;
 
 $text-on-dark-background: $mw-white-color !default;
 
-$mw-footer-background:       $mw-white-color !default;
-$mw-footer-text-color:       $mw-black-color !default;
+$mw-footer-background-color:       $mw-white-color !default;
+$mw-footer-button-background-color: $mw-orange-color !default;
+$mw-footer-button-background-hover-color: $mw-orange-color !default;
+$mw-footer-button-text-color:       $mw-white-color !default;
+$mw-footer-button-text-hover-color: $mw-white-color !default;
 $mw-footer-link-color:       $mw-black-color !default;
 $mw-footer-hover-link-color: $mw-black-color !default;
+$mw-footer-text-color:       $mw-black-color !default;
+$mw-footer-primary-color:    $mw-orange-color !default;
 
 $mw-btn-border-radius: 33px !default;
 $mw-btn-border-size: 2px !default;
@@ -91,11 +107,21 @@ $mw-form-label-color: $mw-black-color !default;
     --mw-secondary: #{$mw-secondary};
     --mw-textDark: #{$mw-textDark};
     --mw-textLight: #{$mw-textLight};
-    --mw-header-background: #{$mw-header-background};
-    --mw-top-header-background: #{$mw-top-header-background};
-    --mw-top-header-elements: #{$mw-top-header-elements};
-    --mw-menu-color: #{$mw-menu-color};
-    --mw-menu-hover-color: #{$mw-menu-hover-color};
+
+    --mw-header-background-color: #{$mw-header-background};
+    --mw-header-links-color: #{$mw-header-links-color};
+    --mw-header-links-hover-color: #{$mw-header-links-hover-color};
+
+    --mw-top-header-background-color: #{$mw-top-header-background};
+    --mw-top-header-primary-color: #{$mw-top-header-primary-color};
+    --mw-top-header-link-color: #{$mw-top-header-links-color};
+    --mw-top-header-link-hover-color: #{$mw-top-header-links-hover-color};
+    --mw-top-header-button-background-color: #{$mw-top-header-button-background-color};
+    --mw-top-header-button-background-hover-color: #{$mw-top-header-button-background-hover-color};
+    --mw-top-header-button-text-color: #{$mw-top-header-button-text-color};
+    --mw-top-header-button-text-hover-color: #{$mw-top-header-button-text-hover-color};
+
+
     --mw-link-color: #{$mw-link-color};
     --mw-paragraph-color: #{$mw-paragraph-color};
 
@@ -117,10 +143,15 @@ $mw-form-label-color: $mw-black-color !default;
 
     --text-on-dark-background: #{$text-on-dark-background};
 
-    --mw-footer-background: #{$mw-footer-background};
-    --mw-footer-text-color: #{$mw-footer-text-color};
+    --mw-footer-background-color: #{$mw-footer-background-color};
     --mw-footer-link-color: #{$mw-footer-link-color};
     --mw-footer-hover-link-color: #{$mw-footer-hover-link-color};
+    --mw-footer-button-background-color: #{$mw-footer-button-background-color};
+    --mw-footer-button-background-hover-color: #{$mw-footer-button-background-hover-color};
+    --mw-footer-button-text-color: #{$mw-footer-button-text-color};
+    --mw-footer-button-text-hover-color: #{$mw-footer-button-text-hover-color};
+    --mw-footer-text-color: #{$mw-footer-text-color};
+    --mw-footer-primary-color: #{$mw-footer-primary-color};
 
     --mw-btn-border-radius: #{$mw-btn-border-radius};
     --mw-btn-border-size: #{$mw-btn-border-size};
@@ -163,31 +194,8 @@ $mw-form-label-color: $mw-black-color !default;
 
 }
 
-
-html {
-    font-size: var(--mw-body-font-size);
-}
-
-body {
-    background-color: var(--mw-background-color);
-}
-
 section.section {
     background-color: var(--mw-section-background-color);
-}
-
-.header-top, .footer-background, .header-background {
-
-    background-color: var(--mw-background-color);
-
-    i.mdi, a {
-        color: var(--mw-link-color);
-
-        &:hover {
-            color: var(--mw-link-hover-color);
-        }
-
-    }
 }
 
 
@@ -390,6 +398,86 @@ h5 {
 h6 {
     @media screen and (min-width: 615px) {
         font-size: var(--mw-heading-six);
+    }
+
+}
+
+.header-background {
+
+    background-color: var(--mw-header-background-color);
+
+    a {
+        color: var(--mw-header-link-color);
+
+        &:hover {
+            color: var(--mw-header-link-hover-color);
+        }
+
+    }
+}
+
+.footer-background {
+    background-color: var(--mw-footer-background-color);
+
+     a {
+        color: var(--mw-footer-link-color);
+
+        &:hover {
+            color: var(--mw-footer-link-hover-color);
+        }
+    }
+
+    i {
+        &:before {
+            color: var(--mw-footer-primary-color);
+        }
+    }
+
+
+    p, span, small {
+        color: var(--mw-footer-text-color);
+    }
+
+    .btn {
+        background-color: var(--mw-footer-button-background-color) !important;
+        color: var(--mw-footer-button-text-color) !important;
+        border-color: var(--mw-footer-button-background-color) !important;
+
+        &:hover, &:active {
+            background-color: var(--mw-footer-button-background-hover-color) !important;
+            color: var(--mw-footer-button-text-hover-color) !important;
+            border-color: var(--mw-footer-button-background-hover-color) !important;
+        }
+    }
+}
+
+.header-top {
+    background-color: var(--mw-top-header-background-color);
+
+    i.mdi, a {
+        color: var(--mw-top-header-link-color);
+
+        &:hover {
+            color: var(--mw-top-header-link-hover-color);
+        }
+    }
+
+    i {
+        &:before {
+            color: var(--mw-top-header-primary-color);
+        }
+    }
+
+    .btn {
+        background-color: var(--mw-top-header-button-background-color) !important;
+        color: var(--mw-top-header-button-text-color) !important;
+        border-color: var(--mw-top-header-button-background-color) !important;
+
+        &:hover, &:active {
+            background-color: var(--mw-top-header-button-background-hover-color) !important;
+            color: var(--mw-top-header-button-text-hover-color) !important;
+            border-color: var(--mw-top-header-button-background-hover-color) !important;
+        }
     }
 
 }
