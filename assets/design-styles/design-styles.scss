@@ -172,12 +172,6 @@ body {
     background-color: var(--mw-background-color);
 }
 
-body, p , h1, h2, h3, h4, h5, h6, .navbar .logo-text, a, span, small {
-    font-family: var(--mw-font-family-sans-serif);
-    font-display: swap;
-    text-align: var(--mw-text-align);
-}
-
 section.section {
     background-color: var(--mw-section-background-color);
 }
@@ -328,12 +322,13 @@ a, .btn-link {
 body {
     background-color: var(--mw-background-color);
     color: var(--mw-body-color);
-    font-family: var(--mw-font-family);
     font-size: var(--mw-body-font-size);
     line-height: var(--mw-line-height);
     letter-spacing: var(--mw-letter-spacing);
     font-weight: var(--mw-font-weight);
     text-transform: var(--mw-text-transform);
+    font-family: var(--mw-font-family-sans-serif);
+    text-align: var(--mw-text-align);
 }
 
 p {
