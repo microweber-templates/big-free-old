@@ -278,6 +278,44 @@
             ]
         },
         {
+            "title": "Links",
+            "description": "Pick a link style, and customize it to achieve the style you want.",
+            "settings": [
+                {
+                    "title": "Text decoration",
+                    "description": "Pick a decoration style for your link, and customize it to achieve the style you want.",
+                    "fieldType": "dropdown",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "property": "--mw-text-decoration",
+                        "options": {
+                            "none": "none",
+                            "underline": "underline",
+                            "underline dotted": "underline dotted",
+                            "wavy underline": "wavy underline",
+                            "overline": "overline"
+
+                        }
+                    }
+                },
+                {
+                    "title": "Clear All",
+                    "description": "Clear all heading styles.",
+                    "fieldType": "clearAll",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "properties": [
+                            "--mw-paragraph-size"
+                        ]
+                    }
+                }
+            ]
+        },
+        {
             "title": "Clear All",
             "description": "Clear all font styles.",
             "fieldType": "clearAll",

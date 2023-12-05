@@ -5,6 +5,7 @@
   --mw-secondary: #6c757d;
   --mw-textDark: #212529;
   --mw-textLight: #212529;
+  --mw-body-font-size: 16px;
   --mw-header-background-color: #ffffff;
   --mw-header-links-color: #000000;
   --mw-header-links-hover-color: #f4a261;
@@ -24,6 +25,7 @@
   --mw-text-transform: none;
   --mw-paragraph-size: 1rem;
   --mw-text-align: center;
+  --mw-text-decoration: none;
   --mw-heading-one: 64px;
   --mw-heading-two: 52px;
   --mw-heading-three: 44px;
@@ -171,6 +173,9 @@ body {
   font-weight: var(--mw-font-weight);
   text-transform: var(--mw-text-transform);
   font-family: var(--mw-font-family-sans-serif); }
+
+a {
+  text-decoration: var(--mw-text-decoration); }
 
 p {
   font-size: var(--mw-paragraph-size);

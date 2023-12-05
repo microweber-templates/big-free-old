@@ -38,6 +38,7 @@ $mw-font-weight:            400 !default;
 $mw-text-transform:         none !default;
 $mw-paragraph-size:         1rem !default;
 $mw-text-align:             center !default;
+$mw-text-decoration:        none !default;
 
 $mw-heading-one:            64px !default;
 $mw-heading-two:            52px !default;
@@ -107,6 +108,7 @@ $mw-form-label-color: $mw-black-color !default;
     --mw-secondary: #{$mw-secondary};
     --mw-textDark: #{$mw-textDark};
     --mw-textLight: #{$mw-textLight};
+    --mw-body-font-size: #{$mw-font-size};
 
     --mw-header-background-color: #{$mw-header-background};
     --mw-header-links-color: #{$mw-header-links-color};
@@ -131,6 +133,7 @@ $mw-form-label-color: $mw-black-color !default;
     --mw-text-transform: #{$mw-text-transform};
     --mw-paragraph-size: #{$mw-paragraph-size};
     --mw-text-align: #{$mw-text-align};
+    --mw-text-decoration: #{$mw-text-decoration};
 
     --mw-heading-one: #{$mw-heading-one};
     --mw-heading-two: #{$mw-heading-two};
@@ -336,6 +339,10 @@ body {
     font-weight: var(--mw-font-weight);
     text-transform: var(--mw-text-transform);
     font-family: var(--mw-font-family-sans-serif);
+}
+
+a {
+    text-decoration: var(--mw-text-decoration);
 }
 
 p {
