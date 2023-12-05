@@ -26,7 +26,7 @@ $mw-letter-spacing:         0 !default;
 $mw-font-weight:            400 !default;
 $mw-text-transform:         none !default;
 $mw-paragraph-size:         1rem !default;
-$mw-text-align:             left !default;
+$mw-text-align:             center !default;
 
 $mw-heading-one:            64px !default;
 $mw-heading-two:            52px !default;
@@ -328,7 +328,6 @@ body {
     font-weight: var(--mw-font-weight);
     text-transform: var(--mw-text-transform);
     font-family: var(--mw-font-family-sans-serif);
-    text-align: var(--mw-text-align);
 }
 
 p {
@@ -336,6 +335,12 @@ p {
     color: var(--mw-paragraph-color);
     line-height: var(--mw-line-height);
     letter-spacing: var(--mw-letter-spacing);
+}
+
+section.section {
+    h1,h2,h3,h4,h5,h6,p {
+        text-align: var(--mw-text-align);
+    }
 }
 
 .mw-layout-dark-background{

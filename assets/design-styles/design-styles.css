@@ -17,7 +17,7 @@
   --mw-font-weight: 400;
   --mw-text-transform: none;
   --mw-paragraph-size: 1rem;
-  --mw-text-align: left;
+  --mw-text-align: center;
   --mw-heading-one: 64px;
   --mw-heading-two: 52px;
   --mw-heading-three: 44px;
@@ -172,14 +172,16 @@ body {
   letter-spacing: var(--mw-letter-spacing);
   font-weight: var(--mw-font-weight);
   text-transform: var(--mw-text-transform);
-  font-family: var(--mw-font-family-sans-serif);
-  text-align: var(--mw-text-align); }
+  font-family: var(--mw-font-family-sans-serif); }
 
 p {
   font-size: var(--mw-paragraph-size);
   color: var(--mw-paragraph-color);
   line-height: var(--mw-line-height);
   letter-spacing: var(--mw-letter-spacing); }
+
+section.section h1, section.section h2, section.section h3, section.section h4, section.section h5, section.section h6, section.section p {
+  text-align: var(--mw-text-align); }
 
 .mw-layout-dark-background h1, .mw-layout-dark-background h2, .mw-layout-dark-background h3, .mw-layout-dark-background h4, .mw-layout-dark-background h5, .mw-layout-dark-background h6, .mw-layout-dark-background p {
   color: var(--mw-text-on-dark-background-color); }
