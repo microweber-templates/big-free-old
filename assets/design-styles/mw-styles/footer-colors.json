@@ -109,6 +109,8 @@
                     "fieldSettings": {
                         "properties": [
                             "--mw-footer-background-color",
+                            "--mw-footer-text-color",
+                            "--mw-footer-primary-color",
                             "--mw-footer-link-color",
                             "--mw-footer-link-hover-color",
                             "--mw-footer-button-background-color",

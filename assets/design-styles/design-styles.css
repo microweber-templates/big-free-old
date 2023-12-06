@@ -121,11 +121,15 @@ a, .btn-link {
   border-width: var(--mw-btn-border-size);
   border-style: var(--mw-btn-border-style);
   color: var(--mw-btn-text-color); }
+  .btn:not(.btn-link) i:before {
+    color: var(--mw-btn-text-color); }
   .btn:not(.btn-link):hover, .btn:not(.btn-link):focus, .btn:not(.btn-link).active, .btn:not(.btn-link):active {
     outline: 0 none !important;
     box-shadow: none !important;
     border-color: color-mix(in srgb, var(--form-control-background) 50%, transparent);
     color: var(--mw-btn-text-hover-color); }
+    .btn:not(.btn-link):hover i:before, .btn:not(.btn-link):focus i:before, .btn:not(.btn-link).active i:before, .btn:not(.btn-link):active i:before {
+      color: var(--mw-btn-text-hover-color); }
 
 .module-custom-fields .form-label {
   color: var(--mw-form-label-color);
@@ -241,10 +245,14 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--mw-footer-button-background-color) !important;
     color: var(--mw-footer-button-text-color) !important;
     border-color: var(--mw-footer-button-background-color) !important; }
+    .footer-background .btn i:before {
+      color: var(--mw-footer-button-text-color) !important; }
     .footer-background .btn:hover, .footer-background .btn:active {
       background-color: var(--mw-footer-button-background-hover-color) !important;
       color: var(--mw-footer-button-text-hover-color) !important;
       border-color: var(--mw-footer-button-background-hover-color) !important; }
+      .footer-background .btn:hover i:before, .footer-background .btn:active i:before {
+        color: var(--mw-footer-button-text-hover-color) !important; }
 
 .header-top {
   background-color: var(--mw-top-header-background-color); }
@@ -258,9 +266,13 @@ h1, h2, h3, h4, h5, h6 {
     background-color: var(--mw-top-header-button-background-color) !important;
     color: var(--mw-top-header-button-text-color) !important;
     border-color: var(--mw-top-header-button-background-color) !important; }
+    .header-top .btn i:before {
+      color: var(--mw-top-header-button-text-color) !important; }
     .header-top .btn:hover, .header-top .btn:active {
       background-color: var(--mw-top-header-button-background-hover-color) !important;
       color: var(--mw-top-header-button-text-hover-color) !important;
       border-color: var(--mw-top-header-button-background-hover-color) !important; }
+      .header-top .btn:hover i:before, .header-top .btn:active i:before {
+        color: var(--mw-top-header-button-text-hover-color) !important; }
 
 /*# sourceMappingURL=design-styles.css.map */

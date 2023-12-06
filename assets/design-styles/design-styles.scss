@@ -260,18 +260,27 @@ a, .btn-link {
     border-style: var(--mw-btn-border-style);
     color: var(--mw-btn-text-color);
 
+
+    i {
+        &:before {
+            color: var(--mw-btn-text-color);
+        }
+    }
+
     &:hover, &:focus, &.active, &:active {
         outline: 0 none !important;
         box-shadow: none !important;
         border-color: color-mix(in srgb, var(--form-control-background) 50%, transparent);
         color: var(--mw-btn-text-hover-color);
-    }
 
-    &:hover, &.focus, &.active, &:active {
         i {
+            &:before {
+                color: var(--mw-btn-text-hover-color);
 
+            }
         }
     }
+
 }
 
 
@@ -450,10 +459,24 @@ h6 {
         color: var(--mw-footer-button-text-color) !important;
         border-color: var(--mw-footer-button-background-color) !important;
 
+        i {
+            &:before {
+                color: var(--mw-footer-button-text-color) !important;
+
+            }
+        }
+
         &:hover, &:active {
             background-color: var(--mw-footer-button-background-hover-color) !important;
             color: var(--mw-footer-button-text-hover-color) !important;
             border-color: var(--mw-footer-button-background-hover-color) !important;
+
+            i {
+                &:before {
+                    color: var(--mw-footer-button-text-hover-color) !important;
+
+                }
+            }
         }
     }
 }
@@ -480,10 +503,23 @@ h6 {
         color: var(--mw-top-header-button-text-color) !important;
         border-color: var(--mw-top-header-button-background-color) !important;
 
+        i {
+            &:before {
+                color: var(--mw-top-header-button-text-color) !important;
+            }
+        }
+
         &:hover, &:active {
             background-color: var(--mw-top-header-button-background-hover-color) !important;
             color: var(--mw-top-header-button-text-hover-color) !important;
             border-color: var(--mw-top-header-button-background-hover-color) !important;
+
+            i {
+                &:before {
+                    color: var(--mw-top-header-button-text-hover-color) !important;
+
+                }
+            }
         }
     }
 
