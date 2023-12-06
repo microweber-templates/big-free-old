@@ -100,6 +100,8 @@ $mw-form-control-text-color: $mw-black-color !default;
 $mw-form-control-text-hover-color: $mw-black-color !default;
 $mw-form-label-color: $mw-black-color !default;
 
+$mw-text-on-dark-background-color: $mw-white-color !default;
+
 
 :root {
     --mw-background-color: #{$mw-background-color};
@@ -193,7 +195,7 @@ $mw-form-label-color: $mw-black-color !default;
     --mw-form-control-text-hover-color: #{$mw-form-control-text-hover-color};
     --mw-form-label-color: #{$mw-form-label-color};
 
-
+    --mw-text-on-dark-background-color: #{$mw-text-on-dark-background-color};
 
 }
 
@@ -573,4 +575,10 @@ h6 {
         }
     }
 
+}
+
+.mw-le-spacer {
+    span {
+        color: #fff !important;
+    }
 }

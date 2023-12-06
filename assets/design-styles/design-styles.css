@@ -74,7 +74,8 @@
   --mw-form-control-background-hover: #ffffff;
   --mw-form-control-text-color: #000000;
   --mw-form-control-text-hover-color: #000000;
-  --mw-form-label-color: #000000; }
+  --mw-form-label-color: #000000;
+  --mw-text-on-dark-background-color: #ffffff; }
 
 section.section {
   background-color: var(--mw-section-background-color); }
@@ -293,5 +294,8 @@ h1, h2, h3, h4, h5, h6 {
       border-color: var(--mw-top-header-button-background-hover-color) !important; }
       .header-top .btn:hover i:before, .header-top .btn:active i:before {
         color: var(--mw-top-header-button-text-hover-color) !important; }
+
+.mw-le-spacer span {
+  color: #fff !important; }
 
 /*# sourceMappingURL=design-styles.css.map */
