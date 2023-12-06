@@ -222,9 +222,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .header-background {
   background-color: var(--mw-header-background-color); }
-  .header-background a {
+  .header-background a, .header-background .mw-vhmbgr-wrapper {
     color: var(--mw-header-link-color); }
-    .header-background a:hover {
+    .header-background a:hover, .header-background .mw-vhmbgr-wrapper:hover {
       color: var(--mw-header-link-hover-color); }
 
 .footer-background {
