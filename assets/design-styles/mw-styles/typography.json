@@ -12,21 +12,6 @@
             }
         },
         {
-            "title": "Font Size",
-            "description": "Choose a font size to use for your site.",
-            "fieldType": "rangeSlider",
-            "selectors": [
-                ":root"
-            ],
-            "fieldSettings": {
-                "property": "--mw-body-font-size",
-                "min": 1,
-                "max": 120,
-                "step": 1,
-                "unit": "px"
-            }
-        },
-        {
             "title": "Spacing",
             "description": "Pick a spacing style, and customize it to achieve the style you want.",
             "settings": [
@@ -325,7 +310,6 @@
             "fieldSettings": {
                 "properties": [
                     "--mw-font-family-sans-serif",
-                    "--mw-body-font-size",
                     "--mw-heading-one",
                     "--mw-heading-two",
                     "--mw-heading-three",
