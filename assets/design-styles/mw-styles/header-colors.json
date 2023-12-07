@@ -59,7 +59,8 @@
                         "properties": [
                             "--mw-header-background-color",
                             "--mw-header-link-color",
-                            "--mw-header-link-hover-color"
+                            "--mw-header-link-hover-color",
+                            "--mw-header-padding-block"
 
                         ]
                     }

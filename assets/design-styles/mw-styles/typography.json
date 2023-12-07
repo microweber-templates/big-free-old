@@ -119,8 +119,8 @@
                         "properties": [
                             "--mw-line-height",
                             "--mw-letter-spacing",
-                            "--mw-text-transform",
                             "--mw-font-weight",
+                            "--mw-text-transform",
                             "--mw-text-align"
 
                         ]
@@ -309,7 +309,7 @@
                     ],
                     "fieldSettings": {
                         "properties": [
-                            "--mw-paragraph-size"
+                            "--mw-text-decoration"
                         ]
                     }
                 }
@@ -325,7 +325,21 @@
             "fieldSettings": {
                 "properties": [
                     "--mw-font-family-sans-serif",
-                    "--mw-body-font-size"
+                    "--mw-body-font-size",
+                    "--mw-heading-one",
+                    "--mw-heading-two",
+                    "--mw-heading-three",
+                    "--mw-heading-for",
+                    "--mw-heading-five",
+                    "--mw-heading-six",
+                    "--mw-paragraph-size",
+                    "--mw-text-decoration",
+                    "--mw-line-height",
+                    "--mw-letter-spacing",
+                    "--mw-font-weight",
+                    "--mw-text-transform",
+                    "--mw-text-align",
+                    "--mw-text-decoration"
                 ]
             }
         }
