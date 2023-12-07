@@ -34,6 +34,21 @@
                     }
                 },
                 {
+                    "title": "Height",
+                    "description": "Height",
+                    "fieldType": "rangeSlider",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "property": "--mw-header-padding-block",
+                        "min": 1,
+                        "max": 120,
+                        "step": 1,
+                        "unit": "px"
+                    }
+                },
+                {
                     "title": "Clear All",
                     "description": "Clear all colors styles you have set for your site.",
                     "fieldType": "clearAll",

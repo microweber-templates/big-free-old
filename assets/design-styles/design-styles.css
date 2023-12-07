@@ -9,6 +9,7 @@
   --mw-header-background-color: #ffffff;
   --mw-header-link-color: #000000;
   --mw-header-link-hover-color: #f4a261;
+  --mw-header-padding-block: 10px;
   --mw-top-header-background-color: #000000;
   --mw-top-header-primary-color: #f4a261;
   --mw-top-header-link-color: #f4a261;
@@ -251,6 +252,9 @@ h1, h2, h3, h4, h5, h6 {
     .header-background a:hover, .header-background .mw-vhmbgr-wrapper:hover, .mw-vhmbgr-active-popup a:hover, .mw-vhmbgr-active-popup .mw-vhmbgr-wrapper:hover {
       color: var(--mw-header-link-hover-color) !important; }
 
+.header-background {
+  padding-block: var(--mw-header-padding-block); }
+
 .footer-background {
   background-color: var(--mw-footer-background-color); }
   .footer-background a {
@@ -297,5 +301,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .mw-le-spacer span {
   color: #fff !important; }
+
+#to-top {
+  padding: 12px 15px !important;
+  border-radius: 0 !important;
+  border: none !important; }
 
 /*# sourceMappingURL=design-styles.css.map */

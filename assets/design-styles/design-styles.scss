@@ -18,6 +18,7 @@ $mw-textLight:                      $mw-light-color !default;
 $mw-header-background:          $mw-white-color !default;
 $mw-header-links-color:         $mw-black-color !default;
 $mw-header-links-hover-color:   $mw-orange-color !default;
+$mw-header-padding-block:       10px !default;
 
 $mw-top-header-background:          $mw-black-color !default;
 $mw-top-header-primary-color:       $mw-orange-color !default;
@@ -115,6 +116,7 @@ $mw-text-on-dark-background-color: $mw-white-color !default;
     --mw-header-background-color: #{$mw-header-background};
     --mw-header-link-color: #{$mw-header-links-color};
     --mw-header-link-hover-color: #{$mw-header-links-hover-color};
+    --mw-header-padding-block: #{$mw-header-padding-block};
 
     --mw-top-header-background-color: #{$mw-top-header-background};
     --mw-top-header-primary-color: #{$mw-top-header-primary-color};
@@ -484,6 +486,10 @@ h6 {
 
 }
 
+.header-background {
+    padding-block: var(--mw-header-padding-block);
+}
+
 .footer-background {
     background-color: var(--mw-footer-background-color);
 
@@ -581,4 +587,10 @@ h6 {
     span {
         color: #fff !important;
     }
+}
+
+#to-top {
+    padding: 12px 15px !important;
+    border-radius: 0 !important;
+    border: none !important;
 }
