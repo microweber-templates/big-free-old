@@ -36,7 +36,7 @@ $layout_classes = ' ' . $classes['padding_top'] . ' ' . $classes['padding_bottom
     }
 </style>
 
-<div class="  footer-background py-0 <?php print $layout_classes; ?>">
+<div class="  footer-background py-0 <?php print $layout_classes; ?>" id="mw-footer-background">
 
     <module type="background" id="background-layout--<?php print $params['id'] ?>" />
 

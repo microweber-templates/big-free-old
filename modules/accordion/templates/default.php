@@ -57,9 +57,12 @@ if (isset($json) == false or count($json) == 0) {
 
             <div id="collapse-accordion-item-<?php print $edit_field_key . '-' . $key ?>" class="collapse <?php if ($key == 0): ?>show<?php endif; ?>" aria-labelledby="header-item-<?php print $edit_field_key ?>" data-parent="#mw-accordion-module-<?php print $params['id'] ?>">
                 <div class="card-body">
-                    <div class="edit  " field="accordion-item-<?php print $edit_field_key ?>" rel="module-<?php print $params['id'] ?>">
-                        <div class="element"> <?php print isset($slide['content']) ? $slide['content'] : 'Accordion content' ?></div>
-                    </div>
+
+                    <?php include modules_path() . 'accordion/templates/partials/render_accordion_item_content.php'; ?>
+
+
+
+
                 </div>
             </div>
         </div>

@@ -29,7 +29,7 @@ if ($header_top_menu) {
 }
 ?>
 
-<section class="header-background px-0">
+<section class="header-background px-0" id="mw-header-background">
 
     <script>
 

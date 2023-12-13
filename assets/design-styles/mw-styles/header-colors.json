@@ -49,6 +49,21 @@
                     }
                 },
                 {
+                    "title": "Font size",
+                    "description": "Menu Font size",
+                    "fieldType": "rangeSlider",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "property": "--mw-header-font-size",
+                        "min": 1,
+                        "max": 120,
+                        "step": 1,
+                        "unit": "px"
+                    }
+                },
+                {
                     "title": "Clear All",
                     "description": "Clear all colors styles you have set for your site.",
                     "fieldType": "clearAll",
@@ -60,8 +75,8 @@
                             "--mw-header-background-color",
                             "--mw-header-link-color",
                             "--mw-header-link-hover-color",
-                            "--mw-header-padding-block"
-
+                            "--mw-header-padding-block",
+                            "--mw-header-font-size"
                         ]
                     }
                 }

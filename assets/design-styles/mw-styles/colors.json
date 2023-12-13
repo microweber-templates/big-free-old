@@ -33,6 +33,17 @@
                         "property": "--mw-primary-color"
                     }
                 },
+            {
+                    "title": "Body color",
+                    "description": "Body color",
+                    "fieldType": "colorPicker",
+                    "selectors": [
+                        ":root"
+                    ],
+                    "fieldSettings": {
+                        "property": "--mw-body-color"
+                    }
+                },
                 {
                     "title": "Heading color",
                     "description": "Heading color",
@@ -105,7 +116,8 @@
                             "--mw-paragraph-color",
                             "--mw-text-on-dark-background-color",
                             "--mw-link-color",
-                            "--mw-link-hover-color"
+                            "--mw-link-hover-color",
+                            "--mw-body-color"
 
                         ]
                     }
