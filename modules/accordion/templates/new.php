@@ -95,7 +95,7 @@ if (isset($json) == false or count($json) == 0) {
                     </button>
                 </div>
                 <div id="collapse-accordion-item-<?php print $edit_field_key . '-' . $key ?>" class="collapse <?php if ($key == 0) : ?> show <?php endif; ?>" aria-labelledby="header-item-<?php print $edit_field_key ?>" data-parent="#mw-accordion-module-<?php print $params['id'] ?>">
-                    <div class="card-body px-5 pt-0 pb-5">
+                    <div class="card-body p-5">
                         <div class="  edit" field="accordion-item-<?php print $edit_field_key ?>" rel="module-<?php print $params['id'] ?>">
                             <div class="element">
                                 <p   text-black"> <?php print isset($slide['content']) ? $slide['content'] : 'Accordion content' ?></p>

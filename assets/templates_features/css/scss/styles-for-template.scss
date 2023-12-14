@@ -481,9 +481,14 @@
 
 
 body.js-dusk-browser-test {
-    .mh-100vh {
+    .mh-100vh, .guesthouse-header {
         max-height: 500px !important;
         min-height: 500px !important;
+    }
+
+
+    .module-background {
+        min-height: unset !important;
     }
 }
 
@@ -674,3 +679,6 @@ body.js-dusk-browser-test {
     color: #fff !important;
 }
 
+.font-weight-bold {
+    font-weight: bold !important;
+}
