@@ -124,9 +124,6 @@ p {
   line-height: var(--mw-line-height);
   letter-spacing: var(--mw-letter-spacing); }
 
-section.section h1, section.section h2, section.section h3, section.section h4, section.section h5, section.section h6, section.section p {
-  text-align: var(--mw-text-align); }
-
 .mw-layout-dark-background h1, .mw-layout-dark-background h2, .mw-layout-dark-background h3, .mw-layout-dark-background h4, .mw-layout-dark-background h5, .mw-layout-dark-background h6, .mw-layout-dark-background p {
   color: var(--mw-text-on-dark-background-color); }
 

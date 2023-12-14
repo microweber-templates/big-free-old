@@ -78,22 +78,6 @@
                     }
                 },
                 {
-                    "title": "Body Text Align",
-                    "description": "Choose a text align for your site.",
-                    "fieldType": "dropdown",
-                    "selectors": [
-                        ":root"
-                    ],
-                    "fieldSettings": {
-                        "property": "--mw-text-align",
-                        "options": {
-                            "left": "left",
-                            "center": "center",
-                            "right": "right"
-                        }
-                    }
-                },
-                {
                     "title": "Clear All",
                     "description": "Clear all spacing styles.",
                     "fieldType": "clearAll",
